@@ -13,6 +13,7 @@ def create_tool_agent(tool_device, path):
     return ToolQA_OnLine(args)
 
 tool_agent = create_tool_agent(tool_device=0, path="/mnt/workspace/nas/chenguoxin.cgx/api/datasets/ToolQA")
+# tool_agent = create_tool_agent(tool_device=0, path="/yinxr/workhome/zzhong/chenguoxin/api/datasets/ToolQA")
 
 @app.route('/toolqa', methods=['POST'])
 def call_toolqa():

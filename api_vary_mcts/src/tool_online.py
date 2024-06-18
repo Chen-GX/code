@@ -10,6 +10,8 @@ from tools.text.scirex_retriever import create_chroma_db_local as scirex_create_
 # from tools.text.scirex_retriever import insert_to_db as scirex_insert_to_db
 from tools.graph.graphtools import graph_toolkits
 
+root_path = "/yinxr/workhome/zzhong/chenguoxin"
+root_path = "/mnt/workspace/nas/chenguoxin.cgx"
 
 def sentence_embedding(model, texts):
     embeddings = model.encode(texts, show_progress_bar=False)
@@ -37,12 +39,12 @@ class ToolQA_OnLine(object):
     
 
     def init_agenda_retriever(self, args, is_local=True):
-        EMBED_MODEL_NAME = "/mnt/workspace/nas/chenguoxin.cgx/model_cache/all-mpnet-base-v2"
-        CHROMA_PERSIST_DIRECTORY = "/mnt/workspace/nas/chenguoxin.cgx/api/datasets/ToolQA/data/chroma_db/agenda"
+        EMBED_MODEL_NAME = f"{root_path}/model_cache/all-mpnet-base-v2"
+        CHROMA_PERSIST_DIRECTORY = f"{root_path}/api/datasets/ToolQA/data/chroma_db/agenda"
         CHROMA_COLLECTION_NAME = "all"
         CHROMA_SERVER_HOST = ""
         CHROMA_SERVER_HTTP_PORT = ""
-        FILE_PATH = "/mnt/workspace/nas/chenguoxin.cgx/api/datasets/ToolQA/data/external_corpus/agenda/agenda_descriptions_merged.jsonl"
+        FILE_PATH = f"{root_path}/api/datasets/ToolQA/data/external_corpus/agenda/agenda_descriptions_merged.jsonl"
         cuda_idxes = [args.tool_device]
         number_of_processes = len(cuda_idxes)
         input_texts = []
@@ -67,12 +69,12 @@ class ToolQA_OnLine(object):
         print("test agendas", self.agenda_retriever("What is the Jessica's genda on March 7th, 2023?"))
 
     def init_scirex_retriever(self, args, is_local=True):
-        EMBED_MODEL_NAME = "/mnt/workspace/nas/chenguoxin.cgx/model_cache/all-mpnet-base-v2"
-        CHROMA_PERSIST_DIRECTORY = "/mnt/workspace/nas/chenguoxin.cgx/api/datasets/ToolQA/data/chroma_db/scirex-v2"
+        EMBED_MODEL_NAME = f"{root_path}/model_cache/all-mpnet-base-v2"
+        CHROMA_PERSIST_DIRECTORY = f"{root_path}/api/datasets/ToolQA/data/chroma_db/scirex-v2"
         CHROMA_COLLECTION_NAME = "all"
         CHROMA_SERVER_HOST = ""
         CHROMA_SERVER_HTTP_PORT = ""
-        FILE_PATH = "/mnt/workspace/nas/chenguoxin.cgx/api/datasets/ToolQA/data/external_corpus/scirex/Preprocessed_Scirex.jsonl"
+        FILE_PATH = f"{root_path}/api/datasets/ToolQA/data/external_corpus/scirex/Preprocessed_Scirex.jsonl"
         cuda_idxes = [args.tool_device]
         number_of_processes = len(cuda_idxes)
         input_texts = []
@@ -169,10 +171,10 @@ if __name__=="__main__":
     args = parser.parse_args()
 
     gpu_device = os.environ.get('CUDA_VISIBLE_DEVICES', "0").split(',')
-    assert len(gpu_device) == 2
+    # assert len(gpu_device) == 2
     args.device = 0
     args.tool_device = 1
-    args.path = "/yinxr/workhome/zzhong/chenguoxin/datasets/ToolQA"
+    args.path = f"{root_path}/api/datasets/ToolQA"
     tool = ToolQA(args)
     from tools.table.tabtools import table_toolkits
     table = table_toolkits()

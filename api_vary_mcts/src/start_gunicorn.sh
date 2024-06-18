@@ -1,6 +1,7 @@
 #!/bin/bash
 
-gunicorn_run=/opt/conda/envs/mc/bin/gunicorn
+# gunicorn_run=/opt/conda/envs/mc/bin/gunicorn
+gunicorn_run=/yinxr/workhome/zzhong/miniconda3/envs/mc/bin/gunicorn
 
 export VLLM_USE_MODELSCOPE="False"
 

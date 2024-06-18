@@ -34,6 +34,7 @@ def set_seed(seed: int = 1024) -> None:
 
 def get_args():
     root_path = "/mnt/workspace/nas/chenguoxin.cgx"
+    # root_path = "/yinxr/workhome/zzhong/chenguoxin"
     parser = argparse.ArgumentParser()
     parser.add_argument('--seed', type=int, default=42)
     parser.add_argument('--verbose', type=str2bool, default=False, help="print intermediate result on screen")

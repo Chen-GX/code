@@ -10,8 +10,9 @@ from tools.text.scirex_retriever import create_chroma_db_local as scirex_create_
 # from tools.text.scirex_retriever import insert_to_db as scirex_insert_to_db
 from tools.graph.graphtools import graph_toolkits
 
-root_path = "/yinxr/workhome/zzhong/chenguoxin"
 root_path = "/mnt/workspace/nas/chenguoxin.cgx"
+# root_path = "/yinxr/workhome/zzhong/chenguoxin"
+# root_path = "/bjzhyai03/workhome/cgx/chenguoxin"
 
 def sentence_embedding(model, texts):
     embeddings = model.encode(texts, show_progress_bar=False)

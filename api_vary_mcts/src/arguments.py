@@ -35,6 +35,8 @@ def set_seed(seed: int = 1024) -> None:
 def get_args():
     root_path = "/mnt/workspace/nas/chenguoxin.cgx"
     # root_path = "/yinxr/workhome/zzhong/chenguoxin"
+    # root_path = "/bjzhyai03/workhome/cgx/chenguoxin"
+
     parser = argparse.ArgumentParser()
     parser.add_argument('--seed', type=int, default=42)
     parser.add_argument('--verbose', type=str2bool, default=False, help="print intermediate result on screen")
@@ -60,7 +62,7 @@ def get_args():
 
     ## params of mcts
     parser.add_argument("--Cpuct", type=float, default=1.25)
-    parser.add_argument('--n_generate_sample', type=int, default=5, help="how many samples generated for each step")
+    parser.add_argument('--n_generate_sample', type=int, default=3, help="how many samples generated for each step")
     parser.add_argument('--max_iter', type=int, default=12, help="maximally allowed iterations")
     parser.add_argument("--max_depth", type=int, default=15)  # 15 for easy, 20 for hard
     parser.add_argument('--positive_reward', type=float, default=1.)

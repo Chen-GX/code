@@ -25,8 +25,8 @@ CUDA_VISIBLE_DEVICES="5" bash base_sample.sh toolqa_hard coffee-hard 1 $temperat
 sleep 20
 
 CUDA_VISIBLE_DEVICES="6" bash base_sample.sh toolqa_hard yelp-hard 1 $temperature $frequency_penalty $max_iter > ./logs/yelp-hard_$timestamp.log 2>&1 &
-sleep 10
+sleep 20
 
 CUDA_VISIBLE_DEVICES="7" bash base_sample.sh toolqa_hard dblp-hard 1 $temperature $frequency_penalty $max_iter> ./logs/dblp-hard_2_$timestamp.log 2>&1 &
-sleep 10
+sleep 20
 wait

@@ -1,0 +1,372 @@
+toolqa_easy
+dblp-easy
+1
+2024/06/18 16:02:06 log_utils.py[line:35] INFO seed:1718697726
+2024/06/18 16:02:06 log_utils.py[line:35] INFO verbose:False
+2024/06/18 16:02:06 log_utils.py[line:35] INFO process_num:1
+2024/06/18 16:02:06 log_utils.py[line:35] INFO path:/mnt/workspace/nas/chenguoxin.cgx/api/datasets/ToolQA
+2024/06/18 16:02:06 log_utils.py[line:35] INFO num_epoch:1
+2024/06/18 16:02:06 log_utils.py[line:35] INFO tool_url:http://127.0.0.1:5010/toolqa
+2024/06/18 16:02:06 log_utils.py[line:35] INFO filter:True
+2024/06/18 16:02:06 log_utils.py[line:35] INFO filter_path:/mnt/workspace/nas/chenguoxin.cgx/api/workspace/code/api_vary_mcts/count_num/easy/toolqa_easy_4.json
+2024/06/18 16:02:06 log_utils.py[line:35] INFO checkpoint_dir:/mnt/workspace/nas/chenguoxin.cgx/model_cache/Meta-Llama-3-8B-Instruct
+2024/06/18 16:02:06 log_utils.py[line:35] INFO temperature:0.5
+2024/06/18 16:02:06 log_utils.py[line:35] INFO top_k:-1
+2024/06/18 16:02:06 log_utils.py[line:35] INFO top_p:1.0
+2024/06/18 16:02:06 log_utils.py[line:35] INFO frequency_penalty:1.2
+2024/06/18 16:02:06 log_utils.py[line:35] INFO scratchpad_length:1024
+2024/06/18 16:02:06 log_utils.py[line:35] INFO api_kernel_version:1
+2024/06/18 16:02:06 log_utils.py[line:35] INFO Cpuct:1.25
+2024/06/18 16:02:06 log_utils.py[line:35] INFO n_generate_sample:3
+2024/06/18 16:02:06 log_utils.py[line:35] INFO max_iter:12
+2024/06/18 16:02:06 log_utils.py[line:35] INFO max_depth:12
+2024/06/18 16:02:06 log_utils.py[line:35] INFO positive_reward:1.0
+2024/06/18 16:02:06 log_utils.py[line:35] INFO negative_reward:-1.0
+2024/06/18 16:02:06 log_utils.py[line:35] INFO max_new_tokens:1024
+2024/06/18 16:02:06 log_utils.py[line:35] INFO max_load_db:5
+2024/06/18 16:02:06 log_utils.py[line:35] INFO debug_num:-1
+2024/06/18 16:02:06 log_utils.py[line:35] INFO datapath:/mnt/workspace/nas/chenguoxin.cgx/api/workspace/data
+2024/06/18 16:02:06 log_utils.py[line:35] INFO task:toolqa_easy
+2024/06/18 16:02:06 log_utils.py[line:35] INFO dataname:dblp-easy
+2024/06/18 16:02:06 log_utils.py[line:35] INFO output_dir:/mnt/workspace/nas/chenguoxin.cgx/api/workspace/output_dir/mcts/round1/run/toolqa_easy/dblp-easy/Meta-Llama-3-8B-Instruct/20240618_160206
+2024/06/18 16:02:06 log_utils.py[line:35] INFO num_examples:2
+2024/06/18 16:02:06 log_utils.py[line:35] INFO model_name:Meta-Llama-3-8B-Instruct
+2024/06/18 16:02:06 log_utils.py[line:35] INFO timestamp:20240618_160206
+cp: 对 '/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src' 调用 stat 失败: 没有那个文件或目录
+2024/06/18 16:02:06 batch_search_generate.py[line:279] INFO ********** EPOCH 0 ***********
+Execute:   0%|          | 0/478 [00:00<?, ?it/s]INFO 06-18 16:02:06 llm_engine.py:161] Initializing an LLM engine (v0.4.3) with config: model='/mnt/workspace/nas/chenguoxin.cgx/model_cache/Meta-Llama-3-8B-Instruct', speculative_config=None, tokenizer='/mnt/workspace/nas/chenguoxin.cgx/model_cache/Meta-Llama-3-8B-Instruct', skip_tokenizer_init=False, tokenizer_mode=auto, revision=None, rope_scaling=None, tokenizer_revision=None, trust_remote_code=False, dtype=torch.bfloat16, max_seq_len=8192, download_dir=None, load_format=LoadFormat.AUTO, tensor_parallel_size=1, disable_custom_all_reduce=False, quantization=None, enforce_eager=False, kv_cache_dtype=auto, quantization_param_path=None, device_config=cuda, decoding_config=DecodingConfig(guided_decoding_backend='outlines'), seed=1718697726, served_model_name=/mnt/workspace/nas/chenguoxin.cgx/model_cache/Meta-Llama-3-8B-Instruct)
+Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+INFO 06-18 16:02:10 model_runner.py:146] Loading model weights took 14.9595 GB
+INFO 06-18 16:02:12 gpu_executor.py:83] # GPU blocks: 27986, # CPU blocks: 4096
+INFO 06-18 16:02:15 model_runner.py:854] Capturing the model for CUDA graphs. This may lead to unexpected consequences if the model is not static. To run the model in eager mode, set 'enforce_eager=True' or use '--enforce-eager' in the CLI.
+INFO 06-18 16:02:15 model_runner.py:858] CUDA graphs can take additional 1~3 GiB memory per GPU. If you are running out of memory, consider decreasing `gpu_memory_utilization` or enforcing eager mode. You can also reduce the `max_num_seqs` as needed to decrease memory usage.
+INFO 06-18 16:02:18 model_runner.py:924] Graph capturing finished in 4 secs.
+Execute:   0%|          | 0/478 [00:15<?, ?it/s]Execute:   0%|          | 0/478 [00:30<?, ?it/s]Execute:   0%|          | 0/478 [00:45<?, ?it/s]Execute:   0%|          | 0/478 [01:00<?, ?it/s]Execute:   0%|          | 0/478 [01:15<?, ?it/s]Execute:   0%|          | 0/478 [01:30<?, ?it/s]Execute:   0%|          | 0/478 [01:45<?, ?it/s]Execute:   0%|          | 0/478 [02:00<?, ?it/s]Execute:   0%|          | 0/478 [02:15<?, ?it/s]Execute:   0%|          | 0/478 [02:30<?, ?it/s]Execute:   0%|          | 0/478 [02:45<?, ?it/s]Execute:   0%|          | 0/478 [03:00<?, ?it/s]Execute:   0%|          | 0/478 [03:15<?, ?it/s]Execute:   0%|          | 0/478 [03:30<?, ?it/s]Execute:   0%|          | 0/478 [03:45<?, ?it/s]Execute:   0%|          | 0/478 [04:00<?, ?it/s]Execute:   0%|          | 0/478 [04:15<?, ?it/s]Execute:   0%|          | 0/478 [04:30<?, ?it/s]Execute:   0%|          | 0/478 [04:45<?, ?it/s]Execute:   0%|          | 0/478 [05:00<?, ?it/s]Execute:   0%|          | 0/478 [05:15<?, ?it/s]Execute:   0%|          | 0/478 [05:30<?, ?it/s]Execute:   0%|          | 0/478 [05:45<?, ?it/s]Execute:   0%|          | 0/478 [06:00<?, ?it/s]Execute:   0%|          | 0/478 [06:15<?, ?it/s]Execute:   0%|          | 0/478 [06:30<?, ?it/s]Execute:   0%|          | 0/478 [06:45<?, ?it/s]Execute:   0%|          | 1/478 [07:00<1:59:16, 15.00s/it]2024/06/18 16:12:06 batch_search_generate.py[line:133] INFO LLM process is alive.
+2024/06/18 16:14:06 batch_search_generate.py[line:133] INFO LLM process is alive.
+2024/06/18 16:16:06 batch_search_generate.py[line:133] INFO LLM process is alive.
+<string>:12: SyntaxWarning: list indices must be integers or slices, not str; perhaps you missed a comma?
+Execute:   0%|          | 2/478 [15:30<40:29:29, 306.24s/it]2024/06/18 16:18:06 batch_search_generate.py[line:133] INFO LLM process is alive.
+Execute:   1%|          | 3/478 [16:30<25:34:20, 193.81s/it]2024/06/18 16:20:06 batch_search_generate.py[line:133] INFO LLM process is alive.
+Execute:   1%|          | 4/478 [18:15<20:54:19, 158.78s/it]2024/06/18 16:21:06 batch_search_generate.py[line:174] INFO save solutions: 5
+Execute:   1%|          | 5/478 [19:00<15:28:29, 117.78s/it]Execute:   1%|▏         | 6/478 [19:15<10:51:41, 82.84s/it] Execute:   1%|▏         | 7/478 [19:45<8:34:48, 65.58s/it] 2024/06/18 16:22:06 batch_search_generate.py[line:133] INFO LLM process is alive.
+2024/06/18 16:24:06 batch_search_generate.py[line:133] INFO LLM process is alive.
+Execute:   2%|▏         | 9/478 [22:15<9:08:40, 70.19s/it]2024/06/18 16:24:37 batch_search_generate.py[line:174] INFO save solutions: 5
+Execute:   2%|▏         | 10/478 [22:30<7:17:31, 56.09s/it]Execute:   2%|▏         | 11/478 [23:15<6:53:39, 53.15s/it]2024/06/18 16:26:06 batch_search_generate.py[line:133] INFO LLM process is alive.
+2024/06/18 16:28:06 batch_search_generate.py[line:133] INFO LLM process is alive.
+2024/06/18 16:30:06 batch_search_generate.py[line:133] INFO LLM process is alive.
+Execute:   3%|▎         | 12/478 [29:17<17:55:35, 138.49s/it]2024/06/18 16:32:06 batch_search_generate.py[line:133] INFO LLM process is alive.
+Execute:   3%|▎         | 13/478 [31:47<18:19:39, 141.89s/it]2024/06/18 16:34:06 batch_search_generate.py[line:133] INFO LLM process is alive.
+Execute:   3%|▎         | 14/478 [33:48<17:29:24, 135.70s/it]2024/06/18 16:36:06 batch_search_generate.py[line:133] INFO LLM process is alive.
+2024/06/18 16:38:06 batch_search_generate.py[line:133] INFO LLM process is alive.
+2024/06/18 16:40:06 batch_search_generate.py[line:133] INFO LLM process is alive.
+2024/06/18 16:40:10 batch_search_generate.py[line:174] INFO save solutions: 5
+Execute:   3%|▎         | 15/478 [38:04<21:58:00, 170.80s/it]Execute:   3%|▎         | 16/478 [38:19<16:02:33, 125.01s/it]Execute:   4%|▍         | 18/478 [39:04<9:59:49, 78.24s/it]  2024/06/18 16:41:41 batch_search_generate.py[line:174] INFO save solutions: 5
+Execute:   4%|▍         | 20/478 [39:34<6:47:00, 53.32s/it]2024/06/18 16:42:06 batch_search_generate.py[line:133] INFO LLM process is alive.
+Execute:   4%|▍         | 21/478 [41:05<7:48:24, 61.50s/it]2024/06/18 16:44:06 batch_search_generate.py[line:133] INFO LLM process is alive.
+Execute:   5%|▍         | 22/478 [42:50<9:07:35, 72.05s/it]2024/06/18 16:46:06 batch_search_generate.py[line:133] INFO LLM process is alive.
+2024/06/18 16:48:06 batch_search_generate.py[line:133] INFO LLM process is alive.
+2024/06/18 16:50:06 batch_search_generate.py[line:133] INFO LLM process is alive.
+Execute:   5%|▍         | 23/478 [48:23<17:28:37, 138.28s/it]2024/06/18 16:52:06 batch_search_generate.py[line:133] INFO LLM process is alive.
+2024/06/18 16:54:06 batch_search_generate.py[line:133] INFO LLM process is alive.
+Execute:   5%|▌         | 24/478 [52:24<20:54:52, 165.84s/it]2024/06/18 16:56:06 batch_search_generate.py[line:133] INFO LLM process is alive.
+2024/06/18 16:56:16 batch_search_generate.py[line:174] INFO save solutions: 5
+Execute:   5%|▌         | 26/478 [54:10<14:41:21, 116.99s/it]Execute:   6%|▌         | 27/478 [55:26<13:26:07, 107.25s/it]2024/06/18 16:58:06 batch_search_generate.py[line:133] INFO LLM process is alive.
+2024/06/18 17:00:06 batch_search_generate.py[line:133] INFO LLM process is alive.
+Execute:   6%|▌         | 28/478 [58:42<16:13:10, 129.76s/it]Execute:   6%|▌         | 29/478 [59:58<14:23:44, 115.42s/it]2024/06/18 17:02:06 batch_search_generate.py[line:133] INFO LLM process is alive.
+2024/06/18 17:03:05 batch_search_generate.py[line:174] INFO save solutions: 5
+Execute:   6%|▋         | 30/478 [1:00:58<12:29:17, 100.35s/it]2024/06/18 17:04:06 batch_search_generate.py[line:133] INFO LLM process is alive.
+2024/06/18 17:06:06 batch_search_generate.py[line:133] INFO LLM process is alive.
+2024/06/18 17:08:06 batch_search_generate.py[line:133] INFO LLM process is alive.
+WARNING 06-18 17:08:06 scheduler.py:663] Input prompt (8521 tokens) is too long and exceeds limit of 8192
+Execute:   6%|▋         | 31/478 [1:07:31<22:42:09, 182.84s/it]WARNING 06-18 17:09:40 scheduler.py:663] Input prompt (8239 tokens) is too long and exceeds limit of 8192
+2024/06/18 17:10:06 batch_search_generate.py[line:133] INFO LLM process is alive.
+Execute:   7%|▋         | 32/478 [1:08:02<17:13:48, 139.08s/it]Execute:   7%|▋         | 33/478 [1:08:17<12:44:22, 103.06s/it]Execute:   7%|▋         | 34/478 [1:09:17<11:10:11, 90.57s/it] 2024/06/18 17:12:06 batch_search_generate.py[line:133] INFO LLM process is alive.
+2024/06/18 17:13:56 batch_search_generate.py[line:174] INFO save solutions: 5
+Execute:   7%|▋         | 35/478 [1:11:49<13:21:48, 108.60s/it]2024/06/18 17:14:06 batch_search_generate.py[line:133] INFO LLM process is alive.
+Execute:   8%|▊         | 36/478 [1:12:04<9:55:47, 80.88s/it]  Execute:   8%|▊         | 37/478 [1:13:50<10:49:30, 88.37s/it]2024/06/18 17:16:06 batch_search_generate.py[line:133] INFO LLM process is alive.
+Execute:   8%|▊         | 38/478 [1:14:21<8:41:02, 71.05s/it] Execute:   8%|▊         | 39/478 [1:15:06<7:43:58, 63.41s/it]2024/06/18 17:18:06 batch_search_generate.py[line:133] INFO LLM process is alive.
+/mnt/workspace/nas/chenguoxin.cgx/api/workspace/code/api_vary_mcts/src/tools/table/tabtools.py:44: DtypeWarning: Columns (25) have mixed types. Specify dtype option on import or set low_memory=False.
+  self.data = pd.read_csv(file_path)
+/mnt/workspace/nas/chenguoxin.cgx/api/workspace/code/api_vary_mcts/src/tools/table/tabtools.py:44: DtypeWarning: Columns (25) have mixed types. Specify dtype option on import or set low_memory=False.
+  self.data = pd.read_csv(file_path)
+/mnt/workspace/nas/chenguoxin.cgx/api/workspace/code/api_vary_mcts/src/tools/table/tabtools.py:44: DtypeWarning: Columns (25) have mixed types. Specify dtype option on import or set low_memory=False.
+  self.data = pd.read_csv(file_path)
+2024/06/18 17:19:59 batch_search_generate.py[line:174] INFO save solutions: 5
+Execute:   8%|▊         | 40/478 [1:17:53<11:28:40, 94.34s/it]2024/06/18 17:20:06 batch_search_generate.py[line:133] INFO LLM process is alive.
+WARNING 06-18 17:21:29 scheduler.py:663] Input prompt (8252 tokens) is too long and exceeds limit of 8192
+2024/06/18 17:22:06 batch_search_generate.py[line:133] INFO LLM process is alive.
+2024/06/18 17:24:06 batch_search_generate.py[line:133] INFO LLM process is alive.
+2024/06/18 17:26:06 batch_search_generate.py[line:133] INFO LLM process is alive.
+Execute:   9%|▊         | 41/478 [1:24:27<22:21:11, 184.14s/it]Execute:   9%|▉         | 42/478 [1:24:42<16:10:21, 133.54s/it]Execute:   9%|▉         | 43/478 [1:25:28<12:56:53, 107.16s/it]2024/06/18 17:28:06 batch_search_generate.py[line:133] INFO LLM process is alive.
+Execute:   9%|▉         | 44/478 [1:26:29<11:14:26, 93.24s/it] 2024/06/18 17:30:07 batch_search_generate.py[line:133] INFO LLM process is alive.
+2024/06/18 17:31:37 batch_search_generate.py[line:174] INFO save solutions: 5
+Execute:   9%|▉         | 45/478 [1:29:31<14:25:37, 119.95s/it]2024/06/18 17:32:07 batch_search_generate.py[line:133] INFO LLM process is alive.
+Execute:  10%|▉         | 46/478 [1:30:01<11:10:10, 93.08s/it] 2024/06/18 17:34:07 batch_search_generate.py[line:133] INFO LLM process is alive.
+Execute:  10%|▉         | 47/478 [1:33:34<15:26:26, 128.97s/it]2024/06/18 17:36:07 batch_search_generate.py[line:133] INFO LLM process is alive.
+Execute:  10%|█         | 48/478 [1:34:05<11:52:30, 99.42s/it] Execute:  10%|█         | 49/478 [1:34:20<8:50:19, 74.17s/it] 2024/06/18 17:37:42 batch_search_generate.py[line:174] INFO save solutions: 5
+Execute:  10%|█         | 50/478 [1:35:36<8:53:08, 74.74s/it]2024/06/18 17:38:07 batch_search_generate.py[line:133] INFO LLM process is alive.
+2024/06/18 17:40:07 batch_search_generate.py[line:133] INFO LLM process is alive.
+Execute:  11%|█         | 51/478 [1:39:09<13:47:02, 116.21s/it]Execute:  11%|█         | 52/478 [1:39:54<11:14:30, 95.00s/it] 2024/06/18 17:42:07 batch_search_generate.py[line:133] INFO LLM process is alive.
+Execute:  11%|█         | 53/478 [1:40:10<8:23:29, 71.08s/it] Execute:  11%|█▏        | 54/478 [1:41:11<8:00:51, 68.05s/it]2024/06/18 17:43:48 batch_search_generate.py[line:174] INFO save solutions: 5
+Execute:  12%|█▏        | 55/478 [1:41:41<6:40:17, 56.78s/it]2024/06/18 17:44:07 batch_search_generate.py[line:133] INFO LLM process is alive.
+2024/06/18 17:46:07 batch_search_generate.py[line:133] INFO LLM process is alive.
+Execute:  12%|█▏        | 56/478 [1:45:15<12:09:57, 103.79s/it]/mnt/workspace/nas/chenguoxin.cgx/api/workspace/code/api_vary_mcts/src/tools/table/tabtools.py:44: DtypeWarning: Columns (25) have mixed types. Specify dtype option on import or set low_memory=False.
+  self.data = pd.read_csv(file_path)
+/mnt/workspace/nas/chenguoxin.cgx/api/workspace/code/api_vary_mcts/src/tools/table/tabtools.py:44: DtypeWarning: Columns (25) have mixed types. Specify dtype option on import or set low_memory=False.
+  self.data = pd.read_csv(file_path)
+2024/06/18 17:48:07 batch_search_generate.py[line:133] INFO LLM process is alive.
+2024/06/18 17:50:07 batch_search_generate.py[line:133] INFO LLM process is alive.
+Execute:  12%|█▏        | 57/478 [1:48:17<14:54:26, 127.47s/it]Execute:  12%|█▏        | 58/478 [1:49:03<12:00:57, 102.99s/it]Execute:  12%|█▏        | 59/478 [1:49:18<8:55:15, 76.65s/it]  2024/06/18 17:52:07 batch_search_generate.py[line:133] INFO LLM process is alive.
+2024/06/18 17:52:26 batch_search_generate.py[line:174] INFO save solutions: 5
+Execute:  13%|█▎        | 60/478 [1:50:19<8:21:24, 71.97s/it]/mnt/workspace/nas/chenguoxin.cgx/api/workspace/code/api_vary_mcts/src/tools/table/tabtools.py:44: DtypeWarning: Columns (25) have mixed types. Specify dtype option on import or set low_memory=False.
+  self.data = pd.read_csv(file_path)
+2024/06/18 17:54:07 batch_search_generate.py[line:133] INFO LLM process is alive.
+/mnt/workspace/nas/chenguoxin.cgx/api/workspace/code/api_vary_mcts/src/tools/table/tabtools.py:44: DtypeWarning: Columns (25) have mixed types. Specify dtype option on import or set low_memory=False.
+  self.data = pd.read_csv(file_path)
+Execute:  13%|█▎        | 61/478 [1:53:22<12:11:47, 105.29s/it]2024/06/18 17:56:07 batch_search_generate.py[line:133] INFO LLM process is alive.
+2024/06/18 17:58:07 batch_search_generate.py[line:133] INFO LLM process is alive.
+Execute:  13%|█▎        | 62/478 [1:56:56<15:55:10, 137.77s/it]Execute:  13%|█▎        | 63/478 [1:57:11<11:38:43, 101.02s/it]2024/06/18 18:00:07 batch_search_generate.py[line:133] INFO LLM process is alive.
+Execute:  13%|█▎        | 64/478 [1:59:44<13:24:01, 116.53s/it]2024/06/18 18:02:06 batch_search_generate.py[line:174] INFO save solutions: 5
+Execute:  14%|█▎        | 65/478 [1:59:59<9:53:08, 86.17s/it]  2024/06/18 18:02:07 batch_search_generate.py[line:133] INFO LLM process is alive.
+Execute:  14%|█▍        | 66/478 [2:01:46<10:34:26, 92.39s/it]2024/06/18 18:04:07 batch_search_generate.py[line:133] INFO LLM process is alive.
+Execute:  14%|█▍        | 67/478 [2:02:17<8:25:44, 73.83s/it] 2024/06/18 18:06:07 batch_search_generate.py[line:133] INFO LLM process is alive.
+Execute:  14%|█▍        | 68/478 [2:05:51<13:11:48, 115.88s/it]2024/06/18 18:08:07 batch_search_generate.py[line:133] INFO LLM process is alive.
+2024/06/18 18:10:07 batch_search_generate.py[line:133] INFO LLM process is alive.
+Execute:  14%|█▍        | 69/478 [2:08:54<15:27:42, 136.10s/it]2024/06/18 18:12:07 batch_search_generate.py[line:133] INFO LLM process is alive.
+2024/06/18 18:13:18 batch_search_generate.py[line:174] INFO save solutions: 5
+Execute:  15%|█▍        | 70/478 [2:11:11<15:28:14, 136.51s/it]2024/06/18 18:14:07 batch_search_generate.py[line:133] INFO LLM process is alive.
+Execute:  15%|█▍        | 71/478 [2:12:43<13:54:48, 123.07s/it]2024/06/18 18:16:07 batch_search_generate.py[line:133] INFO LLM process is alive.
+2024/06/18 18:18:07 batch_search_generate.py[line:133] INFO LLM process is alive.
+Execute:  15%|█▌        | 73/478 [2:16:02<12:36:55, 112.14s/it]Execute:  15%|█▌        | 74/478 [2:16:48<10:44:42, 95.75s/it] 2024/06/18 18:20:07 batch_search_generate.py[line:133] INFO LLM process is alive.
+2024/06/18 18:21:27 batch_search_generate.py[line:174] INFO save solutions: 5
+Execute:  16%|█▌        | 75/478 [2:19:21<12:23:33, 110.70s/it]2024/06/18 18:22:07 batch_search_generate.py[line:133] INFO LLM process is alive.
+Execute:  16%|█▌        | 76/478 [2:20:07<10:23:35, 93.07s/it] 2024/06/18 18:24:07 batch_search_generate.py[line:133] INFO LLM process is alive.
+2024/06/18 18:26:07 batch_search_generate.py[line:133] INFO LLM process is alive.
+Execute:  16%|█▌        | 77/478 [2:24:58<16:32:34, 148.51s/it]2024/06/18 18:28:07 batch_search_generate.py[line:133] INFO LLM process is alive.
+/mnt/workspace/nas/chenguoxin.cgx/api/workspace/code/api_vary_mcts/src/tools/table/tabtools.py:44: DtypeWarning: Columns (25) have mixed types. Specify dtype option on import or set low_memory=False.
+  self.data = pd.read_csv(file_path)
+Execute:  16%|█▋        | 78/478 [2:27:47<17:08:35, 154.29s/it]2024/06/18 18:30:07 batch_search_generate.py[line:133] INFO LLM process is alive.
+Execute:  17%|█▋        | 79/478 [2:28:02<12:38:20, 114.04s/it]/mnt/workspace/nas/chenguoxin.cgx/api/workspace/code/api_vary_mcts/src/tools/table/tabtools.py:44: DtypeWarning: Columns (25) have mixed types. Specify dtype option on import or set low_memory=False.
+  self.data = pd.read_csv(file_path)
+2024/06/18 18:31:41 batch_search_generate.py[line:174] INFO save solutions: 5
+Execute:  17%|█▋        | 80/478 [2:29:34<11:53:53, 107.62s/it]2024/06/18 18:32:07 batch_search_generate.py[line:133] INFO LLM process is alive.
+Execute:  17%|█▋        | 82/478 [2:30:51<8:22:08, 76.08s/it]  2024/06/18 18:34:07 batch_search_generate.py[line:133] INFO LLM process is alive.
+2024/06/18 18:36:07 batch_search_generate.py[line:133] INFO LLM process is alive.
+Execute:  17%|█▋        | 83/478 [2:34:11<11:40:39, 106.43s/it]Execute:  18%|█▊        | 84/478 [2:34:26<9:03:42, 82.80s/it]  2024/06/18 18:37:34 batch_search_generate.py[line:174] INFO save solutions: 5
+Execute:  18%|█▊        | 85/478 [2:35:28<8:24:46, 77.06s/it]2024/06/18 18:38:07 batch_search_generate.py[line:133] INFO LLM process is alive.
+Execute:  18%|█▊        | 86/478 [2:36:14<7:27:10, 68.44s/it]Execute:  18%|█▊        | 87/478 [2:37:31<7:41:49, 70.87s/it]2024/06/18 18:40:07 batch_search_generate.py[line:133] INFO LLM process is alive.
+2024/06/18 18:42:07 batch_search_generate.py[line:133] INFO LLM process is alive.
+2024/06/18 18:44:07 batch_search_generate.py[line:133] INFO LLM process is alive.
+2024/06/18 18:46:07 batch_search_generate.py[line:133] INFO LLM process is alive.
+Execute:  18%|█▊        | 88/478 [2:44:11<17:59:10, 166.03s/it]2024/06/18 18:48:07 batch_search_generate.py[line:133] INFO LLM process is alive.
+Execute:  19%|█▊        | 89/478 [2:46:44<17:33:07, 162.44s/it]2024/06/18 18:50:07 batch_search_generate.py[line:133] INFO LLM process is alive.
+2024/06/18 18:51:10 batch_search_generate.py[line:174] INFO save solutions: 5
+Execute:  19%|█▉        | 90/478 [2:49:03<16:45:03, 155.42s/it]2024/06/18 18:52:07 batch_search_generate.py[line:133] INFO LLM process is alive.
+/mnt/workspace/nas/chenguoxin.cgx/api/workspace/code/api_vary_mcts/src/tools/table/tabtools.py:44: DtypeWarning: Columns (25) have mixed types. Specify dtype option on import or set low_memory=False.
+  self.data = pd.read_csv(file_path)
+2024/06/18 18:54:07 batch_search_generate.py[line:133] INFO LLM process is alive.
+Execute:  19%|█▉        | 91/478 [2:52:23<18:07:39, 168.63s/it]WARNING 06-18 18:56:02 scheduler.py:663] Input prompt (8945 tokens) is too long and exceeds limit of 8192
+2024/06/18 18:56:07 batch_search_generate.py[line:133] INFO LLM process is alive.
+Execute:  19%|█▉        | 92/478 [2:54:42<17:07:22, 159.70s/it]Execute:  19%|█▉        | 93/478 [2:55:13<12:58:25, 121.31s/it]2024/06/18 18:58:07 batch_search_generate.py[line:133] INFO LLM process is alive.
+Execute:  20%|█▉        | 94/478 [2:56:30<11:31:34, 108.06s/it]2024/06/18 18:59:07 batch_search_generate.py[line:174] INFO save solutions: 5
+Execute:  20%|█▉        | 95/478 [2:57:00<9:02:32, 84.99s/it]  Execute:  20%|██        | 96/478 [2:57:31<7:17:48, 68.77s/it]2024/06/18 19:00:07 batch_search_generate.py[line:133] INFO LLM process is alive.
+Execute:  20%|██        | 97/478 [2:58:02<6:04:23, 57.38s/it]2024/06/18 19:02:07 batch_search_generate.py[line:133] INFO LLM process is alive.
+Execute:  21%|██        | 98/478 [3:00:51<9:36:07, 90.97s/it]2024/06/18 19:04:07 batch_search_generate.py[line:133] INFO LLM process is alive.
+Execute:  21%|██        | 99/478 [3:02:24<9:37:19, 91.40s/it]2024/06/18 19:06:07 batch_search_generate.py[line:133] INFO LLM process is alive.
+Execute:  21%|██        | 100/478 [3:04:43<11:05:41, 105.66s/it]2024/06/18 19:07:05 batch_search_generate.py[line:174] INFO save solutions: 5
+/mnt/workspace/nas/chenguoxin.cgx/api/workspace/code/api_vary_mcts/src/tools/table/tabtools.py:44: DtypeWarning: Columns (25) have mixed types. Specify dtype option on import or set low_memory=False.
+  self.data = pd.read_csv(file_path)
+Execute:  21%|██        | 101/478 [3:05:14<8:43:01, 83.24s/it]  2024/06/18 19:08:07 batch_search_generate.py[line:133] INFO LLM process is alive.
+Execute:  21%|██▏       | 102/478 [3:07:02<9:28:05, 90.65s/it]Execute:  22%|██▏       | 103/478 [3:07:17<7:05:35, 68.10s/it]2024/06/18 19:10:07 batch_search_generate.py[line:133] INFO LLM process is alive.
+Execute:  22%|██▏       | 104/478 [3:09:06<8:19:46, 80.18s/it]2024/06/18 19:12:07 batch_search_generate.py[line:133] INFO LLM process is alive.
+2024/06/18 19:13:00 batch_search_generate.py[line:174] INFO save solutions: 5
+Execute:  22%|██▏       | 105/478 [3:10:54<9:10:32, 88.56s/it]2024/06/18 19:14:07 batch_search_generate.py[line:133] INFO LLM process is alive.
+Execute:  22%|██▏       | 106/478 [3:12:26<9:16:43, 89.79s/it]2024/06/18 19:16:07 batch_search_generate.py[line:133] INFO LLM process is alive.
+2024/06/18 19:18:07 batch_search_generate.py[line:133] INFO LLM process is alive.
+Execute:  22%|██▏       | 107/478 [3:17:20<15:32:49, 150.86s/it]2024/06/18 19:20:07 batch_search_generate.py[line:133] INFO LLM process is alive.
+Execute:  23%|██▎       | 108/478 [3:18:21<12:45:23, 124.12s/it]Execute:  23%|██▎       | 109/478 [3:18:37<9:22:47, 91.51s/it]  2024/06/18 19:22:07 batch_search_generate.py[line:133] INFO LLM process is alive.
+2024/06/18 19:23:34 batch_search_generate.py[line:174] INFO save solutions: 5
+Execute:  23%|██▎       | 110/478 [3:21:27<11:46:10, 115.14s/it]2024/06/18 19:24:07 batch_search_generate.py[line:133] INFO LLM process is alive.
+2024/06/18 19:26:07 batch_search_generate.py[line:133] INFO LLM process is alive.
+Execute:  23%|██▎       | 112/478 [3:24:33<10:39:40, 104.87s/it]Execute:  24%|██▎       | 113/478 [3:25:35<9:33:37, 94.30s/it]  WARNING 06-18 19:28:05 scheduler.py:663] Input prompt (9850 tokens) is too long and exceeds limit of 8192
+2024/06/18 19:28:07 batch_search_generate.py[line:133] INFO LLM process is alive.
+Execute:  24%|██▍       | 114/478 [3:27:54<10:43:34, 106.08s/it]2024/06/18 19:30:07 batch_search_generate.py[line:133] INFO LLM process is alive.
+2024/06/18 19:32:07 batch_search_generate.py[line:133] INFO LLM process is alive.
+2024/06/18 19:32:21 batch_search_generate.py[line:174] INFO save solutions: 5
+Execute:  24%|██▍       | 115/478 [3:30:14<11:37:27, 115.28s/it]2024/06/18 19:34:07 batch_search_generate.py[line:133] INFO LLM process is alive.
+Execute:  24%|██▍       | 116/478 [3:32:18<11:50:23, 117.74s/it]Execute:  25%|██▍       | 118/478 [3:32:34<6:53:13, 68.87s/it]  /mnt/workspace/nas/chenguoxin.cgx/api/workspace/code/api_vary_mcts/src/tools/table/tabtools.py:44: DtypeWarning: Columns (25) have mixed types. Specify dtype option on import or set low_memory=False.
+  self.data = pd.read_csv(file_path)
+2024/06/18 19:36:07 batch_search_generate.py[line:133] INFO LLM process is alive.
+WARNING 06-18 19:37:49 scheduler.py:663] Input prompt (8389 tokens) is too long and exceeds limit of 8192
+2024/06/18 19:38:07 batch_search_generate.py[line:133] INFO LLM process is alive.
+2024/06/18 19:40:07 batch_search_generate.py[line:133] INFO LLM process is alive.
+2024/06/18 19:40:53 batch_search_generate.py[line:174] INFO save solutions: 5
+Execute:  25%|██▌       | 120/478 [3:38:47<11:23:11, 114.50s/it]Execute:  25%|██▌       | 121/478 [3:39:02<9:13:26, 93.02s/it]  2024/06/18 19:42:07 batch_search_generate.py[line:133] INFO LLM process is alive.
+2024/06/18 19:44:07 batch_search_generate.py[line:133] INFO LLM process is alive.
+2024/06/18 19:46:07 batch_search_generate.py[line:133] INFO LLM process is alive.
+Execute:  26%|██▌       | 123/478 [3:44:44<12:06:51, 122.85s/it]2024/06/18 19:48:07 batch_search_generate.py[line:133] INFO LLM process is alive.
+2024/06/18 19:50:07 batch_search_generate.py[line:133] INFO LLM process is alive.
+Execute:  26%|██▌       | 124/478 [3:48:06<13:45:31, 139.92s/it]2024/06/18 19:51:31 batch_search_generate.py[line:174] INFO save solutions: 5
+Execute:  26%|██▌       | 125/478 [3:49:24<12:17:18, 125.32s/it]Execute:  26%|██▋       | 126/478 [3:49:40<9:33:18, 97.72s/it]  2024/06/18 19:52:07 batch_search_generate.py[line:133] INFO LLM process is alive.
+Execute:  27%|██▋       | 127/478 [3:50:11<7:48:49, 80.14s/it]2024/06/18 19:54:07 batch_search_generate.py[line:133] INFO LLM process is alive.
+Execute:  27%|██▋       | 128/478 [3:53:02<10:12:28, 104.99s/it]2024/06/18 19:56:07 batch_search_generate.py[line:133] INFO LLM process is alive.
+2024/06/18 19:58:07 batch_search_generate.py[line:133] INFO LLM process is alive.
+Execute:  27%|██▋       | 129/478 [3:56:40<13:15:37, 136.79s/it]2024/06/18 19:59:49 batch_search_generate.py[line:174] INFO save solutions: 5
+Execute:  27%|██▋       | 130/478 [3:57:42<11:09:46, 115.48s/it]2024/06/18 20:00:07 batch_search_generate.py[line:133] INFO LLM process is alive.
+Execute:  27%|██▋       | 131/478 [3:58:13<8:46:12, 90.99s/it]  /mnt/workspace/nas/chenguoxin.cgx/api/workspace/code/api_vary_mcts/src/tools/table/tabtools.py:44: DtypeWarning: Columns (25) have mixed types. Specify dtype option on import or set low_memory=False.
+  self.data = pd.read_csv(file_path)
+2024/06/18 20:02:07 batch_search_generate.py[line:133] INFO LLM process is alive.
+2024/06/18 20:04:07 batch_search_generate.py[line:133] INFO LLM process is alive.
+Execute:  28%|██▊       | 132/478 [4:02:07<12:46:49, 132.97s/it]Execute:  28%|██▊       | 133/478 [4:03:57<12:04:04, 125.92s/it]2024/06/18 20:06:07 batch_search_generate.py[line:133] INFO LLM process is alive.
+Execute:  28%|██▊       | 134/478 [4:04:28<9:20:47, 97.81s/it]  2024/06/18 20:08:07 batch_search_generate.py[line:133] INFO LLM process is alive.
+2024/06/18 20:08:39 batch_search_generate.py[line:174] INFO save solutions: 5
+Execute:  28%|██▊       | 135/478 [4:06:33<10:05:27, 105.91s/it]Execute:  28%|██▊       | 136/478 [4:07:19<8:23:02, 88.25s/it]  2024/06/18 20:10:07 batch_search_generate.py[line:133] INFO LLM process is alive.
+Execute:  29%|██▊       | 137/478 [4:09:40<9:50:18, 103.87s/it]2024/06/18 20:12:07 batch_search_generate.py[line:133] INFO LLM process is alive.
+Execute:  29%|██▉       | 138/478 [4:11:45<10:23:45, 110.08s/it]2024/06/18 20:14:07 batch_search_generate.py[line:133] INFO LLM process is alive.
+Execute:  29%|██▉       | 139/478 [4:12:32<8:35:11, 91.18s/it]  2024/06/18 20:16:07 batch_search_generate.py[line:133] INFO LLM process is alive.
+2024/06/18 20:16:43 batch_search_generate.py[line:174] INFO save solutions: 5
+Execute:  29%|██▉       | 140/478 [4:14:37<9:30:41, 101.31s/it]2024/06/18 20:18:07 batch_search_generate.py[line:133] INFO LLM process is alive.
+2024/06/18 20:20:07 batch_search_generate.py[line:133] INFO LLM process is alive.
+Execute:  29%|██▉       | 141/478 [4:18:16<12:47:27, 136.64s/it]Execute:  30%|██▉       | 142/478 [4:19:34<11:06:46, 119.07s/it]2024/06/18 20:22:07 batch_search_generate.py[line:133] INFO LLM process is alive.
+Execute:  30%|██▉       | 143/478 [4:20:21<9:04:17, 97.49s/it]  Execute:  30%|███       | 144/478 [4:21:08<7:38:13, 82.32s/it]2024/06/18 20:24:08 batch_search_generate.py[line:133] INFO LLM process is alive.
+2024/06/18 20:24:48 batch_search_generate.py[line:174] INFO save solutions: 5
+Execute:  30%|███       | 145/478 [4:22:42<7:55:59, 85.77s/it]Execute:  31%|███       | 146/478 [4:23:13<6:24:17, 69.45s/it]2024/06/18 20:26:08 batch_search_generate.py[line:133] INFO LLM process is alive.
+2024/06/18 20:28:08 batch_search_generate.py[line:133] INFO LLM process is alive.
+Execute:  31%|███       | 147/478 [4:26:05<9:12:55, 100.23s/it]2024/06/18 20:30:08 batch_search_generate.py[line:133] INFO LLM process is alive.
+Execute:  31%|███       | 148/478 [4:28:11<9:53:18, 107.87s/it]Execute:  31%|███       | 149/478 [4:28:42<7:45:28, 84.89s/it] /mnt/workspace/nas/chenguoxin.cgx/api/workspace/code/api_vary_mcts/src/tools/table/tabtools.py:44: DtypeWarning: Columns (25) have mixed types. Specify dtype option on import or set low_memory=False.
+  self.data = pd.read_csv(file_path)
+2024/06/18 20:31:36 batch_search_generate.py[line:174] INFO save solutions: 5
+Execute:  31%|███▏      | 150/478 [4:29:29<6:42:24, 73.61s/it]2024/06/18 20:32:08 batch_search_generate.py[line:133] INFO LLM process is alive.
+Execute:  32%|███▏      | 152/478 [4:31:35<6:12:27, 68.55s/it]/mnt/workspace/nas/chenguoxin.cgx/api/workspace/code/api_vary_mcts/src/tools/table/tabtools.py:44: DtypeWarning: Columns (25) have mixed types. Specify dtype option on import or set low_memory=False.
+  self.data = pd.read_csv(file_path)
+/mnt/workspace/nas/chenguoxin.cgx/api/workspace/code/api_vary_mcts/src/tools/table/tabtools.py:44: DtypeWarning: Columns (25) have mixed types. Specify dtype option on import or set low_memory=False.
+  self.data = pd.read_csv(file_path)
+2024/06/18 20:34:08 batch_search_generate.py[line:133] INFO LLM process is alive.
+2024/06/18 20:36:08 batch_search_generate.py[line:133] INFO LLM process is alive.
+2024/06/18 20:38:08 batch_search_generate.py[line:133] INFO LLM process is alive.
+Execute:  32%|███▏      | 153/478 [4:36:01<10:37:40, 117.73s/it]Execute:  32%|███▏      | 154/478 [4:37:51<10:24:30, 115.65s/it]2024/06/18 20:40:08 batch_search_generate.py[line:133] INFO LLM process is alive.
+2024/06/18 20:40:29 batch_search_generate.py[line:174] INFO save solutions: 5
+Execute:  32%|███▏      | 155/478 [4:38:23<8:19:24, 92.77s/it]  Execute:  33%|███▎      | 156/478 [4:39:41<7:56:26, 88.78s/it]2024/06/18 20:42:08 batch_search_generate.py[line:133] INFO LLM process is alive.
+Execute:  33%|███▎      | 157/478 [4:40:29<6:51:37, 76.94s/it]2024/06/18 20:44:08 batch_search_generate.py[line:133] INFO LLM process is alive.
+Execute:  33%|███▎      | 158/478 [4:43:37<9:42:31, 109.22s/it]2024/06/18 20:46:08 batch_search_generate.py[line:133] INFO LLM process is alive.
+Execute:  33%|███▎      | 159/478 [4:44:08<7:39:38, 86.45s/it] 2024/06/18 20:46:46 batch_search_generate.py[line:174] INFO save solutions: 5
+Execute:  33%|███▎      | 160/478 [4:44:40<6:12:14, 70.23s/it]Execute:  34%|███▎      | 161/478 [4:45:59<6:24:30, 72.78s/it]2024/06/18 20:48:08 batch_search_generate.py[line:133] INFO LLM process is alive.
+Execute:  34%|███▍      | 163/478 [4:47:33<5:20:34, 61.06s/it]2024/06/18 20:50:08 batch_search_generate.py[line:133] INFO LLM process is alive.
+Execute:  34%|███▍      | 164/478 [4:49:24<6:23:20, 73.25s/it]2024/06/18 20:52:08 batch_search_generate.py[line:133] INFO LLM process is alive.
+2024/06/18 20:54:08 batch_search_generate.py[line:133] INFO LLM process is alive.
+2024/06/18 20:54:08 batch_search_generate.py[line:174] INFO save solutions: 5
+Execute:  35%|███▍      | 165/478 [4:52:02<8:17:48, 95.43s/it]2024/06/18 20:56:08 batch_search_generate.py[line:133] INFO LLM process is alive.
+Execute:  35%|███▍      | 166/478 [4:55:11<10:27:58, 120.76s/it]2024/06/18 20:58:08 batch_search_generate.py[line:133] INFO LLM process is alive.
+Execute:  35%|███▍      | 167/478 [4:57:01<10:10:55, 117.86s/it]Execute:  35%|███▌      | 168/478 [4:57:33<8:01:45, 93.25s/it]  2024/06/18 21:00:08 batch_search_generate.py[line:133] INFO LLM process is alive.
+Execute:  35%|███▌      | 169/478 [4:58:20<6:51:43, 79.95s/it]2024/06/18 21:02:08 batch_search_generate.py[line:133] INFO LLM process is alive.
+/mnt/workspace/nas/chenguoxin.cgx/api/workspace/code/api_vary_mcts/src/tools/table/tabtools.py:44: DtypeWarning: Columns (25) have mixed types. Specify dtype option on import or set low_memory=False.
+  self.data = pd.read_csv(file_path)
+WARNING 06-18 21:02:33 scheduler.py:663] Input prompt (8901 tokens) is too long and exceeds limit of 8192
+2024/06/18 21:03:20 batch_search_generate.py[line:174] INFO save solutions: 5
+Execute:  36%|███▌      | 170/478 [5:01:14<9:10:59, 107.34s/it]Execute:  36%|███▌      | 171/478 [5:02:01<7:38:41, 89.65s/it] 2024/06/18 21:04:08 batch_search_generate.py[line:133] INFO LLM process is alive.
+2024/06/18 21:06:08 batch_search_generate.py[line:133] INFO LLM process is alive.
+/mnt/workspace/nas/chenguoxin.cgx/api/workspace/code/api_vary_mcts/src/tools/table/tabtools.py:44: DtypeWarning: Columns (25) have mixed types. Specify dtype option on import or set low_memory=False.
+  self.data = pd.read_csv(file_path)
+2024/06/18 21:08:08 batch_search_generate.py[line:133] INFO LLM process is alive.
+Execute:  36%|███▌      | 172/478 [5:06:29<12:07:17, 142.61s/it]2024/06/18 21:10:08 batch_search_generate.py[line:133] INFO LLM process is alive.
+Execute:  36%|███▌      | 173/478 [5:08:36<11:40:31, 137.81s/it]Execute:  36%|███▋      | 174/478 [5:08:51<8:33:44, 101.39s/it] 2024/06/18 21:12:08 batch_search_generate.py[line:133] INFO LLM process is alive.
+/mnt/workspace/nas/chenguoxin.cgx/api/workspace/code/api_vary_mcts/src/tools/table/tabtools.py:44: DtypeWarning: Columns (25) have mixed types. Specify dtype option on import or set low_memory=False.
+  self.data = pd.read_csv(file_path)
+/mnt/workspace/nas/chenguoxin.cgx/api/workspace/code/api_vary_mcts/src/tools/table/tabtools.py:44: DtypeWarning: Columns (25) have mixed types. Specify dtype option on import or set low_memory=False.
+  self.data = pd.read_csv(file_path)
+2024/06/18 21:14:08 batch_search_generate.py[line:133] INFO LLM process is alive.
+2024/06/18 21:14:55 batch_search_generate.py[line:174] INFO save solutions: 5
+Execute:  37%|███▋      | 175/478 [5:12:48<11:56:31, 141.89s/it]Execute:  37%|███▋      | 176/478 [5:13:36<9:31:51, 113.61s/it] Execute:  37%|███▋      | 177/478 [5:13:51<7:02:57, 84.31s/it] 2024/06/18 21:16:08 batch_search_generate.py[line:133] INFO LLM process is alive.
+Execute:  37%|███▋      | 178/478 [5:14:07<5:19:04, 63.81s/it]Execute:  37%|███▋      | 179/478 [5:14:55<4:53:24, 58.88s/it]2024/06/18 21:18:04 batch_search_generate.py[line:174] INFO save solutions: 5
+Execute:  38%|███▊      | 180/478 [5:15:58<4:58:49, 60.17s/it]2024/06/18 21:18:08 batch_search_generate.py[line:133] INFO LLM process is alive.
+2024/06/18 21:20:08 batch_search_generate.py[line:133] INFO LLM process is alive.
+Execute:  38%|███▊      | 182/478 [5:18:04<5:03:26, 61.51s/it]2024/06/18 21:22:08 batch_search_generate.py[line:133] INFO LLM process is alive.
+2024/06/18 21:24:08 batch_search_generate.py[line:133] INFO LLM process is alive.
+2024/06/18 21:26:08 batch_search_generate.py[line:133] INFO LLM process is alive.
+Execute:  38%|███▊      | 183/478 [5:25:11<12:27:54, 152.12s/it]2024/06/18 21:28:08 batch_search_generate.py[line:133] INFO LLM process is alive.
+Execute:  38%|███▊      | 184/478 [5:26:46<11:12:26, 137.23s/it]2024/06/18 21:29:56 batch_search_generate.py[line:174] INFO save solutions: 5
+Execute:  39%|███▊      | 185/478 [5:27:50<9:31:56, 117.12s/it] 2024/06/18 21:30:08 batch_search_generate.py[line:133] INFO LLM process is alive.
+2024/06/18 21:32:08 batch_search_generate.py[line:133] INFO LLM process is alive.
+Execute:  39%|███▉      | 186/478 [5:30:28<10:25:49, 128.59s/it]Execute:  39%|███▉      | 187/478 [5:31:15<8:31:11, 105.40s/it] 2024/06/18 21:34:08 batch_search_generate.py[line:133] INFO LLM process is alive.
+/mnt/workspace/nas/chenguoxin.cgx/api/workspace/code/api_vary_mcts/src/tools/table/tabtools.py:44: DtypeWarning: Columns (25) have mixed types. Specify dtype option on import or set low_memory=False.
+  self.data = pd.read_csv(file_path)
+Execute:  39%|███▉      | 188/478 [5:32:50<8:15:12, 102.46s/it]/mnt/workspace/nas/chenguoxin.cgx/api/workspace/code/api_vary_mcts/src/tools/table/tabtools.py:44: DtypeWarning: Columns (25) have mixed types. Specify dtype option on import or set low_memory=False.
+  self.data = pd.read_csv(file_path)
+Execute:  40%|███▉      | 189/478 [5:33:06<6:11:07, 77.05s/it] 2024/06/18 21:36:08 batch_search_generate.py[line:133] INFO LLM process is alive.
+2024/06/18 21:37:51 batch_search_generate.py[line:174] INFO save solutions: 5
+Execute:  40%|███▉      | 190/478 [5:35:44<8:05:05, 101.06s/it]2024/06/18 21:38:08 batch_search_generate.py[line:133] INFO LLM process is alive.
+Execute:  40%|███▉      | 191/478 [5:36:16<6:24:56, 80.48s/it] Execute:  40%|████      | 192/478 [5:36:32<4:52:01, 61.26s/it]2024/06/18 21:40:08 batch_search_generate.py[line:133] INFO LLM process is alive.
+Execute:  40%|████      | 193/478 [5:38:39<6:23:35, 80.75s/it]2024/06/18 21:42:08 batch_search_generate.py[line:133] INFO LLM process is alive.
+Execute:  41%|████      | 194/478 [5:40:14<6:42:48, 85.10s/it]Execute:  41%|████      | 195/478 [5:41:17<6:10:49, 78.62s/it]2024/06/18 21:43:40 batch_search_generate.py[line:174] INFO save solutions: 5
+2024/06/18 21:44:08 batch_search_generate.py[line:133] INFO LLM process is alive.
+WARNING 06-18 21:45:30 scheduler.py:663] Input prompt (8340 tokens) is too long and exceeds limit of 8192
+Execute:  41%|████      | 196/478 [5:43:24<7:17:33, 93.10s/it]2024/06/18 21:46:08 batch_search_generate.py[line:133] INFO LLM process is alive.
+Execute:  41%|████      | 197/478 [5:45:00<7:19:09, 93.77s/it]2024/06/18 21:48:08 batch_search_generate.py[line:133] INFO LLM process is alive.
+Execute:  41%|████▏     | 198/478 [5:46:35<7:19:31, 94.18s/it]Execute:  42%|████▏     | 199/478 [5:47:22<6:12:58, 80.21s/it]2024/06/18 21:49:45 batch_search_generate.py[line:174] INFO save solutions: 5
+Execute:  42%|████▏     | 200/478 [5:47:38<4:42:01, 60.87s/it]Execute:  42%|████▏     | 201/478 [5:47:54<3:38:42, 47.37s/it]2024/06/18 21:50:08 batch_search_generate.py[line:133] INFO LLM process is alive.
+2024/06/18 21:52:08 batch_search_generate.py[line:133] INFO LLM process is alive.
+/mnt/workspace/nas/chenguoxin.cgx/api/workspace/code/api_vary_mcts/src/tools/table/tabtools.py:44: DtypeWarning: Columns (25) have mixed types. Specify dtype option on import or set low_memory=False.
+  self.data = pd.read_csv(file_path)
+2024/06/18 21:54:08 batch_search_generate.py[line:133] INFO LLM process is alive.
+Execute:  42%|████▏     | 202/478 [5:53:12<9:51:03, 128.49s/it]2024/06/18 21:55:33 batch_search_generate.py[line:155] ERROR mcts error 'dict' object has no attribute 'startswith'
+Traceback (most recent call last):
+  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/code/api_vary_mcts/easy_runs/../src/batch_search_generate.py", line 149, in mcts_search
+    outputs = mcts_tree.search()
+              ^^^^^^^^^^^^^^^^^^
+  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/code/api_vary_mcts/src/local_mcts.py", line 43, in search
+    self.search_once()
+  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/code/api_vary_mcts/src/mcts.py", line 204, in search_once
+    self.expansion_evaluation_backpropagation(front)
+  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/code/api_vary_mcts/src/local_mcts.py", line 64, in expansion_evaluation_backpropagation
+    self.expand_node_with_cache(node)
+  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/code/api_vary_mcts/src/mcts.py", line 325, in expand_node_with_cache
+    reward, end_node = self.rollout(child)
+                       ^^^^^^^^^^^^^^^^^^^
+  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/code/api_vary_mcts/src/mcts.py", line 403, in rollout
+    self.expansion_evaluation_backpropagation(node, rollout=True)
+  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/code/api_vary_mcts/src/local_mcts.py", line 60, in expansion_evaluation_backpropagation
+    self.expand_node(output_texts, prior_probs, node, rollout)
+  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/code/api_vary_mcts/src/local_mcts.py", line 139, in expand_node
+    new_node = self.action_parser(step_output_text, node, prior_prob, idx=num_child)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/code/api_vary_mcts/src/mcts.py", line 335, in action_parser
+    action_type, action_input, observation, finished, reward, final_answer, table, new_tool_desc = self.tool_agent.parse_and_perform_action(text, api_version=self.api_version, table=table_toolkits(self.args.path) if node.table is None else copy.deepcopy(node.table))
+                                                                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/code/api_vary_mcts/src/toolqa.py", line 85, in parse_and_perform_action
+    api_state, new_action_type, new_params, error_infos = self.action_params_check(action_type, params, api_version)
+                                                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/code/api_vary_mcts/src/toolqa.py", line 267, in action_params_check
+    if sql_text.startswith("The SQL code is as follows:"):
+       ^^^^^^^^^^^^^^^^^^^
+AttributeError: 'dict' object has no attribute 'startswith'
+2024/06/18 21:56:08 batch_search_generate.py[line:133] INFO LLM process is alive.
+2024/06/18 21:58:08 batch_search_generate.py[line:133] INFO LLM process is alive.
+Execute:  43%|████▎     | 204/478 [5:56:54<9:10:30, 120.55s/it]2024/06/18 22:00:08 batch_search_generate.py[line:133] INFO LLM process is alive.
+2024/06/18 22:02:08 batch_search_generate.py[line:133] INFO LLM process is alive.
+2024/06/18 22:02:12 batch_search_generate.py[line:174] INFO save solutions: 5
+Execute:  43%|████▎     | 206/478 [6:00:06<8:21:42, 110.67s/it]2024/06/18 22:04:08 batch_search_generate.py[line:133] INFO LLM process is alive.
+Execute:  43%|████▎     | 207/478 [6:03:49<10:12:09, 135.53s/it]2024/06/18 22:06:08 batch_search_generate.py[line:133] INFO LLM process is alive.
+2024/06/18 22:08:08 batch_search_generate.py[line:133] INFO LLM process is alive.
+Execute:  44%|████▎     | 208/478 [6:07:32<11:44:17, 156.51s/it]Execute:  44%|████▎     | 209/478 [6:07:48<9:00:38, 120.59s/it] 2024/06/18 22:10:08 batch_search_generate.py[line:133] INFO LLM process is alive.
+2024/06/18 22:10:58 batch_search_generate.py[line:174] INFO save solutions: 5
+Execute:  44%|████▍     | 210/478 [6:08:51<7:50:45, 105.39s/it]Execute:  44%|████▍     | 211/478 [6:09:55<6:57:49, 93.89s/it] 2024/06/18 22:12:08 batch_search_generate.py[line:133] INFO LLM process is alive.
+Execute:  44%|████▍     | 212/478 [6:11:15<6:38:25, 89.87s/it]2024/06/18 22:14:09 batch_search_generate.py[line:133] INFO LLM process is alive.
+Execute:  45%|████▍     | 213/478 [6:12:03<5:43:33, 77.79s/it]Execute:  45%|████▍     | 214/478 [6:12:19<4:22:53, 59.75s/it]/mnt/workspace/nas/chenguoxin.cgx/api/workspace/code/api_vary_mcts/src/tools/table/tabtools.py:44: DtypeWarning: Columns (25) have mixed types. Specify dtype option on import or set low_memory=False.
+  self.data = pd.read_csv(file_path)
+2024/06/18 22:15:29 batch_search_generate.py[line:174] INFO save solutions: 5
+Execute:  45%|████▍     | 215/478 [6:13:22<4:26:50, 60.88s/it]Execute:  45%|████▌     | 216/478 [6:13:38<3:27:50, 47.60s/it]2024/06/18 22:16:09 batch_search_generate.py[line:133] INFO LLM process is alive.
+Execute:  45%|████▌     | 217/478 [6:15:29<4:49:19, 66.51s/it]2024/06/18 22:18:09 batch_search_generate.py[line:133] INFO LLM process is alive.
+2024/06/18 22:20:09 batch_search_generate.py[line:133] INFO LLM process is alive.
+2024/06/18 22:22:09 batch_search_generate.py[line:133] INFO LLM process is alive.
+Execute:  46%|████▌     | 218/478 [6:20:32<9:53:05, 136.87s/it]2024/06/18 22:24:09 batch_search_generate.py[line:133] INFO LLM process is alive.
+Execute:  46%|████▌     | 219/478 [6:22:24<9:18:03, 129.28s/it]2024/06/18 22:26:09 batch_search_generate.py[line:133] INFO LLM process is alive.
+2024/06/18 22:27:09 batch_search_generate.py[line:174] INFO save solutions: 5
+Execute:  46%|████▌     | 220/478 [6:25:03<9:54:41, 138.30s/it]Execute:  46%|████▌     | 221/478 [6:25:35<7:36:11, 106.50s/it]2024/06/18 22:28:09 batch_search_generate.py[line:133] INFO LLM process is alive.
+Execute:  46%|████▋     | 222/478 [6:26:23<6:20:01, 89.07s/it] Execute:  47%|████▋     | 224/478 [6:27:11<4:10:03, 59.07s/it]2024/06/18 22:30:09 batch_search_generate.py[line:133] INFO LLM process is alive.
+2024/06/18 22:30:38 batch_search_generate.py[line:174] INFO save solutions: 5
+Execute:  47%|████▋     | 225/478 [6:28:32<4:31:18, 64.34s/it]/mnt/workspace/nas/chenguoxin.cgx/api/workspace/code/api_vary_mcts/src/tools/table/tabtools.py:44: DtypeWarning: Columns (25) have mixed types. Specify dtype option on import or set low_memory=False.
+  self.data = pd.read_csv(file_path)
+/mnt/workspace/nas/chenguoxin.cgx/api/workspace/code/api_vary_mcts/src/tools/table/tabtools.py:44: DtypeWarning: Columns (25) have mixed types. Specify dtype option on import or set low_memory=False.
+  self.data = pd.read_csv(file_path)
+2024/06/18 22:32:09 batch_search_generate.py[line:133] INFO LLM process is alive.
+Execute:  47%|████▋     | 226/478 [6:30:08<5:05:04, 72.64s/it]Execute:  47%|████▋     | 227/478 [6:30:24<3:59:19, 57.21s/it]Execute:  48%|████▊     | 228/478 [6:31:59<4:43:04, 67.94s/it]

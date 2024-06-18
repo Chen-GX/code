@@ -9,9 +9,14 @@ frequency_penalty=$5
 max_iter=$6
 
 root_path=/mnt/workspace/nas/chenguoxin.cgx
+# root_path=/yinxr/workhome/zzhong/chenguoxin
+# root_path=/bjzhyai03/workhome/cgx/chenguoxin
+
 
 python=/opt/conda/envs/vary/bin/python
 # python=/yinxr/workhome/zzhong/miniconda3/envs/vary/bin/python
+# python=/bjzhyai03/workhome/cgx/miniconda3/envs/vary/bin/python
+
 checkpoint_dir=${root_path}/model_cache/Meta-Llama-3-8B-Instruct
 
 export VLLM_USE_MODELSCOPE="False"

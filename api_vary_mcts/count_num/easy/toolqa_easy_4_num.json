@@ -2,8 +2,11 @@
   "coffee-easy": {
     "num": 679
   },
+  "dblp-easy": {
+    "num": 557
+  },
   "flights-easy": {
-    "num": 688
+    "num": 690
   },
   "yelp-easy": {
     "num": 974
@@ -13,9 +16,6 @@
   },
   "airbnb-easy": {
     "num": 981
-  },
-  "dblp-easy": {
-    "num": 522
   },
   "scirex-easy": {
     "num": 20

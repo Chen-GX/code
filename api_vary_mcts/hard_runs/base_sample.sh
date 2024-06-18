@@ -8,15 +8,18 @@ temperature=$4
 frequency_penalty=$5
 max_iter=$6
 
+root_path=/mnt/workspace/nas/chenguoxin.cgx
+
 python=/opt/conda/envs/vary/bin/python
-checkpoint_dir=/mnt/workspace/nas/chenguoxin.cgx/model_cache/Meta-Llama-3-8B-Instruct
+# python=/yinxr/workhome/zzhong/miniconda3/envs/vary/bin/python
+checkpoint_dir=${root_path}/model_cache/Meta-Llama-3-8B-Instruct
 
 export VLLM_USE_MODELSCOPE="False"
 
 debug_num=-1
 filter=False
 filter_path="11"
-output_dir=/mnt/workspace/nas/chenguoxin.cgx/api/workspace/output_dir/mcts/round1/run
+output_dir=${root_path}/api/workspace/output_dir/mcts/round1/run
 
 seed=0
 

@@ -33,19 +33,19 @@ def set_seed(seed: int = 1024) -> None:
 
 
 def get_args():
+    root_path = "/mnt/workspace/nas/chenguoxin.cgx"
     parser = argparse.ArgumentParser()
-
     parser.add_argument('--seed', type=int, default=42)
     parser.add_argument('--verbose', type=str2bool, default=False, help="print intermediate result on screen")
     parser.add_argument('--process_num', type=int, default=1)
-    parser.add_argument("--path", type=str, default="/mnt/workspace/nas/chenguoxin.cgx/api/datasets/ToolQA")
+    parser.add_argument("--path", type=str, default=f"{root_path}/api/datasets/ToolQA")
     parser.add_argument("--num_epoch", type=int, default=1)
     parser.add_argument("--tool_url", type=str, default="http://127.0.0.1:5010/toolqa")
     parser.add_argument("--filter", type=str2bool, default=False)
-    parser.add_argument("--filter_path", type=str, default="/yinxr/workhome/zzhong/chenguoxin/workspace/multi_mcts_new/count_num/round1")
+    parser.add_argument("--filter_path", type=str, default="")
 
     ## params of LLM
-    parser.add_argument('-c', '--checkpoint_dir', type=str, default='/mnt/workspace/nas/chenguoxin.cgx/model_cache/Meta-Llama-3-8B-Instruct')
+    parser.add_argument('-c', '--checkpoint_dir', type=str, default=f'{root_path}/model_cache/Meta-Llama-3-8B-Instruct')
     parser.add_argument('--temperature', type=float, default=0.5)
     parser.add_argument("--top_k", type=int, default=-1)
     parser.add_argument("--top_p", type=float, default=1.0)  
@@ -69,11 +69,11 @@ def get_args():
 
     ## params of file
     parser.add_argument("--debug_num", type=int, default=5)
-    parser.add_argument('--datapath', type=str, default="/mnt/workspace/nas/chenguoxin.cgx/api/workspace/data")
+    parser.add_argument('--datapath', type=str, default=f"{root_path}/api/workspace/data")
     parser.add_argument('--task', type=str, default='toolqa_easy', choices=["toolqa_easy", "toolqa_hard"])
     parser.add_argument('--dataname', type=str, default='coffee-easy',
                         choices=["agenda-easy", "airbnb-easy", "coffee-easy", "dblp-easy", "flights-easy", "scirex-easy", "yelp-easy", "agenda-hard", "airbnb-hard", "coffee-hard", "dblp-hard", "flights-hard", "scirex-hard", "yelp-hard"])
-    parser.add_argument("--output_dir", type=str, default="/mnt/workspace/nas/chenguoxin.cgx/api/workspace/output_dir/mcts/round1/test")
+    parser.add_argument("--output_dir", type=str, default=f"{root_path}/api/workspace/output_dir/mcts/round1/test")
     parser.add_argument("--num_examples", type=int, default=2)
 
     args = parser.parse_args()  # 解析参数

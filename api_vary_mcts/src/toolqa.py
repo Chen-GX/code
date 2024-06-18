@@ -232,13 +232,23 @@ class ToolQA_Serve(object):
                     return 1, new_action_type, new_params, None
 
                 elif kernel_api_name == "EdgeCheck":
+                    # param_dict.keys() 是规定的新式api的参数名
+                    # params是模型输出的新式api的参数名
                     if set(param_dict.keys()) != set(params.keys()):  # 字典保证唯一性
                         infos = f'There is something wrong with the arguments you send for edge checking. Please modify it.'
                         return 1, action_type, params, infos
                     else:
                         # 更换api name 和参数名
                         new_params = {'GraphName': params['Graph_Name']}
-                        node1, node2 = parse_EdgeCheck(params['NodeInfos'], api_version)
+                        try:
+                            node1, node2 = parse_EdgeCheck(params['NodeInfos'], api_version)
+                        except TypeError as e:
+                            node1, node2 = None, None
+                            infos = f"{e}"
+                            return 1, None, None, infos
+                        except: 
+                            node1, node2 = None, None
+
                         if node1 is None:
                             infos = f'There is something wrong with the arguments you send for edge checking. Please modify it.'
                             return 1, None, None, infos
@@ -361,8 +371,8 @@ if __name__=="__main__":
 
     # 
 
-#     texts = [
-#         'Thought: To determine the minimum number of people M. Tanjidur Rahman needs to know in order to be connected to Shahin Tajik, we can use the DBLP citation network to examine the connections between authors. Assuming that "knowing" someone in this context means having a direct edge or connection in the graph (representing co-authorship or citation), we need to find the shortest path between the two authors in the graph. This shortest path will represent the minimum number of intermediaries (or the minimum degrees of separation) required for M. Tanjidur Rahman to be connected to Shahin Tajik.\n\nAction: InitializeGraphData\n\nAction Input: {"Graph_Name":"dblp"}',
+    texts = [
+        'Thought: To determine the minimum number of people M. Tanjidur Rahman needs to know in order to be connected to Shahin Tajik, we can use the DBLP citation network to examine the connections between authors. Assuming that "knowing" someone in this context means having a direct edge or connection in the graph (representing co-authorship or citation), we need to find the shortest path between the two authors in the graph. This shortest path will represent the minimum number of intermediaries (or the minimum degrees of separation) required for M. Tanjidur Rahman to be connected to Shahin Tajik.\n\nAction: InitializeGraphData\n\nAction Input: {"Graph_Name":"dblp"}',
 
 #         'Thought: With the DBLP data loaded and containing two graphs, AuthorNet and PaperNet, the appropriate network to analyze for our purpose is the AuthorNet. This network represents the connections between authors, likely through co-authorship or joint publications, which aligns with our aim to find the minimum number of people (intermediaries) M. Tanjidur Rahman needs to know to connect to Shahin Tajik.\n\nAction: Verify_NeighbourNodes\n\nAction Input: {"Graph_Name":"AuthorNet", "graphNode":"M. Tanjidur Rahman", "ReturnResult": true}',
 
@@ -371,22 +381,24 @@ if __name__=="__main__":
 
 #         """Thought: The observation has likely encountered an error since it repeated the same paper title multiple times instead of listing different titles. This means I cannot directly find the most cited paper from the information provided. I would look into unique paper written by Wei Liu and then determine their citation counts.\n\nAction: ValidateGraphNode\n\nAction Input: {"Graph_Name":"PaperNet", "graphNode":"Enhancing Geometric Factors in Model Learning and Inference for Object Detection and Instance Segmentation"}""",
 
-#         """Thought: With the detailed information obtained for the paper "Enhancing Geometric Factors in Model Learning and Inference for Object Detection and Instance Segmentation", it is evident that this particular work has garnered significant attention with 176 citations. Since Wei Liu only has this one work, this is the paper he cites most.\n\nAction: Finish\n\nAction Input: {"answer": "Enhancing Geometric Factors in Model Learning and Inference for Object Detection and Instance Segmentation"}"""
-#     ]
+#         """Thought: With the detailed information obtained for the paper "Enhancing Geometric Factors in Model Learning and Inference for Object Detection and Instance Segmentation", it is evident that this particular work has garnered significant attention with 176 citations. Since Wei Liu only has this one work, this is the paper he cites most.\n\nAction: Finish\n\nAction Input: {"answer": "Enhancing Geometric Factors in Model Learning and Inference for Object Detection and Instance Segmentation"}""",
 
-    texts = [
-        # """Thought: First, we need to identify all flights from TPA on 2022-01-04. Then, we must determine which of these flights were delayed. With these two figures, we can calculate the percentage of flights that were delayed.\n\nAction: InitializeDatabase\n\nAction Input: {"DatabaseName": "flights"}""",
-
-        # """Thought: Now that we have access to the flights database and understand its structure, we must filter the records to focus on flights departing from TPA on 2022-01-04. The condition involves targeting flights specifically from the "Origin" column matching "TPA" and the "FlightDate" column matching "2022-01-04"\n\nAction: Apply_Database_Filters\n\nAction Input: {"condition1": "Origin=TPA", "condition2": "FlightDate=2022-01-04"}""",
-        # """Thought: We have the filtered data, we need to retrieve the "DepDelayMinutes" column to calculate the average delay.\n\nAction: GetValue\n\nAction Input: {"column": "DepDelayMinutes"}""",
-
-        # """Thought: The method GetValue[column_name] is deprecated and we should use FetchValue_ByKey instead. We need to retrieve the DepDelayMinutes column and calculate the average delay.\n\nAction: FetchValue_ByKey\n\nAction Input: {"column1": "DepDelayMinutes", "ReturnResult": "True"}""",
-
-        """Thought: Since we successfully used the new function for the first time, we need to update the tool description for future reference.\n\nAction: UpdateTool\n\nAction Input: {"newtool_desc": "Apply_Database_Filters[condition1], which is an updated version of FilterDB and filters database entries based on multiple conditions. For example, you can filter entries by multiple conditions using parameters: {'condition1': 'Date>=YYYY-MM-DD', 'condition2': 'Date<=YYYY-MM-DD'}."}""",
-
-        """Thought: The FetchValue_ByKey method works as intended, and we have successfully retrieved the DepDelayMinutes column. Now, we need to calculate the average delay using the retrieved data. First, let's update the tool description for the new method. \n\nAction: UpdateTool\n\nAction Input: {"newtool_desc": "FetchValue_ByKey[column, ReturnResult], which is an updated version of GetValue and retrieves the values of the specified column from the filtered database and returns the result. For example, {'column1': 'price', 'ReturnResult': 'True'}."}"""
-
+        """Thought: To precisely find out the number of papers they wrote together, I would look for an action to directly check the details of the edge between them, as this should give me the number of co-authored papers.\n\nAction: ValidateGraphEdge\n\nAction Input: {"Graph_Name": "AuthorNet", "NodeInfos": ["FirstNode[Domingo Biel]", "SecondNode[Arnau Doria-Cerezo]"]}"""
     ]
+
+    # texts = [
+    #     # """Thought: First, we need to identify all flights from TPA on 2022-01-04. Then, we must determine which of these flights were delayed. With these two figures, we can calculate the percentage of flights that were delayed.\n\nAction: InitializeDatabase\n\nAction Input: {"DatabaseName": "flights"}""",
+
+    #     # """Thought: Now that we have access to the flights database and understand its structure, we must filter the records to focus on flights departing from TPA on 2022-01-04. The condition involves targeting flights specifically from the "Origin" column matching "TPA" and the "FlightDate" column matching "2022-01-04"\n\nAction: Apply_Database_Filters\n\nAction Input: {"condition1": "Origin=TPA", "condition2": "FlightDate=2022-01-04"}""",
+    #     # """Thought: We have the filtered data, we need to retrieve the "DepDelayMinutes" column to calculate the average delay.\n\nAction: GetValue\n\nAction Input: {"column": "DepDelayMinutes"}""",
+
+    #     # """Thought: The method GetValue[column_name] is deprecated and we should use FetchValue_ByKey instead. We need to retrieve the DepDelayMinutes column and calculate the average delay.\n\nAction: FetchValue_ByKey\n\nAction Input: {"column1": "DepDelayMinutes", "ReturnResult": "True"}""",
+
+    #     """Thought: Since we successfully used the new function for the first time, we need to update the tool description for future reference.\n\nAction: UpdateTool\n\nAction Input: {"newtool_desc": "Apply_Database_Filters[condition1], which is an updated version of FilterDB and filters database entries based on multiple conditions. For example, you can filter entries by multiple conditions using parameters: {'condition1': 'Date>=YYYY-MM-DD', 'condition2': 'Date<=YYYY-MM-DD'}."}""",
+
+    #     """Thought: The FetchValue_ByKey method works as intended, and we have successfully retrieved the DepDelayMinutes column. Now, we need to calculate the average delay using the retrieved data. First, let's update the tool description for the new method. \n\nAction: UpdateTool\n\nAction Input: {"newtool_desc": "FetchValue_ByKey[column, ReturnResult], which is an updated version of GetValue and retrieves the values of the specified column from the filtered database and returns the result. For example, {'column1': 'price', 'ReturnResult': 'True'}."}"""
+
+    # ]
 
     # texts = [
     #     """Thought: The question is asking some performance information about F-Measure score of the EAST method on IC15 dataset for Scene_Text_Detection task, we need to retrieve some useful information from the scirex database.\n\nAction: FetchScirexData\n\nAction Input: {\"QueryText\": \"F-Measure score of the EAST method on IC15 dataset for Scene_Text_Detection task\"}"""

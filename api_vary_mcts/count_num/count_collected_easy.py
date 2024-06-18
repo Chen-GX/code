@@ -6,7 +6,7 @@ import os.path as osp
 import json
 import glob
 
-num_round = './hard'
+num_round = './easy'
 
 os.makedirs(num_round, exist_ok=True)
 
@@ -16,8 +16,9 @@ def load_jsonl(path):
     return data
 
 check_paths = [
-    '/mnt/workspace/nas/chenguoxin.cgx/api/workspace/output_dir/mcts/round1/run/toolqa_hard',
-    '/mnt/workspace/nas/chenguoxin.cgx/api/workspace/other_output/output_dir/mcts/round1/run/toolqa_hard',
+    '/mnt/workspace/nas/chenguoxin.cgx/api/workspace/output_dir/mcts/round1/run/toolqa_easy',
+    '/mnt/workspace/nas/chenguoxin.cgx/api/workspace/other_output/output_dir/mcts/round1/run/toolqa_easy',
+    '/mnt/workspace/nas/chenguoxin.cgx/api/workspace/other_output/output_dir_single/mcts/round1/run/toolqa_easy',
 ]
 modelname = 'Meta-Llama-3-8B-Instruct'  # 用于采样的模型
 threshold = 4

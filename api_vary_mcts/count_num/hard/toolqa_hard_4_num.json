@@ -1,0 +1,17 @@
+{
+  "agenda-hard": {
+    "num": 130
+  },
+  "airbnb-hard": {
+    "num": 39
+  },
+  "coffee-hard": {
+    "num": 8
+  },
+  "dblp-hard": {
+    "num": 191
+  },
+  "yelp-hard": {
+    "num": 261
+  }
+}

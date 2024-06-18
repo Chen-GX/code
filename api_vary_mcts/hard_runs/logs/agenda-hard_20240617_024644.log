@@ -1,0 +1,336 @@
+toolqa_hard
+agenda-hard
+1
+2024/06/17 02:46:46 log_utils.py[line:35] INFO seed:1718563606
+2024/06/17 02:46:46 log_utils.py[line:35] INFO verbose:False
+2024/06/17 02:46:46 log_utils.py[line:35] INFO process_num:1
+2024/06/17 02:46:46 log_utils.py[line:35] INFO path:/mnt/workspace/nas/chenguoxin.cgx/api/datasets/ToolQA
+2024/06/17 02:46:46 log_utils.py[line:35] INFO num_epoch:1
+2024/06/17 02:46:46 log_utils.py[line:35] INFO tool_url:http://127.0.0.1:5010/toolqa
+2024/06/17 02:46:46 log_utils.py[line:35] INFO filter:False
+2024/06/17 02:46:46 log_utils.py[line:35] INFO filter_path:11
+2024/06/17 02:46:46 log_utils.py[line:35] INFO checkpoint_dir:/mnt/workspace/nas/chenguoxin.cgx/model_cache/Meta-Llama-3-8B-Instruct
+2024/06/17 02:46:46 log_utils.py[line:35] INFO temperature:0.5
+2024/06/17 02:46:46 log_utils.py[line:35] INFO top_k:-1
+2024/06/17 02:46:46 log_utils.py[line:35] INFO top_p:1.0
+2024/06/17 02:46:46 log_utils.py[line:35] INFO frequency_penalty:1.2
+2024/06/17 02:46:46 log_utils.py[line:35] INFO scratchpad_length:1024
+2024/06/17 02:46:46 log_utils.py[line:35] INFO api_kernel_version:1
+2024/06/17 02:46:46 log_utils.py[line:35] INFO Cpuct:1.25
+2024/06/17 02:46:46 log_utils.py[line:35] INFO n_generate_sample:5
+2024/06/17 02:46:46 log_utils.py[line:35] INFO max_iter:12
+2024/06/17 02:46:46 log_utils.py[line:35] INFO max_depth:12
+2024/06/17 02:46:46 log_utils.py[line:35] INFO positive_reward:1.0
+2024/06/17 02:46:46 log_utils.py[line:35] INFO negative_reward:-1.0
+2024/06/17 02:46:46 log_utils.py[line:35] INFO max_new_tokens:1024
+2024/06/17 02:46:46 log_utils.py[line:35] INFO max_load_db:5
+2024/06/17 02:46:46 log_utils.py[line:35] INFO debug_num:-1
+2024/06/17 02:46:46 log_utils.py[line:35] INFO datapath:/mnt/workspace/nas/chenguoxin.cgx/api/workspace/data
+2024/06/17 02:46:46 log_utils.py[line:35] INFO task:toolqa_hard
+2024/06/17 02:46:46 log_utils.py[line:35] INFO dataname:agenda-hard
+2024/06/17 02:46:46 log_utils.py[line:35] INFO output_dir:/mnt/workspace/nas/chenguoxin.cgx/api/workspace/output_dir/mcts/round1/run/toolqa_hard/agenda-hard/Meta-Llama-3-8B-Instruct/20240617_024646
+2024/06/17 02:46:46 log_utils.py[line:35] INFO num_examples:2
+2024/06/17 02:46:46 log_utils.py[line:35] INFO model_name:Meta-Llama-3-8B-Instruct
+2024/06/17 02:46:46 log_utils.py[line:35] INFO timestamp:20240617_024646
+2024/06/17 02:46:48 batch_search_generate.py[line:279] INFO ********** EPOCH 0 ***********
+Execute:   0%|          | 0/800 [00:00<?, ?it/s]INFO 06-17 02:46:49 llm_engine.py:161] Initializing an LLM engine (v0.4.3) with config: model='/mnt/workspace/nas/chenguoxin.cgx/model_cache/Meta-Llama-3-8B-Instruct', speculative_config=None, tokenizer='/mnt/workspace/nas/chenguoxin.cgx/model_cache/Meta-Llama-3-8B-Instruct', skip_tokenizer_init=False, tokenizer_mode=auto, revision=None, rope_scaling=None, tokenizer_revision=None, trust_remote_code=False, dtype=torch.bfloat16, max_seq_len=8192, download_dir=None, load_format=LoadFormat.AUTO, tensor_parallel_size=1, disable_custom_all_reduce=False, quantization=None, enforce_eager=False, kv_cache_dtype=auto, quantization_param_path=None, device_config=cuda, decoding_config=DecodingConfig(guided_decoding_backend='outlines'), seed=1718563606, served_model_name=/mnt/workspace/nas/chenguoxin.cgx/model_cache/Meta-Llama-3-8B-Instruct)
+Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+Execute:   0%|          | 0/800 [00:15<?, ?it/s]Execute:   0%|          | 0/800 [00:30<?, ?it/s]Execute:   0%|          | 0/800 [00:45<?, ?it/s]INFO 06-17 02:47:42 model_runner.py:146] Loading model weights took 14.9595 GB
+INFO 06-17 02:47:43 gpu_executor.py:83] # GPU blocks: 27895, # CPU blocks: 4096
+Execute:   0%|          | 0/800 [01:00<?, ?it/s]INFO 06-17 02:47:53 model_runner.py:854] Capturing the model for CUDA graphs. This may lead to unexpected consequences if the model is not static. To run the model in eager mode, set 'enforce_eager=True' or use '--enforce-eager' in the CLI.
+INFO 06-17 02:47:53 model_runner.py:858] CUDA graphs can take additional 1~3 GiB memory per GPU. If you are running out of memory, consider decreasing `gpu_memory_utilization` or enforcing eager mode. You can also reduce the `max_num_seqs` as needed to decrease memory usage.
+INFO 06-17 02:47:57 model_runner.py:924] Graph capturing finished in 4 secs.
+Execute:   0%|          | 0/800 [01:15<?, ?it/s]Execute:   0%|          | 0/800 [01:30<?, ?it/s]Execute:   0%|          | 0/800 [01:45<?, ?it/s]Execute:   0%|          | 0/800 [02:00<?, ?it/s]Execute:   0%|          | 0/800 [02:15<?, ?it/s]Execute:   0%|          | 0/800 [02:30<?, ?it/s]Execute:   0%|          | 0/800 [02:45<?, ?it/s]Execute:   0%|          | 0/800 [03:00<?, ?it/s]Execute:   0%|          | 0/800 [03:15<?, ?it/s]Execute:   0%|          | 0/800 [03:30<?, ?it/s]Execute:   0%|          | 0/800 [03:45<?, ?it/s]Execute:   0%|          | 0/800 [04:00<?, ?it/s]Execute:   0%|          | 0/800 [04:15<?, ?it/s]Execute:   0%|          | 0/800 [04:30<?, ?it/s]Execute:   0%|          | 0/800 [04:45<?, ?it/s]Execute:   0%|          | 0/800 [05:00<?, ?it/s]Execute:   0%|          | 0/800 [05:15<?, ?it/s]Execute:   0%|          | 0/800 [05:30<?, ?it/s]Execute:   0%|          | 0/800 [05:45<?, ?it/s]Execute:   0%|          | 0/800 [06:00<?, ?it/s]Execute:   0%|          | 0/800 [06:15<?, ?it/s]WARNING 06-17 02:53:17 scheduler.py:663] Input prompt (8699 tokens) is too long and exceeds limit of 8192
+Execute:   0%|          | 0/800 [06:30<?, ?it/s]Execute:   0%|          | 0/800 [06:45<?, ?it/s]Execute:   0%|          | 0/800 [07:00<?, ?it/s]Execute:   0%|          | 0/800 [07:15<?, ?it/s]Execute:   0%|          | 0/800 [07:30<?, ?it/s]Execute:   0%|          | 0/800 [07:45<?, ?it/s]Execute:   0%|          | 0/800 [08:00<?, ?it/s]Execute:   0%|          | 0/800 [08:15<?, ?it/s]Execute:   0%|          | 0/800 [08:30<?, ?it/s]Execute:   0%|          | 0/800 [08:45<?, ?it/s]Execute:   0%|          | 0/800 [09:00<?, ?it/s]Execute:   0%|          | 0/800 [09:15<?, ?it/s]Execute:   0%|          | 0/800 [09:30<?, ?it/s]Execute:   0%|          | 0/800 [09:45<?, ?it/s]2024/06/17 02:56:48 batch_search_generate.py[line:133] INFO LLM process is alive.
+Execute:   0%|          | 0/800 [10:00<?, ?it/s]Execute:   0%|          | 0/800 [10:15<?, ?it/s]Execute:   0%|          | 0/800 [10:30<?, ?it/s]Execute:   0%|          | 0/800 [10:45<?, ?it/s]Execute:   0%|          | 0/800 [11:00<?, ?it/s]Execute:   0%|          | 0/800 [11:15<?, ?it/s]Execute:   0%|          | 0/800 [11:30<?, ?it/s]Execute:   0%|          | 0/800 [11:45<?, ?it/s]2024/06/17 02:58:48 batch_search_generate.py[line:133] INFO LLM process is alive.
+Execute:   0%|          | 0/800 [12:00<?, ?it/s]Execute:   0%|          | 0/800 [12:15<?, ?it/s]Execute:   0%|          | 0/800 [12:30<?, ?it/s]Execute:   0%|          | 0/800 [12:45<?, ?it/s]Execute:   0%|          | 0/800 [13:00<?, ?it/s]Execute:   0%|          | 0/800 [13:15<?, ?it/s]Execute:   0%|          | 0/800 [13:30<?, ?it/s]Execute:   0%|          | 0/800 [13:45<?, ?it/s]2024/06/17 03:00:48 batch_search_generate.py[line:133] INFO LLM process is alive.
+Execute:   0%|          | 0/800 [14:00<?, ?it/s]Execute:   0%|          | 0/800 [14:15<?, ?it/s]Execute:   0%|          | 0/800 [14:30<?, ?it/s]Execute:   0%|          | 0/800 [14:45<?, ?it/s]Execute:   0%|          | 0/800 [15:00<?, ?it/s]Execute:   0%|          | 0/800 [15:15<?, ?it/s]Execute:   0%|          | 0/800 [15:30<?, ?it/s]Execute:   0%|          | 0/800 [15:45<?, ?it/s]2024/06/17 03:02:48 batch_search_generate.py[line:133] INFO LLM process is alive.
+Execute:   0%|          | 0/800 [16:00<?, ?it/s]Execute:   0%|          | 0/800 [16:15<?, ?it/s]Execute:   0%|          | 0/800 [16:30<?, ?it/s]Execute:   0%|          | 0/800 [16:45<?, ?it/s]Execute:   0%|          | 0/800 [17:00<?, ?it/s]Execute:   0%|          | 0/800 [17:15<?, ?it/s]Execute:   0%|          | 0/800 [17:30<?, ?it/s]Execute:   0%|          | 0/800 [17:45<?, ?it/s]2024/06/17 03:04:48 batch_search_generate.py[line:133] INFO LLM process is alive.
+Execute:   0%|          | 0/800 [18:00<?, ?it/s]Execute:   0%|          | 0/800 [18:15<?, ?it/s]Execute:   0%|          | 0/800 [18:30<?, ?it/s]Execute:   0%|          | 0/800 [18:45<?, ?it/s]Execute:   0%|          | 0/800 [19:00<?, ?it/s]Execute:   0%|          | 0/800 [19:15<?, ?it/s]Execute:   0%|          | 0/800 [19:30<?, ?it/s]Execute:   0%|          | 0/800 [19:45<?, ?it/s]2024/06/17 03:06:48 batch_search_generate.py[line:133] INFO LLM process is alive.
+Execute:   0%|          | 0/800 [20:00<?, ?it/s]Execute:   0%|          | 0/800 [20:15<?, ?it/s]Execute:   0%|          | 0/800 [20:30<?, ?it/s]Execute:   0%|          | 0/800 [20:45<?, ?it/s]Execute:   0%|          | 0/800 [21:00<?, ?it/s]Execute:   0%|          | 0/800 [21:15<?, ?it/s]Execute:   0%|          | 0/800 [21:30<?, ?it/s]Execute:   0%|          | 0/800 [21:45<?, ?it/s]2024/06/17 03:08:48 batch_search_generate.py[line:133] INFO LLM process is alive.
+Execute:   0%|          | 0/800 [22:00<?, ?it/s]Execute:   0%|          | 0/800 [22:15<?, ?it/s]WARNING 06-17 03:09:13 scheduler.py:663] Input prompt (8194 tokens) is too long and exceeds limit of 8192
+Execute:   0%|          | 0/800 [22:30<?, ?it/s]Execute:   0%|          | 0/800 [22:45<?, ?it/s]Execute:   0%|          | 0/800 [23:00<?, ?it/s]Execute:   0%|          | 0/800 [23:15<?, ?it/s]Execute:   0%|          | 0/800 [23:30<?, ?it/s]Execute:   0%|          | 0/800 [23:45<?, ?it/s]2024/06/17 03:10:49 batch_search_generate.py[line:133] INFO LLM process is alive.
+Execute:   0%|          | 0/800 [24:00<?, ?it/s]Execute:   0%|          | 0/800 [24:15<?, ?it/s]Execute:   0%|          | 0/800 [24:30<?, ?it/s]Execute:   0%|          | 0/800 [24:45<?, ?it/s]Execute:   0%|          | 0/800 [25:00<?, ?it/s]Execute:   0%|          | 0/800 [25:15<?, ?it/s]Execute:   0%|          | 0/800 [25:30<?, ?it/s]Execute:   0%|          | 0/800 [25:45<?, ?it/s]2024/06/17 03:12:49 batch_search_generate.py[line:133] INFO LLM process is alive.
+Execute:   0%|          | 0/800 [26:00<?, ?it/s]Execute:   0%|          | 0/800 [26:15<?, ?it/s]Execute:   0%|          | 0/800 [26:30<?, ?it/s]Execute:   0%|          | 0/800 [26:45<?, ?it/s]Execute:   0%|          | 0/800 [27:00<?, ?it/s]Execute:   0%|          | 0/800 [27:15<?, ?it/s]Execute:   0%|          | 0/800 [27:30<?, ?it/s]Execute:   0%|          | 0/800 [27:45<?, ?it/s]2024/06/17 03:14:49 batch_search_generate.py[line:133] INFO LLM process is alive.
+Execute:   0%|          | 0/800 [28:00<?, ?it/s]Execute:   0%|          | 0/800 [28:15<?, ?it/s]Execute:   0%|          | 0/800 [28:30<?, ?it/s]Execute:   0%|          | 0/800 [28:45<?, ?it/s]Execute:   0%|          | 0/800 [29:00<?, ?it/s]Execute:   0%|          | 0/800 [29:15<?, ?it/s]Execute:   0%|          | 0/800 [29:30<?, ?it/s]Execute:   0%|          | 0/800 [29:45<?, ?it/s]2024/06/17 03:16:49 batch_search_generate.py[line:133] INFO LLM process is alive.
+Execute:   0%|          | 0/800 [30:00<?, ?it/s]Execute:   0%|          | 0/800 [30:15<?, ?it/s]Execute:   0%|          | 0/800 [30:30<?, ?it/s]Execute:   0%|          | 0/800 [30:45<?, ?it/s]Execute:   0%|          | 0/800 [31:00<?, ?it/s]Execute:   0%|          | 0/800 [31:15<?, ?it/s]Execute:   0%|          | 0/800 [31:30<?, ?it/s]Execute:   0%|          | 0/800 [31:45<?, ?it/s]2024/06/17 03:18:49 batch_search_generate.py[line:133] INFO LLM process is alive.
+Execute:   0%|          | 0/800 [32:00<?, ?it/s]Execute:   0%|          | 0/800 [32:15<?, ?it/s]Execute:   0%|          | 0/800 [32:30<?, ?it/s]Execute:   0%|          | 0/800 [32:45<?, ?it/s]Execute:   0%|          | 0/800 [33:00<?, ?it/s]Execute:   0%|          | 0/800 [33:15<?, ?it/s]Execute:   0%|          | 0/800 [33:30<?, ?it/s]Execute:   0%|          | 0/800 [33:45<?, ?it/s]2024/06/17 03:20:49 batch_search_generate.py[line:133] INFO LLM process is alive.
+Execute:   0%|          | 0/800 [34:00<?, ?it/s]Execute:   0%|          | 0/800 [34:15<?, ?it/s]Execute:   0%|          | 0/800 [34:30<?, ?it/s]Execute:   0%|          | 0/800 [34:45<?, ?it/s]Execute:   0%|          | 0/800 [35:00<?, ?it/s]Execute:   0%|          | 1/800 [35:15<3:19:53, 15.01s/it]2024/06/17 03:22:49 batch_search_generate.py[line:133] INFO LLM process is alive.
+WARNING 06-17 03:22:58 scheduler.py:663] Input prompt (12586 tokens) is too long and exceeds limit of 8192
+Execute:   0%|          | 2/800 [36:15<9:11:57, 41.50s/it]2024/06/17 03:24:49 batch_search_generate.py[line:133] INFO LLM process is alive.
+Execute:   0%|          | 3/800 [38:15<17:08:01, 77.39s/it]2024/06/17 03:26:49 batch_search_generate.py[line:133] INFO LLM process is alive.
+WARNING 06-17 03:27:26 scheduler.py:663] Input prompt (10197 tokens) is too long and exceeds limit of 8192
+2024/06/17 03:28:49 batch_search_generate.py[line:133] INFO LLM process is alive.
+Execute:   0%|          | 4/800 [42:16<31:21:13, 141.80s/it]2024/06/17 03:30:49 batch_search_generate.py[line:133] INFO LLM process is alive.
+2024/06/17 03:32:49 batch_search_generate.py[line:133] INFO LLM process is alive.
+2024/06/17 03:34:49 batch_search_generate.py[line:133] INFO LLM process is alive.
+2024/06/17 03:35:06 batch_search_generate.py[line:174] INFO save solutions: 5
+Execute:   1%|          | 5/800 [48:17<48:47:09, 220.92s/it]2024/06/17 03:36:49 batch_search_generate.py[line:133] INFO LLM process is alive.
+WARNING 06-17 03:37:40 scheduler.py:663] Input prompt (12814 tokens) is too long and exceeds limit of 8192
+Execute:   1%|          | 6/800 [51:02<44:34:43, 202.12s/it]2024/06/17 03:38:49 batch_search_generate.py[line:133] INFO LLM process is alive.
+2024/06/17 03:40:49 batch_search_generate.py[line:133] INFO LLM process is alive.
+2024/06/17 03:42:49 batch_search_generate.py[line:133] INFO LLM process is alive.
+2024/06/17 03:44:49 batch_search_generate.py[line:133] INFO LLM process is alive.
+Execute:   1%|          | 7/800 [58:50<63:36:26, 288.76s/it]2024/06/17 03:46:49 batch_search_generate.py[line:245] ERROR pool error: [Errno Task timeout] 3600
+Traceback (most recent call last):
+  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/hard_runs/../src/batch_search_generate.py", line 240, in batch_main
+    for _ in future.result():
+  File "/opt/conda/envs/vary/lib/python3.11/site-packages/pebble/pool/base_pool.py", line 230, in next
+    raise result
+  File "/opt/conda/envs/vary/lib/python3.11/site-packages/pebble/pool/base_pool.py", line 268, in chunk_result
+    return future.result(timeout=timeout)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/envs/vary/lib/python3.11/concurrent/futures/_base.py", line 456, in result
+    return self.__get_result()
+           ^^^^^^^^^^^^^^^^^^^
+  File "/opt/conda/envs/vary/lib/python3.11/concurrent/futures/_base.py", line 401, in __get_result
+    raise self._exception
+TimeoutError: [Errno Task timeout] 3600
+2024/06/17 03:46:49 batch_search_generate.py[line:133] INFO LLM process is alive.
+2024/06/17 03:48:49 batch_search_generate.py[line:133] INFO LLM process is alive.
+2024/06/17 03:50:50 batch_search_generate.py[line:133] INFO LLM process is alive.
+2024/06/17 03:52:50 batch_search_generate.py[line:133] INFO LLM process is alive.
+Execute:   1%|          | 8/800 [1:07:53<81:20:06, 369.71s/it]2024/06/17 03:54:50 batch_search_generate.py[line:133] INFO LLM process is alive.
+2024/06/17 03:56:50 batch_search_generate.py[line:133] INFO LLM process is alive.
+WARNING 06-17 03:57:16 scheduler.py:663] Input prompt (8297 tokens) is too long and exceeds limit of 8192
+2024/06/17 03:58:50 batch_search_generate.py[line:133] INFO LLM process is alive.
+2024/06/17 04:00:50 batch_search_generate.py[line:133] INFO LLM process is alive.
+2024/06/17 04:02:50 batch_search_generate.py[line:133] INFO LLM process is alive.
+2024/06/17 04:04:50 batch_search_generate.py[line:133] INFO LLM process is alive.
+WARNING 06-17 04:05:53 scheduler.py:663] Input prompt (10731 tokens) is too long and exceeds limit of 8192
+2024/06/17 04:06:50 batch_search_generate.py[line:133] INFO LLM process is alive.
+2024/06/17 04:08:50 batch_search_generate.py[line:133] INFO LLM process is alive.
+Execute:   1%|          | 9/800 [1:22:13<114:55:37, 523.06s/it]2024/06/17 04:10:02 batch_search_generate.py[line:174] INFO save solutions: 5
+Execute:   1%|▏         | 10/800 [1:23:13<83:27:05, 380.29s/it]2024/06/17 04:10:50 batch_search_generate.py[line:133] INFO LLM process is alive.
+Execute:   1%|▏         | 11/800 [1:25:45<67:59:09, 310.20s/it]2024/06/17 04:12:50 batch_search_generate.py[line:133] INFO LLM process is alive.
+Execute:   2%|▏         | 12/800 [1:27:46<55:18:07, 252.65s/it]2024/06/17 04:14:50 batch_search_generate.py[line:133] INFO LLM process is alive.
+2024/06/17 04:16:50 batch_search_generate.py[line:133] INFO LLM process is alive.
+/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/tools/table/tabtools.py:44: DtypeWarning: Columns (25) have mixed types. Specify dtype option on import or set low_memory=False.
+  self.data = pd.read_csv(file_path)
+/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/tools/table/tabtools.py:44: DtypeWarning: Columns (25) have mixed types. Specify dtype option on import or set low_memory=False.
+  self.data = pd.read_csv(file_path)
+/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/tools/table/tabtools.py:44: DtypeWarning: Columns (25) have mixed types. Specify dtype option on import or set low_memory=False.
+  self.data = pd.read_csv(file_path)
+/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/tools/table/tabtools.py:44: DtypeWarning: Columns (25) have mixed types. Specify dtype option on import or set low_memory=False.
+  self.data = pd.read_csv(file_path)
+2024/06/17 04:18:50 batch_search_generate.py[line:133] INFO LLM process is alive.
+Execute:   2%|▏         | 13/800 [1:32:49<58:33:17, 267.85s/it]2024/06/17 04:20:50 batch_search_generate.py[line:133] INFO LLM process is alive.
+2024/06/17 04:22:50 batch_search_generate.py[line:133] INFO LLM process is alive.
+2024/06/17 04:24:50 batch_search_generate.py[line:133] INFO LLM process is alive.
+2024/06/17 04:26:50 batch_search_generate.py[line:133] INFO LLM process is alive.
+2024/06/17 04:28:50 batch_search_generate.py[line:133] INFO LLM process is alive.
+WARNING 06-17 04:30:34 scheduler.py:663] Input prompt (8220 tokens) is too long and exceeds limit of 8192
+2024/06/17 04:30:50 batch_search_generate.py[line:133] INFO LLM process is alive.
+2024/06/17 04:32:50 batch_search_generate.py[line:133] INFO LLM process is alive.
+Execute:   2%|▏         | 14/800 [1:46:42<95:47:53, 438.77s/it]2024/06/17 04:34:02 batch_search_generate.py[line:174] INFO save solutions: 5
+Execute:   2%|▏         | 15/800 [1:47:13<68:50:17, 315.69s/it]2024/06/17 04:34:51 batch_search_generate.py[line:133] INFO LLM process is alive.
+2024/06/17 04:36:51 batch_search_generate.py[line:133] INFO LLM process is alive.
+Execute:   2%|▏         | 16/800 [1:51:31<64:58:22, 298.35s/it]2024/06/17 04:38:51 batch_search_generate.py[line:133] INFO LLM process is alive.
+2024/06/17 04:40:51 batch_search_generate.py[line:133] INFO LLM process is alive.
+2024/06/17 04:42:51 batch_search_generate.py[line:133] INFO LLM process is alive.
+Execute:   2%|▏         | 17/800 [1:56:35<65:15:19, 300.03s/it]2024/06/17 04:44:51 batch_search_generate.py[line:133] INFO LLM process is alive.
+2024/06/17 04:46:51 batch_search_generate.py[line:133] INFO LLM process is alive.
+2024/06/17 04:48:51 batch_search_generate.py[line:133] INFO LLM process is alive.
+2024/06/17 04:50:51 batch_search_generate.py[line:133] INFO LLM process is alive.
+WARNING 06-17 04:50:59 scheduler.py:663] Input prompt (8583 tokens) is too long and exceeds limit of 8192
+Execute:   2%|▏         | 18/800 [2:04:41<77:20:56, 356.08s/it]2024/06/17 04:52:51 batch_search_generate.py[line:133] INFO LLM process is alive.
+2024/06/17 04:54:51 batch_search_generate.py[line:133] INFO LLM process is alive.
+WARNING 06-17 04:56:47 scheduler.py:663] Input prompt (8614 tokens) is too long and exceeds limit of 8192
+2024/06/17 04:56:51 batch_search_generate.py[line:133] INFO LLM process is alive.
+Execute:   2%|▏         | 19/800 [2:10:46<77:50:20, 358.80s/it]2024/06/17 04:58:21 batch_search_generate.py[line:174] INFO save solutions: 5
+Execute:   2%|▎         | 20/800 [2:11:32<57:22:36, 264.82s/it]2024/06/17 04:58:51 batch_search_generate.py[line:133] INFO LLM process is alive.
+2024/06/17 05:00:51 batch_search_generate.py[line:133] INFO LLM process is alive.
+Execute:   3%|▎         | 21/800 [2:15:06<53:57:32, 249.36s/it]WARNING 06-17 05:02:26 scheduler.py:663] Input prompt (8286 tokens) is too long and exceeds limit of 8192
+2024/06/17 05:02:51 batch_search_generate.py[line:133] INFO LLM process is alive.
+2024/06/17 05:04:51 batch_search_generate.py[line:133] INFO LLM process is alive.
+2024/06/17 05:06:51 batch_search_generate.py[line:133] INFO LLM process is alive.
+2024/06/17 05:08:51 batch_search_generate.py[line:133] INFO LLM process is alive.
+2024/06/17 05:10:51 batch_search_generate.py[line:133] INFO LLM process is alive.
+2024/06/17 05:12:51 batch_search_generate.py[line:133] INFO LLM process is alive.
+2024/06/17 05:14:51 batch_search_generate.py[line:133] INFO LLM process is alive.
+2024/06/17 05:16:51 batch_search_generate.py[line:133] INFO LLM process is alive.
+Execute:   3%|▎         | 22/800 [2:30:51<99:02:36, 458.30s/it]2024/06/17 05:18:51 batch_search_generate.py[line:133] INFO LLM process is alive.
+Execute:   3%|▎         | 23/800 [2:32:38<76:09:38, 352.87s/it]2024/06/17 05:20:51 batch_search_generate.py[line:133] INFO LLM process is alive.
+2024/06/17 05:22:51 batch_search_generate.py[line:133] INFO LLM process is alive.
+2024/06/17 05:24:51 batch_search_generate.py[line:133] INFO LLM process is alive.
+WARNING 06-17 05:25:42 scheduler.py:663] Input prompt (9037 tokens) is too long and exceeds limit of 8192
+Execute:   3%|▎         | 24/800 [2:39:31<79:55:15, 370.77s/it]2024/06/17 05:26:51 batch_search_generate.py[line:133] INFO LLM process is alive.
+WARNING 06-17 05:27:39 scheduler.py:663] Input prompt (8805 tokens) is too long and exceeds limit of 8192
+2024/06/17 05:28:37 batch_search_generate.py[line:174] INFO save solutions: 5
+Execute:   3%|▎         | 25/800 [2:41:48<64:46:07, 300.86s/it]2024/06/17 05:28:51 batch_search_generate.py[line:133] INFO LLM process is alive.
+Execute:   3%|▎         | 26/800 [2:42:04<46:15:33, 215.16s/it]2024/06/17 05:30:51 batch_search_generate.py[line:133] INFO LLM process is alive.
+Execute:   3%|▎         | 27/800 [2:45:23<45:09:54, 210.34s/it]2024/06/17 05:32:51 batch_search_generate.py[line:133] INFO LLM process is alive.
+2024/06/17 05:34:51 batch_search_generate.py[line:133] INFO LLM process is alive.
+2024/06/17 05:36:51 batch_search_generate.py[line:133] INFO LLM process is alive.
+2024/06/17 05:38:51 batch_search_generate.py[line:133] INFO LLM process is alive.
+2024/06/17 05:40:52 batch_search_generate.py[line:133] INFO LLM process is alive.
+Execute:   4%|▎         | 28/800 [2:55:05<69:01:55, 321.91s/it]2024/06/17 05:42:52 batch_search_generate.py[line:133] INFO LLM process is alive.
+2024/06/17 05:44:52 batch_search_generate.py[line:133] INFO LLM process is alive.
+2024/06/17 05:46:52 batch_search_generate.py[line:133] INFO LLM process is alive.
+2024/06/17 05:48:52 batch_search_generate.py[line:133] INFO LLM process is alive.
+2024/06/17 05:50:52 batch_search_generate.py[line:133] INFO LLM process is alive.
+2024/06/17 05:52:52 batch_search_generate.py[line:133] INFO LLM process is alive.
+2024/06/17 05:54:52 batch_search_generate.py[line:133] INFO LLM process is alive.
+2024/06/17 05:56:52 batch_search_generate.py[line:133] INFO LLM process is alive.
+2024/06/17 05:58:52 batch_search_generate.py[line:133] INFO LLM process is alive.
+Execute:   4%|▎         | 29/800 [3:12:27<115:13:54, 538.05s/it]2024/06/17 06:00:52 batch_search_generate.py[line:133] INFO LLM process is alive.
+2024/06/17 06:01:19 batch_search_generate.py[line:174] INFO save solutions: 5
+Execute:   4%|▍         | 30/800 [3:14:30<88:26:34, 413.50s/it] 2024/06/17 06:02:52 batch_search_generate.py[line:133] INFO LLM process is alive.
+2024/06/17 06:04:52 batch_search_generate.py[line:133] INFO LLM process is alive.
+WARNING 06-17 06:05:49 scheduler.py:663] Input prompt (10872 tokens) is too long and exceeds limit of 8192
+2024/06/17 06:06:52 batch_search_generate.py[line:133] INFO LLM process is alive.
+WARNING 06-17 06:06:53 scheduler.py:663] Input prompt (8357 tokens) is too long and exceeds limit of 8192
+WARNING 06-17 06:08:45 scheduler.py:663] Input prompt (8713 tokens) is too long and exceeds limit of 8192
+2024/06/17 06:08:52 batch_search_generate.py[line:133] INFO LLM process is alive.
+2024/06/17 06:10:52 batch_search_generate.py[line:133] INFO LLM process is alive.
+Execute:   4%|▍         | 31/800 [3:24:14<99:15:07, 464.64s/it]2024/06/17 06:12:52 batch_search_generate.py[line:133] INFO LLM process is alive.
+2024/06/17 06:14:52 batch_search_generate.py[line:133] INFO LLM process is alive.
+Execute:   4%|▍         | 32/800 [3:28:05<84:09:09, 394.47s/it]Execute:   4%|▍         | 33/800 [3:28:20<59:48:55, 280.75s/it]Execute:   4%|▍         | 34/800 [3:29:37<46:43:58, 219.63s/it]2024/06/17 06:16:52 batch_search_generate.py[line:133] INFO LLM process is alive.
+2024/06/17 06:18:45 batch_search_generate.py[line:174] INFO save solutions: 5
+Execute:   4%|▍         | 35/800 [3:31:56<41:31:14, 195.39s/it]2024/06/17 06:18:52 batch_search_generate.py[line:133] INFO LLM process is alive.
+2024/06/17 06:20:52 batch_search_generate.py[line:133] INFO LLM process is alive.
+2024/06/17 06:22:52 batch_search_generate.py[line:133] INFO LLM process is alive.
+2024/06/17 06:24:52 batch_search_generate.py[line:133] INFO LLM process is alive.
+2024/06/17 06:26:52 batch_search_generate.py[line:133] INFO LLM process is alive.
+Execute:   4%|▍         | 36/800 [3:40:56<63:23:58, 298.74s/it]Execute:   5%|▍         | 37/800 [3:41:58<48:14:57, 227.65s/it]2024/06/17 06:28:52 batch_search_generate.py[line:133] INFO LLM process is alive.
+2024/06/17 06:30:52 batch_search_generate.py[line:133] INFO LLM process is alive.
+2024/06/17 06:32:52 batch_search_generate.py[line:133] INFO LLM process is alive.
+2024/06/17 06:34:52 batch_search_generate.py[line:133] INFO LLM process is alive.
+2024/06/17 06:36:52 batch_search_generate.py[line:133] INFO LLM process is alive.
+2024/06/17 06:38:53 batch_search_generate.py[line:133] INFO LLM process is alive.
+2024/06/17 06:40:53 batch_search_generate.py[line:133] INFO LLM process is alive.
+WARNING 06-17 06:41:17 scheduler.py:663] Input prompt (8224 tokens) is too long and exceeds limit of 8192
+2024/06/17 06:42:53 batch_search_generate.py[line:133] INFO LLM process is alive.
+WARNING 06-17 06:43:45 scheduler.py:663] Input prompt (8522 tokens) is too long and exceeds limit of 8192
+2024/06/17 06:44:53 batch_search_generate.py[line:133] INFO LLM process is alive.
+2024/06/17 06:46:53 batch_search_generate.py[line:133] INFO LLM process is alive.
+Execute:   5%|▍         | 38/800 [4:00:14<103:20:13, 488.21s/it]2024/06/17 06:48:53 batch_search_generate.py[line:133] INFO LLM process is alive.
+2024/06/17 06:50:53 batch_search_generate.py[line:133] INFO LLM process is alive.
+Execute:   5%|▍         | 39/800 [4:04:21<87:55:26, 415.93s/it] 2024/06/17 06:52:53 batch_search_generate.py[line:133] INFO LLM process is alive.
+WARNING 06-17 06:54:06 scheduler.py:663] Input prompt (10454 tokens) is too long and exceeds limit of 8192
+2024/06/17 06:54:16 batch_search_generate.py[line:174] INFO save solutions: 5
+Execute:   5%|▌         | 40/800 [4:07:27<73:12:33, 346.78s/it]2024/06/17 06:54:53 batch_search_generate.py[line:133] INFO LLM process is alive.
+2024/06/17 06:56:53 batch_search_generate.py[line:133] INFO LLM process is alive.
+WARNING 06-17 06:57:39 scheduler.py:663] Input prompt (8543 tokens) is too long and exceeds limit of 8192
+2024/06/17 06:58:53 batch_search_generate.py[line:133] INFO LLM process is alive.
+Execute:   5%|▌         | 41/800 [4:12:52<71:44:55, 340.31s/it]2024/06/17 07:00:53 batch_search_generate.py[line:133] INFO LLM process is alive.
+2024/06/17 07:02:53 batch_search_generate.py[line:133] INFO LLM process is alive.
+2024/06/17 07:04:53 batch_search_generate.py[line:133] INFO LLM process is alive.
+2024/06/17 07:06:53 batch_search_generate.py[line:133] INFO LLM process is alive.
+2024/06/17 07:08:53 batch_search_generate.py[line:133] INFO LLM process is alive.
+Execute:   5%|▌         | 42/800 [4:23:11<89:17:16, 424.06s/it]2024/06/17 07:10:53 batch_search_generate.py[line:133] INFO LLM process is alive.
+2024/06/17 07:12:53 batch_search_generate.py[line:133] INFO LLM process is alive.
+WARNING 06-17 07:14:42 scheduler.py:663] Input prompt (8428 tokens) is too long and exceeds limit of 8192
+2024/06/17 07:14:53 batch_search_generate.py[line:133] INFO LLM process is alive.
+2024/06/17 07:16:53 batch_search_generate.py[line:133] INFO LLM process is alive.
+2024/06/17 07:18:53 batch_search_generate.py[line:133] INFO LLM process is alive.
+Execute:   5%|▌         | 43/800 [4:34:03<103:30:11, 492.22s/it]2024/06/17 07:20:53 batch_search_generate.py[line:133] INFO LLM process is alive.
+Execute:   6%|▌         | 44/800 [4:34:33<74:18:08, 353.82s/it] 2024/06/17 07:22:53 batch_search_generate.py[line:133] INFO LLM process is alive.
+2024/06/17 07:22:55 batch_search_generate.py[line:174] INFO save solutions: 5
+Execute:   6%|▌         | 45/800 [4:36:07<57:47:55, 275.60s/it]2024/06/17 07:24:53 batch_search_generate.py[line:133] INFO LLM process is alive.
+WARNING 06-17 07:26:52 scheduler.py:663] Input prompt (8359 tokens) is too long and exceeds limit of 8192
+2024/06/17 07:26:53 batch_search_generate.py[line:133] INFO LLM process is alive.
+Execute:   6%|▌         | 46/800 [4:41:17<59:55:15, 286.10s/it]2024/06/17 07:28:53 batch_search_generate.py[line:133] INFO LLM process is alive.
+2024/06/17 07:30:54 batch_search_generate.py[line:133] INFO LLM process is alive.
+2024/06/17 07:32:54 batch_search_generate.py[line:133] INFO LLM process is alive.
+2024/06/17 07:34:54 batch_search_generate.py[line:133] INFO LLM process is alive.
+2024/06/17 07:36:54 batch_search_generate.py[line:133] INFO LLM process is alive.
+2024/06/17 07:38:54 batch_search_generate.py[line:133] INFO LLM process is alive.
+Execute:   6%|▌         | 47/800 [4:52:42<84:52:18, 405.76s/it]Execute:   6%|▌         | 48/800 [4:53:44<63:13:59, 302.71s/it]2024/06/17 07:40:54 batch_search_generate.py[line:133] INFO LLM process is alive.
+2024/06/17 07:42:54 batch_search_generate.py[line:133] INFO LLM process is alive.
+Execute:   6%|▌         | 49/800 [4:57:38<58:51:15, 282.12s/it]2024/06/17 07:44:54 batch_search_generate.py[line:133] INFO LLM process is alive.
+2024/06/17 07:46:54 batch_search_generate.py[line:133] INFO LLM process is alive.
+2024/06/17 07:47:19 batch_search_generate.py[line:174] INFO save solutions: 5
+Execute:   6%|▋         | 50/800 [5:00:31<51:53:52, 249.11s/it]2024/06/17 07:48:54 batch_search_generate.py[line:133] INFO LLM process is alive.
+2024/06/17 07:50:54 batch_search_generate.py[line:133] INFO LLM process is alive.
+WARNING 06-17 07:52:04 scheduler.py:663] Input prompt (8246 tokens) is too long and exceeds limit of 8192
+2024/06/17 07:52:54 batch_search_generate.py[line:133] INFO LLM process is alive.
+Execute:   6%|▋         | 51/800 [5:07:17<61:37:53, 296.23s/it]2024/06/17 07:54:54 batch_search_generate.py[line:133] INFO LLM process is alive.
+2024/06/17 07:56:54 batch_search_generate.py[line:133] INFO LLM process is alive.
+Execute:   6%|▋         | 52/800 [5:10:09<53:49:27, 259.05s/it]2024/06/17 07:58:54 batch_search_generate.py[line:133] INFO LLM process is alive.
+2024/06/17 08:00:54 batch_search_generate.py[line:133] INFO LLM process is alive.
+2024/06/17 08:02:54 batch_search_generate.py[line:133] INFO LLM process is alive.
+2024/06/17 08:04:54 batch_search_generate.py[line:133] INFO LLM process is alive.
+Execute:   7%|▋         | 53/800 [5:19:02<70:47:28, 341.16s/it]Execute:   7%|▋         | 54/800 [5:20:04<53:23:11, 257.63s/it]2024/06/17 08:06:54 batch_search_generate.py[line:133] INFO LLM process is alive.
+2024/06/17 08:08:54 batch_search_generate.py[line:133] INFO LLM process is alive.
+2024/06/17 08:10:54 batch_search_generate.py[line:133] INFO LLM process is alive.
+WARNING 06-17 08:11:19 scheduler.py:663] Input prompt (8199 tokens) is too long and exceeds limit of 8192
+2024/06/17 08:12:07 batch_search_generate.py[line:174] INFO save solutions: 5
+Execute:   7%|▋         | 55/800 [5:25:18<56:46:37, 274.36s/it]2024/06/17 08:12:54 batch_search_generate.py[line:133] INFO LLM process is alive.
+Execute:   7%|▋         | 56/800 [5:27:39<48:26:41, 234.41s/it]2024/06/17 08:14:55 batch_search_generate.py[line:133] INFO LLM process is alive.
+2024/06/17 08:16:55 batch_search_generate.py[line:133] INFO LLM process is alive.
+2024/06/17 08:18:55 batch_search_generate.py[line:133] INFO LLM process is alive.
+2024/06/17 08:20:55 batch_search_generate.py[line:133] INFO LLM process is alive.
+Execute:   7%|▋         | 57/800 [5:36:01<64:58:24, 314.81s/it]2024/06/17 08:22:55 batch_search_generate.py[line:133] INFO LLM process is alive.
+2024/06/17 08:24:55 batch_search_generate.py[line:133] INFO LLM process is alive.
+2024/06/17 08:26:55 batch_search_generate.py[line:133] INFO LLM process is alive.
+2024/06/17 08:28:55 batch_search_generate.py[line:133] INFO LLM process is alive.
+Execute:   7%|▋         | 59/800 [5:43:06<55:01:58, 267.37s/it]2024/06/17 08:30:55 batch_search_generate.py[line:133] INFO LLM process is alive.
+2024/06/17 08:30:58 batch_search_generate.py[line:174] INFO save solutions: 5
+Execute:   8%|▊         | 60/800 [5:44:09<44:33:07, 216.74s/it]2024/06/17 08:32:55 batch_search_generate.py[line:133] INFO LLM process is alive.
+2024/06/17 08:34:55 batch_search_generate.py[line:133] INFO LLM process is alive.
+2024/06/17 08:36:55 batch_search_generate.py[line:133] INFO LLM process is alive.
+Execute:   8%|▊         | 61/800 [5:50:27<53:09:03, 258.92s/it]Execute:   8%|▊         | 62/800 [5:50:43<39:31:30, 192.81s/it]2024/06/17 08:38:55 batch_search_generate.py[line:133] INFO LLM process is alive.
+2024/06/17 08:40:55 batch_search_generate.py[line:133] INFO LLM process is alive.
+2024/06/17 08:42:55 batch_search_generate.py[line:133] INFO LLM process is alive.
+Execute:   8%|▊         | 63/800 [5:57:02<50:10:37, 245.10s/it]2024/06/17 08:44:55 batch_search_generate.py[line:133] INFO LLM process is alive.
+2024/06/17 08:46:55 batch_search_generate.py[line:133] INFO LLM process is alive.
+Execute:   8%|▊         | 64/800 [6:02:03<53:22:21, 261.06s/it]2024/06/17 08:48:55 batch_search_generate.py[line:133] INFO LLM process is alive.
+2024/06/17 08:50:55 batch_search_generate.py[line:133] INFO LLM process is alive.
+2024/06/17 08:52:55 batch_search_generate.py[line:133] INFO LLM process is alive.
+2024/06/17 08:53:05 batch_search_generate.py[line:174] INFO save solutions: 5
+Execute:   8%|▊         | 65/800 [6:06:16<52:50:12, 258.79s/it]2024/06/17 08:54:55 batch_search_generate.py[line:133] INFO LLM process is alive.
+2024/06/17 08:56:55 batch_search_generate.py[line:133] INFO LLM process is alive.
+2024/06/17 08:58:55 batch_search_generate.py[line:133] INFO LLM process is alive.
+2024/06/17 09:00:55 batch_search_generate.py[line:133] INFO LLM process is alive.
+2024/06/17 09:02:55 batch_search_generate.py[line:133] INFO LLM process is alive.
+2024/06/17 09:04:55 batch_search_generate.py[line:133] INFO LLM process is alive.
+Execute:   8%|▊         | 66/800 [6:19:28<84:34:18, 414.79s/it]2024/06/17 09:06:55 batch_search_generate.py[line:133] INFO LLM process is alive.
+Execute:   8%|▊         | 67/800 [6:22:06<69:03:18, 339.15s/it]2024/06/17 09:08:55 batch_search_generate.py[line:133] INFO LLM process is alive.
+2024/06/17 09:10:56 batch_search_generate.py[line:133] INFO LLM process is alive.
+Execute:   8%|▊         | 68/800 [6:26:05<62:53:05, 309.27s/it]2024/06/17 09:12:56 batch_search_generate.py[line:133] INFO LLM process is alive.
+2024/06/17 09:14:56 batch_search_generate.py[line:133] INFO LLM process is alive.
+Execute:   9%|▊         | 69/800 [6:29:47<57:31:52, 283.33s/it]WARNING 06-17 09:16:51 scheduler.py:663] Input prompt (8422 tokens) is too long and exceeds limit of 8192
+2024/06/17 09:16:52 batch_search_generate.py[line:174] INFO save solutions: 5
+Execute:   9%|▉         | 70/800 [6:30:03<41:16:27, 203.54s/it]2024/06/17 09:16:56 batch_search_generate.py[line:133] INFO LLM process is alive.
+2024/06/17 09:18:56 batch_search_generate.py[line:133] INFO LLM process is alive.
+Execute:   9%|▉         | 71/800 [6:33:13<40:26:43, 199.73s/it]Execute:   9%|▉         | 72/800 [6:33:29<29:16:05, 144.73s/it]2024/06/17 09:20:56 batch_search_generate.py[line:133] INFO LLM process is alive.
+Execute:   9%|▉         | 73/800 [6:34:17<23:21:20, 115.65s/it]2024/06/17 09:22:56 batch_search_generate.py[line:133] INFO LLM process is alive.
+WARNING 06-17 09:24:39 scheduler.py:663] Input prompt (8532 tokens) is too long and exceeds limit of 8192
+2024/06/17 09:24:56 batch_search_generate.py[line:133] INFO LLM process is alive.
+2024/06/17 09:26:56 batch_search_generate.py[line:133] INFO LLM process is alive.
+Execute:   9%|▉         | 74/800 [6:40:55<40:23:11, 200.26s/it]2024/06/17 09:28:56 batch_search_generate.py[line:133] INFO LLM process is alive.
+2024/06/17 09:30:56 batch_search_generate.py[line:133] INFO LLM process is alive.
+2024/06/17 09:31:43 batch_search_generate.py[line:174] INFO save solutions: 5
+Execute:   9%|▉         | 75/800 [6:44:54<42:41:34, 211.99s/it]2024/06/17 09:32:56 batch_search_generate.py[line:133] INFO LLM process is alive.
+2024/06/17 09:34:56 batch_search_generate.py[line:133] INFO LLM process is alive.
+2024/06/17 09:36:56 batch_search_generate.py[line:133] INFO LLM process is alive.
+2024/06/17 09:38:56 batch_search_generate.py[line:133] INFO LLM process is alive.
+2024/06/17 09:40:56 batch_search_generate.py[line:133] INFO LLM process is alive.
+Execute:  10%|▉         | 76/800 [6:55:01<66:24:24, 330.20s/it]2024/06/17 09:42:56 batch_search_generate.py[line:133] INFO LLM process is alive.
+2024/06/17 09:44:56 batch_search_generate.py[line:133] INFO LLM process is alive.
+Execute:  10%|▉         | 77/800 [6:59:00<60:51:10, 303.00s/it]2024/06/17 09:46:56 batch_search_generate.py[line:133] INFO LLM process is alive.
+2024/06/17 09:48:56 batch_search_generate.py[line:133] INFO LLM process is alive.
+2024/06/17 09:50:56 batch_search_generate.py[line:133] INFO LLM process is alive.
+Execute:  10%|▉         | 79/800 [7:05:24<50:24:37, 251.70s/it]2024/06/17 09:52:56 batch_search_generate.py[line:133] INFO LLM process is alive.
+2024/06/17 09:54:57 batch_search_generate.py[line:133] INFO LLM process is alive.
+2024/06/17 09:56:57 batch_search_generate.py[line:133] INFO LLM process is alive.
+2024/06/17 09:58:57 batch_search_generate.py[line:133] INFO LLM process is alive.
+2024/06/17 09:59:41 batch_search_generate.py[line:174] INFO save solutions: 5
+Execute:  10%|█         | 80/800 [7:12:52<60:04:50, 300.40s/it]2024/06/17 10:00:57 batch_search_generate.py[line:133] INFO LLM process is alive.
+2024/06/17 10:02:57 batch_search_generate.py[line:133] INFO LLM process is alive.
+WARNING 06-17 10:03:53 scheduler.py:663] Input prompt (8577 tokens) is too long and exceeds limit of 8192
+2024/06/17 10:04:57 batch_search_generate.py[line:133] INFO LLM process is alive.
+2024/06/17 10:06:57 batch_search_generate.py[line:133] INFO LLM process is alive.
+2024/06/17 10:08:57 batch_search_generate.py[line:133] INFO LLM process is alive.
+2024/06/17 10:10:57 batch_search_generate.py[line:133] INFO LLM process is alive.
+2024/06/17 10:12:57 batch_search_generate.py[line:133] INFO LLM process is alive.
+Execute:  10%|█         | 81/800 [7:27:00<88:35:53, 443.61s/it]Execute:  10%|█         | 82/800 [7:28:04<67:53:56, 340.44s/it]2024/06/17 10:14:57 batch_search_generate.py[line:133] INFO LLM process is alive.
+2024/06/17 10:16:57 batch_search_generate.py[line:133] INFO LLM process is alive.
+Execute:  10%|█         | 83/800 [7:31:17<59:33:28, 299.04s/it]Execute:  10%|█         | 84/800 [7:32:05<45:13:08, 227.36s/it]2024/06/17 10:18:57 batch_search_generate.py[line:133] INFO LLM process is alive.
+2024/06/17 10:20:57 batch_search_generate.py[line:133] INFO LLM process is alive.
+2024/06/17 10:21:19 batch_search_generate.py[line:174] INFO save solutions: 5
+Execute:  11%|█         | 85/800 [7:34:30<40:24:40, 203.47s/it]Execute:  11%|█         | 86/800 [7:36:06<34:09:36, 172.24s/it]2024/06/17 10:22:57 batch_search_generate.py[line:133] INFO LLM process is alive.
+WARNING 06-17 10:24:17 scheduler.py:663] Input prompt (8240 tokens) is too long and exceeds limit of 8192
+2024/06/17 10:24:57 batch_search_generate.py[line:133] INFO LLM process is alive.
+Execute:  11%|█         | 87/800 [7:39:35<36:15:00, 183.03s/it]

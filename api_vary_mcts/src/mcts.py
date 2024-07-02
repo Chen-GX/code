@@ -32,9 +32,6 @@ from tools.table.tabtools import table_toolkits
 import logging
 logger = logging.getLogger(__name__)
 
-
-
-
 def load_function(args):
     import_path = f"few_shots.{args.task}.{args.dataname}"
     module = importlib.import_module(import_path)
@@ -42,7 +39,6 @@ def load_function(args):
     examples = getattr(module, "examples", None)
     
     return examples
-
 
 
 def load_data(args):

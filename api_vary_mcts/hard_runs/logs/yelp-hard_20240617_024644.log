@@ -1,573 +1,0 @@
-toolqa_hard
-yelp-hard
-1
-2024/06/17 02:48:16 log_utils.py[line:35] INFO seed:1718563696
-2024/06/17 02:48:16 log_utils.py[line:35] INFO verbose:False
-2024/06/17 02:48:16 log_utils.py[line:35] INFO process_num:1
-2024/06/17 02:48:16 log_utils.py[line:35] INFO path:/mnt/workspace/nas/chenguoxin.cgx/api/datasets/ToolQA
-2024/06/17 02:48:16 log_utils.py[line:35] INFO num_epoch:1
-2024/06/17 02:48:16 log_utils.py[line:35] INFO tool_url:http://127.0.0.1:5010/toolqa
-2024/06/17 02:48:16 log_utils.py[line:35] INFO filter:False
-2024/06/17 02:48:16 log_utils.py[line:35] INFO filter_path:11
-2024/06/17 02:48:16 log_utils.py[line:35] INFO checkpoint_dir:/mnt/workspace/nas/chenguoxin.cgx/model_cache/Meta-Llama-3-8B-Instruct
-2024/06/17 02:48:16 log_utils.py[line:35] INFO temperature:0.5
-2024/06/17 02:48:16 log_utils.py[line:35] INFO top_k:-1
-2024/06/17 02:48:16 log_utils.py[line:35] INFO top_p:1.0
-2024/06/17 02:48:16 log_utils.py[line:35] INFO frequency_penalty:1.2
-2024/06/17 02:48:16 log_utils.py[line:35] INFO scratchpad_length:1024
-2024/06/17 02:48:16 log_utils.py[line:35] INFO api_kernel_version:1
-2024/06/17 02:48:16 log_utils.py[line:35] INFO Cpuct:1.25
-2024/06/17 02:48:16 log_utils.py[line:35] INFO n_generate_sample:3
-2024/06/17 02:48:16 log_utils.py[line:35] INFO max_iter:12
-2024/06/17 02:48:16 log_utils.py[line:35] INFO max_depth:12
-2024/06/17 02:48:16 log_utils.py[line:35] INFO positive_reward:1.0
-2024/06/17 02:48:16 log_utils.py[line:35] INFO negative_reward:-1.0
-2024/06/17 02:48:16 log_utils.py[line:35] INFO max_new_tokens:1024
-2024/06/17 02:48:16 log_utils.py[line:35] INFO max_load_db:5
-2024/06/17 02:48:16 log_utils.py[line:35] INFO debug_num:-1
-2024/06/17 02:48:16 log_utils.py[line:35] INFO datapath:/mnt/workspace/nas/chenguoxin.cgx/api/workspace/data
-2024/06/17 02:48:16 log_utils.py[line:35] INFO task:toolqa_hard
-2024/06/17 02:48:16 log_utils.py[line:35] INFO dataname:yelp-hard
-2024/06/17 02:48:16 log_utils.py[line:35] INFO output_dir:/mnt/workspace/nas/chenguoxin.cgx/api/workspace/output_dir/mcts/round1/run/toolqa_hard/yelp-hard/Meta-Llama-3-8B-Instruct/20240617_024816
-2024/06/17 02:48:16 log_utils.py[line:35] INFO num_examples:2
-2024/06/17 02:48:16 log_utils.py[line:35] INFO model_name:Meta-Llama-3-8B-Instruct
-2024/06/17 02:48:16 log_utils.py[line:35] INFO timestamp:20240617_024816
-2024/06/17 02:48:17 batch_search_generate.py[line:279] INFO ********** EPOCH 0 ***********
-Execute:   0%|          | 0/793 [00:00<?, ?it/s]INFO 06-17 02:48:17 llm_engine.py:161] Initializing an LLM engine (v0.4.3) with config: model='/mnt/workspace/nas/chenguoxin.cgx/model_cache/Meta-Llama-3-8B-Instruct', speculative_config=None, tokenizer='/mnt/workspace/nas/chenguoxin.cgx/model_cache/Meta-Llama-3-8B-Instruct', skip_tokenizer_init=False, tokenizer_mode=auto, revision=None, rope_scaling=None, tokenizer_revision=None, trust_remote_code=False, dtype=torch.bfloat16, max_seq_len=8192, download_dir=None, load_format=LoadFormat.AUTO, tensor_parallel_size=1, disable_custom_all_reduce=False, quantization=None, enforce_eager=False, kv_cache_dtype=auto, quantization_param_path=None, device_config=cuda, decoding_config=DecodingConfig(guided_decoding_backend='outlines'), seed=1718563696, served_model_name=/mnt/workspace/nas/chenguoxin.cgx/model_cache/Meta-Llama-3-8B-Instruct)
-Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
-INFO 06-17 02:48:21 model_runner.py:146] Loading model weights took 14.9595 GB
-INFO 06-17 02:48:22 gpu_executor.py:83] # GPU blocks: 27895, # CPU blocks: 4096
-INFO 06-17 02:48:27 model_runner.py:854] Capturing the model for CUDA graphs. This may lead to unexpected consequences if the model is not static. To run the model in eager mode, set 'enforce_eager=True' or use '--enforce-eager' in the CLI.
-INFO 06-17 02:48:27 model_runner.py:858] CUDA graphs can take additional 1~3 GiB memory per GPU. If you are running out of memory, consider decreasing `gpu_memory_utilization` or enforcing eager mode. You can also reduce the `max_num_seqs` as needed to decrease memory usage.
-INFO 06-17 02:48:31 model_runner.py:924] Graph capturing finished in 4 secs.
-Execute:   0%|          | 0/793 [00:15<?, ?it/s]Execute:   0%|          | 0/793 [00:30<?, ?it/s]Execute:   0%|          | 0/793 [00:45<?, ?it/s]Execute:   0%|          | 0/793 [01:00<?, ?it/s]Execute:   0%|          | 0/793 [01:15<?, ?it/s]Execute:   0%|          | 0/793 [01:30<?, ?it/s]Execute:   0%|          | 0/793 [01:45<?, ?it/s]Execute:   0%|          | 0/793 [02:00<?, ?it/s]Execute:   0%|          | 0/793 [02:15<?, ?it/s]Execute:   0%|          | 0/793 [02:30<?, ?it/s]Execute:   0%|          | 0/793 [02:45<?, ?it/s]Execute:   0%|          | 0/793 [03:00<?, ?it/s]Execute:   0%|          | 0/793 [03:15<?, ?it/s]Execute:   0%|          | 0/793 [03:30<?, ?it/s]Execute:   0%|          | 0/793 [03:45<?, ?it/s]Execute:   0%|          | 0/793 [04:00<?, ?it/s]Execute:   0%|          | 0/793 [04:15<?, ?it/s]Execute:   0%|          | 0/793 [04:30<?, ?it/s]Execute:   0%|          | 0/793 [04:45<?, ?it/s]Execute:   0%|          | 0/793 [05:00<?, ?it/s]WARNING 06-17 02:53:22 scheduler.py:663] Input prompt (21452 tokens) is too long and exceeds limit of 8192
-Execute:   0%|          | 0/793 [05:15<?, ?it/s]Execute:   0%|          | 0/793 [05:30<?, ?it/s]Execute:   0%|          | 0/793 [05:45<?, ?it/s]Execute:   0%|          | 0/793 [06:00<?, ?it/s]Execute:   0%|          | 0/793 [06:15<?, ?it/s]Execute:   0%|          | 0/793 [06:30<?, ?it/s]Execute:   0%|          | 0/793 [06:45<?, ?it/s]Execute:   0%|          | 0/793 [07:00<?, ?it/s]Execute:   0%|          | 0/793 [07:15<?, ?it/s]Execute:   0%|          | 0/793 [07:30<?, ?it/s]Execute:   0%|          | 0/793 [07:45<?, ?it/s]Execute:   0%|          | 0/793 [08:00<?, ?it/s]Execute:   0%|          | 0/793 [08:15<?, ?it/s]Execute:   0%|          | 1/793 [08:30<3:18:03, 15.00s/it]2024/06/17 02:58:17 batch_search_generate.py[line:133] INFO LLM process is alive.
-WARNING 06-17 02:59:59 scheduler.py:663] Input prompt (8260 tokens) is too long and exceeds limit of 8192
-2024/06/17 03:00:17 batch_search_generate.py[line:133] INFO LLM process is alive.
-2024/06/17 03:02:17 batch_search_generate.py[line:133] INFO LLM process is alive.
-Execute:   0%|          | 2/793 [15:00<51:46:44, 235.66s/it]2024/06/17 03:04:17 batch_search_generate.py[line:133] INFO LLM process is alive.
-Execute:   0%|          | 3/793 [17:15<41:37:57, 189.72s/it]2024/06/17 03:06:17 batch_search_generate.py[line:133] INFO LLM process is alive.
-Execute:   1%|          | 4/793 [19:30<36:51:09, 168.15s/it]2024/06/17 03:08:17 batch_search_generate.py[line:133] INFO LLM process is alive.
-2024/06/17 03:10:17 batch_search_generate.py[line:133] INFO LLM process is alive.
-WARNING 06-17 03:10:48 scheduler.py:663] Input prompt (9914 tokens) is too long and exceeds limit of 8192
-2024/06/17 03:12:17 batch_search_generate.py[line:133] INFO LLM process is alive.
-2024/06/17 03:13:02 batch_search_generate.py[line:174] INFO save solutions: 5
-Execute:   1%|          | 5/793 [24:45<48:25:07, 221.20s/it]Execute:   1%|          | 6/793 [25:15<34:08:54, 156.21s/it]2024/06/17 03:14:17 batch_search_generate.py[line:133] INFO LLM process is alive.
-Execute:   1%|          | 7/793 [26:45<29:24:00, 134.66s/it]Execute:   1%|          | 9/793 [27:15<16:44:35, 76.88s/it] WARNING 06-17 03:15:33 scheduler.py:663] Input prompt (10411 tokens) is too long and exceeds limit of 8192
-2024/06/17 03:15:48 batch_search_generate.py[line:174] INFO save solutions: 5
-Execute:   1%|▏         | 10/793 [27:31<13:16:30, 61.03s/it]WARNING 06-17 03:16:08 scheduler.py:663] Input prompt (10406 tokens) is too long and exceeds limit of 8192
-2024/06/17 03:16:17 batch_search_generate.py[line:133] INFO LLM process is alive.
-2024/06/17 03:18:17 batch_search_generate.py[line:133] INFO LLM process is alive.
-Execute:   1%|▏         | 11/793 [30:01<18:28:16, 85.03s/it]2024/06/17 03:20:17 batch_search_generate.py[line:133] INFO LLM process is alive.
-/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/tools/table/tabtools.py:44: DtypeWarning: Columns (25) have mixed types. Specify dtype option on import or set low_memory=False.
-  self.data = pd.read_csv(file_path)
-/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/tools/table/tabtools.py:44: DtypeWarning: Columns (25) have mixed types. Specify dtype option on import or set low_memory=False.
-  self.data = pd.read_csv(file_path)
-/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/tools/table/tabtools.py:44: DtypeWarning: Columns (25) have mixed types. Specify dtype option on import or set low_memory=False.
-  self.data = pd.read_csv(file_path)
-Execute:   2%|▏         | 12/793 [33:47<26:54:29, 124.03s/it]2024/06/17 03:22:17 batch_search_generate.py[line:133] INFO LLM process is alive.
-2024/06/17 03:24:17 batch_search_generate.py[line:133] INFO LLM process is alive.
-2024/06/17 03:26:17 batch_search_generate.py[line:133] INFO LLM process is alive.
-2024/06/17 03:28:17 batch_search_generate.py[line:133] INFO LLM process is alive.
-/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/tools/table/tabtools.py:44: DtypeWarning: Columns (25) have mixed types. Specify dtype option on import or set low_memory=False.
-  self.data = pd.read_csv(file_path)
-/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/tools/table/tabtools.py:44: DtypeWarning: Columns (25) have mixed types. Specify dtype option on import or set low_memory=False.
-  self.data = pd.read_csv(file_path)
-Execute:   2%|▏         | 13/793 [40:34<44:13:47, 204.14s/it]WARNING 06-17 03:29:04 scheduler.py:663] Input prompt (10409 tokens) is too long and exceeds limit of 8192
-/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/tools/table/tabtools.py:44: DtypeWarning: Columns (25) have mixed types. Specify dtype option on import or set low_memory=False.
-  self.data = pd.read_csv(file_path)
-2024/06/17 03:30:17 batch_search_generate.py[line:133] INFO LLM process is alive.
-/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/tools/table/tabtools.py:44: DtypeWarning: Columns (25) have mixed types. Specify dtype option on import or set low_memory=False.
-  self.data = pd.read_csv(file_path)
-Execute:   2%|▏         | 14/793 [42:19<38:01:12, 175.70s/it]2024/06/17 03:32:17 batch_search_generate.py[line:133] INFO LLM process is alive.
-2024/06/17 03:32:37 batch_search_generate.py[line:174] INFO save solutions: 5
-Execute:   2%|▏         | 15/793 [44:20<34:29:33, 159.61s/it]2024/06/17 03:34:17 batch_search_generate.py[line:133] INFO LLM process is alive.
-Execute:   2%|▏         | 16/793 [47:35<36:45:02, 170.27s/it]Execute:   2%|▏         | 17/793 [47:51<26:48:41, 124.38s/it]2024/06/17 03:36:17 batch_search_generate.py[line:133] INFO LLM process is alive.
-/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/tools/table/tabtools.py:44: DtypeWarning: Columns (25) have mixed types. Specify dtype option on import or set low_memory=False.
-  self.data = pd.read_csv(file_path)
-Execute:   2%|▏         | 18/793 [49:51<26:31:49, 123.24s/it]2024/06/17 03:38:17 batch_search_generate.py[line:133] INFO LLM process is alive.
-/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/tools/table/tabtools.py:44: DtypeWarning: Columns (25) have mixed types. Specify dtype option on import or set low_memory=False.
-  self.data = pd.read_csv(file_path)
-/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/tools/table/tabtools.py:44: DtypeWarning: Columns (25) have mixed types. Specify dtype option on import or set low_memory=False.
-  self.data = pd.read_csv(file_path)
-Execute:   2%|▏         | 19/793 [50:51<22:28:06, 104.50s/it]2024/06/17 03:39:54 batch_search_generate.py[line:174] INFO save solutions: 5
-Execute:   3%|▎         | 20/793 [51:37<18:38:49, 86.84s/it] 2024/06/17 03:40:17 batch_search_generate.py[line:133] INFO LLM process is alive.
-2024/06/17 03:42:18 batch_search_generate.py[line:133] INFO LLM process is alive.
-Execute:   3%|▎         | 21/793 [55:08<26:36:38, 124.09s/it]2024/06/17 03:44:18 batch_search_generate.py[line:133] INFO LLM process is alive.
-Execute:   3%|▎         | 22/793 [57:09<26:21:57, 123.11s/it]2024/06/17 03:46:18 batch_search_generate.py[line:133] INFO LLM process is alive.
-Execute:   3%|▎         | 23/793 [59:25<27:09:23, 126.97s/it]WARNING 06-17 03:47:55 scheduler.py:663] Input prompt (21357 tokens) is too long and exceeds limit of 8192
-Execute:   3%|▎         | 24/793 [59:40<19:57:35, 93.44s/it] 2024/06/17 03:48:18 batch_search_generate.py[line:133] INFO LLM process is alive.
-2024/06/17 03:49:43 batch_search_generate.py[line:174] INFO save solutions: 5
-Execute:   3%|▎         | 25/793 [1:01:26<20:43:44, 97.17s/it]Execute:   3%|▎         | 26/793 [1:01:41<15:27:55, 72.59s/it]2024/06/17 03:50:18 batch_search_generate.py[line:133] INFO LLM process is alive.
-2024/06/17 03:52:18 batch_search_generate.py[line:133] INFO LLM process is alive.
-Execute:   3%|▎         | 27/793 [1:04:58<23:21:56, 109.81s/it]Execute:   4%|▎         | 28/793 [1:05:13<17:18:24, 81.44s/it] 2024/06/17 03:54:18 batch_search_generate.py[line:133] INFO LLM process is alive.
-/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/tools/table/tabtools.py:44: DtypeWarning: Columns (25) have mixed types. Specify dtype option on import or set low_memory=False.
-  self.data = pd.read_csv(file_path)
-2024/06/17 03:56:18 batch_search_generate.py[line:133] INFO LLM process is alive.
-2024/06/17 03:58:18 batch_search_generate.py[line:133] INFO LLM process is alive.
-Execute:   4%|▎         | 29/793 [1:10:31<32:19:18, 152.30s/it]2024/06/17 04:00:18 batch_search_generate.py[line:133] INFO LLM process is alive.
-2024/06/17 04:02:18 batch_search_generate.py[line:133] INFO LLM process is alive.
-2024/06/17 04:02:20 batch_search_generate.py[line:174] INFO save solutions: 5
-Execute:   4%|▍         | 30/793 [1:14:03<36:05:11, 170.26s/it]2024/06/17 04:04:18 batch_search_generate.py[line:133] INFO LLM process is alive.
-/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/tools/table/tabtools.py:44: DtypeWarning: Columns (25) have mixed types. Specify dtype option on import or set low_memory=False.
-  self.data = pd.read_csv(file_path)
-Execute:   4%|▍         | 31/793 [1:16:04<32:55:22, 155.54s/it]Execute:   4%|▍         | 32/793 [1:17:20<27:49:18, 131.61s/it]Execute:   4%|▍         | 33/793 [1:17:50<21:22:12, 101.23s/it]2024/06/17 04:06:18 batch_search_generate.py[line:133] INFO LLM process is alive.
-/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/tools/table/tabtools.py:44: DtypeWarning: Columns (25) have mixed types. Specify dtype option on import or set low_memory=False.
-  self.data = pd.read_csv(file_path)
-Execute:   4%|▍         | 34/793 [1:18:21<16:51:07, 79.93s/it] 2024/06/17 04:07:08 batch_search_generate.py[line:174] INFO save solutions: 5
-Execute:   4%|▍         | 35/793 [1:18:51<13:42:01, 65.07s/it]/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/tools/table/tabtools.py:44: DtypeWarning: Columns (25) have mixed types. Specify dtype option on import or set low_memory=False.
-  self.data = pd.read_csv(file_path)
-2024/06/17 04:08:18 batch_search_generate.py[line:133] INFO LLM process is alive.
-Execute:   5%|▍         | 36/793 [1:20:37<16:16:25, 77.39s/it]Execute:   5%|▍         | 37/793 [1:21:38<15:12:06, 72.39s/it]2024/06/17 04:10:18 batch_search_generate.py[line:133] INFO LLM process is alive.
-WARNING 06-17 04:11:20 scheduler.py:663] Input prompt (9494 tokens) is too long and exceeds limit of 8192
-Execute:   5%|▍         | 38/793 [1:23:24<17:18:37, 82.54s/it]2024/06/17 04:12:18 batch_search_generate.py[line:133] INFO LLM process is alive.
-Execute:   5%|▍         | 39/793 [1:24:09<14:57:29, 71.42s/it]WARNING 06-17 04:12:38 scheduler.py:663] Input prompt (9743 tokens) is too long and exceeds limit of 8192
-/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/tools/table/tabtools.py:44: DtypeWarning: Columns (25) have mixed types. Specify dtype option on import or set low_memory=False.
-  self.data = pd.read_csv(file_path)
-/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/tools/table/tabtools.py:44: DtypeWarning: Columns (25) have mixed types. Specify dtype option on import or set low_memory=False.
-  self.data = pd.read_csv(file_path)
-/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/tools/table/tabtools.py:44: DtypeWarning: Columns (25) have mixed types. Specify dtype option on import or set low_memory=False.
-  self.data = pd.read_csv(file_path)
-2024/06/17 04:14:18 batch_search_generate.py[line:133] INFO LLM process is alive.
-/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/tools/table/tabtools.py:44: DtypeWarning: Columns (25) have mixed types. Specify dtype option on import or set low_memory=False.
-  self.data = pd.read_csv(file_path)
-/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/tools/table/tabtools.py:44: DtypeWarning: Columns (25) have mixed types. Specify dtype option on import or set low_memory=False.
-  self.data = pd.read_csv(file_path)
-2024/06/17 04:16:18 batch_search_generate.py[line:133] INFO LLM process is alive.
-2024/06/17 04:17:15 batch_search_generate.py[line:174] INFO save solutions: 5
-Execute:   5%|▌         | 40/793 [1:28:58<28:34:27, 136.61s/it]2024/06/17 04:18:18 batch_search_generate.py[line:133] INFO LLM process is alive.
-2024/06/17 04:20:18 batch_search_generate.py[line:133] INFO LLM process is alive.
-/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/tools/table/tabtools.py:44: DtypeWarning: Columns (25) have mixed types. Specify dtype option on import or set low_memory=False.
-  self.data = pd.read_csv(file_path)
-/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/tools/table/tabtools.py:44: DtypeWarning: Columns (25) have mixed types. Specify dtype option on import or set low_memory=False.
-  self.data = pd.read_csv(file_path)
-2024/06/17 04:22:19 batch_search_generate.py[line:133] INFO LLM process is alive.
-WARNING 06-17 04:23:09 scheduler.py:663] Input prompt (8420 tokens) is too long and exceeds limit of 8192
-2024/06/17 04:24:19 batch_search_generate.py[line:133] INFO LLM process is alive.
-Execute:   5%|▌         | 41/793 [1:36:19<47:34:27, 227.75s/it]Execute:   5%|▌         | 42/793 [1:36:34<34:12:20, 163.97s/it]Execute:   5%|▌         | 43/793 [1:37:04<25:48:47, 123.90s/it]Execute:   6%|▌         | 44/793 [1:37:35<19:56:55, 95.88s/it] 2024/06/17 04:26:19 batch_search_generate.py[line:133] INFO LLM process is alive.
-2024/06/17 04:26:22 batch_search_generate.py[line:174] INFO save solutions: 5
-Execute:   6%|▌         | 45/793 [1:38:05<15:50:40, 76.26s/it]Execute:   6%|▌         | 46/793 [1:38:51<13:54:45, 67.05s/it]2024/06/17 04:28:19 batch_search_generate.py[line:133] INFO LLM process is alive.
-WARNING 06-17 04:28:52 scheduler.py:663] Input prompt (10315 tokens) is too long and exceeds limit of 8192
-Execute:   6%|▌         | 47/793 [1:41:08<18:14:46, 88.05s/it]WARNING 06-17 04:29:48 scheduler.py:663] Input prompt (9430 tokens) is too long and exceeds limit of 8192
-2024/06/17 04:30:19 batch_search_generate.py[line:133] INFO LLM process is alive.
-Execute:   6%|▌         | 48/793 [1:42:24<17:29:01, 84.49s/it]Execute:   6%|▌         | 49/793 [1:43:25<15:59:48, 77.40s/it]2024/06/17 04:32:19 batch_search_generate.py[line:133] INFO LLM process is alive.
-2024/06/17 04:34:19 batch_search_generate.py[line:133] INFO LLM process is alive.
-2024/06/17 04:36:19 batch_search_generate.py[line:133] INFO LLM process is alive.
-2024/06/17 04:38:19 batch_search_generate.py[line:133] INFO LLM process is alive.
-2024/06/17 04:39:04 batch_search_generate.py[line:174] INFO save solutions: 5
-Execute:   6%|▋         | 50/793 [1:50:47<38:32:40, 186.76s/it]2024/06/17 04:40:19 batch_search_generate.py[line:133] INFO LLM process is alive.
-Execute:   6%|▋         | 51/793 [1:53:04<35:25:46, 171.90s/it]Execute:   7%|▋         | 52/793 [1:53:19<25:42:29, 124.90s/it]2024/06/17 04:42:19 batch_search_generate.py[line:133] INFO LLM process is alive.
-Execute:   7%|▋         | 53/793 [1:54:51<23:36:26, 114.85s/it]Execute:   7%|▋         | 54/793 [1:55:21<18:22:36, 89.52s/it] 2024/06/17 04:44:19 batch_search_generate.py[line:133] INFO LLM process is alive.
-2024/06/17 04:45:10 batch_search_generate.py[line:174] INFO save solutions: 5
-Execute:   7%|▋         | 55/793 [1:56:53<18:28:52, 90.15s/it]Execute:   7%|▋         | 56/793 [1:57:39<15:44:23, 76.88s/it]2024/06/17 04:46:19 batch_search_generate.py[line:133] INFO LLM process is alive.
-Execute:   7%|▋         | 57/793 [1:58:09<12:52:18, 62.96s/it]Execute:   7%|▋         | 58/793 [1:58:40<10:52:34, 53.27s/it]2024/06/17 04:48:19 batch_search_generate.py[line:133] INFO LLM process is alive.
-2024/06/17 04:50:19 batch_search_generate.py[line:133] INFO LLM process is alive.
-WARNING 06-17 04:51:38 scheduler.py:663] Input prompt (11014 tokens) is too long and exceeds limit of 8192
-2024/06/17 04:52:19 batch_search_generate.py[line:133] INFO LLM process is alive.
-Execute:   7%|▋         | 59/793 [2:04:15<28:08:02, 137.99s/it]2024/06/17 04:53:49 batch_search_generate.py[line:174] INFO save solutions: 5
-Execute:   8%|▊         | 60/793 [2:05:32<24:20:22, 119.54s/it]2024/06/17 04:54:19 batch_search_generate.py[line:133] INFO LLM process is alive.
-Execute:   8%|▊         | 61/793 [2:07:03<22:36:15, 111.17s/it]WARNING 06-17 04:55:40 scheduler.py:663] Input prompt (20799 tokens) is too long and exceeds limit of 8192
-2024/06/17 04:56:19 batch_search_generate.py[line:133] INFO LLM process is alive.
-WARNING 06-17 04:57:23 scheduler.py:663] Input prompt (21509 tokens) is too long and exceeds limit of 8192
-2024/06/17 04:58:19 batch_search_generate.py[line:133] INFO LLM process is alive.
-2024/06/17 05:00:19 batch_search_generate.py[line:133] INFO LLM process is alive.
-2024/06/17 05:02:19 batch_search_generate.py[line:133] INFO LLM process is alive.
-Execute:   8%|▊         | 62/793 [2:14:26<42:46:51, 210.69s/it]/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/tools/table/tabtools.py:44: DtypeWarning: Columns (25) have mixed types. Specify dtype option on import or set low_memory=False.
-  self.data = pd.read_csv(file_path)
-/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/tools/table/tabtools.py:44: DtypeWarning: Columns (25) have mixed types. Specify dtype option on import or set low_memory=False.
-  self.data = pd.read_csv(file_path)
-/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/tools/table/tabtools.py:44: DtypeWarning: Columns (25) have mixed types. Specify dtype option on import or set low_memory=False.
-  self.data = pd.read_csv(file_path)
-Execute:   8%|▊         | 63/793 [2:15:12<32:42:12, 161.28s/it]Execute:   8%|▊         | 64/793 [2:15:43<24:42:58, 122.06s/it]/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/tools/table/tabtools.py:44: DtypeWarning: Columns (25) have mixed types. Specify dtype option on import or set low_memory=False.
-  self.data = pd.read_csv(file_path)
-/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/tools/table/tabtools.py:44: DtypeWarning: Columns (25) have mixed types. Specify dtype option on import or set low_memory=False.
-  self.data = pd.read_csv(file_path)
-2024/06/17 05:04:19 batch_search_generate.py[line:133] INFO LLM process is alive.
-WARNING 06-17 05:04:33 scheduler.py:663] Input prompt (20768 tokens) is too long and exceeds limit of 8192
-/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/tools/table/tabtools.py:44: DtypeWarning: Columns (25) have mixed types. Specify dtype option on import or set low_memory=False.
-  self.data = pd.read_csv(file_path)
-2024/06/17 05:05:32 batch_search_generate.py[line:174] INFO save solutions: 5
-Execute:   8%|▊         | 65/793 [2:17:15<22:50:50, 112.98s/it]/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/tools/table/tabtools.py:44: DtypeWarning: Columns (25) have mixed types. Specify dtype option on import or set low_memory=False.
-  self.data = pd.read_csv(file_path)
-/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/tools/table/tabtools.py:44: DtypeWarning: Columns (25) have mixed types. Specify dtype option on import or set low_memory=False.
-  self.data = pd.read_csv(file_path)
-Execute:   8%|▊         | 66/793 [2:18:01<18:45:20, 92.88s/it] 2024/06/17 05:06:19 batch_search_generate.py[line:133] INFO LLM process is alive.
-/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/tools/table/tabtools.py:44: DtypeWarning: Columns (25) have mixed types. Specify dtype option on import or set low_memory=False.
-  self.data = pd.read_csv(file_path)
-2024/06/17 05:08:19 batch_search_generate.py[line:133] INFO LLM process is alive.
-Execute:   8%|▊         | 67/793 [2:21:04<24:12:57, 120.08s/it]Execute:   9%|▊         | 68/793 [2:21:35<18:46:54, 93.26s/it] 2024/06/17 05:10:20 batch_search_generate.py[line:133] INFO LLM process is alive.
-2024/06/17 05:12:20 batch_search_generate.py[line:133] INFO LLM process is alive.
-Execute:   9%|▊         | 69/793 [2:25:09<26:03:57, 129.61s/it]2024/06/17 05:13:57 batch_search_generate.py[line:174] INFO save solutions: 5
-Execute:   9%|▉         | 70/793 [2:25:40<20:04:22, 99.95s/it] 2024/06/17 05:14:20 batch_search_generate.py[line:133] INFO LLM process is alive.
-2024/06/17 05:16:20 batch_search_generate.py[line:133] INFO LLM process is alive.
-Execute:   9%|▉         | 71/793 [2:29:30<27:51:10, 138.88s/it]Execute:   9%|▉         | 72/793 [2:29:45<20:23:37, 101.83s/it]2024/06/17 05:18:20 batch_search_generate.py[line:133] INFO LLM process is alive.
-/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/tools/table/tabtools.py:44: DtypeWarning: Columns (25) have mixed types. Specify dtype option on import or set low_memory=False.
-  self.data = pd.read_csv(file_path)
-2024/06/17 05:20:20 batch_search_generate.py[line:133] INFO LLM process is alive.
-Execute:   9%|▉         | 73/793 [2:32:19<23:27:21, 117.28s/it]Execute:   9%|▉         | 74/793 [2:32:49<18:14:24, 91.33s/it] WARNING 06-17 05:21:28 scheduler.py:663] Input prompt (21759 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 05:22:08 scheduler.py:663] Input prompt (21679 tokens) is too long and exceeds limit of 8192
-2024/06/17 05:22:20 batch_search_generate.py[line:133] INFO LLM process is alive.
-WARNING 06-17 05:22:20 scheduler.py:663] Input prompt (21092 tokens) is too long and exceeds limit of 8192
-2024/06/17 05:24:11 batch_search_generate.py[line:174] INFO save solutions: 5
-Execute:   9%|▉         | 75/793 [2:35:53<23:46:23, 119.20s/it]2024/06/17 05:24:20 batch_search_generate.py[line:133] INFO LLM process is alive.
-Execute:  10%|▉         | 76/793 [2:37:26<22:07:22, 111.08s/it]2024/06/17 05:26:20 batch_search_generate.py[line:133] INFO LLM process is alive.
-WARNING 06-17 05:28:11 scheduler.py:663] Input prompt (10615 tokens) is too long and exceeds limit of 8192
-Execute:  10%|▉         | 77/793 [2:39:59<24:37:06, 123.78s/it]2024/06/17 05:28:20 batch_search_generate.py[line:133] INFO LLM process is alive.
-Execute:  10%|▉         | 78/793 [2:40:30<19:02:48, 95.90s/it] 2024/06/17 05:30:20 batch_search_generate.py[line:133] INFO LLM process is alive.
-Execute:  10%|▉         | 79/793 [2:42:17<19:42:48, 99.40s/it]/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/tools/table/tabtools.py:44: DtypeWarning: Columns (25) have mixed types. Specify dtype option on import or set low_memory=False.
-  self.data = pd.read_csv(file_path)
-/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/tools/table/tabtools.py:44: DtypeWarning: Columns (25) have mixed types. Specify dtype option on import or set low_memory=False.
-  self.data = pd.read_csv(file_path)
-/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/tools/table/tabtools.py:44: DtypeWarning: Columns (25) have mixed types. Specify dtype option on import or set low_memory=False.
-  self.data = pd.read_csv(file_path)
-2024/06/17 05:31:36 batch_search_generate.py[line:174] INFO save solutions: 5
-Execute:  10%|█         | 80/793 [2:43:19<17:25:48, 88.01s/it]2024/06/17 05:32:20 batch_search_generate.py[line:133] INFO LLM process is alive.
-/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/tools/table/tabtools.py:44: DtypeWarning: Columns (25) have mixed types. Specify dtype option on import or set low_memory=False.
-  self.data = pd.read_csv(file_path)
-/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/tools/table/tabtools.py:44: DtypeWarning: Columns (25) have mixed types. Specify dtype option on import or set low_memory=False.
-  self.data = pd.read_csv(file_path)
-/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/tools/table/tabtools.py:44: DtypeWarning: Columns (25) have mixed types. Specify dtype option on import or set low_memory=False.
-  self.data = pd.read_csv(file_path)
-/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/tools/table/tabtools.py:44: DtypeWarning: Columns (25) have mixed types. Specify dtype option on import or set low_memory=False.
-  self.data = pd.read_csv(file_path)
-/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/tools/table/tabtools.py:44: DtypeWarning: Columns (25) have mixed types. Specify dtype option on import or set low_memory=False.
-  self.data = pd.read_csv(file_path)
-/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/tools/table/tabtools.py:44: DtypeWarning: Columns (25) have mixed types. Specify dtype option on import or set low_memory=False.
-  self.data = pd.read_csv(file_path)
-2024/06/17 05:34:20 batch_search_generate.py[line:133] INFO LLM process is alive.
-/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/tools/table/tabtools.py:44: DtypeWarning: Columns (25) have mixed types. Specify dtype option on import or set low_memory=False.
-  self.data = pd.read_csv(file_path)
-2024/06/17 05:36:20 batch_search_generate.py[line:133] INFO LLM process is alive.
-2024/06/17 05:38:20 batch_search_generate.py[line:133] INFO LLM process is alive.
-Execute:  10%|█         | 81/793 [2:50:44<38:37:23, 195.29s/it]/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/tools/table/tabtools.py:44: DtypeWarning: Columns (25) have mixed types. Specify dtype option on import or set low_memory=False.
-  self.data = pd.read_csv(file_path)
-/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/tools/table/tabtools.py:44: DtypeWarning: Columns (25) have mixed types. Specify dtype option on import or set low_memory=False.
-  self.data = pd.read_csv(file_path)
-2024/06/17 05:40:20 batch_search_generate.py[line:133] INFO LLM process is alive.
-/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/tools/table/tabtools.py:44: DtypeWarning: Columns (25) have mixed types. Specify dtype option on import or set low_memory=False.
-  self.data = pd.read_csv(file_path)
-Execute:  10%|█         | 82/793 [2:52:48<34:17:20, 173.62s/it]2024/06/17 05:42:20 batch_search_generate.py[line:133] INFO LLM process is alive.
-Execute:  10%|█         | 83/793 [2:54:20<29:26:05, 149.25s/it]2024/06/17 05:44:20 batch_search_generate.py[line:133] INFO LLM process is alive.
-2024/06/17 05:46:20 batch_search_generate.py[line:133] INFO LLM process is alive.
-WARNING 06-17 05:46:41 scheduler.py:663] Input prompt (8358 tokens) is too long and exceeds limit of 8192
-Execute:  11%|█         | 84/793 [2:58:41<36:00:36, 182.84s/it]2024/06/17 05:47:14 batch_search_generate.py[line:174] INFO save solutions: 5
-Execute:  11%|█         | 85/793 [2:58:57<26:05:08, 132.64s/it]2024/06/17 05:48:20 batch_search_generate.py[line:133] INFO LLM process is alive.
-/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/tools/table/tabtools.py:44: DtypeWarning: Columns (25) have mixed types. Specify dtype option on import or set low_memory=False.
-  self.data = pd.read_csv(file_path)
-Execute:  11%|█         | 86/793 [3:01:31<27:19:25, 139.13s/it]2024/06/17 05:50:20 batch_search_generate.py[line:133] INFO LLM process is alive.
-WARNING 06-17 05:50:46 scheduler.py:663] Input prompt (9448 tokens) is too long and exceeds limit of 8192
-2024/06/17 05:52:20 batch_search_generate.py[line:133] INFO LLM process is alive.
-WARNING 06-17 05:53:39 scheduler.py:663] Input prompt (21132 tokens) is too long and exceeds limit of 8192
-Execute:  11%|█         | 87/793 [3:05:22<32:41:17, 166.68s/it]/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/tools/table/tabtools.py:44: DtypeWarning: Columns (25) have mixed types. Specify dtype option on import or set low_memory=False.
-  self.data = pd.read_csv(file_path)
-2024/06/17 05:54:20 batch_search_generate.py[line:133] INFO LLM process is alive.
-2024/06/17 05:56:20 batch_search_generate.py[line:133] INFO LLM process is alive.
-/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/tools/table/tabtools.py:44: DtypeWarning: Columns (25) have mixed types. Specify dtype option on import or set low_memory=False.
-  self.data = pd.read_csv(file_path)
-/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/tools/table/tabtools.py:44: DtypeWarning: Columns (25) have mixed types. Specify dtype option on import or set low_memory=False.
-  self.data = pd.read_csv(file_path)
-Execute:  11%|█         | 88/793 [3:09:59<39:07:46, 199.81s/it]2024/06/17 05:58:20 batch_search_generate.py[line:133] INFO LLM process is alive.
-Execute:  11%|█         | 89/793 [3:11:31<32:46:10, 167.57s/it]2024/06/17 06:00:20 batch_search_generate.py[line:133] INFO LLM process is alive.
-2024/06/17 06:00:35 batch_search_generate.py[line:174] INFO save solutions: 5
-Execute:  11%|█▏        | 90/793 [3:12:18<25:37:01, 131.18s/it]Execute:  11%|█▏        | 91/793 [3:12:48<19:42:22, 101.06s/it]2024/06/17 06:02:20 batch_search_generate.py[line:133] INFO LLM process is alive.
-Execute:  12%|█▏        | 92/793 [3:15:54<24:35:21, 126.28s/it]2024/06/17 06:04:20 batch_search_generate.py[line:133] INFO LLM process is alive.
-Execute:  12%|█▏        | 93/793 [3:16:55<20:47:12, 106.90s/it]Execute:  12%|█▏        | 94/793 [3:17:42<17:13:33, 88.72s/it] 2024/06/17 06:06:20 batch_search_generate.py[line:133] INFO LLM process is alive.
-2024/06/17 06:06:29 batch_search_generate.py[line:174] INFO save solutions: 5
-Execute:  12%|█▏        | 95/793 [3:18:12<13:50:36, 71.40s/it]Execute:  12%|█▏        | 96/793 [3:18:28<10:34:20, 54.61s/it]Execute:  12%|█▏        | 97/793 [3:19:45<11:52:11, 61.40s/it]2024/06/17 06:08:20 batch_search_generate.py[line:133] INFO LLM process is alive.
-2024/06/17 06:10:20 batch_search_generate.py[line:133] INFO LLM process is alive.
-WARNING 06-17 06:10:32 scheduler.py:663] Input prompt (9869 tokens) is too long and exceeds limit of 8192
-2024/06/17 06:12:20 batch_search_generate.py[line:133] INFO LLM process is alive.
-WARNING 06-17 06:12:23 scheduler.py:663] Input prompt (10065 tokens) is too long and exceeds limit of 8192
-Execute:  12%|█▏        | 98/793 [3:24:08<23:31:15, 121.84s/it]WARNING 06-17 06:12:40 scheduler.py:663] Input prompt (9984 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 06:13:01 scheduler.py:663] Input prompt (10168 tokens) is too long and exceeds limit of 8192
-2024/06/17 06:14:21 batch_search_generate.py[line:133] INFO LLM process is alive.
-Execute:  12%|█▏        | 99/793 [3:27:29<28:04:15, 145.61s/it]/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/tools/table/tabtools.py:140: UserWarning: This pattern is interpreted as a regular expression, and has match groups. To actually get the groups, use str.extract.
-  self.data = self.data[self.data[column_name].str.contains(value)]
-2024/06/17 06:16:21 batch_search_generate.py[line:133] INFO LLM process is alive.
-2024/06/17 06:18:21 batch_search_generate.py[line:133] INFO LLM process is alive.
-2024/06/17 06:20:09 batch_search_generate.py[line:174] INFO save solutions: 5
-Execute:  13%|█▎        | 100/793 [3:31:52<34:48:02, 180.78s/it]2024/06/17 06:20:21 batch_search_generate.py[line:133] INFO LLM process is alive.
-2024/06/17 06:22:21 batch_search_generate.py[line:133] INFO LLM process is alive.
-Execute:  13%|█▎        | 102/793 [3:35:28<28:16:30, 147.31s/it]2024/06/17 06:24:21 batch_search_generate.py[line:133] INFO LLM process is alive.
-/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/tools/table/tabtools.py:44: DtypeWarning: Columns (25) have mixed types. Specify dtype option on import or set low_memory=False.
-  self.data = pd.read_csv(file_path)
-/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/tools/table/tabtools.py:44: DtypeWarning: Columns (25) have mixed types. Specify dtype option on import or set low_memory=False.
-  self.data = pd.read_csv(file_path)
-Execute:  13%|█▎        | 103/793 [3:36:30<24:10:52, 126.16s/it]Execute:  13%|█▎        | 104/793 [3:37:32<20:55:41, 109.35s/it]2024/06/17 06:26:20 batch_search_generate.py[line:174] INFO save solutions: 5
-Execute:  13%|█▎        | 105/793 [3:38:03<16:49:26, 88.03s/it] 2024/06/17 06:26:21 batch_search_generate.py[line:133] INFO LLM process is alive.
-Execute:  13%|█▎        | 106/793 [3:38:34<13:45:21, 72.08s/it]2024/06/17 06:28:21 batch_search_generate.py[line:133] INFO LLM process is alive.
-WARNING 06-17 06:28:34 scheduler.py:663] Input prompt (8549 tokens) is too long and exceeds limit of 8192
-/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/tools/table/tabtools.py:44: DtypeWarning: Columns (25) have mixed types. Specify dtype option on import or set low_memory=False.
-  self.data = pd.read_csv(file_path)
-2024/06/17 06:30:21 batch_search_generate.py[line:133] INFO LLM process is alive.
-/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/tools/table/tabtools.py:44: DtypeWarning: Columns (25) have mixed types. Specify dtype option on import or set low_memory=False.
-  self.data = pd.read_csv(file_path)
-/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/tools/table/tabtools.py:44: DtypeWarning: Columns (25) have mixed types. Specify dtype option on import or set low_memory=False.
-  self.data = pd.read_csv(file_path)
-Execute:  13%|█▎        | 107/793 [3:42:42<23:17:44, 122.25s/it]2024/06/17 06:32:21 batch_search_generate.py[line:133] INFO LLM process is alive.
-WARNING 06-17 06:33:05 scheduler.py:663] Input prompt (8666 tokens) is too long and exceeds limit of 8192
-Execute:  14%|█▎        | 108/793 [3:45:48<26:45:52, 140.66s/it]2024/06/17 06:34:21 batch_search_generate.py[line:133] INFO LLM process is alive.
-WARNING 06-17 06:35:56 scheduler.py:663] Input prompt (9116 tokens) is too long and exceeds limit of 8192
-2024/06/17 06:36:21 batch_search_generate.py[line:133] INFO LLM process is alive.
-Execute:  14%|█▎        | 109/793 [3:49:10<30:06:54, 158.50s/it]WARNING 06-17 06:37:29 scheduler.py:663] Input prompt (9507 tokens) is too long and exceeds limit of 8192
-2024/06/17 06:38:21 batch_search_generate.py[line:133] INFO LLM process is alive.
-2024/06/17 06:39:46 batch_search_generate.py[line:174] INFO save solutions: 5
-Execute:  14%|█▍        | 110/793 [3:51:29<29:00:26, 152.89s/it]2024/06/17 06:40:21 batch_search_generate.py[line:133] INFO LLM process is alive.
-2024/06/17 06:42:21 batch_search_generate.py[line:133] INFO LLM process is alive.
-Execute:  14%|█▍        | 111/793 [3:54:04<29:06:03, 153.61s/it]WARNING 06-17 06:43:33 scheduler.py:663] Input prompt (10312 tokens) is too long and exceeds limit of 8192
-2024/06/17 06:44:21 batch_search_generate.py[line:133] INFO LLM process is alive.
-Execute:  14%|█▍        | 112/793 [3:57:10<30:52:27, 163.21s/it]2024/06/17 06:46:21 batch_search_generate.py[line:133] INFO LLM process is alive.
-Execute:  14%|█▍        | 113/793 [3:58:59<27:45:26, 146.95s/it]Execute:  14%|█▍        | 114/793 [4:00:01<22:55:42, 121.56s/it]2024/06/17 06:48:21 batch_search_generate.py[line:133] INFO LLM process is alive.
-WARNING 06-17 06:49:29 scheduler.py:663] Input prompt (9139 tokens) is too long and exceeds limit of 8192
-2024/06/17 06:50:21 batch_search_generate.py[line:133] INFO LLM process is alive.
-2024/06/17 06:51:24 batch_search_generate.py[line:174] INFO save solutions: 5
-Execute:  15%|█▍        | 115/793 [4:03:07<26:33:30, 141.02s/it]2024/06/17 06:52:21 batch_search_generate.py[line:133] INFO LLM process is alive.
-Execute:  15%|█▍        | 116/793 [4:04:41<23:49:26, 126.69s/it]Execute:  15%|█▍        | 117/793 [4:05:12<18:24:30, 98.03s/it] 2024/06/17 06:54:21 batch_search_generate.py[line:133] INFO LLM process is alive.
-2024/06/17 06:56:21 batch_search_generate.py[line:133] INFO LLM process is alive.
-Execute:  15%|█▍        | 118/793 [4:09:36<27:43:41, 147.88s/it]2024/06/17 06:58:21 batch_search_generate.py[line:133] INFO LLM process is alive.
-Execute:  15%|█▌        | 119/793 [4:11:40<26:22:14, 140.85s/it]2024/06/17 07:00:21 batch_search_generate.py[line:133] INFO LLM process is alive.
-2024/06/17 07:02:22 batch_search_generate.py[line:133] INFO LLM process is alive.
-2024/06/17 07:02:49 batch_search_generate.py[line:174] INFO save solutions: 5
-Execute:  15%|█▌        | 120/793 [4:14:32<28:02:01, 149.96s/it]Execute:  15%|█▌        | 121/793 [4:15:03<21:20:31, 114.33s/it]2024/06/17 07:04:22 batch_search_generate.py[line:133] INFO LLM process is alive.
-2024/06/17 07:06:22 batch_search_generate.py[line:133] INFO LLM process is alive.
-Execute:  15%|█▌        | 122/793 [4:18:41<27:05:46, 145.38s/it]WARNING 06-17 07:07:25 scheduler.py:663] Input prompt (21730 tokens) is too long and exceeds limit of 8192
-Execute:  16%|█▌        | 123/793 [4:19:12<20:41:02, 111.14s/it]Execute:  16%|█▌        | 124/793 [4:19:59<17:03:31, 91.80s/it] 2024/06/17 07:08:22 batch_search_generate.py[line:133] INFO LLM process is alive.
-2024/06/17 07:10:22 batch_search_generate.py[line:133] INFO LLM process is alive.
-2024/06/17 07:11:23 batch_search_generate.py[line:174] INFO save solutions: 5
-Execute:  16%|█▌        | 125/793 [4:23:06<22:20:22, 120.39s/it]2024/06/17 07:12:22 batch_search_generate.py[line:133] INFO LLM process is alive.
-Execute:  16%|█▌        | 126/793 [4:24:39<20:48:40, 112.33s/it]WARNING 06-17 07:13:34 scheduler.py:663] Input prompt (9559 tokens) is too long and exceeds limit of 8192
-Execute:  16%|█▌        | 127/793 [4:25:26<17:08:09, 92.63s/it] 2024/06/17 07:14:22 batch_search_generate.py[line:133] INFO LLM process is alive.
-2024/06/17 07:16:22 batch_search_generate.py[line:133] INFO LLM process is alive.
-Execute:  16%|█▋        | 129/793 [4:28:49<17:50:23, 96.72s/it]2024/06/17 07:18:22 batch_search_generate.py[line:133] INFO LLM process is alive.
-2024/06/17 07:20:22 batch_search_generate.py[line:133] INFO LLM process is alive.
-2024/06/17 07:20:45 batch_search_generate.py[line:174] INFO save solutions: 5
-Execute:  16%|█▋        | 130/793 [4:32:28<23:23:10, 126.98s/it]Execute:  17%|█▋        | 131/793 [4:33:46<20:59:53, 114.19s/it]2024/06/17 07:22:22 batch_search_generate.py[line:133] INFO LLM process is alive.
-Execute:  17%|█▋        | 133/793 [4:35:35<16:16:39, 88.79s/it] 2024/06/17 07:24:22 batch_search_generate.py[line:133] INFO LLM process is alive.
-2024/06/17 07:26:22 batch_search_generate.py[line:133] INFO LLM process is alive.
-Execute:  17%|█▋        | 134/793 [4:38:12<19:08:52, 104.60s/it]2024/06/17 07:28:22 batch_search_generate.py[line:133] INFO LLM process is alive.
-2024/06/17 07:29:36 batch_search_generate.py[line:174] INFO save solutions: 5
-Execute:  17%|█▋        | 135/793 [4:41:19<22:55:43, 125.45s/it]Execute:  17%|█▋        | 136/793 [4:41:35<17:36:35, 96.49s/it] 2024/06/17 07:30:22 batch_search_generate.py[line:133] INFO LLM process is alive.
-Execute:  17%|█▋        | 137/793 [4:42:06<14:19:51, 78.64s/it]2024/06/17 07:32:22 batch_search_generate.py[line:133] INFO LLM process is alive.
-2024/06/17 07:34:22 batch_search_generate.py[line:133] INFO LLM process is alive.
-Execute:  17%|█▋        | 138/793 [4:46:32<23:52:52, 131.26s/it]Execute:  18%|█▊        | 139/793 [4:47:04<18:38:49, 102.64s/it]2024/06/17 07:36:08 batch_search_generate.py[line:174] INFO save solutions: 5
-Execute:  18%|█▊        | 140/793 [4:47:51<15:41:50, 86.54s/it] 2024/06/17 07:36:22 batch_search_generate.py[line:133] INFO LLM process is alive.
-Execute:  18%|█▊        | 141/793 [4:49:56<17:44:27, 97.96s/it]2024/06/17 07:38:22 batch_search_generate.py[line:133] INFO LLM process is alive.
-Execute:  18%|█▊        | 142/793 [4:50:43<15:00:01, 82.95s/it]Execute:  18%|█▊        | 143/793 [4:50:59<11:22:26, 62.99s/it]2024/06/17 07:40:22 batch_search_generate.py[line:133] INFO LLM process is alive.
-2024/06/17 07:42:22 batch_search_generate.py[line:133] INFO LLM process is alive.
-Execute:  18%|█▊        | 144/793 [4:54:38<19:44:12, 109.48s/it]2024/06/17 07:44:22 batch_search_generate.py[line:133] INFO LLM process is alive.
-2024/06/17 07:46:19 batch_search_generate.py[line:174] INFO save solutions: 5
-Execute:  18%|█▊        | 145/793 [4:58:02<24:46:44, 137.66s/it]2024/06/17 07:46:22 batch_search_generate.py[line:133] INFO LLM process is alive.
-Execute:  18%|█▊        | 146/793 [4:59:52<23:15:11, 129.38s/it]2024/06/17 07:48:22 batch_search_generate.py[line:133] INFO LLM process is alive.
-2024/06/17 07:50:22 batch_search_generate.py[line:133] INFO LLM process is alive.
-2024/06/17 07:52:22 batch_search_generate.py[line:133] INFO LLM process is alive.
-Execute:  19%|█▊        | 147/793 [5:04:35<31:26:46, 175.24s/it]2024/06/17 07:54:22 batch_search_generate.py[line:133] INFO LLM process is alive.
-2024/06/17 07:56:23 batch_search_generate.py[line:133] INFO LLM process is alive.
-Execute:  19%|█▊        | 148/793 [5:09:02<36:18:41, 202.67s/it]Execute:  19%|█▉        | 149/793 [5:09:49<27:56:03, 156.15s/it]WARNING 06-17 07:58:09 scheduler.py:663] Input prompt (10406 tokens) is too long and exceeds limit of 8192
-2024/06/17 07:58:23 batch_search_generate.py[line:133] INFO LLM process is alive.
-2024/06/17 08:00:23 batch_search_generate.py[line:133] INFO LLM process is alive.
-2024/06/17 08:00:59 batch_search_generate.py[line:174] INFO save solutions: 5
-Execute:  19%|█▉        | 150/793 [5:12:42<28:46:57, 161.15s/it]Execute:  19%|█▉        | 151/793 [5:13:29<22:38:42, 126.98s/it]2024/06/17 08:02:23 batch_search_generate.py[line:133] INFO LLM process is alive.
-Execute:  19%|█▉        | 152/793 [5:14:48<20:02:09, 112.53s/it]Execute:  19%|█▉        | 153/793 [5:15:51<17:22:28, 97.73s/it] 2024/06/17 08:04:23 batch_search_generate.py[line:133] INFO LLM process is alive.
-Execute:  19%|█▉        | 154/793 [5:16:38<14:39:30, 82.58s/it]WARNING 06-17 08:05:33 scheduler.py:663] Input prompt (10011 tokens) is too long and exceeds limit of 8192
-2024/06/17 08:06:23 batch_search_generate.py[line:133] INFO LLM process is alive.
-2024/06/17 08:08:23 batch_search_generate.py[line:133] INFO LLM process is alive.
-2024/06/17 08:10:23 batch_search_generate.py[line:133] INFO LLM process is alive.
-2024/06/17 08:10:42 batch_search_generate.py[line:174] INFO save solutions: 5
-Execute:  20%|█▉        | 155/793 [5:22:25<28:39:32, 161.71s/it]Execute:  20%|█▉        | 156/793 [5:23:59<25:02:10, 141.49s/it]2024/06/17 08:12:23 batch_search_generate.py[line:133] INFO LLM process is alive.
-Execute:  20%|█▉        | 158/793 [5:25:02<16:00:24, 90.75s/it] 2024/06/17 08:14:23 batch_search_generate.py[line:133] INFO LLM process is alive.
-2024/06/17 08:16:23 batch_search_generate.py[line:133] INFO LLM process is alive.
-Execute:  20%|██        | 159/793 [5:28:11<20:17:22, 115.21s/it]2024/06/17 08:17:00 batch_search_generate.py[line:174] INFO save solutions: 5
-Execute:  20%|██        | 160/793 [5:28:43<16:25:08, 93.38s/it] 2024/06/17 08:18:23 batch_search_generate.py[line:133] INFO LLM process is alive.
-2024/06/17 08:20:23 batch_search_generate.py[line:133] INFO LLM process is alive.
-2024/06/17 08:22:23 batch_search_generate.py[line:133] INFO LLM process is alive.
-WARNING 06-17 08:23:11 scheduler.py:663] Input prompt (8305 tokens) is too long and exceeds limit of 8192
-Execute:  20%|██        | 161/793 [5:36:05<33:01:49, 188.15s/it]2024/06/17 08:24:23 batch_search_generate.py[line:133] INFO LLM process is alive.
-Execute:  21%|██        | 163/793 [5:37:24<21:33:30, 123.19s/it]2024/06/17 08:26:23 batch_search_generate.py[line:133] INFO LLM process is alive.
-/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/tools/table/tabtools.py:44: DtypeWarning: Columns (25) have mixed types. Specify dtype option on import or set low_memory=False.
-  self.data = pd.read_csv(file_path)
-/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/tools/table/tabtools.py:44: DtypeWarning: Columns (25) have mixed types. Specify dtype option on import or set low_memory=False.
-  self.data = pd.read_csv(file_path)
-/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/tools/table/tabtools.py:44: DtypeWarning: Columns (25) have mixed types. Specify dtype option on import or set low_memory=False.
-  self.data = pd.read_csv(file_path)
-/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/tools/table/tabtools.py:44: DtypeWarning: Columns (25) have mixed types. Specify dtype option on import or set low_memory=False.
-  self.data = pd.read_csv(file_path)
-/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/tools/table/tabtools.py:44: DtypeWarning: Columns (25) have mixed types. Specify dtype option on import or set low_memory=False.
-  self.data = pd.read_csv(file_path)
-2024/06/17 08:28:23 batch_search_generate.py[line:133] INFO LLM process is alive.
-Execute:  21%|██        | 165/793 [5:40:34<19:35:32, 112.31s/it]/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/tools/table/tabtools.py:44: DtypeWarning: Columns (25) have mixed types. Specify dtype option on import or set low_memory=False.
-  self.data = pd.read_csv(file_path)
-2024/06/17 08:29:07 batch_search_generate.py[line:174] INFO save solutions: 5
-/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/tools/table/tabtools.py:44: DtypeWarning: Columns (25) have mixed types. Specify dtype option on import or set low_memory=False.
-  self.data = pd.read_csv(file_path)
-2024/06/17 08:30:23 batch_search_generate.py[line:133] INFO LLM process is alive.
-/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/tools/table/tabtools.py:44: DtypeWarning: Columns (25) have mixed types. Specify dtype option on import or set low_memory=False.
-  self.data = pd.read_csv(file_path)
-/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/tools/table/tabtools.py:44: DtypeWarning: Columns (25) have mixed types. Specify dtype option on import or set low_memory=False.
-  self.data = pd.read_csv(file_path)
-2024/06/17 08:32:23 batch_search_generate.py[line:133] INFO LLM process is alive.
-Execute:  21%|██        | 166/793 [5:45:19<26:02:29, 149.52s/it]2024/06/17 08:34:23 batch_search_generate.py[line:133] INFO LLM process is alive.
-/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/tools/table/tabtools.py:44: DtypeWarning: Columns (25) have mixed types. Specify dtype option on import or set low_memory=False.
-  self.data = pd.read_csv(file_path)
-Execute:  21%|██        | 167/793 [5:46:38<23:07:12, 132.96s/it]WARNING 06-17 08:35:37 scheduler.py:663] Input prompt (8269 tokens) is too long and exceeds limit of 8192
-2024/06/17 08:36:23 batch_search_generate.py[line:133] INFO LLM process is alive.
-WARNING 06-17 08:36:40 scheduler.py:663] Input prompt (8283 tokens) is too long and exceeds limit of 8192
-Execute:  21%|██        | 168/793 [5:48:29<22:06:42, 127.36s/it]2024/06/17 08:37:34 batch_search_generate.py[line:174] INFO save solutions: 5
-Execute:  21%|██▏       | 170/793 [5:49:17<14:33:26, 84.12s/it] 2024/06/17 08:38:24 batch_search_generate.py[line:133] INFO LLM process is alive.
-/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/tools/table/tabtools.py:44: DtypeWarning: Columns (25) have mixed types. Specify dtype option on import or set low_memory=False.
-  self.data = pd.read_csv(file_path)
-/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/tools/table/tabtools.py:44: DtypeWarning: Columns (25) have mixed types. Specify dtype option on import or set low_memory=False.
-  self.data = pd.read_csv(file_path)
-/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/tools/table/tabtools.py:44: DtypeWarning: Columns (25) have mixed types. Specify dtype option on import or set low_memory=False.
-  self.data = pd.read_csv(file_path)
-2024/06/17 08:40:24 batch_search_generate.py[line:133] INFO LLM process is alive.
-2024/06/17 08:42:24 batch_search_generate.py[line:133] INFO LLM process is alive.
-Execute:  22%|██▏       | 171/793 [5:54:17<23:08:34, 133.95s/it]Execute:  22%|██▏       | 172/793 [5:55:37<20:47:29, 120.53s/it]2024/06/17 08:44:24 batch_search_generate.py[line:133] INFO LLM process is alive.
-2024/06/17 08:46:24 batch_search_generate.py[line:133] INFO LLM process is alive.
-WARNING 06-17 08:46:35 scheduler.py:663] Input prompt (9758 tokens) is too long and exceeds limit of 8192
-Execute:  22%|██▏       | 173/793 [5:58:48<23:54:07, 138.79s/it]2024/06/17 08:48:24 batch_search_generate.py[line:133] INFO LLM process is alive.
-Execute:  22%|██▏       | 174/793 [6:00:39<22:33:54, 131.23s/it]2024/06/17 08:50:24 batch_search_generate.py[line:133] INFO LLM process is alive.
-/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/tools/table/tabtools.py:44: DtypeWarning: Columns (25) have mixed types. Specify dtype option on import or set low_memory=False.
-  self.data = pd.read_csv(file_path)
-2024/06/17 08:52:24 batch_search_generate.py[line:133] INFO LLM process is alive.
-2024/06/17 08:54:24 batch_search_generate.py[line:133] INFO LLM process is alive.
-WARNING 06-17 08:56:07 scheduler.py:663] Input prompt (20737 tokens) is too long and exceeds limit of 8192
-2024/06/17 08:56:20 batch_search_generate.py[line:174] INFO save solutions: 5
-Execute:  22%|██▏       | 175/793 [6:08:03<37:34:37, 218.90s/it]2024/06/17 08:56:24 batch_search_generate.py[line:133] INFO LLM process is alive.
-/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/tools/table/tabtools.py:44: DtypeWarning: Columns (25) have mixed types. Specify dtype option on import or set low_memory=False.
-  self.data = pd.read_csv(file_path)
-Execute:  22%|██▏       | 176/793 [6:09:07<29:54:28, 174.50s/it]Execute:  22%|██▏       | 177/793 [6:09:39<22:47:27, 133.19s/it]WARNING 06-17 08:58:12 scheduler.py:663] Input prompt (21362 tokens) is too long and exceeds limit of 8192
-2024/06/17 08:58:24 batch_search_generate.py[line:133] INFO LLM process is alive.
-/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/tools/table/tabtools.py:44: DtypeWarning: Columns (25) have mixed types. Specify dtype option on import or set low_memory=False.
-  self.data = pd.read_csv(file_path)
-WARNING 06-17 08:58:43 scheduler.py:663] Input prompt (9240 tokens) is too long and exceeds limit of 8192
-/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/tools/table/tabtools.py:44: DtypeWarning: Columns (25) have mixed types. Specify dtype option on import or set low_memory=False.
-  self.data = pd.read_csv(file_path)
-/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/tools/table/tabtools.py:44: DtypeWarning: Columns (25) have mixed types. Specify dtype option on import or set low_memory=False.
-  self.data = pd.read_csv(file_path)
-/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/tools/table/tabtools.py:44: DtypeWarning: Columns (25) have mixed types. Specify dtype option on import or set low_memory=False.
-  self.data = pd.read_csv(file_path)
-Execute:  22%|██▏       | 178/793 [6:11:14<20:51:09, 122.06s/it]/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/tools/table/tabtools.py:44: DtypeWarning: Columns (25) have mixed types. Specify dtype option on import or set low_memory=False.
-  self.data = pd.read_csv(file_path)
-/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/tools/table/tabtools.py:44: DtypeWarning: Columns (25) have mixed types. Specify dtype option on import or set low_memory=False.
-  self.data = pd.read_csv(file_path)
-/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/tools/table/tabtools.py:44: DtypeWarning: Columns (25) have mixed types. Specify dtype option on import or set low_memory=False.
-  self.data = pd.read_csv(file_path)
-2024/06/17 09:00:24 batch_search_generate.py[line:133] INFO LLM process is alive.
-Execute:  23%|██▎       | 179/793 [6:13:37<21:53:44, 128.38s/it]2024/06/17 09:02:24 batch_search_generate.py[line:133] INFO LLM process is alive.
-2024/06/17 09:02:26 batch_search_generate.py[line:174] INFO save solutions: 5
-Execute:  23%|██▎       | 180/793 [6:14:09<17:00:16, 99.86s/it] WARNING 06-17 09:02:40 scheduler.py:663] Input prompt (10757 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 09:03:44 scheduler.py:663] Input prompt (9846 tokens) is too long and exceeds limit of 8192
-2024/06/17 09:04:24 batch_search_generate.py[line:133] INFO LLM process is alive.
-Execute:  23%|██▎       | 181/793 [6:17:36<22:22:10, 131.59s/it]2024/06/17 09:06:24 batch_search_generate.py[line:133] INFO LLM process is alive.
-Execute:  23%|██▎       | 182/793 [6:19:27<21:17:41, 125.47s/it]2024/06/17 09:08:24 batch_search_generate.py[line:133] INFO LLM process is alive.
-Execute:  23%|██▎       | 183/793 [6:22:06<22:57:41, 135.51s/it]2024/06/17 09:10:24 batch_search_generate.py[line:133] INFO LLM process is alive.
-2024/06/17 09:12:24 batch_search_generate.py[line:133] INFO LLM process is alive.
-2024/06/17 09:13:02 batch_search_generate.py[line:174] INFO save solutions: 5
-Execute:  23%|██▎       | 185/793 [6:24:45<18:31:53, 109.73s/it]2024/06/17 09:14:24 batch_search_generate.py[line:133] INFO LLM process is alive.
-2024/06/17 09:16:25 batch_search_generate.py[line:133] INFO LLM process is alive.
-Execute:  23%|██▎       | 186/793 [6:28:12<22:32:51, 133.73s/it]2024/06/17 09:18:25 batch_search_generate.py[line:133] INFO LLM process is alive.
-2024/06/17 09:20:25 batch_search_generate.py[line:133] INFO LLM process is alive.
-/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/tools/table/tabtools.py:44: DtypeWarning: Columns (25) have mixed types. Specify dtype option on import or set low_memory=False.
-  self.data = pd.read_csv(file_path)
-Execute:  24%|██▎       | 187/793 [6:33:14<29:56:11, 177.84s/it]Execute:  24%|██▍       | 190/793 [6:34:02<15:27:52, 92.33s/it] 2024/06/17 09:22:25 batch_search_generate.py[line:133] INFO LLM process is alive.
-/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/tools/table/tabtools.py:44: DtypeWarning: Columns (25) have mixed types. Specify dtype option on import or set low_memory=False.
-  self.data = pd.read_csv(file_path)
-2024/06/17 09:22:35 batch_search_generate.py[line:174] INFO save solutions: 5
-/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/tools/table/tabtools.py:44: DtypeWarning: Columns (25) have mixed types. Specify dtype option on import or set low_memory=False.
-  self.data = pd.read_csv(file_path)
-/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/tools/table/tabtools.py:44: DtypeWarning: Columns (25) have mixed types. Specify dtype option on import or set low_memory=False.
-  self.data = pd.read_csv(file_path)
-/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/tools/table/tabtools.py:44: DtypeWarning: Columns (25) have mixed types. Specify dtype option on import or set low_memory=False.
-  self.data = pd.read_csv(file_path)
-/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/tools/table/tabtools.py:44: DtypeWarning: Columns (25) have mixed types. Specify dtype option on import or set low_memory=False.
-  self.data = pd.read_csv(file_path)
-/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/tools/table/tabtools.py:44: DtypeWarning: Columns (25) have mixed types. Specify dtype option on import or set low_memory=False.
-  self.data = pd.read_csv(file_path)
-2024/06/17 09:24:25 batch_search_generate.py[line:133] INFO LLM process is alive.
-/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/tools/table/tabtools.py:44: DtypeWarning: Columns (25) have mixed types. Specify dtype option on import or set low_memory=False.
-  self.data = pd.read_csv(file_path)
-2024/06/17 09:26:25 batch_search_generate.py[line:133] INFO LLM process is alive.
-Execute:  24%|██▍       | 191/793 [6:38:49<21:57:53, 131.35s/it]2024/06/17 09:28:25 batch_search_generate.py[line:133] INFO LLM process is alive.
-/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/tools/table/tabtools.py:44: DtypeWarning: Columns (25) have mixed types. Specify dtype option on import or set low_memory=False.
-  self.data = pd.read_csv(file_path)
-/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/tools/table/tabtools.py:44: DtypeWarning: Columns (25) have mixed types. Specify dtype option on import or set low_memory=False.
-  self.data = pd.read_csv(file_path)
-/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/tools/table/tabtools.py:44: DtypeWarning: Columns (25) have mixed types. Specify dtype option on import or set low_memory=False.
-  self.data = pd.read_csv(file_path)
-Execute:  24%|██▍       | 192/793 [6:41:44<23:33:38, 141.13s/it]2024/06/17 09:30:25 batch_search_generate.py[line:133] INFO LLM process is alive.
-Execute:  24%|██▍       | 193/793 [6:43:20<21:41:15, 130.13s/it]Execute:  24%|██▍       | 194/793 [6:44:08<18:08:53, 109.07s/it]2024/06/17 09:32:25 batch_search_generate.py[line:133] INFO LLM process is alive.
-WARNING 06-17 09:33:45 scheduler.py:663] Input prompt (22025 tokens) is too long and exceeds limit of 8192
-2024/06/17 09:34:25 batch_search_generate.py[line:133] INFO LLM process is alive.
-/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/tools/table/tabtools.py:44: DtypeWarning: Columns (25) have mixed types. Specify dtype option on import or set low_memory=False.
-  self.data = pd.read_csv(file_path)
-/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/tools/table/tabtools.py:44: DtypeWarning: Columns (25) have mixed types. Specify dtype option on import or set low_memory=False.
-  self.data = pd.read_csv(file_path)
-WARNING 06-17 09:35:43 scheduler.py:663] Input prompt (20832 tokens) is too long and exceeds limit of 8192
-2024/06/17 09:35:53 batch_search_generate.py[line:174] INFO save solutions: 5
-Execute:  25%|██▍       | 195/793 [6:47:36<22:31:57, 135.65s/it]2024/06/17 09:36:25 batch_search_generate.py[line:133] INFO LLM process is alive.
-/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/tools/table/tabtools.py:44: DtypeWarning: Columns (25) have mixed types. Specify dtype option on import or set low_memory=False.
-  self.data = pd.read_csv(file_path)
-/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/tools/table/tabtools.py:44: DtypeWarning: Columns (25) have mixed types. Specify dtype option on import or set low_memory=False.
-  self.data = pd.read_csv(file_path)
-/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/tools/table/tabtools.py:44: DtypeWarning: Columns (25) have mixed types. Specify dtype option on import or set low_memory=False.
-  self.data = pd.read_csv(file_path)
-Execute:  25%|██▍       | 196/793 [6:49:28<21:24:14, 129.07s/it]2024/06/17 09:38:25 batch_search_generate.py[line:133] INFO LLM process is alive.
-Execute:  25%|██▍       | 197/793 [6:51:04<19:48:27, 119.64s/it]2024/06/17 09:40:25 batch_search_generate.py[line:133] INFO LLM process is alive.
-WARNING 06-17 09:40:43 scheduler.py:663] Input prompt (21763 tokens) is too long and exceeds limit of 8192
-/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/tools/table/tabtools.py:44: DtypeWarning: Columns (25) have mixed types. Specify dtype option on import or set low_memory=False.
-  self.data = pd.read_csv(file_path)
-/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/tools/table/tabtools.py:44: DtypeWarning: Columns (25) have mixed types. Specify dtype option on import or set low_memory=False.
-  self.data = pd.read_csv(file_path)
-/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/tools/table/tabtools.py:44: DtypeWarning: Columns (25) have mixed types. Specify dtype option on import or set low_memory=False.
-  self.data = pd.read_csv(file_path)
-Execute:  25%|██▍       | 198/793 [6:52:55<19:23:50, 117.36s/it]/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/tools/table/tabtools.py:44: DtypeWarning: Columns (25) have mixed types. Specify dtype option on import or set low_memory=False.
-  self.data = pd.read_csv(file_path)
-/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/tools/table/tabtools.py:44: DtypeWarning: Columns (25) have mixed types. Specify dtype option on import or set low_memory=False.
-  self.data = pd.read_csv(file_path)
-Execute:  25%|██▌       | 199/793 [6:53:43<16:01:30, 97.12s/it] 2024/06/17 09:42:25 batch_search_generate.py[line:133] INFO LLM process is alive.
-2024/06/17 09:43:20 batch_search_generate.py[line:174] INFO save solutions: 5
-Execute:  25%|██▌       | 200/793 [6:55:03<15:10:55, 92.17s/it]Execute:  25%|██▌       | 201/793 [6:55:36<12:13:49, 74.37s/it]2024/06/17 09:44:25 batch_search_generate.py[line:133] INFO LLM process is alive.
-Execute:  25%|██▌       | 202/793 [6:57:27<14:02:06, 85.49s/it]Execute:  26%|██▌       | 203/793 [6:57:43<10:37:07, 64.79s/it]2024/06/17 09:46:25 batch_search_generate.py[line:133] INFO LLM process is alive.
-Execute:  26%|██▌       | 204/793 [6:58:47<10:33:32, 64.54s/it]2024/06/17 09:48:25 batch_search_generate.py[line:133] INFO LLM process is alive.
-2024/06/17 09:49:44 batch_search_generate.py[line:174] INFO save solutions: 5
-Execute:  26%|██▌       | 205/793 [7:01:27<15:12:01, 93.06s/it]2024/06/17 09:50:25 batch_search_generate.py[line:133] INFO LLM process is alive.
-Execute:  26%|██▌       | 206/793 [7:02:15<12:59:18, 79.66s/it]WARNING 06-17 09:50:57 scheduler.py:663] Input prompt (9581 tokens) is too long and exceeds limit of 8192
-2024/06/17 09:52:26 batch_search_generate.py[line:133] INFO LLM process is alive.
-Execute:  26%|██▌       | 207/793 [7:05:28<18:27:49, 113.43s/it]2024/06/17 09:54:26 batch_search_generate.py[line:133] INFO LLM process is alive.
-/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/tools/table/tabtools.py:44: DtypeWarning: Columns (25) have mixed types. Specify dtype option on import or set low_memory=False.
-  self.data = pd.read_csv(file_path)
-/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/tools/table/tabtools.py:44: DtypeWarning: Columns (25) have mixed types. Specify dtype option on import or set low_memory=False.
-  self.data = pd.read_csv(file_path)
-/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/tools/table/tabtools.py:44: DtypeWarning: Columns (25) have mixed types. Specify dtype option on import or set low_memory=False.
-  self.data = pd.read_csv(file_path)
-/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/tools/table/tabtools.py:44: DtypeWarning: Columns (25) have mixed types. Specify dtype option on import or set low_memory=False.
-  self.data = pd.read_csv(file_path)
-2024/06/17 09:56:26 batch_search_generate.py[line:133] INFO LLM process is alive.
-/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/tools/table/tabtools.py:44: DtypeWarning: Columns (25) have mixed types. Specify dtype option on import or set low_memory=False.
-  self.data = pd.read_csv(file_path)
-2024/06/17 09:58:26 batch_search_generate.py[line:133] INFO LLM process is alive.
-/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/tools/table/tabtools.py:44: DtypeWarning: Columns (25) have mixed types. Specify dtype option on import or set low_memory=False.
-  self.data = pd.read_csv(file_path)
-/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/tools/table/tabtools.py:44: DtypeWarning: Columns (25) have mixed types. Specify dtype option on import or set low_memory=False.
-  self.data = pd.read_csv(file_path)
-2024/06/17 10:00:26 batch_search_generate.py[line:133] INFO LLM process is alive.
-Execute:  26%|██▌       | 208/793 [7:12:09<32:25:25, 199.53s/it]/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/tools/table/tabtools.py:44: DtypeWarning: Columns (25) have mixed types. Specify dtype option on import or set low_memory=False.
-  self.data = pd.read_csv(file_path)
-/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/tools/table/tabtools.py:44: DtypeWarning: Columns (25) have mixed types. Specify dtype option on import or set low_memory=False.
-  self.data = pd.read_csv(file_path)
-2024/06/17 10:02:26 batch_search_generate.py[line:133] INFO LLM process is alive.
-2024/06/17 10:04:26 batch_search_generate.py[line:133] INFO LLM process is alive.
-Execute:  26%|██▋       | 209/793 [7:17:45<39:01:15, 240.54s/it]2024/06/17 10:06:26 batch_search_generate.py[line:133] INFO LLM process is alive.
-2024/06/17 10:07:54 batch_search_generate.py[line:174] INFO save solutions: 5
-Execute:  26%|██▋       | 210/793 [7:19:37<32:43:34, 202.08s/it]2024/06/17 10:08:26 batch_search_generate.py[line:133] INFO LLM process is alive.
-Execute:  27%|██▋       | 211/793 [7:20:42<25:59:10, 160.74s/it]Execute:  27%|██▋       | 212/793 [7:20:58<18:56:12, 117.34s/it]2024/06/17 10:10:26 batch_search_generate.py[line:133] INFO LLM process is alive.
-Execute:  27%|██▋       | 213/793 [7:23:38<21:00:21, 130.38s/it]Execute:  27%|██▋       | 214/793 [7:23:55<15:27:32, 96.12s/it] 2024/06/17 10:12:26 batch_search_generate.py[line:133] INFO LLM process is alive.
-2024/06/17 10:13:16 batch_search_generate.py[line:174] INFO save solutions: 5
-Execute:  27%|██▋       | 215/793 [7:24:59<13:53:45, 86.55s/it]2024/06/17 10:14:26 batch_search_generate.py[line:133] INFO LLM process is alive.
-Execute:  27%|██▋       | 216/793 [7:26:35<14:19:30, 89.38s/it]2024/06/17 10:16:26 batch_search_generate.py[line:133] INFO LLM process is alive.
-Execute:  27%|██▋       | 217/793 [7:28:27<15:24:36, 96.31s/it]Execute:  27%|██▋       | 218/793 [7:29:47<14:36:44, 91.49s/it]2024/06/17 10:18:26 batch_search_generate.py[line:133] INFO LLM process is alive.
-Execute:  28%|██▊       | 219/793 [7:31:08<14:03:41, 88.19s/it]2024/06/17 10:20:26 batch_search_generate.py[line:133] INFO LLM process is alive.
-2024/06/17 10:22:26 batch_search_generate.py[line:133] INFO LLM process is alive.
-2024/06/17 10:23:58 batch_search_generate.py[line:174] INFO save solutions: 5
-Execute:  28%|██▊       | 220/793 [7:35:41<22:52:48, 143.75s/it]2024/06/17 10:24:26 batch_search_generate.py[line:133] INFO LLM process is alive.
-Execute:  28%|██▊       | 221/793 [7:37:50<22:07:37, 139.26s/it]Execute:  28%|██▊       | 222/793 [7:38:06<16:13:27, 102.29s/it]2024/06/17 10:26:26 batch_search_generate.py[line:133] INFO LLM process is alive.

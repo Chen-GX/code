@@ -1,1616 +1,0 @@
-toolqa_hard
-dblp-hard
-1
-2024/06/17 02:48:26 log_utils.py[line:35] INFO seed:1718563706
-2024/06/17 02:48:26 log_utils.py[line:35] INFO verbose:False
-2024/06/17 02:48:26 log_utils.py[line:35] INFO process_num:1
-2024/06/17 02:48:26 log_utils.py[line:35] INFO path:/mnt/workspace/nas/chenguoxin.cgx/api/datasets/ToolQA
-2024/06/17 02:48:26 log_utils.py[line:35] INFO num_epoch:1
-2024/06/17 02:48:26 log_utils.py[line:35] INFO tool_url:http://127.0.0.1:5010/toolqa
-2024/06/17 02:48:26 log_utils.py[line:35] INFO filter:False
-2024/06/17 02:48:26 log_utils.py[line:35] INFO filter_path:11
-2024/06/17 02:48:26 log_utils.py[line:35] INFO checkpoint_dir:/mnt/workspace/nas/chenguoxin.cgx/model_cache/Meta-Llama-3-8B-Instruct
-2024/06/17 02:48:26 log_utils.py[line:35] INFO temperature:0.5
-2024/06/17 02:48:26 log_utils.py[line:35] INFO top_k:-1
-2024/06/17 02:48:26 log_utils.py[line:35] INFO top_p:1.0
-2024/06/17 02:48:26 log_utils.py[line:35] INFO frequency_penalty:1.2
-2024/06/17 02:48:26 log_utils.py[line:35] INFO scratchpad_length:1024
-2024/06/17 02:48:26 log_utils.py[line:35] INFO api_kernel_version:1
-2024/06/17 02:48:26 log_utils.py[line:35] INFO Cpuct:1.25
-2024/06/17 02:48:26 log_utils.py[line:35] INFO n_generate_sample:5
-2024/06/17 02:48:26 log_utils.py[line:35] INFO max_iter:12
-2024/06/17 02:48:26 log_utils.py[line:35] INFO max_depth:12
-2024/06/17 02:48:26 log_utils.py[line:35] INFO positive_reward:1.0
-2024/06/17 02:48:26 log_utils.py[line:35] INFO negative_reward:-1.0
-2024/06/17 02:48:26 log_utils.py[line:35] INFO max_new_tokens:1024
-2024/06/17 02:48:26 log_utils.py[line:35] INFO max_load_db:5
-2024/06/17 02:48:26 log_utils.py[line:35] INFO debug_num:-1
-2024/06/17 02:48:26 log_utils.py[line:35] INFO datapath:/mnt/workspace/nas/chenguoxin.cgx/api/workspace/data
-2024/06/17 02:48:26 log_utils.py[line:35] INFO task:toolqa_hard
-2024/06/17 02:48:26 log_utils.py[line:35] INFO dataname:dblp-hard
-2024/06/17 02:48:26 log_utils.py[line:35] INFO output_dir:/mnt/workspace/nas/chenguoxin.cgx/api/workspace/output_dir/mcts/round1/run/toolqa_hard/dblp-hard/Meta-Llama-3-8B-Instruct/20240617_024826
-2024/06/17 02:48:26 log_utils.py[line:35] INFO num_examples:2
-2024/06/17 02:48:26 log_utils.py[line:35] INFO model_name:Meta-Llama-3-8B-Instruct
-2024/06/17 02:48:26 log_utils.py[line:35] INFO timestamp:20240617_024826
-2024/06/17 02:48:27 batch_search_generate.py[line:279] INFO ********** EPOCH 0 ***********
-Execute:   0%|          | 0/963 [00:00<?, ?it/s]INFO 06-17 02:48:27 llm_engine.py:161] Initializing an LLM engine (v0.4.3) with config: model='/mnt/workspace/nas/chenguoxin.cgx/model_cache/Meta-Llama-3-8B-Instruct', speculative_config=None, tokenizer='/mnt/workspace/nas/chenguoxin.cgx/model_cache/Meta-Llama-3-8B-Instruct', skip_tokenizer_init=False, tokenizer_mode=auto, revision=None, rope_scaling=None, tokenizer_revision=None, trust_remote_code=False, dtype=torch.bfloat16, max_seq_len=8192, download_dir=None, load_format=LoadFormat.AUTO, tensor_parallel_size=1, disable_custom_all_reduce=False, quantization=None, enforce_eager=False, kv_cache_dtype=auto, quantization_param_path=None, device_config=cuda, decoding_config=DecodingConfig(guided_decoding_backend='outlines'), seed=1718563706, served_model_name=/mnt/workspace/nas/chenguoxin.cgx/model_cache/Meta-Llama-3-8B-Instruct)
-Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
-INFO 06-17 02:48:31 model_runner.py:146] Loading model weights took 14.9595 GB
-INFO 06-17 02:48:32 gpu_executor.py:83] # GPU blocks: 27895, # CPU blocks: 4096
-INFO 06-17 02:48:37 model_runner.py:854] Capturing the model for CUDA graphs. This may lead to unexpected consequences if the model is not static. To run the model in eager mode, set 'enforce_eager=True' or use '--enforce-eager' in the CLI.
-INFO 06-17 02:48:37 model_runner.py:858] CUDA graphs can take additional 1~3 GiB memory per GPU. If you are running out of memory, consider decreasing `gpu_memory_utilization` or enforcing eager mode. You can also reduce the `max_num_seqs` as needed to decrease memory usage.
-Execute:   0%|          | 0/963 [00:15<?, ?it/s]INFO 06-17 02:48:42 model_runner.py:924] Graph capturing finished in 5 secs.
-Execute:   0%|          | 0/963 [00:30<?, ?it/s]Execute:   0%|          | 0/963 [00:45<?, ?it/s]Execute:   0%|          | 0/963 [01:00<?, ?it/s]Execute:   0%|          | 0/963 [01:15<?, ?it/s]Execute:   0%|          | 0/963 [01:30<?, ?it/s]Execute:   0%|          | 0/963 [01:45<?, ?it/s]Execute:   0%|          | 0/963 [02:00<?, ?it/s]Execute:   0%|          | 0/963 [02:15<?, ?it/s]Execute:   0%|          | 0/963 [02:30<?, ?it/s]Execute:   0%|          | 0/963 [02:45<?, ?it/s]Execute:   0%|          | 0/963 [03:00<?, ?it/s]2024/06/17 02:51:41 batch_search_generate.py[line:155] ERROR mcts error expected string or bytes-like object, got 'list'
-Traceback (most recent call last):
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/hard_runs/../src/batch_search_generate.py", line 149, in mcts_search
-    outputs = mcts_tree.search()
-              ^^^^^^^^^^^^^^^^^^
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/local_mcts.py", line 43, in search
-    self.search_once()
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/mcts.py", line 204, in search_once
-    self.expansion_evaluation_backpropagation(front)
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/local_mcts.py", line 60, in expansion_evaluation_backpropagation
-    self.expand_node(output_texts, prior_probs, node, rollout)
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/local_mcts.py", line 143, in expand_node
-    reward, end_node = self.rollout(new_node)
-                       ^^^^^^^^^^^^^^^^^^^^^^
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/mcts.py", line 403, in rollout
-    self.expansion_evaluation_backpropagation(node, rollout=True)
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/local_mcts.py", line 60, in expansion_evaluation_backpropagation
-    self.expand_node(output_texts, prior_probs, node, rollout)
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/local_mcts.py", line 139, in expand_node
-    new_node = self.action_parser(step_output_text, node, prior_prob, idx=num_child)
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/mcts.py", line 335, in action_parser
-    action_type, action_input, observation, finished, reward, final_answer, table, new_tool_desc = self.tool_agent.parse_and_perform_action(text, api_version=self.api_version, table=table_toolkits(self.args.path) if node.table is None else copy.deepcopy(node.table))
-                                                                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/toolqa.py", line 85, in parse_and_perform_action
-    api_state, new_action_type, new_params, error_infos = self.action_params_check(action_type, params, api_version)
-                                                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/toolqa.py", line 241, in action_params_check
-    node1, node2 = parse_EdgeCheck(params['NodeInfos'], api_version)
-                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/toolqa.py", line 299, in parse_EdgeCheck
-    matches = re.search(pattern, text)
-              ^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/opt/conda/envs/vary/lib/python3.11/re/__init__.py", line 176, in search
-    return _compile(pattern, flags).search(string)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-TypeError: expected string or bytes-like object, got 'list'
-Execute:   0%|          | 0/963 [03:15<?, ?it/s]Execute:   0%|          | 0/963 [03:30<?, ?it/s]Execute:   0%|          | 0/963 [03:45<?, ?it/s]Execute:   0%|          | 0/963 [04:00<?, ?it/s]Execute:   0%|          | 0/963 [04:15<?, ?it/s]Execute:   0%|          | 0/963 [04:30<?, ?it/s]Execute:   0%|          | 0/963 [04:45<?, ?it/s]Execute:   0%|          | 0/963 [05:00<?, ?it/s]Execute:   0%|          | 0/963 [05:15<?, ?it/s]Execute:   0%|          | 0/963 [05:30<?, ?it/s]Execute:   0%|          | 0/963 [05:45<?, ?it/s]Execute:   0%|          | 0/963 [06:00<?, ?it/s]Execute:   0%|          | 0/963 [06:15<?, ?it/s]Execute:   0%|          | 0/963 [06:30<?, ?it/s]Execute:   0%|          | 0/963 [06:45<?, ?it/s]Execute:   0%|          | 0/963 [07:00<?, ?it/s]Execute:   0%|          | 0/963 [07:15<?, ?it/s]Execute:   0%|          | 0/963 [07:30<?, ?it/s]Execute:   0%|          | 0/963 [07:45<?, ?it/s]Execute:   0%|          | 0/963 [08:00<?, ?it/s]Execute:   0%|          | 0/963 [08:15<?, ?it/s]Execute:   0%|          | 0/963 [08:30<?, ?it/s]Execute:   0%|          | 0/963 [08:45<?, ?it/s]Execute:   0%|          | 0/963 [09:00<?, ?it/s]Execute:   0%|          | 0/963 [09:15<?, ?it/s]Execute:   0%|          | 0/963 [09:30<?, ?it/s]Execute:   0%|          | 0/963 [09:45<?, ?it/s]2024/06/17 02:58:27 batch_search_generate.py[line:133] INFO LLM process is alive.
-Execute:   0%|          | 0/963 [10:00<?, ?it/s]Execute:   0%|          | 0/963 [10:15<?, ?it/s]Execute:   0%|          | 0/963 [10:30<?, ?it/s]Execute:   0%|          | 0/963 [10:45<?, ?it/s]Execute:   0%|          | 0/963 [11:00<?, ?it/s]Execute:   0%|          | 0/963 [11:15<?, ?it/s]Execute:   0%|          | 0/963 [11:30<?, ?it/s]Execute:   0%|          | 0/963 [11:45<?, ?it/s]2024/06/17 03:00:27 batch_search_generate.py[line:133] INFO LLM process is alive.
-Execute:   0%|          | 0/963 [12:00<?, ?it/s]Execute:   0%|          | 0/963 [12:15<?, ?it/s]Execute:   0%|          | 0/963 [12:30<?, ?it/s]Execute:   0%|          | 0/963 [12:45<?, ?it/s]Execute:   0%|          | 0/963 [13:00<?, ?it/s]Execute:   0%|          | 0/963 [13:15<?, ?it/s]Execute:   0%|          | 0/963 [13:30<?, ?it/s]Execute:   0%|          | 0/963 [13:45<?, ?it/s]2024/06/17 03:02:27 batch_search_generate.py[line:133] INFO LLM process is alive.
-Execute:   0%|          | 0/963 [14:00<?, ?it/s]Execute:   0%|          | 0/963 [14:15<?, ?it/s]Execute:   0%|          | 0/963 [14:30<?, ?it/s]Execute:   0%|          | 0/963 [14:45<?, ?it/s]Execute:   0%|          | 0/963 [15:00<?, ?it/s]Execute:   0%|          | 0/963 [15:15<?, ?it/s]Execute:   0%|          | 0/963 [15:30<?, ?it/s]Execute:   0%|          | 0/963 [15:45<?, ?it/s]2024/06/17 03:04:27 batch_search_generate.py[line:133] INFO LLM process is alive.
-Execute:   0%|          | 0/963 [16:00<?, ?it/s]Execute:   0%|          | 0/963 [16:15<?, ?it/s]Execute:   0%|          | 0/963 [16:30<?, ?it/s]Execute:   0%|          | 0/963 [16:45<?, ?it/s]Execute:   0%|          | 0/963 [17:00<?, ?it/s]Execute:   0%|          | 0/963 [17:15<?, ?it/s]Execute:   0%|          | 0/963 [17:30<?, ?it/s]Execute:   0%|          | 0/963 [17:45<?, ?it/s]2024/06/17 03:06:27 batch_search_generate.py[line:133] INFO LLM process is alive.
-Execute:   0%|          | 0/963 [18:00<?, ?it/s]Execute:   0%|          | 0/963 [18:15<?, ?it/s]Execute:   0%|          | 0/963 [18:30<?, ?it/s]Execute:   0%|          | 0/963 [18:45<?, ?it/s]WARNING 06-17 03:07:26 scheduler.py:663] Input prompt (8650 tokens) is too long and exceeds limit of 8192
-Execute:   0%|          | 0/963 [19:00<?, ?it/s]Execute:   0%|          | 0/963 [19:15<?, ?it/s]Execute:   0%|          | 0/963 [19:30<?, ?it/s]Execute:   0%|          | 0/963 [19:45<?, ?it/s]2024/06/17 03:08:27 batch_search_generate.py[line:133] INFO LLM process is alive.
-Execute:   0%|          | 0/963 [20:00<?, ?it/s]Execute:   0%|          | 0/963 [20:15<?, ?it/s]Execute:   0%|          | 0/963 [20:30<?, ?it/s]Execute:   0%|          | 0/963 [20:45<?, ?it/s]Execute:   0%|          | 0/963 [21:00<?, ?it/s]Execute:   0%|          | 0/963 [21:15<?, ?it/s]Execute:   0%|          | 0/963 [21:30<?, ?it/s]Execute:   0%|          | 0/963 [21:45<?, ?it/s]2024/06/17 03:10:27 batch_search_generate.py[line:133] INFO LLM process is alive.
-Execute:   0%|          | 0/963 [22:00<?, ?it/s]Execute:   0%|          | 0/963 [22:15<?, ?it/s]Execute:   0%|          | 0/963 [22:30<?, ?it/s]Execute:   0%|          | 0/963 [22:45<?, ?it/s]Execute:   0%|          | 0/963 [23:00<?, ?it/s]Execute:   0%|          | 0/963 [23:15<?, ?it/s]Execute:   0%|          | 0/963 [23:30<?, ?it/s]Execute:   0%|          | 0/963 [23:45<?, ?it/s]2024/06/17 03:12:27 batch_search_generate.py[line:133] INFO LLM process is alive.
-Execute:   0%|          | 0/963 [24:00<?, ?it/s]Execute:   0%|          | 0/963 [24:15<?, ?it/s]Execute:   0%|          | 0/963 [24:30<?, ?it/s]Execute:   0%|          | 0/963 [24:45<?, ?it/s]Execute:   0%|          | 0/963 [25:00<?, ?it/s]Execute:   0%|          | 0/963 [25:15<?, ?it/s]Execute:   0%|          | 0/963 [25:30<?, ?it/s]Execute:   0%|          | 0/963 [25:45<?, ?it/s]2024/06/17 03:14:27 batch_search_generate.py[line:133] INFO LLM process is alive.
-Execute:   0%|          | 0/963 [26:00<?, ?it/s]Execute:   0%|          | 0/963 [26:15<?, ?it/s]Execute:   0%|          | 0/963 [26:30<?, ?it/s]Execute:   0%|          | 0/963 [26:45<?, ?it/s]Execute:   0%|          | 0/963 [27:00<?, ?it/s]2024/06/17 03:15:40 batch_search_generate.py[line:155] ERROR mcts error expected string or bytes-like object, got 'list'
-Traceback (most recent call last):
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/hard_runs/../src/batch_search_generate.py", line 149, in mcts_search
-    outputs = mcts_tree.search()
-              ^^^^^^^^^^^^^^^^^^
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/local_mcts.py", line 43, in search
-    self.search_once()
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/mcts.py", line 204, in search_once
-    self.expansion_evaluation_backpropagation(front)
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/local_mcts.py", line 64, in expansion_evaluation_backpropagation
-    self.expand_node_with_cache(node)
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/mcts.py", line 325, in expand_node_with_cache
-    reward, end_node = self.rollout(child)
-                       ^^^^^^^^^^^^^^^^^^^
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/mcts.py", line 403, in rollout
-    self.expansion_evaluation_backpropagation(node, rollout=True)
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/local_mcts.py", line 60, in expansion_evaluation_backpropagation
-    self.expand_node(output_texts, prior_probs, node, rollout)
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/local_mcts.py", line 139, in expand_node
-    new_node = self.action_parser(step_output_text, node, prior_prob, idx=num_child)
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/mcts.py", line 335, in action_parser
-    action_type, action_input, observation, finished, reward, final_answer, table, new_tool_desc = self.tool_agent.parse_and_perform_action(text, api_version=self.api_version, table=table_toolkits(self.args.path) if node.table is None else copy.deepcopy(node.table))
-                                                                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/toolqa.py", line 85, in parse_and_perform_action
-    api_state, new_action_type, new_params, error_infos = self.action_params_check(action_type, params, api_version)
-                                                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/toolqa.py", line 241, in action_params_check
-    node1, node2 = parse_EdgeCheck(params['NodeInfos'], api_version)
-                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/toolqa.py", line 299, in parse_EdgeCheck
-    matches = re.search(pattern, text)
-              ^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/opt/conda/envs/vary/lib/python3.11/re/__init__.py", line 176, in search
-    return _compile(pattern, flags).search(string)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-TypeError: expected string or bytes-like object, got 'list'
-Execute:   0%|          | 0/963 [27:15<?, ?it/s]Execute:   0%|          | 0/963 [27:30<?, ?it/s]Execute:   0%|          | 0/963 [27:45<?, ?it/s]2024/06/17 03:16:27 batch_search_generate.py[line:133] INFO LLM process is alive.
-Execute:   0%|          | 0/963 [28:00<?, ?it/s]Execute:   0%|          | 0/963 [28:15<?, ?it/s]Execute:   0%|          | 0/963 [28:30<?, ?it/s]Execute:   0%|          | 0/963 [28:45<?, ?it/s]Execute:   0%|          | 0/963 [29:00<?, ?it/s]Execute:   0%|          | 0/963 [29:15<?, ?it/s]Execute:   0%|          | 0/963 [29:30<?, ?it/s]Execute:   0%|          | 0/963 [29:45<?, ?it/s]2024/06/17 03:18:27 batch_search_generate.py[line:133] INFO LLM process is alive.
-Execute:   0%|          | 0/963 [30:00<?, ?it/s]Execute:   0%|          | 0/963 [30:15<?, ?it/s]Execute:   0%|          | 0/963 [30:30<?, ?it/s]Execute:   0%|          | 0/963 [30:45<?, ?it/s]Execute:   0%|          | 0/963 [31:00<?, ?it/s]Execute:   0%|          | 0/963 [31:15<?, ?it/s]Execute:   0%|          | 0/963 [31:30<?, ?it/s]Execute:   0%|          | 0/963 [31:45<?, ?it/s]2024/06/17 03:20:27 batch_search_generate.py[line:133] INFO LLM process is alive.
-Execute:   0%|          | 0/963 [32:00<?, ?it/s]Execute:   0%|          | 0/963 [32:15<?, ?it/s]Execute:   0%|          | 0/963 [32:30<?, ?it/s]Execute:   0%|          | 0/963 [32:45<?, ?it/s]Execute:   0%|          | 0/963 [33:00<?, ?it/s]Execute:   0%|          | 0/963 [33:15<?, ?it/s]Execute:   0%|          | 0/963 [33:30<?, ?it/s]Execute:   0%|          | 0/963 [33:45<?, ?it/s]2024/06/17 03:22:24 batch_search_generate.py[line:155] ERROR mcts error expected string or bytes-like object, got 'list'
-Traceback (most recent call last):
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/hard_runs/../src/batch_search_generate.py", line 149, in mcts_search
-    outputs = mcts_tree.search()
-              ^^^^^^^^^^^^^^^^^^
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/local_mcts.py", line 43, in search
-    self.search_once()
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/mcts.py", line 204, in search_once
-    self.expansion_evaluation_backpropagation(front)
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/local_mcts.py", line 64, in expansion_evaluation_backpropagation
-    self.expand_node_with_cache(node)
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/mcts.py", line 325, in expand_node_with_cache
-    reward, end_node = self.rollout(child)
-                       ^^^^^^^^^^^^^^^^^^^
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/mcts.py", line 403, in rollout
-    self.expansion_evaluation_backpropagation(node, rollout=True)
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/local_mcts.py", line 60, in expansion_evaluation_backpropagation
-    self.expand_node(output_texts, prior_probs, node, rollout)
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/local_mcts.py", line 139, in expand_node
-    new_node = self.action_parser(step_output_text, node, prior_prob, idx=num_child)
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/mcts.py", line 335, in action_parser
-    action_type, action_input, observation, finished, reward, final_answer, table, new_tool_desc = self.tool_agent.parse_and_perform_action(text, api_version=self.api_version, table=table_toolkits(self.args.path) if node.table is None else copy.deepcopy(node.table))
-                                                                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/toolqa.py", line 85, in parse_and_perform_action
-    api_state, new_action_type, new_params, error_infos = self.action_params_check(action_type, params, api_version)
-                                                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/toolqa.py", line 241, in action_params_check
-    node1, node2 = parse_EdgeCheck(params['NodeInfos'], api_version)
-                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/toolqa.py", line 299, in parse_EdgeCheck
-    matches = re.search(pattern, text)
-              ^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/opt/conda/envs/vary/lib/python3.11/re/__init__.py", line 176, in search
-    return _compile(pattern, flags).search(string)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-TypeError: expected string or bytes-like object, got 'list'
-Execute:   0%|          | 0/963 [34:00<?, ?it/s]2024/06/17 03:22:28 batch_search_generate.py[line:133] INFO LLM process is alive.
-Execute:   0%|          | 1/963 [34:15<4:00:39, 15.01s/it]2024/06/17 03:24:28 batch_search_generate.py[line:133] INFO LLM process is alive.
-2024/06/17 03:26:28 batch_search_generate.py[line:133] INFO LLM process is alive.
-2024/06/17 03:28:28 batch_search_generate.py[line:133] INFO LLM process is alive.
-Execute:   0%|          | 2/963 [40:30<60:34:03, 226.89s/it]2024/06/17 03:30:28 batch_search_generate.py[line:133] INFO LLM process is alive.
-2024/06/17 03:32:28 batch_search_generate.py[line:133] INFO LLM process is alive.
-Execute:   0%|          | 3/963 [44:31<62:08:56, 233.06s/it]2024/06/17 03:34:28 batch_search_generate.py[line:133] INFO LLM process is alive.
-Execute:   0%|          | 4/963 [46:16<48:38:47, 182.61s/it]2024/06/17 03:36:28 batch_search_generate.py[line:133] INFO LLM process is alive.
-2024/06/17 03:38:28 batch_search_generate.py[line:133] INFO LLM process is alive.
-2024/06/17 03:39:14 batch_search_generate.py[line:174] INFO save solutions: 5
-Execute:   1%|          | 5/963 [50:47<57:05:11, 214.52s/it]2024/06/17 03:40:16 batch_search_generate.py[line:155] ERROR mcts error expected string or bytes-like object, got 'NoneType'
-Traceback (most recent call last):
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/hard_runs/../src/batch_search_generate.py", line 149, in mcts_search
-    outputs = mcts_tree.search()
-              ^^^^^^^^^^^^^^^^^^
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/local_mcts.py", line 43, in search
-    self.search_once()
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/mcts.py", line 204, in search_once
-    self.expansion_evaluation_backpropagation(front)
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/local_mcts.py", line 64, in expansion_evaluation_backpropagation
-    self.expand_node_with_cache(node)
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/mcts.py", line 325, in expand_node_with_cache
-    reward, end_node = self.rollout(child)
-                       ^^^^^^^^^^^^^^^^^^^
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/mcts.py", line 403, in rollout
-    self.expansion_evaluation_backpropagation(node, rollout=True)
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/local_mcts.py", line 60, in expansion_evaluation_backpropagation
-    self.expand_node(output_texts, prior_probs, node, rollout)
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/local_mcts.py", line 139, in expand_node
-    new_node = self.action_parser(step_output_text, node, prior_prob, idx=num_child)
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/mcts.py", line 335, in action_parser
-    action_type, action_input, observation, finished, reward, final_answer, table, new_tool_desc = self.tool_agent.parse_and_perform_action(text, api_version=self.api_version, table=table_toolkits(self.args.path) if node.table is None else copy.deepcopy(node.table))
-                                                                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/toolqa.py", line 85, in parse_and_perform_action
-    api_state, new_action_type, new_params, error_infos = self.action_params_check(action_type, params, api_version)
-                                                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/toolqa.py", line 241, in action_params_check
-    node1, node2 = parse_EdgeCheck(params['NodeInfos'], api_version)
-                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/toolqa.py", line 299, in parse_EdgeCheck
-    matches = re.search(pattern, text)
-              ^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/opt/conda/envs/vary/lib/python3.11/re/__init__.py", line 176, in search
-    return _compile(pattern, flags).search(string)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-TypeError: expected string or bytes-like object, got 'NoneType'
-2024/06/17 03:40:28 batch_search_generate.py[line:133] INFO LLM process is alive.
-2024/06/17 03:42:28 batch_search_generate.py[line:133] INFO LLM process is alive.
-Execute:   1%|          | 6/963 [54:33<58:04:08, 218.44s/it]Execute:   1%|          | 7/963 [55:18<42:58:21, 161.82s/it]2024/06/17 03:44:28 batch_search_generate.py[line:133] INFO LLM process is alive.
-2024/06/17 03:45:56 batch_search_generate.py[line:155] ERROR mcts error expected string or bytes-like object, got 'NoneType'
-Traceback (most recent call last):
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/hard_runs/../src/batch_search_generate.py", line 149, in mcts_search
-    outputs = mcts_tree.search()
-              ^^^^^^^^^^^^^^^^^^
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/local_mcts.py", line 43, in search
-    self.search_once()
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/mcts.py", line 204, in search_once
-    self.expansion_evaluation_backpropagation(front)
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/local_mcts.py", line 60, in expansion_evaluation_backpropagation
-    self.expand_node(output_texts, prior_probs, node, rollout)
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/local_mcts.py", line 143, in expand_node
-    reward, end_node = self.rollout(new_node)
-                       ^^^^^^^^^^^^^^^^^^^^^^
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/mcts.py", line 403, in rollout
-    self.expansion_evaluation_backpropagation(node, rollout=True)
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/local_mcts.py", line 60, in expansion_evaluation_backpropagation
-    self.expand_node(output_texts, prior_probs, node, rollout)
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/local_mcts.py", line 139, in expand_node
-    new_node = self.action_parser(step_output_text, node, prior_prob, idx=num_child)
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/mcts.py", line 335, in action_parser
-    action_type, action_input, observation, finished, reward, final_answer, table, new_tool_desc = self.tool_agent.parse_and_perform_action(text, api_version=self.api_version, table=table_toolkits(self.args.path) if node.table is None else copy.deepcopy(node.table))
-                                                                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/toolqa.py", line 85, in parse_and_perform_action
-    api_state, new_action_type, new_params, error_infos = self.action_params_check(action_type, params, api_version)
-                                                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/toolqa.py", line 241, in action_params_check
-    node1, node2 = parse_EdgeCheck(params['NodeInfos'], api_version)
-                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/toolqa.py", line 299, in parse_EdgeCheck
-    matches = re.search(pattern, text)
-              ^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/opt/conda/envs/vary/lib/python3.11/re/__init__.py", line 176, in search
-    return _compile(pattern, flags).search(string)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-TypeError: expected string or bytes-like object, got 'NoneType'
-2024/06/17 03:46:28 batch_search_generate.py[line:133] INFO LLM process is alive.
-2024/06/17 03:48:28 batch_search_generate.py[line:133] INFO LLM process is alive.
-2024/06/17 03:50:28 batch_search_generate.py[line:133] INFO LLM process is alive.
-2024/06/17 03:52:28 batch_search_generate.py[line:133] INFO LLM process is alive.
-/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/tools/table/tabtools.py:44: DtypeWarning: Columns (25) have mixed types. Specify dtype option on import or set low_memory=False.
-  self.data = pd.read_csv(file_path)
-2024/06/17 03:54:28 batch_search_generate.py[line:133] INFO LLM process is alive.
-2024/06/17 03:56:28 batch_search_generate.py[line:133] INFO LLM process is alive.
-2024/06/17 03:58:01 batch_search_generate.py[line:155] ERROR mcts error expected string or bytes-like object, got 'list'
-Traceback (most recent call last):
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/hard_runs/../src/batch_search_generate.py", line 149, in mcts_search
-    outputs = mcts_tree.search()
-              ^^^^^^^^^^^^^^^^^^
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/local_mcts.py", line 43, in search
-    self.search_once()
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/mcts.py", line 204, in search_once
-    self.expansion_evaluation_backpropagation(front)
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/local_mcts.py", line 64, in expansion_evaluation_backpropagation
-    self.expand_node_with_cache(node)
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/mcts.py", line 325, in expand_node_with_cache
-    reward, end_node = self.rollout(child)
-                       ^^^^^^^^^^^^^^^^^^^
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/mcts.py", line 403, in rollout
-    self.expansion_evaluation_backpropagation(node, rollout=True)
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/local_mcts.py", line 60, in expansion_evaluation_backpropagation
-    self.expand_node(output_texts, prior_probs, node, rollout)
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/local_mcts.py", line 139, in expand_node
-    new_node = self.action_parser(step_output_text, node, prior_prob, idx=num_child)
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/mcts.py", line 335, in action_parser
-    action_type, action_input, observation, finished, reward, final_answer, table, new_tool_desc = self.tool_agent.parse_and_perform_action(text, api_version=self.api_version, table=table_toolkits(self.args.path) if node.table is None else copy.deepcopy(node.table))
-                                                                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/toolqa.py", line 85, in parse_and_perform_action
-    api_state, new_action_type, new_params, error_infos = self.action_params_check(action_type, params, api_version)
-                                                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/toolqa.py", line 241, in action_params_check
-    node1, node2 = parse_EdgeCheck(params['NodeInfos'], api_version)
-                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/toolqa.py", line 299, in parse_EdgeCheck
-    matches = re.search(pattern, text)
-              ^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/opt/conda/envs/vary/lib/python3.11/re/__init__.py", line 176, in search
-    return _compile(pattern, flags).search(string)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-TypeError: expected string or bytes-like object, got 'list'
-2024/06/17 03:58:28 batch_search_generate.py[line:133] INFO LLM process is alive.
-2024/06/17 04:00:28 batch_search_generate.py[line:133] INFO LLM process is alive.
-2024/06/17 04:02:28 batch_search_generate.py[line:133] INFO LLM process is alive.
-Execute:   1%|          | 8/963 [1:15:56<133:46:28, 504.28s/it]2024/06/17 04:04:28 batch_search_generate.py[line:133] INFO LLM process is alive.
-2024/06/17 04:04:43 batch_search_generate.py[line:155] ERROR mcts error expected string or bytes-like object, got 'list'
-Traceback (most recent call last):
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/hard_runs/../src/batch_search_generate.py", line 149, in mcts_search
-    outputs = mcts_tree.search()
-              ^^^^^^^^^^^^^^^^^^
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/local_mcts.py", line 43, in search
-    self.search_once()
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/mcts.py", line 204, in search_once
-    self.expansion_evaluation_backpropagation(front)
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/local_mcts.py", line 64, in expansion_evaluation_backpropagation
-    self.expand_node_with_cache(node)
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/mcts.py", line 325, in expand_node_with_cache
-    reward, end_node = self.rollout(child)
-                       ^^^^^^^^^^^^^^^^^^^
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/mcts.py", line 403, in rollout
-    self.expansion_evaluation_backpropagation(node, rollout=True)
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/local_mcts.py", line 60, in expansion_evaluation_backpropagation
-    self.expand_node(output_texts, prior_probs, node, rollout)
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/local_mcts.py", line 139, in expand_node
-    new_node = self.action_parser(step_output_text, node, prior_prob, idx=num_child)
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/mcts.py", line 335, in action_parser
-    action_type, action_input, observation, finished, reward, final_answer, table, new_tool_desc = self.tool_agent.parse_and_perform_action(text, api_version=self.api_version, table=table_toolkits(self.args.path) if node.table is None else copy.deepcopy(node.table))
-                                                                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/toolqa.py", line 85, in parse_and_perform_action
-    api_state, new_action_type, new_params, error_infos = self.action_params_check(action_type, params, api_version)
-                                                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/toolqa.py", line 241, in action_params_check
-    node1, node2 = parse_EdgeCheck(params['NodeInfos'], api_version)
-                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/toolqa.py", line 299, in parse_EdgeCheck
-    matches = re.search(pattern, text)
-              ^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/opt/conda/envs/vary/lib/python3.11/re/__init__.py", line 176, in search
-    return _compile(pattern, flags).search(string)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-TypeError: expected string or bytes-like object, got 'list'
-2024/06/17 04:06:28 batch_search_generate.py[line:133] INFO LLM process is alive.
-2024/06/17 04:08:28 batch_search_generate.py[line:133] INFO LLM process is alive.
-Execute:   1%|          | 9/963 [1:21:28<119:23:24, 450.53s/it]2024/06/17 04:10:28 batch_search_generate.py[line:133] INFO LLM process is alive.
-2024/06/17 04:12:12 batch_search_generate.py[line:174] INFO save solutions: 5
-Execute:   1%|          | 10/963 [1:23:45<93:35:39, 353.56s/it]2024/06/17 04:12:28 batch_search_generate.py[line:133] INFO LLM process is alive.
-2024/06/17 04:14:28 batch_search_generate.py[line:133] INFO LLM process is alive.
-2024/06/17 04:16:28 batch_search_generate.py[line:133] INFO LLM process is alive.
-2024/06/17 04:18:29 batch_search_generate.py[line:133] INFO LLM process is alive.
-Execute:   1%|          | 11/963 [1:30:18<96:44:32, 365.83s/it]2024/06/17 04:20:29 batch_search_generate.py[line:133] INFO LLM process is alive.
-WARNING 06-17 04:20:46 scheduler.py:663] Input prompt (8448 tokens) is too long and exceeds limit of 8192
-2024/06/17 04:22:29 batch_search_generate.py[line:133] INFO LLM process is alive.
-2024/06/17 04:24:27 batch_search_generate.py[line:155] ERROR mcts error expected string or bytes-like object, got 'list'
-Traceback (most recent call last):
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/hard_runs/../src/batch_search_generate.py", line 149, in mcts_search
-    outputs = mcts_tree.search()
-              ^^^^^^^^^^^^^^^^^^
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/local_mcts.py", line 43, in search
-    self.search_once()
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/mcts.py", line 204, in search_once
-    self.expansion_evaluation_backpropagation(front)
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/local_mcts.py", line 64, in expansion_evaluation_backpropagation
-    self.expand_node_with_cache(node)
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/mcts.py", line 325, in expand_node_with_cache
-    reward, end_node = self.rollout(child)
-                       ^^^^^^^^^^^^^^^^^^^
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/mcts.py", line 403, in rollout
-    self.expansion_evaluation_backpropagation(node, rollout=True)
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/local_mcts.py", line 60, in expansion_evaluation_backpropagation
-    self.expand_node(output_texts, prior_probs, node, rollout)
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/local_mcts.py", line 139, in expand_node
-    new_node = self.action_parser(step_output_text, node, prior_prob, idx=num_child)
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/mcts.py", line 335, in action_parser
-    action_type, action_input, observation, finished, reward, final_answer, table, new_tool_desc = self.tool_agent.parse_and_perform_action(text, api_version=self.api_version, table=table_toolkits(self.args.path) if node.table is None else copy.deepcopy(node.table))
-                                                                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/toolqa.py", line 85, in parse_and_perform_action
-    api_state, new_action_type, new_params, error_infos = self.action_params_check(action_type, params, api_version)
-                                                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/toolqa.py", line 241, in action_params_check
-    node1, node2 = parse_EdgeCheck(params['NodeInfos'], api_version)
-                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/toolqa.py", line 299, in parse_EdgeCheck
-    matches = re.search(pattern, text)
-              ^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/opt/conda/envs/vary/lib/python3.11/re/__init__.py", line 176, in search
-    return _compile(pattern, flags).search(string)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-TypeError: expected string or bytes-like object, got 'list'
-2024/06/17 04:24:29 batch_search_generate.py[line:133] INFO LLM process is alive.
-2024/06/17 04:26:29 batch_search_generate.py[line:133] INFO LLM process is alive.
-2024/06/17 04:28:29 batch_search_generate.py[line:133] INFO LLM process is alive.
-2024/06/17 04:30:29 batch_search_generate.py[line:133] INFO LLM process is alive.
-2024/06/17 04:32:29 batch_search_generate.py[line:133] INFO LLM process is alive.
-2024/06/17 04:32:49 batch_search_generate.py[line:245] ERROR pool error: [Errno Task timeout] 3600
-Traceback (most recent call last):
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/hard_runs/../src/batch_search_generate.py", line 240, in batch_main
-    for _ in future.result():
-  File "/opt/conda/envs/vary/lib/python3.11/site-packages/pebble/pool/base_pool.py", line 230, in next
-    raise result
-  File "/opt/conda/envs/vary/lib/python3.11/site-packages/pebble/pool/base_pool.py", line 268, in chunk_result
-    return future.result(timeout=timeout)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/opt/conda/envs/vary/lib/python3.11/concurrent/futures/_base.py", line 456, in result
-    return self.__get_result()
-           ^^^^^^^^^^^^^^^^^^^
-  File "/opt/conda/envs/vary/lib/python3.11/concurrent/futures/_base.py", line 401, in __get_result
-    raise self._exception
-TimeoutError: [Errno Task timeout] 3600
-Execute:   1%|          | 12/963 [1:44:27<135:26:26, 512.71s/it]2024/06/17 04:34:29 batch_search_generate.py[line:133] INFO LLM process is alive.
-2024/06/17 04:36:29 batch_search_generate.py[line:133] INFO LLM process is alive.
-Execute:   1%|▏         | 13/963 [1:49:15<117:21:09, 444.70s/it]WARNING 06-17 04:37:49 scheduler.py:663] Input prompt (8463 tokens) is too long and exceeds limit of 8192
-2024/06/17 04:38:29 batch_search_generate.py[line:133] INFO LLM process is alive.
-2024/06/17 04:40:29 batch_search_generate.py[line:133] INFO LLM process is alive.
-WARNING 06-17 04:41:02 scheduler.py:663] Input prompt (8358 tokens) is too long and exceeds limit of 8192
-Execute:   1%|▏         | 14/963 [1:53:03<99:58:01, 379.22s/it] 2024/06/17 04:42:02 batch_search_generate.py[line:155] ERROR mcts error expected string or bytes-like object, got 'list'
-Traceback (most recent call last):
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/hard_runs/../src/batch_search_generate.py", line 149, in mcts_search
-    outputs = mcts_tree.search()
-              ^^^^^^^^^^^^^^^^^^
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/local_mcts.py", line 43, in search
-    self.search_once()
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/mcts.py", line 204, in search_once
-    self.expansion_evaluation_backpropagation(front)
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/local_mcts.py", line 64, in expansion_evaluation_backpropagation
-    self.expand_node_with_cache(node)
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/mcts.py", line 325, in expand_node_with_cache
-    reward, end_node = self.rollout(child)
-                       ^^^^^^^^^^^^^^^^^^^
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/mcts.py", line 403, in rollout
-    self.expansion_evaluation_backpropagation(node, rollout=True)
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/local_mcts.py", line 60, in expansion_evaluation_backpropagation
-    self.expand_node(output_texts, prior_probs, node, rollout)
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/local_mcts.py", line 139, in expand_node
-    new_node = self.action_parser(step_output_text, node, prior_prob, idx=num_child)
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/mcts.py", line 335, in action_parser
-    action_type, action_input, observation, finished, reward, final_answer, table, new_tool_desc = self.tool_agent.parse_and_perform_action(text, api_version=self.api_version, table=table_toolkits(self.args.path) if node.table is None else copy.deepcopy(node.table))
-                                                                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/toolqa.py", line 85, in parse_and_perform_action
-    api_state, new_action_type, new_params, error_infos = self.action_params_check(action_type, params, api_version)
-                                                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/toolqa.py", line 241, in action_params_check
-    node1, node2 = parse_EdgeCheck(params['NodeInfos'], api_version)
-                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/toolqa.py", line 299, in parse_EdgeCheck
-    matches = re.search(pattern, text)
-              ^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/opt/conda/envs/vary/lib/python3.11/re/__init__.py", line 176, in search
-    return _compile(pattern, flags).search(string)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-TypeError: expected string or bytes-like object, got 'list'
-2024/06/17 04:42:29 batch_search_generate.py[line:133] INFO LLM process is alive.
-2024/06/17 04:43:56 batch_search_generate.py[line:155] ERROR mcts error expected string or bytes-like object, got 'list'
-Traceback (most recent call last):
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/hard_runs/../src/batch_search_generate.py", line 149, in mcts_search
-    outputs = mcts_tree.search()
-              ^^^^^^^^^^^^^^^^^^
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/local_mcts.py", line 43, in search
-    self.search_once()
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/mcts.py", line 204, in search_once
-    self.expansion_evaluation_backpropagation(front)
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/local_mcts.py", line 64, in expansion_evaluation_backpropagation
-    self.expand_node_with_cache(node)
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/mcts.py", line 325, in expand_node_with_cache
-    reward, end_node = self.rollout(child)
-                       ^^^^^^^^^^^^^^^^^^^
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/mcts.py", line 403, in rollout
-    self.expansion_evaluation_backpropagation(node, rollout=True)
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/local_mcts.py", line 60, in expansion_evaluation_backpropagation
-    self.expand_node(output_texts, prior_probs, node, rollout)
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/local_mcts.py", line 139, in expand_node
-    new_node = self.action_parser(step_output_text, node, prior_prob, idx=num_child)
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/mcts.py", line 335, in action_parser
-    action_type, action_input, observation, finished, reward, final_answer, table, new_tool_desc = self.tool_agent.parse_and_perform_action(text, api_version=self.api_version, table=table_toolkits(self.args.path) if node.table is None else copy.deepcopy(node.table))
-                                                                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/toolqa.py", line 85, in parse_and_perform_action
-    api_state, new_action_type, new_params, error_infos = self.action_params_check(action_type, params, api_version)
-                                                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/toolqa.py", line 241, in action_params_check
-    node1, node2 = parse_EdgeCheck(params['NodeInfos'], api_version)
-                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/toolqa.py", line 299, in parse_EdgeCheck
-    matches = re.search(pattern, text)
-              ^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/opt/conda/envs/vary/lib/python3.11/re/__init__.py", line 176, in search
-    return _compile(pattern, flags).search(string)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-TypeError: expected string or bytes-like object, got 'list'
-2024/06/17 04:44:29 batch_search_generate.py[line:133] INFO LLM process is alive.
-2024/06/17 04:46:29 batch_search_generate.py[line:133] INFO LLM process is alive.
-2024/06/17 04:48:29 batch_search_generate.py[line:133] INFO LLM process is alive.
-WARNING 06-17 04:48:57 scheduler.py:663] Input prompt (9907 tokens) is too long and exceeds limit of 8192
-2024/06/17 04:50:29 batch_search_generate.py[line:133] INFO LLM process is alive.
-2024/06/17 04:52:29 batch_search_generate.py[line:133] INFO LLM process is alive.
-2024/06/17 04:54:29 batch_search_generate.py[line:133] INFO LLM process is alive.
-2024/06/17 04:56:29 batch_search_generate.py[line:133] INFO LLM process is alive.
-2024/06/17 04:58:29 batch_search_generate.py[line:133] INFO LLM process is alive.
-2024/06/17 05:00:29 batch_search_generate.py[line:133] INFO LLM process is alive.
-2024/06/17 05:00:31 batch_search_generate.py[line:174] INFO save solutions: 5
-Execute:   2%|▏         | 15/963 [2:12:03<160:16:06, 608.61s/it]2024/06/17 05:02:29 batch_search_generate.py[line:133] INFO LLM process is alive.
-2024/06/17 05:03:26 batch_search_generate.py[line:155] ERROR mcts error expected string or bytes-like object, got 'list'
-Traceback (most recent call last):
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/hard_runs/../src/batch_search_generate.py", line 149, in mcts_search
-    outputs = mcts_tree.search()
-              ^^^^^^^^^^^^^^^^^^
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/local_mcts.py", line 43, in search
-    self.search_once()
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/mcts.py", line 204, in search_once
-    self.expansion_evaluation_backpropagation(front)
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/local_mcts.py", line 64, in expansion_evaluation_backpropagation
-    self.expand_node_with_cache(node)
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/mcts.py", line 325, in expand_node_with_cache
-    reward, end_node = self.rollout(child)
-                       ^^^^^^^^^^^^^^^^^^^
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/mcts.py", line 403, in rollout
-    self.expansion_evaluation_backpropagation(node, rollout=True)
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/local_mcts.py", line 60, in expansion_evaluation_backpropagation
-    self.expand_node(output_texts, prior_probs, node, rollout)
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/local_mcts.py", line 139, in expand_node
-    new_node = self.action_parser(step_output_text, node, prior_prob, idx=num_child)
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/mcts.py", line 335, in action_parser
-    action_type, action_input, observation, finished, reward, final_answer, table, new_tool_desc = self.tool_agent.parse_and_perform_action(text, api_version=self.api_version, table=table_toolkits(self.args.path) if node.table is None else copy.deepcopy(node.table))
-                                                                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/toolqa.py", line 85, in parse_and_perform_action
-    api_state, new_action_type, new_params, error_infos = self.action_params_check(action_type, params, api_version)
-                                                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/toolqa.py", line 241, in action_params_check
-    node1, node2 = parse_EdgeCheck(params['NodeInfos'], api_version)
-                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/toolqa.py", line 299, in parse_EdgeCheck
-    matches = re.search(pattern, text)
-              ^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/opt/conda/envs/vary/lib/python3.11/re/__init__.py", line 176, in search
-    return _compile(pattern, flags).search(string)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-TypeError: expected string or bytes-like object, got 'list'
-Execute:   2%|▏         | 16/963 [2:15:51<129:58:04, 494.07s/it]2024/06/17 05:04:29 batch_search_generate.py[line:133] INFO LLM process is alive.
-2024/06/17 05:06:29 batch_search_generate.py[line:133] INFO LLM process is alive.
-2024/06/17 05:07:40 batch_search_generate.py[line:155] ERROR mcts error expected string or bytes-like object, got 'list'
-Traceback (most recent call last):
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/hard_runs/../src/batch_search_generate.py", line 149, in mcts_search
-    outputs = mcts_tree.search()
-              ^^^^^^^^^^^^^^^^^^
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/local_mcts.py", line 43, in search
-    self.search_once()
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/mcts.py", line 204, in search_once
-    self.expansion_evaluation_backpropagation(front)
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/local_mcts.py", line 64, in expansion_evaluation_backpropagation
-    self.expand_node_with_cache(node)
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/mcts.py", line 325, in expand_node_with_cache
-    reward, end_node = self.rollout(child)
-                       ^^^^^^^^^^^^^^^^^^^
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/mcts.py", line 403, in rollout
-    self.expansion_evaluation_backpropagation(node, rollout=True)
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/local_mcts.py", line 60, in expansion_evaluation_backpropagation
-    self.expand_node(output_texts, prior_probs, node, rollout)
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/local_mcts.py", line 139, in expand_node
-    new_node = self.action_parser(step_output_text, node, prior_prob, idx=num_child)
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/mcts.py", line 335, in action_parser
-    action_type, action_input, observation, finished, reward, final_answer, table, new_tool_desc = self.tool_agent.parse_and_perform_action(text, api_version=self.api_version, table=table_toolkits(self.args.path) if node.table is None else copy.deepcopy(node.table))
-                                                                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/toolqa.py", line 85, in parse_and_perform_action
-    api_state, new_action_type, new_params, error_infos = self.action_params_check(action_type, params, api_version)
-                                                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/toolqa.py", line 241, in action_params_check
-    node1, node2 = parse_EdgeCheck(params['NodeInfos'], api_version)
-                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/toolqa.py", line 299, in parse_EdgeCheck
-    matches = re.search(pattern, text)
-              ^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/opt/conda/envs/vary/lib/python3.11/re/__init__.py", line 176, in search
-    return _compile(pattern, flags).search(string)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-TypeError: expected string or bytes-like object, got 'list'
-2024/06/17 05:08:29 batch_search_generate.py[line:133] INFO LLM process is alive.
-2024/06/17 05:10:29 batch_search_generate.py[line:133] INFO LLM process is alive.
-WARNING 06-17 05:11:00 scheduler.py:663] Input prompt (8910 tokens) is too long and exceeds limit of 8192
-2024/06/17 05:11:50 batch_search_generate.py[line:155] ERROR mcts error expected string or bytes-like object, got 'list'
-Traceback (most recent call last):
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/hard_runs/../src/batch_search_generate.py", line 149, in mcts_search
-    outputs = mcts_tree.search()
-              ^^^^^^^^^^^^^^^^^^
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/local_mcts.py", line 43, in search
-    self.search_once()
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/mcts.py", line 204, in search_once
-    self.expansion_evaluation_backpropagation(front)
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/local_mcts.py", line 64, in expansion_evaluation_backpropagation
-    self.expand_node_with_cache(node)
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/mcts.py", line 325, in expand_node_with_cache
-    reward, end_node = self.rollout(child)
-                       ^^^^^^^^^^^^^^^^^^^
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/mcts.py", line 403, in rollout
-    self.expansion_evaluation_backpropagation(node, rollout=True)
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/local_mcts.py", line 60, in expansion_evaluation_backpropagation
-    self.expand_node(output_texts, prior_probs, node, rollout)
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/local_mcts.py", line 139, in expand_node
-    new_node = self.action_parser(step_output_text, node, prior_prob, idx=num_child)
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/mcts.py", line 335, in action_parser
-    action_type, action_input, observation, finished, reward, final_answer, table, new_tool_desc = self.tool_agent.parse_and_perform_action(text, api_version=self.api_version, table=table_toolkits(self.args.path) if node.table is None else copy.deepcopy(node.table))
-                                                                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/toolqa.py", line 85, in parse_and_perform_action
-    api_state, new_action_type, new_params, error_infos = self.action_params_check(action_type, params, api_version)
-                                                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/toolqa.py", line 241, in action_params_check
-    node1, node2 = parse_EdgeCheck(params['NodeInfos'], api_version)
-                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/toolqa.py", line 299, in parse_EdgeCheck
-    matches = re.search(pattern, text)
-              ^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/opt/conda/envs/vary/lib/python3.11/re/__init__.py", line 176, in search
-    return _compile(pattern, flags).search(string)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-TypeError: expected string or bytes-like object, got 'list'
-2024/06/17 05:12:29 batch_search_generate.py[line:133] INFO LLM process is alive.
-2024/06/17 05:14:29 batch_search_generate.py[line:133] INFO LLM process is alive.
-Execute:   2%|▏         | 17/963 [2:28:02<148:31:25, 565.21s/it]2024/06/17 05:16:30 batch_search_generate.py[line:133] INFO LLM process is alive.
-2024/06/17 05:18:30 batch_search_generate.py[line:133] INFO LLM process is alive.
-2024/06/17 05:20:30 batch_search_generate.py[line:133] INFO LLM process is alive.
-2024/06/17 05:22:30 batch_search_generate.py[line:133] INFO LLM process is alive.
-2024/06/17 05:24:30 batch_search_generate.py[line:133] INFO LLM process is alive.
-Execute:   2%|▏         | 18/963 [2:37:56<150:39:49, 573.96s/it]2024/06/17 05:26:30 batch_search_generate.py[line:133] INFO LLM process is alive.
-2024/06/17 05:28:09 batch_search_generate.py[line:155] ERROR mcts error expected string or bytes-like object, got 'list'
-Traceback (most recent call last):
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/hard_runs/../src/batch_search_generate.py", line 149, in mcts_search
-    outputs = mcts_tree.search()
-              ^^^^^^^^^^^^^^^^^^
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/local_mcts.py", line 43, in search
-    self.search_once()
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/mcts.py", line 204, in search_once
-    self.expansion_evaluation_backpropagation(front)
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/local_mcts.py", line 64, in expansion_evaluation_backpropagation
-    self.expand_node_with_cache(node)
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/mcts.py", line 325, in expand_node_with_cache
-    reward, end_node = self.rollout(child)
-                       ^^^^^^^^^^^^^^^^^^^
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/mcts.py", line 403, in rollout
-    self.expansion_evaluation_backpropagation(node, rollout=True)
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/local_mcts.py", line 60, in expansion_evaluation_backpropagation
-    self.expand_node(output_texts, prior_probs, node, rollout)
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/local_mcts.py", line 139, in expand_node
-    new_node = self.action_parser(step_output_text, node, prior_prob, idx=num_child)
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/mcts.py", line 335, in action_parser
-    action_type, action_input, observation, finished, reward, final_answer, table, new_tool_desc = self.tool_agent.parse_and_perform_action(text, api_version=self.api_version, table=table_toolkits(self.args.path) if node.table is None else copy.deepcopy(node.table))
-                                                                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/toolqa.py", line 85, in parse_and_perform_action
-    api_state, new_action_type, new_params, error_infos = self.action_params_check(action_type, params, api_version)
-                                                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/toolqa.py", line 241, in action_params_check
-    node1, node2 = parse_EdgeCheck(params['NodeInfos'], api_version)
-                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/toolqa.py", line 299, in parse_EdgeCheck
-    matches = re.search(pattern, text)
-              ^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/opt/conda/envs/vary/lib/python3.11/re/__init__.py", line 176, in search
-    return _compile(pattern, flags).search(string)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-TypeError: expected string or bytes-like object, got 'list'
-2024/06/17 05:28:24 batch_search_generate.py[line:155] ERROR mcts error expected string or bytes-like object, got 'list'
-Traceback (most recent call last):
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/hard_runs/../src/batch_search_generate.py", line 149, in mcts_search
-    outputs = mcts_tree.search()
-              ^^^^^^^^^^^^^^^^^^
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/local_mcts.py", line 43, in search
-    self.search_once()
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/mcts.py", line 204, in search_once
-    self.expansion_evaluation_backpropagation(front)
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/local_mcts.py", line 64, in expansion_evaluation_backpropagation
-    self.expand_node_with_cache(node)
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/mcts.py", line 325, in expand_node_with_cache
-    reward, end_node = self.rollout(child)
-                       ^^^^^^^^^^^^^^^^^^^
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/mcts.py", line 403, in rollout
-    self.expansion_evaluation_backpropagation(node, rollout=True)
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/local_mcts.py", line 60, in expansion_evaluation_backpropagation
-    self.expand_node(output_texts, prior_probs, node, rollout)
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/local_mcts.py", line 139, in expand_node
-    new_node = self.action_parser(step_output_text, node, prior_prob, idx=num_child)
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/mcts.py", line 335, in action_parser
-    action_type, action_input, observation, finished, reward, final_answer, table, new_tool_desc = self.tool_agent.parse_and_perform_action(text, api_version=self.api_version, table=table_toolkits(self.args.path) if node.table is None else copy.deepcopy(node.table))
-                                                                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/toolqa.py", line 85, in parse_and_perform_action
-    api_state, new_action_type, new_params, error_infos = self.action_params_check(action_type, params, api_version)
-                                                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/toolqa.py", line 241, in action_params_check
-    node1, node2 = parse_EdgeCheck(params['NodeInfos'], api_version)
-                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/toolqa.py", line 299, in parse_EdgeCheck
-    matches = re.search(pattern, text)
-              ^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/opt/conda/envs/vary/lib/python3.11/re/__init__.py", line 176, in search
-    return _compile(pattern, flags).search(string)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-TypeError: expected string or bytes-like object, got 'list'
-2024/06/17 05:28:30 batch_search_generate.py[line:133] INFO LLM process is alive.
-2024/06/17 05:29:36 batch_search_generate.py[line:155] ERROR mcts error expected string or bytes-like object, got 'NoneType'
-Traceback (most recent call last):
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/hard_runs/../src/batch_search_generate.py", line 149, in mcts_search
-    outputs = mcts_tree.search()
-              ^^^^^^^^^^^^^^^^^^
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/local_mcts.py", line 43, in search
-    self.search_once()
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/mcts.py", line 204, in search_once
-    self.expansion_evaluation_backpropagation(front)
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/local_mcts.py", line 60, in expansion_evaluation_backpropagation
-    self.expand_node(output_texts, prior_probs, node, rollout)
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/local_mcts.py", line 143, in expand_node
-    reward, end_node = self.rollout(new_node)
-                       ^^^^^^^^^^^^^^^^^^^^^^
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/mcts.py", line 403, in rollout
-    self.expansion_evaluation_backpropagation(node, rollout=True)
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/local_mcts.py", line 60, in expansion_evaluation_backpropagation
-    self.expand_node(output_texts, prior_probs, node, rollout)
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/local_mcts.py", line 139, in expand_node
-    new_node = self.action_parser(step_output_text, node, prior_prob, idx=num_child)
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/mcts.py", line 335, in action_parser
-    action_type, action_input, observation, finished, reward, final_answer, table, new_tool_desc = self.tool_agent.parse_and_perform_action(text, api_version=self.api_version, table=table_toolkits(self.args.path) if node.table is None else copy.deepcopy(node.table))
-                                                                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/toolqa.py", line 85, in parse_and_perform_action
-    api_state, new_action_type, new_params, error_infos = self.action_params_check(action_type, params, api_version)
-                                                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/toolqa.py", line 241, in action_params_check
-    node1, node2 = parse_EdgeCheck(params['NodeInfos'], api_version)
-                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/toolqa.py", line 299, in parse_EdgeCheck
-    matches = re.search(pattern, text)
-              ^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/opt/conda/envs/vary/lib/python3.11/re/__init__.py", line 176, in search
-    return _compile(pattern, flags).search(string)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-TypeError: expected string or bytes-like object, got 'NoneType'
-2024/06/17 05:30:30 batch_search_generate.py[line:133] INFO LLM process is alive.
-2024/06/17 05:32:30 batch_search_generate.py[line:133] INFO LLM process is alive.
-Execute:   2%|▏         | 19/963 [2:44:33<136:32:32, 520.71s/it]2024/06/17 05:34:30 batch_search_generate.py[line:133] INFO LLM process is alive.
-2024/06/17 05:36:30 batch_search_generate.py[line:133] INFO LLM process is alive.
-2024/06/17 05:37:20 batch_search_generate.py[line:174] INFO save solutions: 5
-Execute:   2%|▏         | 20/963 [2:48:53<115:52:01, 442.33s/it]2024/06/17 05:38:30 batch_search_generate.py[line:133] INFO LLM process is alive.
-2024/06/17 05:40:30 batch_search_generate.py[line:133] INFO LLM process is alive.
-2024/06/17 05:42:30 batch_search_generate.py[line:133] INFO LLM process is alive.
-2024/06/17 05:44:30 batch_search_generate.py[line:133] INFO LLM process is alive.
-2024/06/17 05:46:30 batch_search_generate.py[line:133] INFO LLM process is alive.
-2024/06/17 05:48:30 batch_search_generate.py[line:133] INFO LLM process is alive.
-Execute:   2%|▏         | 21/963 [3:01:22<139:50:14, 534.41s/it]2024/06/17 05:50:30 batch_search_generate.py[line:133] INFO LLM process is alive.
-2024/06/17 05:52:30 batch_search_generate.py[line:133] INFO LLM process is alive.
-2024/06/17 05:54:30 batch_search_generate.py[line:133] INFO LLM process is alive.
-2024/06/17 05:56:30 batch_search_generate.py[line:133] INFO LLM process is alive.
-Execute:   2%|▏         | 22/963 [3:09:46<137:21:41, 525.51s/it]2024/06/17 05:58:30 batch_search_generate.py[line:133] INFO LLM process is alive.
-Execute:   2%|▏         | 23/963 [3:11:03<102:01:41, 390.75s/it]2024/06/17 06:00:30 batch_search_generate.py[line:133] INFO LLM process is alive.
-2024/06/17 06:02:09 batch_search_generate.py[line:155] ERROR mcts error expected string or bytes-like object, got 'list'
-Traceback (most recent call last):
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/hard_runs/../src/batch_search_generate.py", line 149, in mcts_search
-    outputs = mcts_tree.search()
-              ^^^^^^^^^^^^^^^^^^
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/local_mcts.py", line 43, in search
-    self.search_once()
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/mcts.py", line 204, in search_once
-    self.expansion_evaluation_backpropagation(front)
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/local_mcts.py", line 64, in expansion_evaluation_backpropagation
-    self.expand_node_with_cache(node)
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/mcts.py", line 325, in expand_node_with_cache
-    reward, end_node = self.rollout(child)
-                       ^^^^^^^^^^^^^^^^^^^
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/mcts.py", line 403, in rollout
-    self.expansion_evaluation_backpropagation(node, rollout=True)
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/local_mcts.py", line 60, in expansion_evaluation_backpropagation
-    self.expand_node(output_texts, prior_probs, node, rollout)
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/local_mcts.py", line 139, in expand_node
-    new_node = self.action_parser(step_output_text, node, prior_prob, idx=num_child)
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/mcts.py", line 335, in action_parser
-    action_type, action_input, observation, finished, reward, final_answer, table, new_tool_desc = self.tool_agent.parse_and_perform_action(text, api_version=self.api_version, table=table_toolkits(self.args.path) if node.table is None else copy.deepcopy(node.table))
-                                                                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/toolqa.py", line 85, in parse_and_perform_action
-    api_state, new_action_type, new_params, error_infos = self.action_params_check(action_type, params, api_version)
-                                                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/toolqa.py", line 241, in action_params_check
-    node1, node2 = parse_EdgeCheck(params['NodeInfos'], api_version)
-                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/toolqa.py", line 299, in parse_EdgeCheck
-    matches = re.search(pattern, text)
-              ^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/opt/conda/envs/vary/lib/python3.11/re/__init__.py", line 176, in search
-    return _compile(pattern, flags).search(string)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-TypeError: expected string or bytes-like object, got 'list'
-2024/06/17 06:02:30 batch_search_generate.py[line:133] INFO LLM process is alive.
-Execute:   2%|▏         | 24/963 [3:15:24<91:44:39, 351.74s/it] 2024/06/17 06:04:30 batch_search_generate.py[line:133] INFO LLM process is alive.
-2024/06/17 06:05:23 batch_search_generate.py[line:174] INFO save solutions: 5
-Execute:   3%|▎         | 25/963 [3:16:56<71:21:43, 273.88s/it]2024/06/17 06:06:30 batch_search_generate.py[line:133] INFO LLM process is alive.
-Execute:   3%|▎         | 26/963 [3:20:00<64:17:18, 247.00s/it]2024/06/17 06:08:30 batch_search_generate.py[line:133] INFO LLM process is alive.
-2024/06/17 06:10:31 batch_search_generate.py[line:133] INFO LLM process is alive.
-WARNING 06-17 06:11:12 scheduler.py:663] Input prompt (8445 tokens) is too long and exceeds limit of 8192
-2024/06/17 06:12:31 batch_search_generate.py[line:133] INFO LLM process is alive.
-2024/06/17 06:14:31 batch_search_generate.py[line:133] INFO LLM process is alive.
-Execute:   3%|▎         | 27/963 [3:26:24<74:55:58, 288.20s/it]Execute:   3%|▎         | 28/963 [3:26:55<54:48:13, 211.01s/it]2024/06/17 06:16:31 batch_search_generate.py[line:133] INFO LLM process is alive.
-2024/06/17 06:18:31 batch_search_generate.py[line:133] INFO LLM process is alive.
-2024/06/17 06:20:31 batch_search_generate.py[line:133] INFO LLM process is alive.
-2024/06/17 06:22:31 batch_search_generate.py[line:133] INFO LLM process is alive.
-2024/06/17 06:24:31 batch_search_generate.py[line:133] INFO LLM process is alive.
-2024/06/17 06:26:31 batch_search_generate.py[line:133] INFO LLM process is alive.
-2024/06/17 06:28:31 batch_search_generate.py[line:133] INFO LLM process is alive.
-2024/06/17 06:30:09 batch_search_generate.py[line:155] ERROR mcts error expected string or bytes-like object, got 'list'
-Traceback (most recent call last):
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/hard_runs/../src/batch_search_generate.py", line 149, in mcts_search
-    outputs = mcts_tree.search()
-              ^^^^^^^^^^^^^^^^^^
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/local_mcts.py", line 43, in search
-    self.search_once()
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/mcts.py", line 204, in search_once
-    self.expansion_evaluation_backpropagation(front)
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/local_mcts.py", line 64, in expansion_evaluation_backpropagation
-    self.expand_node_with_cache(node)
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/mcts.py", line 325, in expand_node_with_cache
-    reward, end_node = self.rollout(child)
-                       ^^^^^^^^^^^^^^^^^^^
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/mcts.py", line 403, in rollout
-    self.expansion_evaluation_backpropagation(node, rollout=True)
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/local_mcts.py", line 60, in expansion_evaluation_backpropagation
-    self.expand_node(output_texts, prior_probs, node, rollout)
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/local_mcts.py", line 139, in expand_node
-    new_node = self.action_parser(step_output_text, node, prior_prob, idx=num_child)
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/mcts.py", line 335, in action_parser
-    action_type, action_input, observation, finished, reward, final_answer, table, new_tool_desc = self.tool_agent.parse_and_perform_action(text, api_version=self.api_version, table=table_toolkits(self.args.path) if node.table is None else copy.deepcopy(node.table))
-                                                                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/toolqa.py", line 85, in parse_and_perform_action
-    api_state, new_action_type, new_params, error_infos = self.action_params_check(action_type, params, api_version)
-                                                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/toolqa.py", line 241, in action_params_check
-    node1, node2 = parse_EdgeCheck(params['NodeInfos'], api_version)
-                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/toolqa.py", line 299, in parse_EdgeCheck
-    matches = re.search(pattern, text)
-              ^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/opt/conda/envs/vary/lib/python3.11/re/__init__.py", line 176, in search
-    return _compile(pattern, flags).search(string)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-TypeError: expected string or bytes-like object, got 'list'
-2024/06/17 06:30:31 batch_search_generate.py[line:133] INFO LLM process is alive.
-2024/06/17 06:32:31 batch_search_generate.py[line:133] INFO LLM process is alive.
-2024/06/17 06:34:31 batch_search_generate.py[line:133] INFO LLM process is alive.
-2024/06/17 06:36:31 batch_search_generate.py[line:133] INFO LLM process is alive.
-2024/06/17 06:37:19 batch_search_generate.py[line:155] ERROR mcts error expected string or bytes-like object, got 'NoneType'
-Traceback (most recent call last):
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/hard_runs/../src/batch_search_generate.py", line 149, in mcts_search
-    outputs = mcts_tree.search()
-              ^^^^^^^^^^^^^^^^^^
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/local_mcts.py", line 43, in search
-    self.search_once()
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/mcts.py", line 204, in search_once
-    self.expansion_evaluation_backpropagation(front)
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/local_mcts.py", line 64, in expansion_evaluation_backpropagation
-    self.expand_node_with_cache(node)
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/mcts.py", line 325, in expand_node_with_cache
-    reward, end_node = self.rollout(child)
-                       ^^^^^^^^^^^^^^^^^^^
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/mcts.py", line 403, in rollout
-    self.expansion_evaluation_backpropagation(node, rollout=True)
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/local_mcts.py", line 60, in expansion_evaluation_backpropagation
-    self.expand_node(output_texts, prior_probs, node, rollout)
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/local_mcts.py", line 139, in expand_node
-    new_node = self.action_parser(step_output_text, node, prior_prob, idx=num_child)
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/mcts.py", line 335, in action_parser
-    action_type, action_input, observation, finished, reward, final_answer, table, new_tool_desc = self.tool_agent.parse_and_perform_action(text, api_version=self.api_version, table=table_toolkits(self.args.path) if node.table is None else copy.deepcopy(node.table))
-                                                                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/toolqa.py", line 85, in parse_and_perform_action
-    api_state, new_action_type, new_params, error_infos = self.action_params_check(action_type, params, api_version)
-                                                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/toolqa.py", line 241, in action_params_check
-    node1, node2 = parse_EdgeCheck(params['NodeInfos'], api_version)
-                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/toolqa.py", line 299, in parse_EdgeCheck
-    matches = re.search(pattern, text)
-              ^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/opt/conda/envs/vary/lib/python3.11/re/__init__.py", line 176, in search
-    return _compile(pattern, flags).search(string)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-TypeError: expected string or bytes-like object, got 'NoneType'
-Execute:   3%|▎         | 29/963 [3:49:29<143:42:27, 553.91s/it]2024/06/17 06:38:31 batch_search_generate.py[line:133] INFO LLM process is alive.
-2024/06/17 06:40:31 batch_search_generate.py[line:133] INFO LLM process is alive.
-2024/06/17 06:42:31 batch_search_generate.py[line:133] INFO LLM process is alive.
-2024/06/17 06:43:29 batch_search_generate.py[line:155] ERROR mcts error expected string or bytes-like object, got 'list'
-Traceback (most recent call last):
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/hard_runs/../src/batch_search_generate.py", line 149, in mcts_search
-    outputs = mcts_tree.search()
-              ^^^^^^^^^^^^^^^^^^
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/local_mcts.py", line 43, in search
-    self.search_once()
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/mcts.py", line 204, in search_once
-    self.expansion_evaluation_backpropagation(front)
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/local_mcts.py", line 64, in expansion_evaluation_backpropagation
-    self.expand_node_with_cache(node)
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/mcts.py", line 325, in expand_node_with_cache
-    reward, end_node = self.rollout(child)
-                       ^^^^^^^^^^^^^^^^^^^
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/mcts.py", line 403, in rollout
-    self.expansion_evaluation_backpropagation(node, rollout=True)
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/local_mcts.py", line 60, in expansion_evaluation_backpropagation
-    self.expand_node(output_texts, prior_probs, node, rollout)
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/local_mcts.py", line 139, in expand_node
-    new_node = self.action_parser(step_output_text, node, prior_prob, idx=num_child)
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/mcts.py", line 335, in action_parser
-    action_type, action_input, observation, finished, reward, final_answer, table, new_tool_desc = self.tool_agent.parse_and_perform_action(text, api_version=self.api_version, table=table_toolkits(self.args.path) if node.table is None else copy.deepcopy(node.table))
-                                                                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/toolqa.py", line 85, in parse_and_perform_action
-    api_state, new_action_type, new_params, error_infos = self.action_params_check(action_type, params, api_version)
-                                                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/toolqa.py", line 241, in action_params_check
-    node1, node2 = parse_EdgeCheck(params['NodeInfos'], api_version)
-                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/toolqa.py", line 299, in parse_EdgeCheck
-    matches = re.search(pattern, text)
-              ^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/opt/conda/envs/vary/lib/python3.11/re/__init__.py", line 176, in search
-    return _compile(pattern, flags).search(string)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-TypeError: expected string or bytes-like object, got 'list'
-2024/06/17 06:44:31 batch_search_generate.py[line:133] INFO LLM process is alive.
-2024/06/17 06:44:52 batch_search_generate.py[line:174] INFO save solutions: 5
-Execute:   3%|▎         | 30/963 [3:56:25<132:47:58, 512.41s/it]Execute:   3%|▎         | 31/963 [3:56:56<95:15:29, 367.95s/it] 2024/06/17 06:46:31 batch_search_generate.py[line:133] INFO LLM process is alive.
-2024/06/17 06:48:31 batch_search_generate.py[line:133] INFO LLM process is alive.
-Execute:   3%|▎         | 32/963 [4:01:03<85:45:59, 331.64s/it]2024/06/17 06:50:31 batch_search_generate.py[line:133] INFO LLM process is alive.
-2024/06/17 06:52:31 batch_search_generate.py[line:133] INFO LLM process is alive.
-2024/06/17 06:54:31 batch_search_generate.py[line:133] INFO LLM process is alive.
-2024/06/17 06:56:31 batch_search_generate.py[line:133] INFO LLM process is alive.
-2024/06/17 06:58:31 batch_search_generate.py[line:133] INFO LLM process is alive.
-2024/06/17 07:00:31 batch_search_generate.py[line:133] INFO LLM process is alive.
-2024/06/17 07:02:31 batch_search_generate.py[line:133] INFO LLM process is alive.
-/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/tools/table/tabtools.py:44: DtypeWarning: Columns (25) have mixed types. Specify dtype option on import or set low_memory=False.
-  self.data = pd.read_csv(file_path)
-/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/tools/table/tabtools.py:44: DtypeWarning: Columns (25) have mixed types. Specify dtype option on import or set low_memory=False.
-  self.data = pd.read_csv(file_path)
-2024/06/17 07:04:31 batch_search_generate.py[line:133] INFO LLM process is alive.
-2024/06/17 07:06:32 batch_search_generate.py[line:133] INFO LLM process is alive.
-2024/06/17 07:08:32 batch_search_generate.py[line:133] INFO LLM process is alive.
-2024/06/17 07:10:32 batch_search_generate.py[line:133] INFO LLM process is alive.
-Execute:   3%|▎         | 33/963 [4:22:39<160:26:18, 621.05s/it]2024/06/17 07:12:32 batch_search_generate.py[line:133] INFO LLM process is alive.
-2024/06/17 07:14:32 batch_search_generate.py[line:133] INFO LLM process is alive.
-2024/06/17 07:16:32 batch_search_generate.py[line:133] INFO LLM process is alive.
-Execute:   4%|▎         | 34/963 [4:29:21<143:16:43, 555.22s/it]2024/06/17 07:18:32 batch_search_generate.py[line:133] INFO LLM process is alive.
-2024/06/17 07:20:32 batch_search_generate.py[line:133] INFO LLM process is alive.
-2024/06/17 07:21:24 batch_search_generate.py[line:174] INFO save solutions: 5
-Execute:   4%|▎         | 35/963 [4:32:57<116:55:35, 453.59s/it]Execute:   4%|▎         | 36/963 [4:33:13<82:57:09, 322.15s/it] 2024/06/17 07:22:32 batch_search_generate.py[line:133] INFO LLM process is alive.
-Execute:   4%|▍         | 37/963 [4:34:14<62:46:46, 244.07s/it]2024/06/17 07:24:32 batch_search_generate.py[line:133] INFO LLM process is alive.
-2024/06/17 07:26:32 batch_search_generate.py[line:133] INFO LLM process is alive.
-WARNING 06-17 07:26:49 scheduler.py:663] Input prompt (8600 tokens) is too long and exceeds limit of 8192
-2024/06/17 07:28:32 batch_search_generate.py[line:133] INFO LLM process is alive.
-2024/06/17 07:30:32 batch_search_generate.py[line:133] INFO LLM process is alive.
-2024/06/17 07:32:32 batch_search_generate.py[line:133] INFO LLM process is alive.
-2024/06/17 07:34:32 batch_search_generate.py[line:133] INFO LLM process is alive.
-2024/06/17 07:36:32 batch_search_generate.py[line:133] INFO LLM process is alive.
-Execute:   4%|▍         | 38/963 [4:48:12<108:26:30, 422.04s/it]2024/06/17 07:38:32 batch_search_generate.py[line:133] INFO LLM process is alive.
-Execute:   4%|▍         | 39/963 [4:50:47<87:45:32, 341.92s/it] 2024/06/17 07:40:32 batch_search_generate.py[line:133] INFO LLM process is alive.
-2024/06/17 07:42:05 batch_search_generate.py[line:155] ERROR mcts error expected string or bytes-like object, got 'list'
-Traceback (most recent call last):
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/hard_runs/../src/batch_search_generate.py", line 149, in mcts_search
-    outputs = mcts_tree.search()
-              ^^^^^^^^^^^^^^^^^^
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/local_mcts.py", line 43, in search
-    self.search_once()
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/mcts.py", line 204, in search_once
-    self.expansion_evaluation_backpropagation(front)
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/local_mcts.py", line 64, in expansion_evaluation_backpropagation
-    self.expand_node_with_cache(node)
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/mcts.py", line 325, in expand_node_with_cache
-    reward, end_node = self.rollout(child)
-                       ^^^^^^^^^^^^^^^^^^^
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/mcts.py", line 403, in rollout
-    self.expansion_evaluation_backpropagation(node, rollout=True)
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/local_mcts.py", line 60, in expansion_evaluation_backpropagation
-    self.expand_node(output_texts, prior_probs, node, rollout)
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/local_mcts.py", line 139, in expand_node
-    new_node = self.action_parser(step_output_text, node, prior_prob, idx=num_child)
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/mcts.py", line 335, in action_parser
-    action_type, action_input, observation, finished, reward, final_answer, table, new_tool_desc = self.tool_agent.parse_and_perform_action(text, api_version=self.api_version, table=table_toolkits(self.args.path) if node.table is None else copy.deepcopy(node.table))
-                                                                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/toolqa.py", line 85, in parse_and_perform_action
-    api_state, new_action_type, new_params, error_infos = self.action_params_check(action_type, params, api_version)
-                                                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/toolqa.py", line 241, in action_params_check
-    node1, node2 = parse_EdgeCheck(params['NodeInfos'], api_version)
-                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/toolqa.py", line 299, in parse_EdgeCheck
-    matches = re.search(pattern, text)
-              ^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/opt/conda/envs/vary/lib/python3.11/re/__init__.py", line 176, in search
-    return _compile(pattern, flags).search(string)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-TypeError: expected string or bytes-like object, got 'list'
-2024/06/17 07:42:32 batch_search_generate.py[line:133] INFO LLM process is alive.
-2024/06/17 07:43:07 batch_search_generate.py[line:174] INFO save solutions: 5
-Execute:   4%|▍         | 40/963 [4:54:40<79:17:10, 309.24s/it]2024/06/17 07:44:32 batch_search_generate.py[line:133] INFO LLM process is alive.
-2024/06/17 07:46:32 batch_search_generate.py[line:133] INFO LLM process is alive.
-2024/06/17 07:48:32 batch_search_generate.py[line:133] INFO LLM process is alive.
-Execute:   4%|▍         | 41/963 [5:01:24<86:30:49, 337.80s/it]2024/06/17 07:50:32 batch_search_generate.py[line:133] INFO LLM process is alive.
-2024/06/17 07:52:32 batch_search_generate.py[line:133] INFO LLM process is alive.
-2024/06/17 07:52:43 batch_search_generate.py[line:155] ERROR mcts error expected string or bytes-like object, got 'list'
-Traceback (most recent call last):
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/hard_runs/../src/batch_search_generate.py", line 149, in mcts_search
-    outputs = mcts_tree.search()
-              ^^^^^^^^^^^^^^^^^^
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/local_mcts.py", line 43, in search
-    self.search_once()
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/mcts.py", line 204, in search_once
-    self.expansion_evaluation_backpropagation(front)
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/local_mcts.py", line 64, in expansion_evaluation_backpropagation
-    self.expand_node_with_cache(node)
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/mcts.py", line 325, in expand_node_with_cache
-    reward, end_node = self.rollout(child)
-                       ^^^^^^^^^^^^^^^^^^^
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/mcts.py", line 403, in rollout
-    self.expansion_evaluation_backpropagation(node, rollout=True)
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/local_mcts.py", line 60, in expansion_evaluation_backpropagation
-    self.expand_node(output_texts, prior_probs, node, rollout)
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/local_mcts.py", line 139, in expand_node
-    new_node = self.action_parser(step_output_text, node, prior_prob, idx=num_child)
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/mcts.py", line 335, in action_parser
-    action_type, action_input, observation, finished, reward, final_answer, table, new_tool_desc = self.tool_agent.parse_and_perform_action(text, api_version=self.api_version, table=table_toolkits(self.args.path) if node.table is None else copy.deepcopy(node.table))
-                                                                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/toolqa.py", line 85, in parse_and_perform_action
-    api_state, new_action_type, new_params, error_infos = self.action_params_check(action_type, params, api_version)
-                                                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/toolqa.py", line 241, in action_params_check
-    node1, node2 = parse_EdgeCheck(params['NodeInfos'], api_version)
-                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/toolqa.py", line 299, in parse_EdgeCheck
-    matches = re.search(pattern, text)
-              ^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/opt/conda/envs/vary/lib/python3.11/re/__init__.py", line 176, in search
-    return _compile(pattern, flags).search(string)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-TypeError: expected string or bytes-like object, got 'list'
-2024/06/17 07:54:32 batch_search_generate.py[line:133] INFO LLM process is alive.
-2024/06/17 07:56:32 batch_search_generate.py[line:133] INFO LLM process is alive.
-2024/06/17 07:58:32 batch_search_generate.py[line:133] INFO LLM process is alive.
-2024/06/17 08:00:32 batch_search_generate.py[line:133] INFO LLM process is alive.
-2024/06/17 08:02:32 batch_search_generate.py[line:133] INFO LLM process is alive.
-2024/06/17 08:04:32 batch_search_generate.py[line:133] INFO LLM process is alive.
-/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/tools/table/tabtools.py:44: DtypeWarning: Columns (25) have mixed types. Specify dtype option on import or set low_memory=False.
-  self.data = pd.read_csv(file_path)
-2024/06/17 08:06:32 batch_search_generate.py[line:133] INFO LLM process is alive.
-2024/06/17 08:08:32 batch_search_generate.py[line:133] INFO LLM process is alive.
-2024/06/17 08:10:33 batch_search_generate.py[line:133] INFO LLM process is alive.
-2024/06/17 08:12:33 batch_search_generate.py[line:133] INFO LLM process is alive.
-Execute:   4%|▍         | 42/963 [5:26:03<174:01:38, 680.24s/it]2024/06/17 08:14:33 batch_search_generate.py[line:133] INFO LLM process is alive.
-2024/06/17 08:16:33 batch_search_generate.py[line:133] INFO LLM process is alive.
-Execute:   4%|▍         | 43/963 [5:28:39<133:38:34, 522.95s/it]/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/tools/table/tabtools.py:44: DtypeWarning: Columns (25) have mixed types. Specify dtype option on import or set low_memory=False.
-  self.data = pd.read_csv(file_path)
-/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/tools/table/tabtools.py:44: DtypeWarning: Columns (25) have mixed types. Specify dtype option on import or set low_memory=False.
-  self.data = pd.read_csv(file_path)
-2024/06/17 08:18:33 batch_search_generate.py[line:133] INFO LLM process is alive.
-2024/06/17 08:20:33 batch_search_generate.py[line:133] INFO LLM process is alive.
-2024/06/17 08:22:33 batch_search_generate.py[line:133] INFO LLM process is alive.
-Execute:   5%|▍         | 44/963 [5:34:23<119:45:33, 469.13s/it]2024/06/17 08:24:09 batch_search_generate.py[line:174] INFO save solutions: 5
-Execute:   5%|▍         | 45/963 [5:35:41<89:44:36, 351.94s/it] 2024/06/17 08:24:33 batch_search_generate.py[line:133] INFO LLM process is alive.
-2024/06/17 08:26:33 batch_search_generate.py[line:133] INFO LLM process is alive.
-2024/06/17 08:28:33 batch_search_generate.py[line:133] INFO LLM process is alive.
-2024/06/17 08:30:33 batch_search_generate.py[line:133] INFO LLM process is alive.
-Execute:   5%|▍         | 46/963 [5:43:15<97:24:06, 382.38s/it]2024/06/17 08:32:33 batch_search_generate.py[line:133] INFO LLM process is alive.
-2024/06/17 08:34:33 batch_search_generate.py[line:133] INFO LLM process is alive.
-Execute:   5%|▍         | 47/963 [5:47:10<86:02:06, 338.13s/it]2024/06/17 08:36:33 batch_search_generate.py[line:133] INFO LLM process is alive.
-Execute:   5%|▍         | 48/963 [5:49:00<68:32:04, 269.64s/it]2024/06/17 08:37:58 batch_search_generate.py[line:155] ERROR mcts error expected string or bytes-like object, got 'list'
-Traceback (most recent call last):
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/hard_runs/../src/batch_search_generate.py", line 149, in mcts_search
-    outputs = mcts_tree.search()
-              ^^^^^^^^^^^^^^^^^^
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/local_mcts.py", line 43, in search
-    self.search_once()
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/mcts.py", line 204, in search_once
-    self.expansion_evaluation_backpropagation(front)
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/local_mcts.py", line 60, in expansion_evaluation_backpropagation
-    self.expand_node(output_texts, prior_probs, node, rollout)
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/local_mcts.py", line 143, in expand_node
-    reward, end_node = self.rollout(new_node)
-                       ^^^^^^^^^^^^^^^^^^^^^^
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/mcts.py", line 403, in rollout
-    self.expansion_evaluation_backpropagation(node, rollout=True)
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/local_mcts.py", line 60, in expansion_evaluation_backpropagation
-    self.expand_node(output_texts, prior_probs, node, rollout)
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/local_mcts.py", line 139, in expand_node
-    new_node = self.action_parser(step_output_text, node, prior_prob, idx=num_child)
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/mcts.py", line 335, in action_parser
-    action_type, action_input, observation, finished, reward, final_answer, table, new_tool_desc = self.tool_agent.parse_and_perform_action(text, api_version=self.api_version, table=table_toolkits(self.args.path) if node.table is None else copy.deepcopy(node.table))
-                                                                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/toolqa.py", line 85, in parse_and_perform_action
-    api_state, new_action_type, new_params, error_infos = self.action_params_check(action_type, params, api_version)
-                                                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/toolqa.py", line 241, in action_params_check
-    node1, node2 = parse_EdgeCheck(params['NodeInfos'], api_version)
-                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/toolqa.py", line 299, in parse_EdgeCheck
-    matches = re.search(pattern, text)
-              ^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/opt/conda/envs/vary/lib/python3.11/re/__init__.py", line 176, in search
-    return _compile(pattern, flags).search(string)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-TypeError: expected string or bytes-like object, got 'list'
-2024/06/17 08:38:33 batch_search_generate.py[line:133] INFO LLM process is alive.
-2024/06/17 08:40:33 batch_search_generate.py[line:133] INFO LLM process is alive.
-2024/06/17 08:42:12 batch_search_generate.py[line:155] ERROR mcts error expected string or bytes-like object, got 'list'
-Traceback (most recent call last):
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/hard_runs/../src/batch_search_generate.py", line 149, in mcts_search
-    outputs = mcts_tree.search()
-              ^^^^^^^^^^^^^^^^^^
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/local_mcts.py", line 43, in search
-    self.search_once()
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/mcts.py", line 204, in search_once
-    self.expansion_evaluation_backpropagation(front)
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/local_mcts.py", line 64, in expansion_evaluation_backpropagation
-    self.expand_node_with_cache(node)
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/mcts.py", line 325, in expand_node_with_cache
-    reward, end_node = self.rollout(child)
-                       ^^^^^^^^^^^^^^^^^^^
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/mcts.py", line 403, in rollout
-    self.expansion_evaluation_backpropagation(node, rollout=True)
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/local_mcts.py", line 60, in expansion_evaluation_backpropagation
-    self.expand_node(output_texts, prior_probs, node, rollout)
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/local_mcts.py", line 139, in expand_node
-    new_node = self.action_parser(step_output_text, node, prior_prob, idx=num_child)
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/mcts.py", line 335, in action_parser
-    action_type, action_input, observation, finished, reward, final_answer, table, new_tool_desc = self.tool_agent.parse_and_perform_action(text, api_version=self.api_version, table=table_toolkits(self.args.path) if node.table is None else copy.deepcopy(node.table))
-                                                                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/toolqa.py", line 85, in parse_and_perform_action
-    api_state, new_action_type, new_params, error_infos = self.action_params_check(action_type, params, api_version)
-                                                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/toolqa.py", line 241, in action_params_check
-    node1, node2 = parse_EdgeCheck(params['NodeInfos'], api_version)
-                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/toolqa.py", line 299, in parse_EdgeCheck
-    matches = re.search(pattern, text)
-              ^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/opt/conda/envs/vary/lib/python3.11/re/__init__.py", line 176, in search
-    return _compile(pattern, flags).search(string)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-TypeError: expected string or bytes-like object, got 'list'
-2024/06/17 08:42:33 batch_search_generate.py[line:133] INFO LLM process is alive.
-2024/06/17 08:44:33 batch_search_generate.py[line:133] INFO LLM process is alive.
-2024/06/17 08:45:01 batch_search_generate.py[line:155] ERROR mcts error expected string or bytes-like object, got 'list'
-Traceback (most recent call last):
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/hard_runs/../src/batch_search_generate.py", line 149, in mcts_search
-    outputs = mcts_tree.search()
-              ^^^^^^^^^^^^^^^^^^
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/local_mcts.py", line 43, in search
-    self.search_once()
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/mcts.py", line 204, in search_once
-    self.expansion_evaluation_backpropagation(front)
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/local_mcts.py", line 64, in expansion_evaluation_backpropagation
-    self.expand_node_with_cache(node)
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/mcts.py", line 325, in expand_node_with_cache
-    reward, end_node = self.rollout(child)
-                       ^^^^^^^^^^^^^^^^^^^
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/mcts.py", line 403, in rollout
-    self.expansion_evaluation_backpropagation(node, rollout=True)
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/local_mcts.py", line 60, in expansion_evaluation_backpropagation
-    self.expand_node(output_texts, prior_probs, node, rollout)
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/local_mcts.py", line 139, in expand_node
-    new_node = self.action_parser(step_output_text, node, prior_prob, idx=num_child)
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/mcts.py", line 335, in action_parser
-    action_type, action_input, observation, finished, reward, final_answer, table, new_tool_desc = self.tool_agent.parse_and_perform_action(text, api_version=self.api_version, table=table_toolkits(self.args.path) if node.table is None else copy.deepcopy(node.table))
-                                                                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/toolqa.py", line 85, in parse_and_perform_action
-    api_state, new_action_type, new_params, error_infos = self.action_params_check(action_type, params, api_version)
-                                                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/toolqa.py", line 241, in action_params_check
-    node1, node2 = parse_EdgeCheck(params['NodeInfos'], api_version)
-                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/toolqa.py", line 299, in parse_EdgeCheck
-    matches = re.search(pattern, text)
-              ^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/opt/conda/envs/vary/lib/python3.11/re/__init__.py", line 176, in search
-    return _compile(pattern, flags).search(string)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-TypeError: expected string or bytes-like object, got 'list'
-2024/06/17 08:46:33 batch_search_generate.py[line:133] INFO LLM process is alive.
-2024/06/17 08:48:33 batch_search_generate.py[line:133] INFO LLM process is alive.
-Execute:   5%|▌         | 49/963 [6:02:05<107:44:30, 424.37s/it]2024/06/17 08:50:33 batch_search_generate.py[line:133] INFO LLM process is alive.
-2024/06/17 08:52:33 batch_search_generate.py[line:133] INFO LLM process is alive.
-2024/06/17 08:54:33 batch_search_generate.py[line:133] INFO LLM process is alive.
-WARNING 06-17 08:55:30 scheduler.py:663] Input prompt (8409 tokens) is too long and exceeds limit of 8192
-2024/06/17 08:56:33 batch_search_generate.py[line:133] INFO LLM process is alive.
-2024/06/17 08:57:05 batch_search_generate.py[line:174] INFO save solutions: 5
-Execute:   5%|▌         | 51/963 [6:08:38<80:51:32, 319.18s/it] 2024/06/17 08:58:33 batch_search_generate.py[line:133] INFO LLM process is alive.
-WARNING 06-17 09:00:28 scheduler.py:663] Input prompt (8528 tokens) is too long and exceeds limit of 8192
-2024/06/17 09:00:33 batch_search_generate.py[line:133] INFO LLM process is alive.
-2024/06/17 09:02:34 batch_search_generate.py[line:133] INFO LLM process is alive.
-2024/06/17 09:04:34 batch_search_generate.py[line:133] INFO LLM process is alive.
-Execute:   5%|▌         | 52/963 [6:17:01<92:20:21, 364.90s/it]2024/06/17 09:06:34 batch_search_generate.py[line:133] INFO LLM process is alive.
-Execute:   6%|▌         | 53/963 [6:19:23<77:29:45, 306.58s/it]Execute:   6%|▌         | 54/963 [6:19:39<57:26:29, 227.49s/it]2024/06/17 09:08:34 batch_search_generate.py[line:133] INFO LLM process is alive.
-2024/06/17 09:09:15 batch_search_generate.py[line:155] ERROR mcts error expected string or bytes-like object, got 'list'
-Traceback (most recent call last):
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/hard_runs/../src/batch_search_generate.py", line 149, in mcts_search
-    outputs = mcts_tree.search()
-              ^^^^^^^^^^^^^^^^^^
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/local_mcts.py", line 43, in search
-    self.search_once()
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/mcts.py", line 204, in search_once
-    self.expansion_evaluation_backpropagation(front)
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/local_mcts.py", line 60, in expansion_evaluation_backpropagation
-    self.expand_node(output_texts, prior_probs, node, rollout)
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/local_mcts.py", line 143, in expand_node
-    reward, end_node = self.rollout(new_node)
-                       ^^^^^^^^^^^^^^^^^^^^^^
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/mcts.py", line 403, in rollout
-    self.expansion_evaluation_backpropagation(node, rollout=True)
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/local_mcts.py", line 60, in expansion_evaluation_backpropagation
-    self.expand_node(output_texts, prior_probs, node, rollout)
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/local_mcts.py", line 139, in expand_node
-    new_node = self.action_parser(step_output_text, node, prior_prob, idx=num_child)
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/mcts.py", line 335, in action_parser
-    action_type, action_input, observation, finished, reward, final_answer, table, new_tool_desc = self.tool_agent.parse_and_perform_action(text, api_version=self.api_version, table=table_toolkits(self.args.path) if node.table is None else copy.deepcopy(node.table))
-                                                                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/toolqa.py", line 85, in parse_and_perform_action
-    api_state, new_action_type, new_params, error_infos = self.action_params_check(action_type, params, api_version)
-                                                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/toolqa.py", line 241, in action_params_check
-    node1, node2 = parse_EdgeCheck(params['NodeInfos'], api_version)
-                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/toolqa.py", line 299, in parse_EdgeCheck
-    matches = re.search(pattern, text)
-              ^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/opt/conda/envs/vary/lib/python3.11/re/__init__.py", line 176, in search
-    return _compile(pattern, flags).search(string)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-TypeError: expected string or bytes-like object, got 'list'
-2024/06/17 09:09:22 batch_search_generate.py[line:155] ERROR mcts error expected string or bytes-like object, got 'list'
-Traceback (most recent call last):
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/hard_runs/../src/batch_search_generate.py", line 149, in mcts_search
-    outputs = mcts_tree.search()
-              ^^^^^^^^^^^^^^^^^^
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/local_mcts.py", line 43, in search
-    self.search_once()
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/mcts.py", line 204, in search_once
-    self.expansion_evaluation_backpropagation(front)
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/local_mcts.py", line 64, in expansion_evaluation_backpropagation
-    self.expand_node_with_cache(node)
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/mcts.py", line 325, in expand_node_with_cache
-    reward, end_node = self.rollout(child)
-                       ^^^^^^^^^^^^^^^^^^^
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/mcts.py", line 403, in rollout
-    self.expansion_evaluation_backpropagation(node, rollout=True)
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/local_mcts.py", line 60, in expansion_evaluation_backpropagation
-    self.expand_node(output_texts, prior_probs, node, rollout)
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/local_mcts.py", line 139, in expand_node
-    new_node = self.action_parser(step_output_text, node, prior_prob, idx=num_child)
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/mcts.py", line 335, in action_parser
-    action_type, action_input, observation, finished, reward, final_answer, table, new_tool_desc = self.tool_agent.parse_and_perform_action(text, api_version=self.api_version, table=table_toolkits(self.args.path) if node.table is None else copy.deepcopy(node.table))
-                                                                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/toolqa.py", line 85, in parse_and_perform_action
-    api_state, new_action_type, new_params, error_infos = self.action_params_check(action_type, params, api_version)
-                                                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/toolqa.py", line 241, in action_params_check
-    node1, node2 = parse_EdgeCheck(params['NodeInfos'], api_version)
-                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/toolqa.py", line 299, in parse_EdgeCheck
-    matches = re.search(pattern, text)
-              ^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/opt/conda/envs/vary/lib/python3.11/re/__init__.py", line 176, in search
-    return _compile(pattern, flags).search(string)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-TypeError: expected string or bytes-like object, got 'list'
-2024/06/17 09:10:34 batch_search_generate.py[line:133] INFO LLM process is alive.
-2024/06/17 09:11:16 batch_search_generate.py[line:174] INFO save solutions: 5
-Execute:   6%|▌         | 55/963 [6:22:49<54:43:12, 216.95s/it]2024/06/17 09:12:34 batch_search_generate.py[line:133] INFO LLM process is alive.
-2024/06/17 09:14:34 batch_search_generate.py[line:133] INFO LLM process is alive.
-2024/06/17 09:16:34 batch_search_generate.py[line:133] INFO LLM process is alive.
-2024/06/17 09:18:34 batch_search_generate.py[line:133] INFO LLM process is alive.
-2024/06/17 09:20:34 batch_search_generate.py[line:133] INFO LLM process is alive.
-2024/06/17 09:22:34 batch_search_generate.py[line:133] INFO LLM process is alive.
-2024/06/17 09:23:02 batch_search_generate.py[line:155] ERROR mcts error expected string or bytes-like object, got 'list'
-Traceback (most recent call last):
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/hard_runs/../src/batch_search_generate.py", line 149, in mcts_search
-    outputs = mcts_tree.search()
-              ^^^^^^^^^^^^^^^^^^
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/local_mcts.py", line 43, in search
-    self.search_once()
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/mcts.py", line 204, in search_once
-    self.expansion_evaluation_backpropagation(front)
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/local_mcts.py", line 64, in expansion_evaluation_backpropagation
-    self.expand_node_with_cache(node)
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/mcts.py", line 325, in expand_node_with_cache
-    reward, end_node = self.rollout(child)
-                       ^^^^^^^^^^^^^^^^^^^
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/mcts.py", line 403, in rollout
-    self.expansion_evaluation_backpropagation(node, rollout=True)
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/local_mcts.py", line 60, in expansion_evaluation_backpropagation
-    self.expand_node(output_texts, prior_probs, node, rollout)
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/local_mcts.py", line 139, in expand_node
-    new_node = self.action_parser(step_output_text, node, prior_prob, idx=num_child)
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/mcts.py", line 335, in action_parser
-    action_type, action_input, observation, finished, reward, final_answer, table, new_tool_desc = self.tool_agent.parse_and_perform_action(text, api_version=self.api_version, table=table_toolkits(self.args.path) if node.table is None else copy.deepcopy(node.table))
-                                                                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/toolqa.py", line 85, in parse_and_perform_action
-    api_state, new_action_type, new_params, error_infos = self.action_params_check(action_type, params, api_version)
-                                                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/toolqa.py", line 241, in action_params_check
-    node1, node2 = parse_EdgeCheck(params['NodeInfos'], api_version)
-                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/toolqa.py", line 299, in parse_EdgeCheck
-    matches = re.search(pattern, text)
-              ^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/opt/conda/envs/vary/lib/python3.11/re/__init__.py", line 176, in search
-    return _compile(pattern, flags).search(string)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-TypeError: expected string or bytes-like object, got 'list'
-2024/06/17 09:24:34 batch_search_generate.py[line:133] INFO LLM process is alive.
-2024/06/17 09:26:34 batch_search_generate.py[line:133] INFO LLM process is alive.
-2024/06/17 09:27:07 batch_search_generate.py[line:155] ERROR mcts error expected string or bytes-like object, got 'list'
-Traceback (most recent call last):
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/hard_runs/../src/batch_search_generate.py", line 149, in mcts_search
-    outputs = mcts_tree.search()
-              ^^^^^^^^^^^^^^^^^^
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/local_mcts.py", line 43, in search
-    self.search_once()
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/mcts.py", line 204, in search_once
-    self.expansion_evaluation_backpropagation(front)
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/local_mcts.py", line 64, in expansion_evaluation_backpropagation
-    self.expand_node_with_cache(node)
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/mcts.py", line 325, in expand_node_with_cache
-    reward, end_node = self.rollout(child)
-                       ^^^^^^^^^^^^^^^^^^^
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/mcts.py", line 403, in rollout
-    self.expansion_evaluation_backpropagation(node, rollout=True)
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/local_mcts.py", line 60, in expansion_evaluation_backpropagation
-    self.expand_node(output_texts, prior_probs, node, rollout)
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/local_mcts.py", line 139, in expand_node
-    new_node = self.action_parser(step_output_text, node, prior_prob, idx=num_child)
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/mcts.py", line 335, in action_parser
-    action_type, action_input, observation, finished, reward, final_answer, table, new_tool_desc = self.tool_agent.parse_and_perform_action(text, api_version=self.api_version, table=table_toolkits(self.args.path) if node.table is None else copy.deepcopy(node.table))
-                                                                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/toolqa.py", line 85, in parse_and_perform_action
-    api_state, new_action_type, new_params, error_infos = self.action_params_check(action_type, params, api_version)
-                                                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/toolqa.py", line 241, in action_params_check
-    node1, node2 = parse_EdgeCheck(params['NodeInfos'], api_version)
-                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/toolqa.py", line 299, in parse_EdgeCheck
-    matches = re.search(pattern, text)
-              ^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/opt/conda/envs/vary/lib/python3.11/re/__init__.py", line 176, in search
-    return _compile(pattern, flags).search(string)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-TypeError: expected string or bytes-like object, got 'list'
-/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/tools/table/tabtools.py:44: DtypeWarning: Columns (25) have mixed types. Specify dtype option on import or set low_memory=False.
-  self.data = pd.read_csv(file_path)
-Execute:   6%|▌         | 56/963 [6:39:24<110:40:08, 439.26s/it]2024/06/17 09:28:34 batch_search_generate.py[line:133] INFO LLM process is alive.
-Execute:   6%|▌         | 57/963 [6:42:03<90:04:08, 357.89s/it] 2024/06/17 09:30:34 batch_search_generate.py[line:133] INFO LLM process is alive.
-Execute:   6%|▌         | 58/963 [6:43:22<69:27:19, 276.29s/it]Execute:   6%|▌         | 59/963 [6:43:54<51:15:56, 204.16s/it]2024/06/17 09:32:34 batch_search_generate.py[line:133] INFO LLM process is alive.
-2024/06/17 09:34:34 batch_search_generate.py[line:133] INFO LLM process is alive.
-2024/06/17 09:36:34 batch_search_generate.py[line:133] INFO LLM process is alive.
-2024/06/17 09:38:34 batch_search_generate.py[line:133] INFO LLM process is alive.
-2024/06/17 09:38:59 batch_search_generate.py[line:155] ERROR mcts error expected string or bytes-like object, got 'list'
-Traceback (most recent call last):
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/hard_runs/../src/batch_search_generate.py", line 149, in mcts_search
-    outputs = mcts_tree.search()
-              ^^^^^^^^^^^^^^^^^^
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/local_mcts.py", line 43, in search
-    self.search_once()
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/mcts.py", line 204, in search_once
-    self.expansion_evaluation_backpropagation(front)
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/local_mcts.py", line 64, in expansion_evaluation_backpropagation
-    self.expand_node_with_cache(node)
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/mcts.py", line 325, in expand_node_with_cache
-    reward, end_node = self.rollout(child)
-                       ^^^^^^^^^^^^^^^^^^^
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/mcts.py", line 403, in rollout
-    self.expansion_evaluation_backpropagation(node, rollout=True)
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/local_mcts.py", line 60, in expansion_evaluation_backpropagation
-    self.expand_node(output_texts, prior_probs, node, rollout)
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/local_mcts.py", line 139, in expand_node
-    new_node = self.action_parser(step_output_text, node, prior_prob, idx=num_child)
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/mcts.py", line 335, in action_parser
-    action_type, action_input, observation, finished, reward, final_answer, table, new_tool_desc = self.tool_agent.parse_and_perform_action(text, api_version=self.api_version, table=table_toolkits(self.args.path) if node.table is None else copy.deepcopy(node.table))
-                                                                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/toolqa.py", line 85, in parse_and_perform_action
-    api_state, new_action_type, new_params, error_infos = self.action_params_check(action_type, params, api_version)
-                                                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/toolqa.py", line 241, in action_params_check
-    node1, node2 = parse_EdgeCheck(params['NodeInfos'], api_version)
-                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/toolqa.py", line 299, in parse_EdgeCheck
-    matches = re.search(pattern, text)
-              ^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/opt/conda/envs/vary/lib/python3.11/re/__init__.py", line 176, in search
-    return _compile(pattern, flags).search(string)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-TypeError: expected string or bytes-like object, got 'list'
-2024/06/17 09:40:34 batch_search_generate.py[line:133] INFO LLM process is alive.
-2024/06/17 09:41:03 batch_search_generate.py[line:155] ERROR mcts error expected string or bytes-like object, got 'list'
-Traceback (most recent call last):
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/hard_runs/../src/batch_search_generate.py", line 149, in mcts_search
-    outputs = mcts_tree.search()
-              ^^^^^^^^^^^^^^^^^^
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/local_mcts.py", line 43, in search
-    self.search_once()
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/mcts.py", line 204, in search_once
-    self.expansion_evaluation_backpropagation(front)
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/local_mcts.py", line 64, in expansion_evaluation_backpropagation
-    self.expand_node_with_cache(node)
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/mcts.py", line 325, in expand_node_with_cache
-    reward, end_node = self.rollout(child)
-                       ^^^^^^^^^^^^^^^^^^^
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/mcts.py", line 403, in rollout
-    self.expansion_evaluation_backpropagation(node, rollout=True)
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/local_mcts.py", line 60, in expansion_evaluation_backpropagation
-    self.expand_node(output_texts, prior_probs, node, rollout)
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/local_mcts.py", line 139, in expand_node
-    new_node = self.action_parser(step_output_text, node, prior_prob, idx=num_child)
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/mcts.py", line 335, in action_parser
-    action_type, action_input, observation, finished, reward, final_answer, table, new_tool_desc = self.tool_agent.parse_and_perform_action(text, api_version=self.api_version, table=table_toolkits(self.args.path) if node.table is None else copy.deepcopy(node.table))
-                                                                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/toolqa.py", line 85, in parse_and_perform_action
-    api_state, new_action_type, new_params, error_infos = self.action_params_check(action_type, params, api_version)
-                                                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/toolqa.py", line 241, in action_params_check
-    node1, node2 = parse_EdgeCheck(params['NodeInfos'], api_version)
-                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/toolqa.py", line 299, in parse_EdgeCheck
-    matches = re.search(pattern, text)
-              ^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/opt/conda/envs/vary/lib/python3.11/re/__init__.py", line 176, in search
-    return _compile(pattern, flags).search(string)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-TypeError: expected string or bytes-like object, got 'list'
-2024/06/17 09:42:35 batch_search_generate.py[line:133] INFO LLM process is alive.
-2024/06/17 09:44:35 batch_search_generate.py[line:133] INFO LLM process is alive.
-2024/06/17 09:44:42 batch_search_generate.py[line:155] ERROR mcts error expected string or bytes-like object, got 'list'
-Traceback (most recent call last):
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/hard_runs/../src/batch_search_generate.py", line 149, in mcts_search
-    outputs = mcts_tree.search()
-              ^^^^^^^^^^^^^^^^^^
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/local_mcts.py", line 43, in search
-    self.search_once()
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/mcts.py", line 204, in search_once
-    self.expansion_evaluation_backpropagation(front)
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/local_mcts.py", line 60, in expansion_evaluation_backpropagation
-    self.expand_node(output_texts, prior_probs, node, rollout)
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/local_mcts.py", line 143, in expand_node
-    reward, end_node = self.rollout(new_node)
-                       ^^^^^^^^^^^^^^^^^^^^^^
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/mcts.py", line 403, in rollout
-    self.expansion_evaluation_backpropagation(node, rollout=True)
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/local_mcts.py", line 60, in expansion_evaluation_backpropagation
-    self.expand_node(output_texts, prior_probs, node, rollout)
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/local_mcts.py", line 139, in expand_node
-    new_node = self.action_parser(step_output_text, node, prior_prob, idx=num_child)
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/mcts.py", line 335, in action_parser
-    action_type, action_input, observation, finished, reward, final_answer, table, new_tool_desc = self.tool_agent.parse_and_perform_action(text, api_version=self.api_version, table=table_toolkits(self.args.path) if node.table is None else copy.deepcopy(node.table))
-                                                                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/toolqa.py", line 85, in parse_and_perform_action
-    api_state, new_action_type, new_params, error_infos = self.action_params_check(action_type, params, api_version)
-                                                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/toolqa.py", line 241, in action_params_check
-    node1, node2 = parse_EdgeCheck(params['NodeInfos'], api_version)
-                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/toolqa.py", line 299, in parse_EdgeCheck
-    matches = re.search(pattern, text)
-              ^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/opt/conda/envs/vary/lib/python3.11/re/__init__.py", line 176, in search
-    return _compile(pattern, flags).search(string)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-TypeError: expected string or bytes-like object, got 'list'
-2024/06/17 09:46:31 batch_search_generate.py[line:155] ERROR mcts error expected string or bytes-like object, got 'NoneType'
-Traceback (most recent call last):
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/hard_runs/../src/batch_search_generate.py", line 149, in mcts_search
-    outputs = mcts_tree.search()
-              ^^^^^^^^^^^^^^^^^^
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/local_mcts.py", line 43, in search
-    self.search_once()
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/mcts.py", line 204, in search_once
-    self.expansion_evaluation_backpropagation(front)
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/local_mcts.py", line 64, in expansion_evaluation_backpropagation
-    self.expand_node_with_cache(node)
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/mcts.py", line 325, in expand_node_with_cache
-    reward, end_node = self.rollout(child)
-                       ^^^^^^^^^^^^^^^^^^^
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/mcts.py", line 403, in rollout
-    self.expansion_evaluation_backpropagation(node, rollout=True)
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/local_mcts.py", line 60, in expansion_evaluation_backpropagation
-    self.expand_node(output_texts, prior_probs, node, rollout)
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/local_mcts.py", line 139, in expand_node
-    new_node = self.action_parser(step_output_text, node, prior_prob, idx=num_child)
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/mcts.py", line 335, in action_parser
-    action_type, action_input, observation, finished, reward, final_answer, table, new_tool_desc = self.tool_agent.parse_and_perform_action(text, api_version=self.api_version, table=table_toolkits(self.args.path) if node.table is None else copy.deepcopy(node.table))
-                                                                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/toolqa.py", line 85, in parse_and_perform_action
-    api_state, new_action_type, new_params, error_infos = self.action_params_check(action_type, params, api_version)
-                                                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/toolqa.py", line 241, in action_params_check
-    node1, node2 = parse_EdgeCheck(params['NodeInfos'], api_version)
-                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/toolqa.py", line 299, in parse_EdgeCheck
-    matches = re.search(pattern, text)
-              ^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/opt/conda/envs/vary/lib/python3.11/re/__init__.py", line 176, in search
-    return _compile(pattern, flags).search(string)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-TypeError: expected string or bytes-like object, got 'NoneType'
-2024/06/17 09:46:35 batch_search_generate.py[line:133] INFO LLM process is alive.
-2024/06/17 09:48:35 batch_search_generate.py[line:133] INFO LLM process is alive.
-2024/06/17 09:50:35 batch_search_generate.py[line:133] INFO LLM process is alive.
-2024/06/17 09:52:27 batch_search_generate.py[line:174] INFO save solutions: 5
-Execute:   6%|▌         | 60/963 [7:04:00<125:43:16, 501.21s/it]2024/06/17 09:52:35 batch_search_generate.py[line:133] INFO LLM process is alive.
-/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/tools/table/tabtools.py:44: DtypeWarning: Columns (25) have mixed types. Specify dtype option on import or set low_memory=False.
-  self.data = pd.read_csv(file_path)
-2024/06/17 09:53:29 batch_search_generate.py[line:155] ERROR mcts error expected string or bytes-like object, got 'list'
-Traceback (most recent call last):
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/hard_runs/../src/batch_search_generate.py", line 149, in mcts_search
-    outputs = mcts_tree.search()
-              ^^^^^^^^^^^^^^^^^^
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/local_mcts.py", line 43, in search
-    self.search_once()
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/mcts.py", line 204, in search_once
-    self.expansion_evaluation_backpropagation(front)
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/local_mcts.py", line 64, in expansion_evaluation_backpropagation
-    self.expand_node_with_cache(node)
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/mcts.py", line 325, in expand_node_with_cache
-    reward, end_node = self.rollout(child)
-                       ^^^^^^^^^^^^^^^^^^^
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/mcts.py", line 403, in rollout
-    self.expansion_evaluation_backpropagation(node, rollout=True)
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/local_mcts.py", line 60, in expansion_evaluation_backpropagation
-    self.expand_node(output_texts, prior_probs, node, rollout)
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/local_mcts.py", line 139, in expand_node
-    new_node = self.action_parser(step_output_text, node, prior_prob, idx=num_child)
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/mcts.py", line 335, in action_parser
-    action_type, action_input, observation, finished, reward, final_answer, table, new_tool_desc = self.tool_agent.parse_and_perform_action(text, api_version=self.api_version, table=table_toolkits(self.args.path) if node.table is None else copy.deepcopy(node.table))
-                                                                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/toolqa.py", line 85, in parse_and_perform_action
-    api_state, new_action_type, new_params, error_infos = self.action_params_check(action_type, params, api_version)
-                                                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/toolqa.py", line 241, in action_params_check
-    node1, node2 = parse_EdgeCheck(params['NodeInfos'], api_version)
-                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/toolqa.py", line 299, in parse_EdgeCheck
-    matches = re.search(pattern, text)
-              ^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/opt/conda/envs/vary/lib/python3.11/re/__init__.py", line 176, in search
-    return _compile(pattern, flags).search(string)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-TypeError: expected string or bytes-like object, got 'list'
-2024/06/17 09:54:35 batch_search_generate.py[line:133] INFO LLM process is alive.
-2024/06/17 09:56:35 batch_search_generate.py[line:133] INFO LLM process is alive.
-Execute:   6%|▋         | 61/963 [7:08:30<108:22:34, 432.54s/it]2024/06/17 09:58:35 batch_search_generate.py[line:133] INFO LLM process is alive.
-2024/06/17 10:00:35 batch_search_generate.py[line:133] INFO LLM process is alive.
-2024/06/17 10:02:35 batch_search_generate.py[line:133] INFO LLM process is alive.
-2024/06/17 10:04:35 batch_search_generate.py[line:133] INFO LLM process is alive.
-Execute:   6%|▋         | 62/963 [7:16:27<111:33:26, 445.73s/it]Execute:   7%|▋         | 63/963 [7:17:15<81:42:41, 326.85s/it] 2024/06/17 10:06:35 batch_search_generate.py[line:133] INFO LLM process is alive.
-2024/06/17 10:08:35 batch_search_generate.py[line:133] INFO LLM process is alive.
-2024/06/17 10:10:35 batch_search_generate.py[line:133] INFO LLM process is alive.
-2024/06/17 10:12:35 batch_search_generate.py[line:133] INFO LLM process is alive.
-2024/06/17 10:14:35 batch_search_generate.py[line:133] INFO LLM process is alive.
-2024/06/17 10:16:35 batch_search_generate.py[line:133] INFO LLM process is alive.
-Execute:   7%|▋         | 64/963 [7:28:24<107:11:17, 429.23s/it]2024/06/17 10:18:35 batch_search_generate.py[line:133] INFO LLM process is alive.
-Execute:   7%|▋         | 65/963 [7:31:36<89:21:37, 358.24s/it] 2024/06/17 10:20:19 batch_search_generate.py[line:174] INFO save solutions: 5
-2024/06/17 10:20:35 batch_search_generate.py[line:133] INFO LLM process is alive.
-2024/06/17 10:22:35 batch_search_generate.py[line:133] INFO LLM process is alive.
-2024/06/17 10:22:55 batch_search_generate.py[line:155] ERROR mcts error expected string or bytes-like object, got 'list'
-Traceback (most recent call last):
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/hard_runs/../src/batch_search_generate.py", line 149, in mcts_search
-    outputs = mcts_tree.search()
-              ^^^^^^^^^^^^^^^^^^
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/local_mcts.py", line 43, in search
-    self.search_once()
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/mcts.py", line 204, in search_once
-    self.expansion_evaluation_backpropagation(front)
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/local_mcts.py", line 64, in expansion_evaluation_backpropagation
-    self.expand_node_with_cache(node)
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/mcts.py", line 325, in expand_node_with_cache
-    reward, end_node = self.rollout(child)
-                       ^^^^^^^^^^^^^^^^^^^
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/mcts.py", line 403, in rollout
-    self.expansion_evaluation_backpropagation(node, rollout=True)
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/local_mcts.py", line 60, in expansion_evaluation_backpropagation
-    self.expand_node(output_texts, prior_probs, node, rollout)
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/local_mcts.py", line 139, in expand_node
-    new_node = self.action_parser(step_output_text, node, prior_prob, idx=num_child)
-               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/mcts.py", line 335, in action_parser
-    action_type, action_input, observation, finished, reward, final_answer, table, new_tool_desc = self.tool_agent.parse_and_perform_action(text, api_version=self.api_version, table=table_toolkits(self.args.path) if node.table is None else copy.deepcopy(node.table))
-                                                                                                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/toolqa.py", line 85, in parse_and_perform_action
-    api_state, new_action_type, new_params, error_infos = self.action_params_check(action_type, params, api_version)
-                                                          ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/toolqa.py", line 241, in action_params_check
-    node1, node2 = parse_EdgeCheck(params['NodeInfos'], api_version)
-                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/toolqa.py", line 299, in parse_EdgeCheck
-    matches = re.search(pattern, text)
-              ^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/opt/conda/envs/vary/lib/python3.11/re/__init__.py", line 176, in search
-    return _compile(pattern, flags).search(string)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-TypeError: expected string or bytes-like object, got 'list'
-2024/06/17 10:24:35 batch_search_generate.py[line:133] INFO LLM process is alive.
-Execute:   7%|▋         | 66/963 [7:37:43<89:54:48, 360.86s/it]

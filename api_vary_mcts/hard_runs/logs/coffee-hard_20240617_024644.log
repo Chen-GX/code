@@ -1,975 +1,0 @@
-toolqa_hard
-coffee-hard
-1
-2024/06/17 02:47:27 log_utils.py[line:35] INFO seed:1718563647
-2024/06/17 02:47:27 log_utils.py[line:35] INFO verbose:False
-2024/06/17 02:47:27 log_utils.py[line:35] INFO process_num:1
-2024/06/17 02:47:27 log_utils.py[line:35] INFO path:/mnt/workspace/nas/chenguoxin.cgx/api/datasets/ToolQA
-2024/06/17 02:47:27 log_utils.py[line:35] INFO num_epoch:1
-2024/06/17 02:47:27 log_utils.py[line:35] INFO tool_url:http://127.0.0.1:5010/toolqa
-2024/06/17 02:47:27 log_utils.py[line:35] INFO filter:False
-2024/06/17 02:47:27 log_utils.py[line:35] INFO filter_path:11
-2024/06/17 02:47:27 log_utils.py[line:35] INFO checkpoint_dir:/mnt/workspace/nas/chenguoxin.cgx/model_cache/Meta-Llama-3-8B-Instruct
-2024/06/17 02:47:27 log_utils.py[line:35] INFO temperature:0.5
-2024/06/17 02:47:27 log_utils.py[line:35] INFO top_k:-1
-2024/06/17 02:47:27 log_utils.py[line:35] INFO top_p:1.0
-2024/06/17 02:47:27 log_utils.py[line:35] INFO frequency_penalty:1.2
-2024/06/17 02:47:27 log_utils.py[line:35] INFO scratchpad_length:1024
-2024/06/17 02:47:27 log_utils.py[line:35] INFO api_kernel_version:1
-2024/06/17 02:47:27 log_utils.py[line:35] INFO Cpuct:1.25
-2024/06/17 02:47:27 log_utils.py[line:35] INFO n_generate_sample:5
-2024/06/17 02:47:27 log_utils.py[line:35] INFO max_iter:12
-2024/06/17 02:47:27 log_utils.py[line:35] INFO max_depth:12
-2024/06/17 02:47:27 log_utils.py[line:35] INFO positive_reward:1.0
-2024/06/17 02:47:27 log_utils.py[line:35] INFO negative_reward:-1.0
-2024/06/17 02:47:27 log_utils.py[line:35] INFO max_new_tokens:1024
-2024/06/17 02:47:27 log_utils.py[line:35] INFO max_load_db:5
-2024/06/17 02:47:27 log_utils.py[line:35] INFO debug_num:-1
-2024/06/17 02:47:27 log_utils.py[line:35] INFO datapath:/mnt/workspace/nas/chenguoxin.cgx/api/workspace/data
-2024/06/17 02:47:27 log_utils.py[line:35] INFO task:toolqa_hard
-2024/06/17 02:47:27 log_utils.py[line:35] INFO dataname:coffee-hard
-2024/06/17 02:47:27 log_utils.py[line:35] INFO output_dir:/mnt/workspace/nas/chenguoxin.cgx/api/workspace/output_dir/mcts/round1/run/toolqa_hard/coffee-hard/Meta-Llama-3-8B-Instruct/20240617_024727
-2024/06/17 02:47:27 log_utils.py[line:35] INFO num_examples:2
-2024/06/17 02:47:27 log_utils.py[line:35] INFO model_name:Meta-Llama-3-8B-Instruct
-2024/06/17 02:47:27 log_utils.py[line:35] INFO timestamp:20240617_024727
-2024/06/17 02:47:32 batch_search_generate.py[line:279] INFO ********** EPOCH 0 ***********
-Execute:   0%|          | 0/1167 [00:00<?, ?it/s]INFO 06-17 02:47:32 llm_engine.py:161] Initializing an LLM engine (v0.4.3) with config: model='/mnt/workspace/nas/chenguoxin.cgx/model_cache/Meta-Llama-3-8B-Instruct', speculative_config=None, tokenizer='/mnt/workspace/nas/chenguoxin.cgx/model_cache/Meta-Llama-3-8B-Instruct', skip_tokenizer_init=False, tokenizer_mode=auto, revision=None, rope_scaling=None, tokenizer_revision=None, trust_remote_code=False, dtype=torch.bfloat16, max_seq_len=8192, download_dir=None, load_format=LoadFormat.AUTO, tensor_parallel_size=1, disable_custom_all_reduce=False, quantization=None, enforce_eager=False, kv_cache_dtype=auto, quantization_param_path=None, device_config=cuda, decoding_config=DecodingConfig(guided_decoding_backend='outlines'), seed=1718563647, served_model_name=/mnt/workspace/nas/chenguoxin.cgx/model_cache/Meta-Llama-3-8B-Instruct)
-Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
-INFO 06-17 02:47:42 model_runner.py:146] Loading model weights took 14.9595 GB
-INFO 06-17 02:47:43 gpu_executor.py:83] # GPU blocks: 27895, # CPU blocks: 4096
-Execute:   0%|          | 0/1167 [00:15<?, ?it/s]INFO 06-17 02:47:53 model_runner.py:854] Capturing the model for CUDA graphs. This may lead to unexpected consequences if the model is not static. To run the model in eager mode, set 'enforce_eager=True' or use '--enforce-eager' in the CLI.
-INFO 06-17 02:47:53 model_runner.py:858] CUDA graphs can take additional 1~3 GiB memory per GPU. If you are running out of memory, consider decreasing `gpu_memory_utilization` or enforcing eager mode. You can also reduce the `max_num_seqs` as needed to decrease memory usage.
-INFO 06-17 02:47:57 model_runner.py:924] Graph capturing finished in 4 secs.
-Execute:   0%|          | 0/1167 [00:30<?, ?it/s]Execute:   0%|          | 0/1167 [00:45<?, ?it/s]Execute:   0%|          | 0/1167 [01:00<?, ?it/s]Execute:   0%|          | 0/1167 [01:15<?, ?it/s]WARNING 06-17 02:48:58 scheduler.py:663] Input prompt (8862 tokens) is too long and exceeds limit of 8192
-Execute:   0%|          | 0/1167 [01:30<?, ?it/s]Execute:   0%|          | 0/1167 [01:45<?, ?it/s]Execute:   0%|          | 0/1167 [02:00<?, ?it/s]WARNING 06-17 02:49:45 scheduler.py:663] Input prompt (9071 tokens) is too long and exceeds limit of 8192
-Execute:   0%|          | 0/1167 [02:15<?, ?it/s]WARNING 06-17 02:49:53 scheduler.py:663] Input prompt (9994 tokens) is too long and exceeds limit of 8192
-Execute:   0%|          | 0/1167 [02:30<?, ?it/s]WARNING 06-17 02:50:07 scheduler.py:663] Input prompt (11847 tokens) is too long and exceeds limit of 8192
-Execute:   0%|          | 0/1167 [02:45<?, ?it/s]WARNING 06-17 02:50:18 scheduler.py:663] Input prompt (8793 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 02:50:25 scheduler.py:663] Input prompt (9854 tokens) is too long and exceeds limit of 8192
-Execute:   0%|          | 0/1167 [03:00<?, ?it/s]Execute:   0%|          | 0/1167 [03:15<?, ?it/s]Execute:   0%|          | 0/1167 [03:30<?, ?it/s]WARNING 06-17 02:51:12 scheduler.py:663] Input prompt (8655 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 02:51:12 scheduler.py:663] Input prompt (9808 tokens) is too long and exceeds limit of 8192
-Execute:   0%|          | 0/1167 [03:45<?, ?it/s]WARNING 06-17 02:51:25 scheduler.py:663] Input prompt (9171 tokens) is too long and exceeds limit of 8192
-Execute:   0%|          | 0/1167 [04:00<?, ?it/s]Execute:   0%|          | 0/1167 [04:15<?, ?it/s]WARNING 06-17 02:51:53 scheduler.py:663] Input prompt (8697 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 02:51:54 scheduler.py:663] Input prompt (9542 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 02:52:01 scheduler.py:663] Input prompt (8755 tokens) is too long and exceeds limit of 8192
-Execute:   0%|          | 0/1167 [04:30<?, ?it/s]Execute:   0%|          | 0/1167 [04:45<?, ?it/s]Execute:   0%|          | 0/1167 [05:00<?, ?it/s]Execute:   0%|          | 0/1167 [05:15<?, ?it/s]Execute:   0%|          | 0/1167 [05:30<?, ?it/s]Execute:   0%|          | 0/1167 [05:45<?, ?it/s]Execute:   0%|          | 0/1167 [06:00<?, ?it/s]Execute:   0%|          | 0/1167 [06:15<?, ?it/s]WARNING 06-17 02:54:01 scheduler.py:663] Input prompt (9167 tokens) is too long and exceeds limit of 8192
-Execute:   0%|          | 0/1167 [06:30<?, ?it/s]Execute:   0%|          | 0/1167 [06:45<?, ?it/s]Execute:   0%|          | 0/1167 [07:00<?, ?it/s]WARNING 06-17 02:54:40 scheduler.py:663] Input prompt (8677 tokens) is too long and exceeds limit of 8192
-Execute:   0%|          | 0/1167 [07:15<?, ?it/s]Execute:   0%|          | 0/1167 [07:30<?, ?it/s]Execute:   0%|          | 0/1167 [07:45<?, ?it/s]WARNING 06-17 02:55:25 scheduler.py:663] Input prompt (10144 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 02:55:27 scheduler.py:663] Input prompt (9230 tokens) is too long and exceeds limit of 8192
-Execute:   0%|          | 0/1167 [08:00<?, ?it/s]Execute:   0%|          | 0/1167 [08:15<?, ?it/s]Execute:   0%|          | 0/1167 [08:30<?, ?it/s]WARNING 06-17 02:56:02 scheduler.py:663] Input prompt (8276 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 02:56:11 scheduler.py:663] Input prompt (10059 tokens) is too long and exceeds limit of 8192
-Execute:   0%|          | 0/1167 [08:45<?, ?it/s]Execute:   0%|          | 0/1167 [09:00<?, ?it/s]WARNING 06-17 02:56:39 scheduler.py:663] Input prompt (9036 tokens) is too long and exceeds limit of 8192
-Execute:   0%|          | 0/1167 [09:15<?, ?it/s]WARNING 06-17 02:56:55 scheduler.py:663] Input prompt (8606 tokens) is too long and exceeds limit of 8192
-Execute:   0%|          | 0/1167 [09:30<?, ?it/s]Execute:   0%|          | 0/1167 [09:45<?, ?it/s]2024/06/17 02:57:32 batch_search_generate.py[line:133] INFO LLM process is alive.
-Execute:   0%|          | 0/1167 [10:00<?, ?it/s]WARNING 06-17 02:57:39 scheduler.py:663] Input prompt (10022 tokens) is too long and exceeds limit of 8192
-Execute:   0%|          | 0/1167 [10:15<?, ?it/s]Execute:   0%|          | 0/1167 [10:30<?, ?it/s]Execute:   0%|          | 0/1167 [10:45<?, ?it/s]WARNING 06-17 02:58:18 scheduler.py:663] Input prompt (9399 tokens) is too long and exceeds limit of 8192
-Execute:   0%|          | 0/1167 [11:00<?, ?it/s]Execute:   0%|          | 0/1167 [11:15<?, ?it/s]WARNING 06-17 02:58:51 scheduler.py:663] Input prompt (8938 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 02:58:58 scheduler.py:663] Input prompt (9311 tokens) is too long and exceeds limit of 8192
-Execute:   0%|          | 0/1167 [11:30<?, ?it/s]Execute:   0%|          | 0/1167 [11:45<?, ?it/s]2024/06/17 02:59:32 batch_search_generate.py[line:133] INFO LLM process is alive.
-Execute:   0%|          | 0/1167 [12:00<?, ?it/s]WARNING 06-17 02:59:36 scheduler.py:663] Input prompt (9395 tokens) is too long and exceeds limit of 8192
-Execute:   0%|          | 0/1167 [12:15<?, ?it/s]Execute:   0%|          | 0/1167 [12:30<?, ?it/s]Execute:   0%|          | 0/1167 [12:45<?, ?it/s]WARNING 06-17 03:00:26 scheduler.py:663] Input prompt (9247 tokens) is too long and exceeds limit of 8192
-Execute:   0%|          | 0/1167 [13:00<?, ?it/s]WARNING 06-17 03:00:35 scheduler.py:663] Input prompt (10026 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 03:00:36 scheduler.py:663] Input prompt (8298 tokens) is too long and exceeds limit of 8192
-Execute:   0%|          | 0/1167 [13:15<?, ?it/s]Execute:   0%|          | 0/1167 [13:30<?, ?it/s]Execute:   0%|          | 0/1167 [13:45<?, ?it/s]2024/06/17 03:01:32 batch_search_generate.py[line:133] INFO LLM process is alive.
-Execute:   0%|          | 0/1167 [14:00<?, ?it/s]WARNING 06-17 03:01:40 scheduler.py:663] Input prompt (8420 tokens) is too long and exceeds limit of 8192
-Execute:   0%|          | 0/1167 [14:15<?, ?it/s]WARNING 06-17 03:01:47 scheduler.py:663] Input prompt (9615 tokens) is too long and exceeds limit of 8192
-Execute:   0%|          | 0/1167 [14:30<?, ?it/s]Execute:   0%|          | 0/1167 [14:45<?, ?it/s]Execute:   0%|          | 0/1167 [15:00<?, ?it/s]WARNING 06-17 03:02:35 scheduler.py:663] Input prompt (8752 tokens) is too long and exceeds limit of 8192
-Execute:   0%|          | 0/1167 [15:15<?, ?it/s]Execute:   0%|          | 0/1167 [15:30<?, ?it/s]Execute:   0%|          | 0/1167 [15:45<?, ?it/s]2024/06/17 03:03:32 batch_search_generate.py[line:133] INFO LLM process is alive.
-Execute:   0%|          | 0/1167 [16:00<?, ?it/s]WARNING 06-17 03:03:33 scheduler.py:663] Input prompt (9913 tokens) is too long and exceeds limit of 8192
-Execute:   0%|          | 0/1167 [16:15<?, ?it/s]Execute:   0%|          | 0/1167 [16:30<?, ?it/s]Execute:   0%|          | 0/1167 [16:45<?, ?it/s]WARNING 06-17 03:04:24 scheduler.py:663] Input prompt (8353 tokens) is too long and exceeds limit of 8192
-Execute:   0%|          | 0/1167 [17:00<?, ?it/s]Execute:   0%|          | 0/1167 [17:15<?, ?it/s]WARNING 06-17 03:04:59 scheduler.py:663] Input prompt (9130 tokens) is too long and exceeds limit of 8192
-Execute:   0%|          | 0/1167 [17:30<?, ?it/s]Execute:   0%|          | 0/1167 [17:45<?, ?it/s]WARNING 06-17 03:05:31 scheduler.py:663] Input prompt (8980 tokens) is too long and exceeds limit of 8192
-2024/06/17 03:05:32 batch_search_generate.py[line:133] INFO LLM process is alive.
-Execute:   0%|          | 0/1167 [18:00<?, ?it/s]Execute:   0%|          | 0/1167 [18:15<?, ?it/s]Execute:   0%|          | 0/1167 [18:30<?, ?it/s]Execute:   0%|          | 0/1167 [18:45<?, ?it/s]WARNING 06-17 03:06:24 scheduler.py:663] Input prompt (9225 tokens) is too long and exceeds limit of 8192
-Execute:   0%|          | 0/1167 [19:00<?, ?it/s]WARNING 06-17 03:06:36 scheduler.py:663] Input prompt (9953 tokens) is too long and exceeds limit of 8192
-Execute:   0%|          | 0/1167 [19:15<?, ?it/s]Execute:   0%|          | 0/1167 [19:30<?, ?it/s]Execute:   0%|          | 0/1167 [19:45<?, ?it/s]WARNING 06-17 03:07:18 scheduler.py:663] Input prompt (9301 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 03:07:26 scheduler.py:663] Input prompt (9858 tokens) is too long and exceeds limit of 8192
-2024/06/17 03:07:32 batch_search_generate.py[line:133] INFO LLM process is alive.
-Execute:   0%|          | 0/1167 [20:00<?, ?it/s]Execute:   0%|          | 0/1167 [20:15<?, ?it/s]Execute:   0%|          | 0/1167 [20:30<?, ?it/s]WARNING 06-17 03:08:05 scheduler.py:663] Input prompt (9137 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 03:08:12 scheduler.py:663] Input prompt (9805 tokens) is too long and exceeds limit of 8192
-Execute:   0%|          | 0/1167 [20:45<?, ?it/s]Execute:   0%|          | 0/1167 [21:00<?, ?it/s]Execute:   0%|          | 0/1167 [21:15<?, ?it/s]WARNING 06-17 03:08:51 scheduler.py:663] Input prompt (9046 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 03:08:51 scheduler.py:663] Input prompt (9441 tokens) is too long and exceeds limit of 8192
-Execute:   0%|          | 0/1167 [21:30<?, ?it/s]WARNING 06-17 03:09:05 scheduler.py:663] Input prompt (9169 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 03:09:12 scheduler.py:663] Input prompt (8195 tokens) is too long and exceeds limit of 8192
-Execute:   0%|          | 0/1167 [21:45<?, ?it/s]2024/06/17 03:09:32 batch_search_generate.py[line:133] INFO LLM process is alive.
-Execute:   0%|          | 0/1167 [22:00<?, ?it/s]Execute:   0%|          | 0/1167 [22:15<?, ?it/s]Execute:   0%|          | 0/1167 [22:30<?, ?it/s]WARNING 06-17 03:10:05 scheduler.py:663] Input prompt (10260 tokens) is too long and exceeds limit of 8192
-Execute:   0%|          | 0/1167 [22:45<?, ?it/s]Execute:   0%|          | 0/1167 [23:00<?, ?it/s]WARNING 06-17 03:10:41 scheduler.py:663] Input prompt (8722 tokens) is too long and exceeds limit of 8192
-Execute:   0%|          | 0/1167 [23:15<?, ?it/s]Execute:   0%|          | 0/1167 [23:30<?, ?it/s]WARNING 06-17 03:11:03 scheduler.py:663] Input prompt (8764 tokens) is too long and exceeds limit of 8192
-Execute:   0%|          | 0/1167 [23:45<?, ?it/s]2024/06/17 03:11:32 batch_search_generate.py[line:133] INFO LLM process is alive.
-Execute:   0%|          | 0/1167 [24:00<?, ?it/s]WARNING 06-17 03:11:36 scheduler.py:663] Input prompt (9333 tokens) is too long and exceeds limit of 8192
-Execute:   0%|          | 0/1167 [24:15<?, ?it/s]WARNING 06-17 03:11:52 scheduler.py:663] Input prompt (9216 tokens) is too long and exceeds limit of 8192
-Execute:   0%|          | 0/1167 [24:30<?, ?it/s]WARNING 06-17 03:12:06 scheduler.py:663] Input prompt (8847 tokens) is too long and exceeds limit of 8192
-Execute:   0%|          | 0/1167 [24:45<?, ?it/s]Execute:   0%|          | 0/1167 [25:00<?, ?it/s]WARNING 06-17 03:12:38 scheduler.py:663] Input prompt (8909 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 03:12:46 scheduler.py:663] Input prompt (9093 tokens) is too long and exceeds limit of 8192
-Execute:   0%|          | 0/1167 [25:15<?, ?it/s]Execute:   0%|          | 0/1167 [25:30<?, ?it/s]Execute:   0%|          | 0/1167 [25:45<?, ?it/s]WARNING 06-17 03:13:21 scheduler.py:663] Input prompt (14636 tokens) is too long and exceeds limit of 8192
-Execute:   0%|          | 0/1167 [26:00<?, ?it/s]2024/06/17 03:13:32 batch_search_generate.py[line:133] INFO LLM process is alive.
-Execute:   0%|          | 0/1167 [26:15<?, ?it/s]WARNING 06-17 03:14:02 scheduler.py:663] Input prompt (9388 tokens) is too long and exceeds limit of 8192
-Execute:   0%|          | 0/1167 [26:30<?, ?it/s]Execute:   0%|          | 0/1167 [26:45<?, ?it/s]WARNING 06-17 03:14:27 scheduler.py:663] Input prompt (9909 tokens) is too long and exceeds limit of 8192
-Execute:   0%|          | 0/1167 [27:00<?, ?it/s]WARNING 06-17 03:14:47 scheduler.py:663] Input prompt (9384 tokens) is too long and exceeds limit of 8192
-Execute:   0%|          | 0/1167 [27:15<?, ?it/s]WARNING 06-17 03:14:57 scheduler.py:663] Input prompt (8558 tokens) is too long and exceeds limit of 8192
-Execute:   0%|          | 0/1167 [27:30<?, ?it/s]Execute:   0%|          | 0/1167 [27:45<?, ?it/s]Execute:   0%|          | 0/1167 [28:00<?, ?it/s]2024/06/17 03:15:32 batch_search_generate.py[line:133] INFO LLM process is alive.
-WARNING 06-17 03:15:39 scheduler.py:663] Input prompt (9947 tokens) is too long and exceeds limit of 8192
-Execute:   0%|          | 0/1167 [28:15<?, ?it/s]WARNING 06-17 03:15:49 scheduler.py:663] Input prompt (8513 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 03:15:53 scheduler.py:663] Input prompt (9387 tokens) is too long and exceeds limit of 8192
-Execute:   0%|          | 0/1167 [28:30<?, ?it/s]WARNING 06-17 03:16:17 scheduler.py:663] Input prompt (8987 tokens) is too long and exceeds limit of 8192
-Execute:   0%|          | 0/1167 [28:45<?, ?it/s]Execute:   0%|          | 0/1167 [29:00<?, ?it/s]Execute:   0%|          | 0/1167 [29:15<?, ?it/s]Execute:   0%|          | 0/1167 [29:30<?, ?it/s]WARNING 06-17 03:17:11 scheduler.py:663] Input prompt (9210 tokens) is too long and exceeds limit of 8192
-Execute:   0%|          | 0/1167 [29:45<?, ?it/s]WARNING 06-17 03:17:18 scheduler.py:663] Input prompt (9412 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 03:17:30 scheduler.py:663] Input prompt (12263 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 03:17:30 scheduler.py:663] Input prompt (9500 tokens) is too long and exceeds limit of 8192
-Execute:   0%|          | 0/1167 [30:00<?, ?it/s]2024/06/17 03:17:32 batch_search_generate.py[line:133] INFO LLM process is alive.
-WARNING 06-17 03:17:36 scheduler.py:663] Input prompt (8991 tokens) is too long and exceeds limit of 8192
-Execute:   0%|          | 0/1167 [30:15<?, ?it/s]WARNING 06-17 03:17:57 scheduler.py:663] Input prompt (8934 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 03:17:58 scheduler.py:663] Input prompt (9063 tokens) is too long and exceeds limit of 8192
-Execute:   0%|          | 0/1167 [30:30<?, ?it/s]Execute:   0%|          | 0/1167 [30:45<?, ?it/s]Execute:   0%|          | 0/1167 [31:00<?, ?it/s]WARNING 06-17 03:18:47 scheduler.py:663] Input prompt (8906 tokens) is too long and exceeds limit of 8192
-Execute:   0%|          | 0/1167 [31:15<?, ?it/s]WARNING 06-17 03:18:54 scheduler.py:663] Input prompt (9353 tokens) is too long and exceeds limit of 8192
-Execute:   0%|          | 0/1167 [31:30<?, ?it/s]Execute:   0%|          | 0/1167 [31:45<?, ?it/s]WARNING 06-17 03:19:20 scheduler.py:663] Input prompt (8333 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 03:19:24 scheduler.py:663] Input prompt (9659 tokens) is too long and exceeds limit of 8192
-Execute:   0%|          | 0/1167 [32:00<?, ?it/s]2024/06/17 03:19:32 batch_search_generate.py[line:133] INFO LLM process is alive.
-Execute:   0%|          | 0/1167 [32:15<?, ?it/s]Execute:   0%|          | 0/1167 [32:30<?, ?it/s]WARNING 06-17 03:20:04 scheduler.py:663] Input prompt (8787 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 03:20:05 scheduler.py:663] Input prompt (9494 tokens) is too long and exceeds limit of 8192
-Execute:   0%|          | 0/1167 [32:45<?, ?it/s]Execute:   0%|          | 0/1167 [33:00<?, ?it/s]WARNING 06-17 03:20:44 scheduler.py:663] Input prompt (9087 tokens) is too long and exceeds limit of 8192
-Execute:   0%|          | 0/1167 [33:15<?, ?it/s]WARNING 06-17 03:20:57 scheduler.py:663] Input prompt (9038 tokens) is too long and exceeds limit of 8192
-Execute:   0%|          | 0/1167 [33:30<?, ?it/s]Execute:   0%|          | 0/1167 [33:45<?, ?it/s]Execute:   0%|          | 0/1167 [34:00<?, ?it/s]2024/06/17 03:21:32 batch_search_generate.py[line:133] INFO LLM process is alive.
-Execute:   0%|          | 0/1167 [34:15<?, ?it/s]Execute:   0%|          | 0/1167 [34:30<?, ?it/s]Execute:   0%|          | 0/1167 [34:45<?, ?it/s]Execute:   0%|          | 0/1167 [35:00<?, ?it/s]WARNING 06-17 03:22:45 scheduler.py:663] Input prompt (8267 tokens) is too long and exceeds limit of 8192
-Execute:   0%|          | 0/1167 [35:15<?, ?it/s]Execute:   0%|          | 0/1167 [35:30<?, ?it/s]WARNING 06-17 03:23:17 scheduler.py:663] Input prompt (8962 tokens) is too long and exceeds limit of 8192
-Execute:   0%|          | 0/1167 [35:45<?, ?it/s]Execute:   0%|          | 0/1167 [36:00<?, ?it/s]2024/06/17 03:23:32 batch_search_generate.py[line:133] INFO LLM process is alive.
-Execute:   0%|          | 0/1167 [36:15<?, ?it/s]Execute:   0%|          | 0/1167 [36:30<?, ?it/s]Execute:   0%|          | 0/1167 [36:45<?, ?it/s]WARNING 06-17 03:24:20 scheduler.py:663] Input prompt (8925 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 03:24:27 scheduler.py:663] Input prompt (8798 tokens) is too long and exceeds limit of 8192
-Execute:   0%|          | 0/1167 [37:00<?, ?it/s]Execute:   0%|          | 0/1167 [37:15<?, ?it/s]Execute:   0%|          | 0/1167 [37:30<?, ?it/s]Execute:   0%|          | 0/1167 [37:45<?, ?it/s]WARNING 06-17 03:25:21 scheduler.py:663] Input prompt (8722 tokens) is too long and exceeds limit of 8192
-Execute:   0%|          | 0/1167 [38:00<?, ?it/s]2024/06/17 03:25:32 batch_search_generate.py[line:133] INFO LLM process is alive.
-WARNING 06-17 03:25:34 scheduler.py:663] Input prompt (9648 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 03:25:38 scheduler.py:663] Input prompt (8200 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 03:25:39 scheduler.py:663] Input prompt (10816 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 03:25:46 scheduler.py:663] Input prompt (9099 tokens) is too long and exceeds limit of 8192
-Execute:   0%|          | 0/1167 [38:15<?, ?it/s]Execute:   0%|          | 0/1167 [38:30<?, ?it/s]Execute:   0%|          | 0/1167 [38:45<?, ?it/s]WARNING 06-17 03:26:31 scheduler.py:663] Input prompt (8969 tokens) is too long and exceeds limit of 8192
-Execute:   0%|          | 0/1167 [39:00<?, ?it/s]WARNING 06-17 03:26:38 scheduler.py:663] Input prompt (8963 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 03:26:45 scheduler.py:663] Input prompt (9429 tokens) is too long and exceeds limit of 8192
-Execute:   0%|          | 0/1167 [39:15<?, ?it/s]WARNING 06-17 03:26:53 scheduler.py:663] Input prompt (9844 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 03:27:00 scheduler.py:663] Input prompt (9366 tokens) is too long and exceeds limit of 8192
-Execute:   0%|          | 0/1167 [39:30<?, ?it/s]WARNING 06-17 03:27:15 scheduler.py:663] Input prompt (9127 tokens) is too long and exceeds limit of 8192
-Execute:   0%|          | 0/1167 [39:45<?, ?it/s]WARNING 06-17 03:27:29 scheduler.py:663] Input prompt (9255 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 03:27:30 scheduler.py:663] Input prompt (9412 tokens) is too long and exceeds limit of 8192
-Execute:   0%|          | 1/1167 [40:00<4:51:43, 15.01s/it]2024/06/17 03:27:32 batch_search_generate.py[line:133] INFO LLM process is alive.
-WARNING 06-17 03:27:36 scheduler.py:663] Input prompt (8879 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 03:28:54 scheduler.py:663] Input prompt (9695 tokens) is too long and exceeds limit of 8192
-2024/06/17 03:29:32 batch_search_generate.py[line:133] INFO LLM process is alive.
-WARNING 06-17 03:29:48 scheduler.py:663] Input prompt (9461 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 03:30:36 scheduler.py:663] Input prompt (8718 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 03:31:10 scheduler.py:663] Input prompt (8875 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 03:31:18 scheduler.py:663] Input prompt (8625 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 03:31:25 scheduler.py:663] Input prompt (8492 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 03:31:32 scheduler.py:663] Input prompt (8840 tokens) is too long and exceeds limit of 8192
-2024/06/17 03:31:32 batch_search_generate.py[line:133] INFO LLM process is alive.
-2024/06/17 03:33:32 batch_search_generate.py[line:133] INFO LLM process is alive.
-WARNING 06-17 03:34:17 scheduler.py:663] Input prompt (9675 tokens) is too long and exceeds limit of 8192
-2024/06/17 03:35:32 batch_search_generate.py[line:133] INFO LLM process is alive.
-WARNING 06-17 03:35:44 scheduler.py:663] Input prompt (10009 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 03:36:19 scheduler.py:663] Input prompt (8845 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 03:37:14 scheduler.py:663] Input prompt (9392 tokens) is too long and exceeds limit of 8192
-2024/06/17 03:37:32 batch_search_generate.py[line:133] INFO LLM process is alive.
-WARNING 06-17 03:38:20 scheduler.py:663] Input prompt (9337 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 03:38:27 scheduler.py:663] Input prompt (8725 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 03:39:15 scheduler.py:663] Input prompt (9953 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 03:39:16 scheduler.py:663] Input prompt (8618 tokens) is too long and exceeds limit of 8192
-Execute:   0%|          | 2/1167 [51:45<136:17:09, 421.14s/it]2024/06/17 03:39:32 batch_search_generate.py[line:133] INFO LLM process is alive.
-WARNING 06-17 03:40:29 scheduler.py:663] Input prompt (8717 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 03:41:03 scheduler.py:663] Input prompt (9306 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 03:41:09 scheduler.py:663] Input prompt (8979 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 03:41:10 scheduler.py:663] Input prompt (8369 tokens) is too long and exceeds limit of 8192
-2024/06/17 03:41:33 batch_search_generate.py[line:133] INFO LLM process is alive.
-WARNING 06-17 03:42:00 scheduler.py:663] Input prompt (8404 tokens) is too long and exceeds limit of 8192
-Execute:   0%|          | 3/1167 [54:46<100:37:27, 311.21s/it]WARNING 06-17 03:42:28 scheduler.py:663] Input prompt (8232 tokens) is too long and exceeds limit of 8192
-2024/06/17 03:43:33 batch_search_generate.py[line:133] INFO LLM process is alive.
-WARNING 06-17 03:43:42 scheduler.py:663] Input prompt (8240 tokens) is too long and exceeds limit of 8192
-2024/06/17 03:45:33 batch_search_generate.py[line:133] INFO LLM process is alive.
-WARNING 06-17 03:46:41 scheduler.py:663] Input prompt (10620 tokens) is too long and exceeds limit of 8192
-2024/06/17 03:47:32 batch_search_generate.py[line:245] ERROR pool error: [Errno Task timeout] 3600
-Traceback (most recent call last):
-  File "/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/hard_runs/../src/batch_search_generate.py", line 240, in batch_main
-    for _ in future.result():
-  File "/opt/conda/envs/vary/lib/python3.11/site-packages/pebble/pool/base_pool.py", line 230, in next
-    raise result
-  File "/opt/conda/envs/vary/lib/python3.11/site-packages/pebble/pool/base_pool.py", line 268, in chunk_result
-    return future.result(timeout=timeout)
-           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
-  File "/opt/conda/envs/vary/lib/python3.11/concurrent/futures/_base.py", line 456, in result
-    return self.__get_result()
-           ^^^^^^^^^^^^^^^^^^^
-  File "/opt/conda/envs/vary/lib/python3.11/concurrent/futures/_base.py", line 401, in __get_result
-    raise self._exception
-TimeoutError: [Errno Task timeout] 3600
-2024/06/17 03:47:33 batch_search_generate.py[line:133] INFO LLM process is alive.
-WARNING 06-17 03:48:32 scheduler.py:663] Input prompt (9433 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 03:48:32 scheduler.py:663] Input prompt (9256 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 03:48:33 scheduler.py:663] Input prompt (10119 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 03:49:18 scheduler.py:663] Input prompt (8246 tokens) is too long and exceeds limit of 8192
-2024/06/17 03:49:33 batch_search_generate.py[line:133] INFO LLM process is alive.
-WARNING 06-17 03:50:31 scheduler.py:663] Input prompt (8899 tokens) is too long and exceeds limit of 8192
-2024/06/17 03:51:33 batch_search_generate.py[line:133] INFO LLM process is alive.
-WARNING 06-17 03:52:12 scheduler.py:663] Input prompt (9000 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 03:52:31 scheduler.py:663] Input prompt (8214 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 03:53:18 scheduler.py:663] Input prompt (9188 tokens) is too long and exceeds limit of 8192
-2024/06/17 03:53:33 batch_search_generate.py[line:133] INFO LLM process is alive.
-WARNING 06-17 03:54:12 scheduler.py:663] Input prompt (8543 tokens) is too long and exceeds limit of 8192
-2024/06/17 03:55:33 batch_search_generate.py[line:133] INFO LLM process is alive.
-WARNING 06-17 03:55:48 scheduler.py:663] Input prompt (10055 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 03:55:55 scheduler.py:663] Input prompt (8634 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 03:57:21 scheduler.py:663] Input prompt (9444 tokens) is too long and exceeds limit of 8192
-2024/06/17 03:57:33 batch_search_generate.py[line:133] INFO LLM process is alive.
-WARNING 06-17 03:58:41 scheduler.py:663] Input prompt (8500 tokens) is too long and exceeds limit of 8192
-2024/06/17 03:59:33 batch_search_generate.py[line:133] INFO LLM process is alive.
-WARNING 06-17 03:59:36 scheduler.py:663] Input prompt (8830 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 03:59:41 scheduler.py:663] Input prompt (8403 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 03:59:56 scheduler.py:663] Input prompt (9287 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 04:00:22 scheduler.py:663] Input prompt (8684 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 04:00:35 scheduler.py:663] Input prompt (8916 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 04:00:40 scheduler.py:663] Input prompt (9456 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 04:00:53 scheduler.py:663] Input prompt (9378 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 04:01:26 scheduler.py:663] Input prompt (9945 tokens) is too long and exceeds limit of 8192
-2024/06/17 04:01:33 batch_search_generate.py[line:133] INFO LLM process is alive.
-WARNING 06-17 04:02:16 scheduler.py:663] Input prompt (9438 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 04:03:03 scheduler.py:663] Input prompt (9849 tokens) is too long and exceeds limit of 8192
-2024/06/17 04:03:33 batch_search_generate.py[line:133] INFO LLM process is alive.
-WARNING 06-17 04:04:48 scheduler.py:663] Input prompt (9171 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 04:04:57 scheduler.py:663] Input prompt (8223 tokens) is too long and exceeds limit of 8192
-2024/06/17 04:05:33 batch_search_generate.py[line:133] INFO LLM process is alive.
-WARNING 06-17 04:06:13 scheduler.py:663] Input prompt (9094 tokens) is too long and exceeds limit of 8192
-2024/06/17 04:07:33 batch_search_generate.py[line:133] INFO LLM process is alive.
-WARNING 06-17 04:07:54 scheduler.py:663] Input prompt (9903 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 04:08:35 scheduler.py:663] Input prompt (8748 tokens) is too long and exceeds limit of 8192
-2024/06/17 04:09:33 batch_search_generate.py[line:133] INFO LLM process is alive.
-WARNING 06-17 04:11:01 scheduler.py:663] Input prompt (10022 tokens) is too long and exceeds limit of 8192
-2024/06/17 04:11:33 batch_search_generate.py[line:133] INFO LLM process is alive.
-WARNING 06-17 04:13:12 scheduler.py:663] Input prompt (8771 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 04:13:30 scheduler.py:663] Input prompt (9770 tokens) is too long and exceeds limit of 8192
-2024/06/17 04:13:33 batch_search_generate.py[line:133] INFO LLM process is alive.
-WARNING 06-17 04:14:15 scheduler.py:663] Input prompt (9219 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 04:15:11 scheduler.py:663] Input prompt (8385 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 04:15:20 scheduler.py:663] Input prompt (8570 tokens) is too long and exceeds limit of 8192
-2024/06/17 04:15:33 batch_search_generate.py[line:133] INFO LLM process is alive.
-WARNING 06-17 04:16:02 scheduler.py:663] Input prompt (9332 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 04:16:52 scheduler.py:663] Input prompt (9198 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 04:16:58 scheduler.py:663] Input prompt (8882 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 04:17:05 scheduler.py:663] Input prompt (9311 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 04:17:20 scheduler.py:663] Input prompt (9927 tokens) is too long and exceeds limit of 8192
-2024/06/17 04:17:33 batch_search_generate.py[line:133] INFO LLM process is alive.
-WARNING 06-17 04:17:39 scheduler.py:663] Input prompt (9290 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 04:17:39 scheduler.py:663] Input prompt (8704 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 04:18:29 scheduler.py:663] Input prompt (10150 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 04:19:10 scheduler.py:663] Input prompt (8929 tokens) is too long and exceeds limit of 8192
-2024/06/17 04:19:33 batch_search_generate.py[line:133] INFO LLM process is alive.
-WARNING 06-17 04:20:03 scheduler.py:663] Input prompt (13158 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 04:20:17 scheduler.py:663] Input prompt (10146 tokens) is too long and exceeds limit of 8192
-2024/06/17 04:21:33 batch_search_generate.py[line:133] INFO LLM process is alive.
-WARNING 06-17 04:22:20 scheduler.py:663] Input prompt (9984 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 04:22:33 scheduler.py:663] Input prompt (8605 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 04:22:34 scheduler.py:663] Input prompt (8235 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 04:23:20 scheduler.py:663] Input prompt (8797 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 04:23:28 scheduler.py:663] Input prompt (9457 tokens) is too long and exceeds limit of 8192
-2024/06/17 04:23:33 batch_search_generate.py[line:133] INFO LLM process is alive.
-WARNING 06-17 04:23:36 scheduler.py:663] Input prompt (8807 tokens) is too long and exceeds limit of 8192
-Execute:   0%|          | 4/1167 [1:36:08<377:24:00, 1168.22s/it]WARNING 06-17 04:23:49 scheduler.py:663] Input prompt (9207 tokens) is too long and exceeds limit of 8192
-2024/06/17 04:25:33 batch_search_generate.py[line:133] INFO LLM process is alive.
-WARNING 06-17 04:27:14 scheduler.py:663] Input prompt (9257 tokens) is too long and exceeds limit of 8192
-2024/06/17 04:27:33 batch_search_generate.py[line:133] INFO LLM process is alive.
-WARNING 06-17 04:28:06 scheduler.py:663] Input prompt (10367 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 04:29:06 scheduler.py:663] Input prompt (8973 tokens) is too long and exceeds limit of 8192
-2024/06/17 04:29:33 batch_search_generate.py[line:133] INFO LLM process is alive.
-2024/06/17 04:31:33 batch_search_generate.py[line:133] INFO LLM process is alive.
-WARNING 06-17 04:32:46 scheduler.py:663] Input prompt (9365 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 04:32:54 scheduler.py:663] Input prompt (8334 tokens) is too long and exceeds limit of 8192
-2024/06/17 04:33:33 batch_search_generate.py[line:133] INFO LLM process is alive.
-2024/06/17 04:35:34 batch_search_generate.py[line:133] INFO LLM process is alive.
-2024/06/17 04:36:13 batch_search_generate.py[line:174] INFO save solutions: 5
-Execute:   0%|          | 5/1167 [1:48:41<328:42:50, 1018.39s/it]WARNING 06-17 04:37:11 scheduler.py:663] Input prompt (11172 tokens) is too long and exceeds limit of 8192
-2024/06/17 04:37:34 batch_search_generate.py[line:133] INFO LLM process is alive.
-WARNING 06-17 04:38:54 scheduler.py:663] Input prompt (9067 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 04:39:26 scheduler.py:663] Input prompt (8652 tokens) is too long and exceeds limit of 8192
-2024/06/17 04:39:34 batch_search_generate.py[line:133] INFO LLM process is alive.
-WARNING 06-17 04:40:14 scheduler.py:663] Input prompt (8968 tokens) is too long and exceeds limit of 8192
-2024/06/17 04:41:34 batch_search_generate.py[line:133] INFO LLM process is alive.
-WARNING 06-17 04:42:12 scheduler.py:663] Input prompt (8511 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 04:42:55 scheduler.py:663] Input prompt (8229 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 04:42:57 scheduler.py:663] Input prompt (8510 tokens) is too long and exceeds limit of 8192
-2024/06/17 04:43:34 batch_search_generate.py[line:133] INFO LLM process is alive.
-WARNING 06-17 04:44:19 scheduler.py:663] Input prompt (8619 tokens) is too long and exceeds limit of 8192
-2024/06/17 04:45:34 batch_search_generate.py[line:133] INFO LLM process is alive.
-WARNING 06-17 04:45:54 scheduler.py:663] Input prompt (9233 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 04:46:21 scheduler.py:663] Input prompt (8317 tokens) is too long and exceeds limit of 8192
-2024/06/17 04:47:34 batch_search_generate.py[line:133] INFO LLM process is alive.
-WARNING 06-17 04:48:59 scheduler.py:663] Input prompt (9158 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 04:49:08 scheduler.py:663] Input prompt (9603 tokens) is too long and exceeds limit of 8192
-2024/06/17 04:49:34 batch_search_generate.py[line:133] INFO LLM process is alive.
-WARNING 06-17 04:49:42 scheduler.py:663] Input prompt (9341 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 04:49:58 scheduler.py:663] Input prompt (8928 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 04:50:14 scheduler.py:663] Input prompt (9790 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 04:50:27 scheduler.py:663] Input prompt (9462 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 04:50:27 scheduler.py:663] Input prompt (8913 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 04:50:58 scheduler.py:663] Input prompt (8862 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 04:51:29 scheduler.py:663] Input prompt (11843 tokens) is too long and exceeds limit of 8192
-2024/06/17 04:51:34 batch_search_generate.py[line:133] INFO LLM process is alive.
-WARNING 06-17 04:51:47 scheduler.py:663] Input prompt (8264 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 04:52:38 scheduler.py:663] Input prompt (13634 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 04:52:59 scheduler.py:663] Input prompt (9160 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 04:53:14 scheduler.py:663] Input prompt (9379 tokens) is too long and exceeds limit of 8192
-2024/06/17 04:53:34 batch_search_generate.py[line:133] INFO LLM process is alive.
-WARNING 06-17 04:53:47 scheduler.py:663] Input prompt (8551 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 04:54:35 scheduler.py:663] Input prompt (8259 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 04:54:42 scheduler.py:663] Input prompt (9043 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 04:55:25 scheduler.py:663] Input prompt (9001 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 04:55:26 scheduler.py:663] Input prompt (8498 tokens) is too long and exceeds limit of 8192
-2024/06/17 04:55:34 batch_search_generate.py[line:133] INFO LLM process is alive.
-WARNING 06-17 04:56:46 scheduler.py:663] Input prompt (8616 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 04:56:46 scheduler.py:663] Input prompt (8272 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 04:56:46 scheduler.py:663] Input prompt (8639 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 04:57:30 scheduler.py:663] Input prompt (8460 tokens) is too long and exceeds limit of 8192
-2024/06/17 04:57:34 batch_search_generate.py[line:133] INFO LLM process is alive.
-WARNING 06-17 04:58:51 scheduler.py:663] Input prompt (9279 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 04:59:15 scheduler.py:663] Input prompt (11625 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 04:59:31 scheduler.py:663] Input prompt (9584 tokens) is too long and exceeds limit of 8192
-2024/06/17 04:59:34 batch_search_generate.py[line:133] INFO LLM process is alive.
-WARNING 06-17 04:59:57 scheduler.py:663] Input prompt (8932 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 05:00:29 scheduler.py:663] Input prompt (13101 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 05:00:44 scheduler.py:663] Input prompt (9372 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 05:00:58 scheduler.py:663] Input prompt (8369 tokens) is too long and exceeds limit of 8192
-2024/06/17 05:01:34 batch_search_generate.py[line:133] INFO LLM process is alive.
-WARNING 06-17 05:02:14 scheduler.py:663] Input prompt (10160 tokens) is too long and exceeds limit of 8192
-2024/06/17 05:03:34 batch_search_generate.py[line:133] INFO LLM process is alive.
-WARNING 06-17 05:03:35 scheduler.py:663] Input prompt (9284 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 05:04:08 scheduler.py:663] Input prompt (8837 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 05:04:08 scheduler.py:663] Input prompt (9329 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 05:04:15 scheduler.py:663] Input prompt (9648 tokens) is too long and exceeds limit of 8192
-2024/06/17 05:05:34 batch_search_generate.py[line:133] INFO LLM process is alive.
-WARNING 06-17 05:06:55 scheduler.py:663] Input prompt (8831 tokens) is too long and exceeds limit of 8192
-2024/06/17 05:07:34 batch_search_generate.py[line:133] INFO LLM process is alive.
-WARNING 06-17 05:07:39 scheduler.py:663] Input prompt (10950 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 05:07:53 scheduler.py:663] Input prompt (8645 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 05:08:05 scheduler.py:663] Input prompt (8830 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 05:09:08 scheduler.py:663] Input prompt (10351 tokens) is too long and exceeds limit of 8192
-2024/06/17 05:09:34 batch_search_generate.py[line:133] INFO LLM process is alive.
-WARNING 06-17 05:09:56 scheduler.py:663] Input prompt (9531 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 05:10:39 scheduler.py:663] Input prompt (9064 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 05:11:08 scheduler.py:663] Input prompt (10109 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 05:11:34 scheduler.py:663] Input prompt (9301 tokens) is too long and exceeds limit of 8192
-2024/06/17 05:11:34 batch_search_generate.py[line:133] INFO LLM process is alive.
-WARNING 06-17 05:12:04 scheduler.py:663] Input prompt (8583 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 05:12:05 scheduler.py:663] Input prompt (8876 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 05:13:17 scheduler.py:663] Input prompt (8575 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 05:13:22 scheduler.py:663] Input prompt (8824 tokens) is too long and exceeds limit of 8192
-2024/06/17 05:13:34 batch_search_generate.py[line:133] INFO LLM process is alive.
-WARNING 06-17 05:13:56 scheduler.py:663] Input prompt (8793 tokens) is too long and exceeds limit of 8192
-2024/06/17 05:15:35 batch_search_generate.py[line:133] INFO LLM process is alive.
-WARNING 06-17 05:15:41 scheduler.py:663] Input prompt (8225 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 05:16:25 scheduler.py:663] Input prompt (9685 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 05:16:47 scheduler.py:663] Input prompt (9438 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 05:16:55 scheduler.py:663] Input prompt (9350 tokens) is too long and exceeds limit of 8192
-2024/06/17 05:17:35 batch_search_generate.py[line:133] INFO LLM process is alive.
-WARNING 06-17 05:17:40 scheduler.py:663] Input prompt (9860 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 05:18:02 scheduler.py:663] Input prompt (9231 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 05:18:11 scheduler.py:663] Input prompt (8852 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 05:18:17 scheduler.py:663] Input prompt (9957 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 05:18:30 scheduler.py:663] Input prompt (8323 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 05:18:31 scheduler.py:663] Input prompt (8716 tokens) is too long and exceeds limit of 8192
-2024/06/17 05:19:35 batch_search_generate.py[line:133] INFO LLM process is alive.
-WARNING 06-17 05:19:53 scheduler.py:663] Input prompt (9278 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 05:20:36 scheduler.py:663] Input prompt (9164 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 05:21:08 scheduler.py:663] Input prompt (9280 tokens) is too long and exceeds limit of 8192
-2024/06/17 05:21:35 batch_search_generate.py[line:133] INFO LLM process is alive.
-WARNING 06-17 05:21:47 scheduler.py:663] Input prompt (9257 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 05:21:54 scheduler.py:663] Input prompt (8374 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 05:22:18 scheduler.py:663] Input prompt (9935 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 05:22:24 scheduler.py:663] Input prompt (8680 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 05:23:15 scheduler.py:663] Input prompt (10115 tokens) is too long and exceeds limit of 8192
-2024/06/17 05:23:35 batch_search_generate.py[line:133] INFO LLM process is alive.
-WARNING 06-17 05:23:52 scheduler.py:663] Input prompt (8912 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 05:24:07 scheduler.py:663] Input prompt (9351 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 05:24:41 scheduler.py:663] Input prompt (8718 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 05:24:41 scheduler.py:663] Input prompt (9041 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 05:25:15 scheduler.py:663] Input prompt (9594 tokens) is too long and exceeds limit of 8192
-2024/06/17 05:25:35 batch_search_generate.py[line:133] INFO LLM process is alive.
-Execute:   1%|          | 6/1167 [2:39:08<548:44:59, 1701.55s/it]WARNING 06-17 05:27:12 scheduler.py:663] Input prompt (8623 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 05:27:30 scheduler.py:663] Input prompt (9212 tokens) is too long and exceeds limit of 8192
-2024/06/17 05:27:35 batch_search_generate.py[line:133] INFO LLM process is alive.
-WARNING 06-17 05:27:39 scheduler.py:663] Input prompt (9966 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 05:27:46 scheduler.py:663] Input prompt (8220 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 05:28:00 scheduler.py:663] Input prompt (8300 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 05:28:24 scheduler.py:663] Input prompt (8482 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 05:29:17 scheduler.py:663] Input prompt (9001 tokens) is too long and exceeds limit of 8192
-2024/06/17 05:29:35 batch_search_generate.py[line:133] INFO LLM process is alive.
-WARNING 06-17 05:29:45 scheduler.py:663] Input prompt (10034 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 05:30:26 scheduler.py:663] Input prompt (9493 tokens) is too long and exceeds limit of 8192
-Execute:   1%|          | 7/1167 [2:43:24<396:01:25, 1229.04s/it]2024/06/17 05:31:35 batch_search_generate.py[line:133] INFO LLM process is alive.
-WARNING 06-17 05:32:56 scheduler.py:663] Input prompt (9185 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 05:33:12 scheduler.py:663] Input prompt (8262 tokens) is too long and exceeds limit of 8192
-Execute:   1%|          | 8/1167 [2:45:40<283:38:23, 881.02s/it] 2024/06/17 05:33:35 batch_search_generate.py[line:133] INFO LLM process is alive.
-WARNING 06-17 05:34:29 scheduler.py:663] Input prompt (8844 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 05:34:50 scheduler.py:663] Input prompt (8936 tokens) is too long and exceeds limit of 8192
-2024/06/17 05:35:35 batch_search_generate.py[line:133] INFO LLM process is alive.
-WARNING 06-17 05:36:07 scheduler.py:663] Input prompt (8405 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 05:36:07 scheduler.py:663] Input prompt (8502 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 05:36:55 scheduler.py:663] Input prompt (8443 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 05:37:20 scheduler.py:663] Input prompt (8670 tokens) is too long and exceeds limit of 8192
-2024/06/17 05:37:35 batch_search_generate.py[line:133] INFO LLM process is alive.
-WARNING 06-17 05:38:15 scheduler.py:663] Input prompt (10014 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 05:38:15 scheduler.py:663] Input prompt (8801 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 05:38:15 scheduler.py:663] Input prompt (8816 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 05:39:23 scheduler.py:663] Input prompt (8640 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 05:39:31 scheduler.py:663] Input prompt (9364 tokens) is too long and exceeds limit of 8192
-2024/06/17 05:39:35 batch_search_generate.py[line:133] INFO LLM process is alive.
-WARNING 06-17 05:39:45 scheduler.py:663] Input prompt (8891 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 05:40:14 scheduler.py:663] Input prompt (8827 tokens) is too long and exceeds limit of 8192
-Execute:   1%|          | 9/1167 [2:53:58<244:53:18, 761.31s/it]2024/06/17 05:41:35 batch_search_generate.py[line:133] INFO LLM process is alive.
-WARNING 06-17 05:42:29 scheduler.py:663] Input prompt (8257 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 05:42:30 scheduler.py:663] Input prompt (8989 tokens) is too long and exceeds limit of 8192
-2024/06/17 05:43:35 batch_search_generate.py[line:133] INFO LLM process is alive.
-WARNING 06-17 05:43:39 scheduler.py:663] Input prompt (8870 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 05:43:56 scheduler.py:663] Input prompt (8425 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 05:44:26 scheduler.py:663] Input prompt (8398 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 05:44:58 scheduler.py:663] Input prompt (9251 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 05:45:23 scheduler.py:663] Input prompt (9394 tokens) is too long and exceeds limit of 8192
-2024/06/17 05:45:32 batch_search_generate.py[line:174] INFO save solutions: 5
-Execute:   1%|          | 10/1167 [2:58:00<193:08:17, 600.95s/it]2024/06/17 05:45:35 batch_search_generate.py[line:133] INFO LLM process is alive.
-WARNING 06-17 05:45:50 scheduler.py:663] Input prompt (10018 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 05:45:50 scheduler.py:663] Input prompt (8636 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 05:46:18 scheduler.py:663] Input prompt (8570 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 05:46:54 scheduler.py:663] Input prompt (8846 tokens) is too long and exceeds limit of 8192
-2024/06/17 05:47:35 batch_search_generate.py[line:133] INFO LLM process is alive.
-WARNING 06-17 05:47:52 scheduler.py:663] Input prompt (8508 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 05:48:25 scheduler.py:663] Input prompt (8835 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 05:48:37 scheduler.py:663] Input prompt (8298 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 05:48:56 scheduler.py:663] Input prompt (8902 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 05:49:08 scheduler.py:663] Input prompt (8860 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 05:49:15 scheduler.py:663] Input prompt (10038 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 05:49:15 scheduler.py:663] Input prompt (9011 tokens) is too long and exceeds limit of 8192
-2024/06/17 05:49:35 batch_search_generate.py[line:133] INFO LLM process is alive.
-WARNING 06-17 05:49:35 scheduler.py:663] Input prompt (9440 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 05:49:35 scheduler.py:663] Input prompt (8360 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 05:49:40 scheduler.py:663] Input prompt (9548 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 05:50:05 scheduler.py:663] Input prompt (9029 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 05:50:22 scheduler.py:663] Input prompt (9014 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 05:50:56 scheduler.py:663] Input prompt (9712 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 05:51:33 scheduler.py:663] Input prompt (10016 tokens) is too long and exceeds limit of 8192
-2024/06/17 05:51:35 batch_search_generate.py[line:133] INFO LLM process is alive.
-WARNING 06-17 05:51:56 scheduler.py:663] Input prompt (10815 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 05:52:01 scheduler.py:663] Input prompt (9608 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 05:52:48 scheduler.py:663] Input prompt (10369 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 05:53:32 scheduler.py:663] Input prompt (10459 tokens) is too long and exceeds limit of 8192
-2024/06/17 05:53:35 batch_search_generate.py[line:133] INFO LLM process is alive.
-WARNING 06-17 05:53:52 scheduler.py:663] Input prompt (11069 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 05:53:53 scheduler.py:663] Input prompt (8856 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 05:54:03 scheduler.py:663] Input prompt (9115 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 05:54:26 scheduler.py:663] Input prompt (8828 tokens) is too long and exceeds limit of 8192
-2024/06/17 05:55:35 batch_search_generate.py[line:133] INFO LLM process is alive.
-WARNING 06-17 05:56:22 scheduler.py:663] Input prompt (8707 tokens) is too long and exceeds limit of 8192
-2024/06/17 05:57:35 batch_search_generate.py[line:133] INFO LLM process is alive.
-WARNING 06-17 05:57:48 scheduler.py:663] Input prompt (8760 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 05:57:56 scheduler.py:663] Input prompt (10247 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 05:58:09 scheduler.py:663] Input prompt (8301 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 05:58:32 scheduler.py:663] Input prompt (8358 tokens) is too long and exceeds limit of 8192
-2024/06/17 05:59:35 batch_search_generate.py[line:133] INFO LLM process is alive.
-WARNING 06-17 05:59:50 scheduler.py:663] Input prompt (8897 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 06:00:12 scheduler.py:663] Input prompt (9559 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 06:00:13 scheduler.py:663] Input prompt (9769 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 06:00:23 scheduler.py:663] Input prompt (8823 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 06:00:31 scheduler.py:663] Input prompt (8224 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 06:00:41 scheduler.py:663] Input prompt (10085 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 06:01:15 scheduler.py:663] Input prompt (8440 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 06:01:31 scheduler.py:663] Input prompt (9347 tokens) is too long and exceeds limit of 8192
-2024/06/17 06:01:35 batch_search_generate.py[line:133] INFO LLM process is alive.
-WARNING 06-17 06:01:40 scheduler.py:663] Input prompt (8822 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 06:01:59 scheduler.py:663] Input prompt (8866 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 06:02:01 scheduler.py:663] Input prompt (8818 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 06:02:23 scheduler.py:663] Input prompt (9840 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 06:03:10 scheduler.py:663] Input prompt (9046 tokens) is too long and exceeds limit of 8192
-2024/06/17 06:03:35 batch_search_generate.py[line:133] INFO LLM process is alive.
-WARNING 06-17 06:04:13 scheduler.py:663] Input prompt (8740 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 06:04:44 scheduler.py:663] Input prompt (8685 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 06:04:44 scheduler.py:663] Input prompt (9636 tokens) is too long and exceeds limit of 8192
-Execute:   1%|          | 11/1167 [3:17:25<248:24:03, 773.57s/it]WARNING 06-17 06:05:00 scheduler.py:663] Input prompt (8350 tokens) is too long and exceeds limit of 8192
-2024/06/17 06:05:35 batch_search_generate.py[line:133] INFO LLM process is alive.
-WARNING 06-17 06:07:30 scheduler.py:663] Input prompt (8845 tokens) is too long and exceeds limit of 8192
-2024/06/17 06:07:35 batch_search_generate.py[line:133] INFO LLM process is alive.
-WARNING 06-17 06:07:54 scheduler.py:663] Input prompt (9708 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 06:08:02 scheduler.py:663] Input prompt (8916 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 06:08:39 scheduler.py:663] Input prompt (8822 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 06:09:25 scheduler.py:663] Input prompt (9266 tokens) is too long and exceeds limit of 8192
-2024/06/17 06:09:35 batch_search_generate.py[line:133] INFO LLM process is alive.
-WARNING 06-17 06:10:05 scheduler.py:663] Input prompt (9619 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 06:10:28 scheduler.py:663] Input prompt (9260 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 06:11:03 scheduler.py:663] Input prompt (9060 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 06:11:18 scheduler.py:663] Input prompt (9366 tokens) is too long and exceeds limit of 8192
-2024/06/17 06:11:35 batch_search_generate.py[line:133] INFO LLM process is alive.
-WARNING 06-17 06:11:38 scheduler.py:663] Input prompt (8714 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 06:12:24 scheduler.py:663] Input prompt (9877 tokens) is too long and exceeds limit of 8192
-Execute:   1%|          | 12/1167 [3:25:15<218:29:19, 681.00s/it]WARNING 06-17 06:12:50 scheduler.py:663] Input prompt (8285 tokens) is too long and exceeds limit of 8192
-2024/06/17 06:13:35 batch_search_generate.py[line:133] INFO LLM process is alive.
-WARNING 06-17 06:13:41 scheduler.py:663] Input prompt (9130 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 06:14:27 scheduler.py:663] Input prompt (8289 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 06:14:51 scheduler.py:663] Input prompt (9561 tokens) is too long and exceeds limit of 8192
-2024/06/17 06:15:35 batch_search_generate.py[line:133] INFO LLM process is alive.
-/mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src/tools/table/tabtools.py:44: DtypeWarning: Columns (25) have mixed types. Specify dtype option on import or set low_memory=False.
-  self.data = pd.read_csv(file_path)
-WARNING 06-17 06:15:48 scheduler.py:663] Input prompt (9001 tokens) is too long and exceeds limit of 8192
-2024/06/17 06:17:35 batch_search_generate.py[line:133] INFO LLM process is alive.
-WARNING 06-17 06:17:54 scheduler.py:663] Input prompt (9385 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 06:17:56 scheduler.py:663] Input prompt (8369 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 06:18:51 scheduler.py:663] Input prompt (8778 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 06:19:00 scheduler.py:663] Input prompt (8880 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 06:19:14 scheduler.py:663] Input prompt (9801 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 06:19:20 scheduler.py:663] Input prompt (9038 tokens) is too long and exceeds limit of 8192
-2024/06/17 06:19:36 batch_search_generate.py[line:133] INFO LLM process is alive.
-WARNING 06-17 06:21:02 scheduler.py:663] Input prompt (9038 tokens) is too long and exceeds limit of 8192
-2024/06/17 06:21:36 batch_search_generate.py[line:133] INFO LLM process is alive.
-WARNING 06-17 06:22:09 scheduler.py:663] Input prompt (8992 tokens) is too long and exceeds limit of 8192
-2024/06/17 06:23:36 batch_search_generate.py[line:133] INFO LLM process is alive.
-WARNING 06-17 06:23:38 scheduler.py:663] Input prompt (9326 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 06:23:48 scheduler.py:663] Input prompt (8948 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 06:23:49 scheduler.py:663] Input prompt (8914 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 06:24:01 scheduler.py:663] Input prompt (9992 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 06:24:28 scheduler.py:663] Input prompt (8363 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 06:24:34 scheduler.py:663] Input prompt (8620 tokens) is too long and exceeds limit of 8192
-2024/06/17 06:25:36 batch_search_generate.py[line:133] INFO LLM process is alive.
-WARNING 06-17 06:26:27 scheduler.py:663] Input prompt (8946 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 06:26:45 scheduler.py:663] Input prompt (8919 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 06:27:05 scheduler.py:663] Input prompt (8924 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 06:27:14 scheduler.py:663] Input prompt (9238 tokens) is too long and exceeds limit of 8192
-2024/06/17 06:27:36 batch_search_generate.py[line:133] INFO LLM process is alive.
-WARNING 06-17 06:27:42 scheduler.py:663] Input prompt (8682 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 06:27:55 scheduler.py:663] Input prompt (9709 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 06:28:47 scheduler.py:663] Input prompt (8874 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 06:29:22 scheduler.py:663] Input prompt (8731 tokens) is too long and exceeds limit of 8192
-2024/06/17 06:29:36 batch_search_generate.py[line:133] INFO LLM process is alive.
-WARNING 06-17 06:29:36 scheduler.py:663] Input prompt (8273 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 06:29:50 scheduler.py:663] Input prompt (9988 tokens) is too long and exceeds limit of 8192
-Execute:   1%|          | 13/1167 [3:42:25<252:12:51, 786.80s/it]WARNING 06-17 06:30:48 scheduler.py:663] Input prompt (8747 tokens) is too long and exceeds limit of 8192
-Execute:   1%|          | 14/1167 [3:43:25<181:45:21, 567.50s/it]2024/06/17 06:31:36 batch_search_generate.py[line:133] INFO LLM process is alive.
-2024/06/17 06:33:36 batch_search_generate.py[line:133] INFO LLM process is alive.
-2024/06/17 06:35:36 batch_search_generate.py[line:133] INFO LLM process is alive.
-WARNING 06-17 06:35:37 scheduler.py:663] Input prompt (8686 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 06:36:01 scheduler.py:663] Input prompt (8571 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 06:36:33 scheduler.py:663] Input prompt (8292 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 06:37:04 scheduler.py:663] Input prompt (8796 tokens) is too long and exceeds limit of 8192
-2024/06/17 06:37:36 batch_search_generate.py[line:133] INFO LLM process is alive.
-WARNING 06-17 06:39:17 scheduler.py:663] Input prompt (8363 tokens) is too long and exceeds limit of 8192
-2024/06/17 06:39:36 batch_search_generate.py[line:133] INFO LLM process is alive.
-WARNING 06-17 06:39:49 scheduler.py:663] Input prompt (8339 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 06:40:51 scheduler.py:663] Input prompt (8818 tokens) is too long and exceeds limit of 8192
-2024/06/17 06:41:36 batch_search_generate.py[line:133] INFO LLM process is alive.
-2024/06/17 06:43:36 batch_search_generate.py[line:133] INFO LLM process is alive.
-WARNING 06-17 06:44:11 scheduler.py:663] Input prompt (8523 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 06:45:29 scheduler.py:663] Input prompt (8908 tokens) is too long and exceeds limit of 8192
-2024/06/17 06:45:36 batch_search_generate.py[line:133] INFO LLM process is alive.
-WARNING 06-17 06:45:53 scheduler.py:663] Input prompt (8372 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 06:46:21 scheduler.py:663] Input prompt (10061 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 06:46:31 scheduler.py:663] Input prompt (8515 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 06:46:38 scheduler.py:663] Input prompt (8916 tokens) is too long and exceeds limit of 8192
-2024/06/17 06:47:36 batch_search_generate.py[line:133] INFO LLM process is alive.
-WARNING 06-17 06:48:00 scheduler.py:663] Input prompt (10675 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 06:48:06 scheduler.py:663] Input prompt (8826 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 06:48:55 scheduler.py:663] Input prompt (8449 tokens) is too long and exceeds limit of 8192
-2024/06/17 06:49:36 batch_search_generate.py[line:133] INFO LLM process is alive.
-WARNING 06-17 06:50:12 scheduler.py:663] Input prompt (8679 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 06:50:26 scheduler.py:663] Input prompt (8443 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 06:51:14 scheduler.py:663] Input prompt (9245 tokens) is too long and exceeds limit of 8192
-2024/06/17 06:51:36 batch_search_generate.py[line:133] INFO LLM process is alive.
-WARNING 06-17 06:51:43 scheduler.py:663] Input prompt (8328 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 06:52:29 scheduler.py:663] Input prompt (8588 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 06:52:31 scheduler.py:663] Input prompt (9030 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 06:52:53 scheduler.py:663] Input prompt (9935 tokens) is too long and exceeds limit of 8192
-2024/06/17 06:53:36 batch_search_generate.py[line:133] INFO LLM process is alive.
-WARNING 06-17 06:55:01 scheduler.py:663] Input prompt (9886 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 06:55:26 scheduler.py:663] Input prompt (8624 tokens) is too long and exceeds limit of 8192
-2024/06/17 06:55:36 batch_search_generate.py[line:133] INFO LLM process is alive.
-WARNING 06-17 06:55:43 scheduler.py:663] Input prompt (8362 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 06:55:47 scheduler.py:663] Input prompt (9406 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 06:56:31 scheduler.py:663] Input prompt (8287 tokens) is too long and exceeds limit of 8192
-2024/06/17 06:57:36 batch_search_generate.py[line:133] INFO LLM process is alive.
-WARNING 06-17 06:57:42 scheduler.py:663] Input prompt (8860 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 06:58:40 scheduler.py:663] Input prompt (9693 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 06:59:24 scheduler.py:663] Input prompt (10515 tokens) is too long and exceeds limit of 8192
-2024/06/17 06:59:36 batch_search_generate.py[line:133] INFO LLM process is alive.
-WARNING 06-17 07:00:01 scheduler.py:663] Input prompt (9091 tokens) is too long and exceeds limit of 8192
-2024/06/17 07:01:36 batch_search_generate.py[line:133] INFO LLM process is alive.
-WARNING 06-17 07:02:32 scheduler.py:663] Input prompt (9962 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 07:02:48 scheduler.py:663] Input prompt (8598 tokens) is too long and exceeds limit of 8192
-2024/06/17 07:03:36 batch_search_generate.py[line:133] INFO LLM process is alive.
-WARNING 06-17 07:03:48 scheduler.py:663] Input prompt (8928 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 07:04:42 scheduler.py:663] Input prompt (8671 tokens) is too long and exceeds limit of 8192
-2024/06/17 07:05:36 batch_search_generate.py[line:133] INFO LLM process is alive.
-2024/06/17 07:07:36 batch_search_generate.py[line:133] INFO LLM process is alive.
-WARNING 06-17 07:09:14 scheduler.py:663] Input prompt (9062 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 07:09:26 scheduler.py:663] Input prompt (11426 tokens) is too long and exceeds limit of 8192
-2024/06/17 07:09:36 batch_search_generate.py[line:133] INFO LLM process is alive.
-WARNING 06-17 07:09:50 scheduler.py:663] Input prompt (9730 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 07:11:06 scheduler.py:663] Input prompt (8227 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 07:11:11 scheduler.py:663] Input prompt (8843 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 07:11:26 scheduler.py:663] Input prompt (9979 tokens) is too long and exceeds limit of 8192
-2024/06/17 07:11:36 batch_search_generate.py[line:133] INFO LLM process is alive.
-WARNING 06-17 07:12:19 scheduler.py:663] Input prompt (8417 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 07:12:27 scheduler.py:663] Input prompt (8534 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 07:12:34 scheduler.py:663] Input prompt (9432 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 07:12:34 scheduler.py:663] Input prompt (10074 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 07:13:06 scheduler.py:663] Input prompt (8594 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 07:13:19 scheduler.py:663] Input prompt (10172 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 07:13:19 scheduler.py:663] Input prompt (9264 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 07:13:24 scheduler.py:663] Input prompt (9923 tokens) is too long and exceeds limit of 8192
-2024/06/17 07:13:36 batch_search_generate.py[line:133] INFO LLM process is alive.
-WARNING 06-17 07:14:00 scheduler.py:663] Input prompt (9079 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 07:14:00 scheduler.py:663] Input prompt (8677 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 07:14:18 scheduler.py:663] Input prompt (8363 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 07:14:52 scheduler.py:663] Input prompt (9186 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 07:15:25 scheduler.py:663] Input prompt (9875 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 07:15:33 scheduler.py:663] Input prompt (9427 tokens) is too long and exceeds limit of 8192
-2024/06/17 07:15:36 batch_search_generate.py[line:133] INFO LLM process is alive.
-WARNING 06-17 07:16:04 scheduler.py:663] Input prompt (8789 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 07:16:54 scheduler.py:663] Input prompt (8736 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 07:17:33 scheduler.py:663] Input prompt (10094 tokens) is too long and exceeds limit of 8192
-2024/06/17 07:17:36 batch_search_generate.py[line:133] INFO LLM process is alive.
-WARNING 06-17 07:17:39 scheduler.py:663] Input prompt (8404 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 07:17:48 scheduler.py:663] Input prompt (8888 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 07:17:54 scheduler.py:663] Input prompt (8524 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 07:18:32 scheduler.py:663] Input prompt (8209 tokens) is too long and exceeds limit of 8192
-2024/06/17 07:19:36 batch_search_generate.py[line:133] INFO LLM process is alive.
-2024/06/17 07:20:01 batch_search_generate.py[line:174] INFO save solutions: 5
-Execute:   1%|▏         | 15/1167 [4:32:29<410:48:49, 1283.79s/it]WARNING 06-17 07:21:09 scheduler.py:663] Input prompt (8556 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 07:21:09 scheduler.py:663] Input prompt (9120 tokens) is too long and exceeds limit of 8192
-2024/06/17 07:21:36 batch_search_generate.py[line:133] INFO LLM process is alive.
-WARNING 06-17 07:21:38 scheduler.py:663] Input prompt (8666 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 07:22:41 scheduler.py:663] Input prompt (8593 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 07:23:18 scheduler.py:663] Input prompt (8220 tokens) is too long and exceeds limit of 8192
-2024/06/17 07:23:37 batch_search_generate.py[line:133] INFO LLM process is alive.
-WARNING 06-17 07:24:06 scheduler.py:663] Input prompt (8263 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 07:24:40 scheduler.py:663] Input prompt (9707 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 07:25:20 scheduler.py:663] Input prompt (9337 tokens) is too long and exceeds limit of 8192
-2024/06/17 07:25:37 batch_search_generate.py[line:133] INFO LLM process is alive.
-WARNING 06-17 07:25:43 scheduler.py:663] Input prompt (9796 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 07:25:49 scheduler.py:663] Input prompt (8273 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 07:26:13 scheduler.py:663] Input prompt (9348 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 07:26:19 scheduler.py:663] Input prompt (9435 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 07:26:33 scheduler.py:663] Input prompt (9513 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 07:27:03 scheduler.py:663] Input prompt (8843 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 07:27:32 scheduler.py:663] Input prompt (8701 tokens) is too long and exceeds limit of 8192
-2024/06/17 07:27:37 batch_search_generate.py[line:133] INFO LLM process is alive.
-WARNING 06-17 07:27:52 scheduler.py:663] Input prompt (9893 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 07:29:11 scheduler.py:663] Input prompt (8766 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 07:29:16 scheduler.py:663] Input prompt (9590 tokens) is too long and exceeds limit of 8192
-2024/06/17 07:29:37 batch_search_generate.py[line:133] INFO LLM process is alive.
-WARNING 06-17 07:29:42 scheduler.py:663] Input prompt (8790 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 07:29:58 scheduler.py:663] Input prompt (8259 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 07:29:59 scheduler.py:663] Input prompt (8293 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 07:30:21 scheduler.py:663] Input prompt (8649 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 07:31:31 scheduler.py:663] Input prompt (9330 tokens) is too long and exceeds limit of 8192
-2024/06/17 07:31:37 batch_search_generate.py[line:133] INFO LLM process is alive.
-WARNING 06-17 07:32:01 scheduler.py:663] Input prompt (9333 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 07:33:23 scheduler.py:663] Input prompt (9958 tokens) is too long and exceeds limit of 8192
-2024/06/17 07:33:37 batch_search_generate.py[line:133] INFO LLM process is alive.
-WARNING 06-17 07:34:31 scheduler.py:663] Input prompt (8734 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 07:35:22 scheduler.py:663] Input prompt (10330 tokens) is too long and exceeds limit of 8192
-2024/06/17 07:35:37 batch_search_generate.py[line:133] INFO LLM process is alive.
-WARNING 06-17 07:36:56 scheduler.py:663] Input prompt (9836 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 07:37:18 scheduler.py:663] Input prompt (9476 tokens) is too long and exceeds limit of 8192
-2024/06/17 07:37:37 batch_search_generate.py[line:133] INFO LLM process is alive.
-WARNING 06-17 07:37:54 scheduler.py:663] Input prompt (9336 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 07:38:31 scheduler.py:663] Input prompt (8345 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 07:38:31 scheduler.py:663] Input prompt (9366 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 07:38:31 scheduler.py:663] Input prompt (9500 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 07:38:46 scheduler.py:663] Input prompt (8582 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 07:38:51 scheduler.py:663] Input prompt (9415 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 07:39:16 scheduler.py:663] Input prompt (8994 tokens) is too long and exceeds limit of 8192
-2024/06/17 07:39:37 batch_search_generate.py[line:133] INFO LLM process is alive.
-WARNING 06-17 07:41:33 scheduler.py:663] Input prompt (8859 tokens) is too long and exceeds limit of 8192
-2024/06/17 07:41:37 batch_search_generate.py[line:133] INFO LLM process is alive.
-WARNING 06-17 07:42:39 scheduler.py:663] Input prompt (8306 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 07:42:56 scheduler.py:663] Input prompt (9886 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 07:43:10 scheduler.py:663] Input prompt (8377 tokens) is too long and exceeds limit of 8192
-2024/06/17 07:43:37 batch_search_generate.py[line:133] INFO LLM process is alive.
-WARNING 06-17 07:43:41 scheduler.py:663] Input prompt (9901 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 07:44:18 scheduler.py:663] Input prompt (9905 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 07:45:26 scheduler.py:663] Input prompt (8222 tokens) is too long and exceeds limit of 8192
-2024/06/17 07:45:37 batch_search_generate.py[line:133] INFO LLM process is alive.
-WARNING 06-17 07:46:14 scheduler.py:663] Input prompt (8648 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 07:46:35 scheduler.py:663] Input prompt (8959 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 07:47:36 scheduler.py:663] Input prompt (8893 tokens) is too long and exceeds limit of 8192
-2024/06/17 07:47:37 batch_search_generate.py[line:133] INFO LLM process is alive.
-WARNING 06-17 07:47:57 scheduler.py:663] Input prompt (8720 tokens) is too long and exceeds limit of 8192
-2024/06/17 07:49:37 batch_search_generate.py[line:133] INFO LLM process is alive.
-WARNING 06-17 07:49:44 scheduler.py:663] Input prompt (8860 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 07:50:05 scheduler.py:663] Input prompt (8870 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 07:50:55 scheduler.py:663] Input prompt (8697 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 07:51:03 scheduler.py:663] Input prompt (9112 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 07:51:33 scheduler.py:663] Input prompt (13773 tokens) is too long and exceeds limit of 8192
-2024/06/17 07:51:37 batch_search_generate.py[line:133] INFO LLM process is alive.
-WARNING 06-17 07:52:01 scheduler.py:663] Input prompt (8812 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 07:52:02 scheduler.py:663] Input prompt (8957 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 07:53:08 scheduler.py:663] Input prompt (11796 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 07:53:22 scheduler.py:663] Input prompt (9139 tokens) is too long and exceeds limit of 8192
-2024/06/17 07:53:37 batch_search_generate.py[line:133] INFO LLM process is alive.
-WARNING 06-17 07:54:12 scheduler.py:663] Input prompt (8601 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 07:54:46 scheduler.py:663] Input prompt (8587 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 07:54:59 scheduler.py:663] Input prompt (9602 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 07:55:00 scheduler.py:663] Input prompt (8233 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 07:55:04 scheduler.py:663] Input prompt (8736 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 07:55:26 scheduler.py:663] Input prompt (8796 tokens) is too long and exceeds limit of 8192
-2024/06/17 07:55:37 batch_search_generate.py[line:133] INFO LLM process is alive.
-WARNING 06-17 07:55:49 scheduler.py:663] Input prompt (10014 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 07:57:17 scheduler.py:663] Input prompt (8593 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 07:57:36 scheduler.py:663] Input prompt (8703 tokens) is too long and exceeds limit of 8192
-2024/06/17 07:57:37 batch_search_generate.py[line:133] INFO LLM process is alive.
-WARNING 06-17 07:58:21 scheduler.py:663] Input prompt (8502 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 07:59:16 scheduler.py:663] Input prompt (8890 tokens) is too long and exceeds limit of 8192
-2024/06/17 07:59:37 batch_search_generate.py[line:133] INFO LLM process is alive.
-WARNING 06-17 07:59:54 scheduler.py:663] Input prompt (8468 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 07:59:54 scheduler.py:663] Input prompt (9087 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 08:00:57 scheduler.py:663] Input prompt (9047 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 08:01:08 scheduler.py:663] Input prompt (8542 tokens) is too long and exceeds limit of 8192
-Execute:   1%|▏         | 16/1167 [5:13:44<525:04:03, 1642.26s/it]2024/06/17 08:01:37 batch_search_generate.py[line:133] INFO LLM process is alive.
-2024/06/17 08:03:37 batch_search_generate.py[line:133] INFO LLM process is alive.
-WARNING 06-17 08:05:02 scheduler.py:663] Input prompt (8901 tokens) is too long and exceeds limit of 8192
-2024/06/17 08:05:37 batch_search_generate.py[line:133] INFO LLM process is alive.
-WARNING 06-17 08:05:50 scheduler.py:663] Input prompt (8217 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 08:07:09 scheduler.py:663] Input prompt (8220 tokens) is too long and exceeds limit of 8192
-2024/06/17 08:07:37 batch_search_generate.py[line:133] INFO LLM process is alive.
-WARNING 06-17 08:07:52 scheduler.py:663] Input prompt (9982 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 08:08:03 scheduler.py:663] Input prompt (8738 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 08:09:09 scheduler.py:663] Input prompt (8328 tokens) is too long and exceeds limit of 8192
-2024/06/17 08:09:37 batch_search_generate.py[line:133] INFO LLM process is alive.
-WARNING 06-17 08:10:22 scheduler.py:663] Input prompt (8886 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 08:10:36 scheduler.py:663] Input prompt (10098 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 08:11:29 scheduler.py:663] Input prompt (8960 tokens) is too long and exceeds limit of 8192
-2024/06/17 08:11:37 batch_search_generate.py[line:133] INFO LLM process is alive.
-WARNING 06-17 08:12:18 scheduler.py:663] Input prompt (8295 tokens) is too long and exceeds limit of 8192
-2024/06/17 08:13:37 batch_search_generate.py[line:133] INFO LLM process is alive.
-WARNING 06-17 08:13:42 scheduler.py:663] Input prompt (9503 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 08:15:13 scheduler.py:663] Input prompt (8784 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 08:15:34 scheduler.py:663] Input prompt (9232 tokens) is too long and exceeds limit of 8192
-2024/06/17 08:15:37 batch_search_generate.py[line:133] INFO LLM process is alive.
-WARNING 06-17 08:16:05 scheduler.py:663] Input prompt (10158 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 08:16:23 scheduler.py:663] Input prompt (8841 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 08:17:00 scheduler.py:663] Input prompt (8875 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 08:17:28 scheduler.py:663] Input prompt (8889 tokens) is too long and exceeds limit of 8192
-2024/06/17 08:17:38 batch_search_generate.py[line:133] INFO LLM process is alive.
-WARNING 06-17 08:18:25 scheduler.py:663] Input prompt (9279 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 08:18:36 scheduler.py:663] Input prompt (9299 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 08:19:05 scheduler.py:663] Input prompt (8226 tokens) is too long and exceeds limit of 8192
-2024/06/17 08:19:38 batch_search_generate.py[line:133] INFO LLM process is alive.
-WARNING 06-17 08:20:09 scheduler.py:663] Input prompt (8591 tokens) is too long and exceeds limit of 8192
-2024/06/17 08:21:38 batch_search_generate.py[line:133] INFO LLM process is alive.
-WARNING 06-17 08:22:05 scheduler.py:663] Input prompt (9845 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 08:22:55 scheduler.py:663] Input prompt (9196 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 08:23:24 scheduler.py:663] Input prompt (8505 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 08:23:24 scheduler.py:663] Input prompt (9613 tokens) is too long and exceeds limit of 8192
-Execute:   1%|▏         | 17/1167 [5:36:01<495:19:32, 1550.58s/it]2024/06/17 08:23:38 batch_search_generate.py[line:133] INFO LLM process is alive.
-WARNING 06-17 08:25:04 scheduler.py:663] Input prompt (8956 tokens) is too long and exceeds limit of 8192
-2024/06/17 08:25:38 batch_search_generate.py[line:133] INFO LLM process is alive.
-WARNING 06-17 08:26:10 scheduler.py:663] Input prompt (8221 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 08:26:58 scheduler.py:663] Input prompt (9067 tokens) is too long and exceeds limit of 8192
-2024/06/17 08:27:38 batch_search_generate.py[line:133] INFO LLM process is alive.
-WARNING 06-17 08:28:11 scheduler.py:663] Input prompt (8927 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 08:28:39 scheduler.py:663] Input prompt (8612 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 08:29:12 scheduler.py:663] Input prompt (10130 tokens) is too long and exceeds limit of 8192
-2024/06/17 08:29:38 batch_search_generate.py[line:133] INFO LLM process is alive.
-WARNING 06-17 08:29:39 scheduler.py:663] Input prompt (8973 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 08:30:45 scheduler.py:663] Input prompt (8816 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 08:30:46 scheduler.py:663] Input prompt (8288 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 08:30:53 scheduler.py:663] Input prompt (9535 tokens) is too long and exceeds limit of 8192
-2024/06/17 08:31:38 batch_search_generate.py[line:133] INFO LLM process is alive.
-WARNING 06-17 08:31:50 scheduler.py:663] Input prompt (9163 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 08:31:58 scheduler.py:663] Input prompt (10894 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 08:32:56 scheduler.py:663] Input prompt (8840 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 08:33:32 scheduler.py:663] Input prompt (9561 tokens) is too long and exceeds limit of 8192
-2024/06/17 08:33:38 batch_search_generate.py[line:133] INFO LLM process is alive.
-WARNING 06-17 08:33:55 scheduler.py:663] Input prompt (8678 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 08:34:34 scheduler.py:663] Input prompt (8348 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 08:35:04 scheduler.py:663] Input prompt (8597 tokens) is too long and exceeds limit of 8192
-2024/06/17 08:35:38 batch_search_generate.py[line:133] INFO LLM process is alive.
-WARNING 06-17 08:36:05 scheduler.py:663] Input prompt (8975 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 08:36:05 scheduler.py:663] Input prompt (9597 tokens) is too long and exceeds limit of 8192
-2024/06/17 08:37:38 batch_search_generate.py[line:133] INFO LLM process is alive.
-WARNING 06-17 08:37:58 scheduler.py:663] Input prompt (8199 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 08:38:52 scheduler.py:663] Input prompt (8438 tokens) is too long and exceeds limit of 8192
-2024/06/17 08:39:38 batch_search_generate.py[line:133] INFO LLM process is alive.
-WARNING 06-17 08:40:24 scheduler.py:663] Input prompt (11270 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 08:41:02 scheduler.py:663] Input prompt (8534 tokens) is too long and exceeds limit of 8192
-2024/06/17 08:41:38 batch_search_generate.py[line:133] INFO LLM process is alive.
-WARNING 06-17 08:42:46 scheduler.py:663] Input prompt (8717 tokens) is too long and exceeds limit of 8192
-2024/06/17 08:43:38 batch_search_generate.py[line:133] INFO LLM process is alive.
-2024/06/17 08:45:38 batch_search_generate.py[line:133] INFO LLM process is alive.
-WARNING 06-17 08:46:23 scheduler.py:663] Input prompt (9043 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 08:46:37 scheduler.py:663] Input prompt (8335 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 08:47:10 scheduler.py:663] Input prompt (8789 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 08:47:10 scheduler.py:663] Input prompt (9358 tokens) is too long and exceeds limit of 8192
-2024/06/17 08:47:38 batch_search_generate.py[line:133] INFO LLM process is alive.
-WARNING 06-17 08:48:18 scheduler.py:663] Input prompt (9090 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 08:48:33 scheduler.py:663] Input prompt (10017 tokens) is too long and exceeds limit of 8192
-2024/06/17 08:49:38 batch_search_generate.py[line:133] INFO LLM process is alive.
-WARNING 06-17 08:49:57 scheduler.py:663] Input prompt (9613 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 08:50:31 scheduler.py:663] Input prompt (8945 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 08:50:39 scheduler.py:663] Input prompt (10912 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 08:51:14 scheduler.py:663] Input prompt (9393 tokens) is too long and exceeds limit of 8192
-2024/06/17 08:51:38 batch_search_generate.py[line:133] INFO LLM process is alive.
-WARNING 06-17 08:52:26 scheduler.py:663] Input prompt (9347 tokens) is too long and exceeds limit of 8192
-Execute:   2%|▏         | 18/1167 [6:05:26<515:26:39, 1614.97s/it]2024/06/17 08:53:38 batch_search_generate.py[line:133] INFO LLM process is alive.
-WARNING 06-17 08:54:03 scheduler.py:663] Input prompt (8237 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 08:54:32 scheduler.py:663] Input prompt (8857 tokens) is too long and exceeds limit of 8192
-2024/06/17 08:55:38 batch_search_generate.py[line:133] INFO LLM process is alive.
-WARNING 06-17 08:55:53 scheduler.py:663] Input prompt (8901 tokens) is too long and exceeds limit of 8192
-Execute:   2%|▏         | 19/1167 [6:09:45<385:06:55, 1207.68s/it]2024/06/17 08:57:38 batch_search_generate.py[line:133] INFO LLM process is alive.
-WARNING 06-17 08:58:43 scheduler.py:663] Input prompt (9402 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 08:59:15 scheduler.py:663] Input prompt (8522 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 08:59:26 scheduler.py:663] Input prompt (9260 tokens) is too long and exceeds limit of 8192
-2024/06/17 08:59:38 batch_search_generate.py[line:133] INFO LLM process is alive.
-WARNING 06-17 09:01:15 scheduler.py:663] Input prompt (8340 tokens) is too long and exceeds limit of 8192
-2024/06/17 09:01:38 batch_search_generate.py[line:133] INFO LLM process is alive.
-WARNING 06-17 09:02:00 scheduler.py:663] Input prompt (8831 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 09:02:54 scheduler.py:663] Input prompt (9028 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 09:03:24 scheduler.py:663] Input prompt (9028 tokens) is too long and exceeds limit of 8192
-2024/06/17 09:03:38 batch_search_generate.py[line:133] INFO LLM process is alive.
-WARNING 06-17 09:03:39 scheduler.py:663] Input prompt (9757 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 09:04:21 scheduler.py:663] Input prompt (9715 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 09:04:40 scheduler.py:663] Input prompt (8537 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 09:04:55 scheduler.py:663] Input prompt (8840 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 09:05:36 scheduler.py:663] Input prompt (9376 tokens) is too long and exceeds limit of 8192
-2024/06/17 09:05:38 batch_search_generate.py[line:133] INFO LLM process is alive.
-WARNING 06-17 09:06:08 scheduler.py:663] Input prompt (9423 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 09:06:18 scheduler.py:663] Input prompt (8194 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 09:06:45 scheduler.py:663] Input prompt (8323 tokens) is too long and exceeds limit of 8192
-2024/06/17 09:07:38 batch_search_generate.py[line:133] INFO LLM process is alive.
-2024/06/17 09:09:38 batch_search_generate.py[line:133] INFO LLM process is alive.
-WARNING 06-17 09:09:49 scheduler.py:663] Input prompt (8250 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 09:09:49 scheduler.py:663] Input prompt (9254 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 09:09:57 scheduler.py:663] Input prompt (8787 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 09:10:28 scheduler.py:663] Input prompt (9630 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 09:10:41 scheduler.py:663] Input prompt (8682 tokens) is too long and exceeds limit of 8192
-2024/06/17 09:11:38 batch_search_generate.py[line:133] INFO LLM process is alive.
-WARNING 06-17 09:11:42 scheduler.py:663] Input prompt (9212 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 09:12:08 scheduler.py:663] Input prompt (8469 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 09:12:31 scheduler.py:663] Input prompt (8812 tokens) is too long and exceeds limit of 8192
-2024/06/17 09:13:38 batch_search_generate.py[line:133] INFO LLM process is alive.
-WARNING 06-17 09:14:14 scheduler.py:663] Input prompt (9910 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 09:15:38 scheduler.py:663] Input prompt (8372 tokens) is too long and exceeds limit of 8192
-2024/06/17 09:15:39 batch_search_generate.py[line:133] INFO LLM process is alive.
-WARNING 06-17 09:16:04 scheduler.py:663] Input prompt (9394 tokens) is too long and exceeds limit of 8192
-2024/06/17 09:17:39 batch_search_generate.py[line:133] INFO LLM process is alive.
-WARNING 06-17 09:17:39 scheduler.py:663] Input prompt (9653 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 09:17:56 scheduler.py:663] Input prompt (9117 tokens) is too long and exceeds limit of 8192
-2024/06/17 09:19:39 batch_search_generate.py[line:133] INFO LLM process is alive.
-WARNING 06-17 09:20:30 scheduler.py:663] Input prompt (8715 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 09:21:31 scheduler.py:663] Input prompt (8799 tokens) is too long and exceeds limit of 8192
-2024/06/17 09:21:39 batch_search_generate.py[line:133] INFO LLM process is alive.
-WARNING 06-17 09:22:04 scheduler.py:663] Input prompt (8216 tokens) is too long and exceeds limit of 8192
-2024/06/17 09:23:39 batch_search_generate.py[line:133] INFO LLM process is alive.
-WARNING 06-17 09:23:46 scheduler.py:663] Input prompt (9995 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 09:24:16 scheduler.py:663] Input prompt (10105 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 09:24:45 scheduler.py:663] Input prompt (8977 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 09:25:22 scheduler.py:663] Input prompt (9129 tokens) is too long and exceeds limit of 8192
-2024/06/17 09:25:39 batch_search_generate.py[line:133] INFO LLM process is alive.
-WARNING 06-17 09:25:53 scheduler.py:663] Input prompt (9247 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 09:26:03 scheduler.py:663] Input prompt (9200 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 09:26:11 scheduler.py:663] Input prompt (9234 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 09:26:50 scheduler.py:663] Input prompt (8443 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 09:27:15 scheduler.py:663] Input prompt (8944 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 09:27:21 scheduler.py:663] Input prompt (8411 tokens) is too long and exceeds limit of 8192
-2024/06/17 09:27:39 batch_search_generate.py[line:133] INFO LLM process is alive.
-WARNING 06-17 09:27:48 scheduler.py:663] Input prompt (9387 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 09:28:19 scheduler.py:663] Input prompt (9669 tokens) is too long and exceeds limit of 8192
-2024/06/17 09:29:02 batch_search_generate.py[line:174] INFO save solutions: 5
-Execute:   2%|▏         | 20/1167 [6:41:30<451:30:05, 1417.09s/it]2024/06/17 09:29:39 batch_search_generate.py[line:133] INFO LLM process is alive.
-WARNING 06-17 09:30:10 scheduler.py:663] Input prompt (8240 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 09:30:49 scheduler.py:663] Input prompt (8726 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 09:31:02 scheduler.py:663] Input prompt (8269 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 09:31:03 scheduler.py:663] Input prompt (8241 tokens) is too long and exceeds limit of 8192
-Execute:   2%|▏         | 21/1167 [6:43:48<328:49:12, 1032.94s/it]WARNING 06-17 09:31:33 scheduler.py:663] Input prompt (8226 tokens) is too long and exceeds limit of 8192
-2024/06/17 09:31:39 batch_search_generate.py[line:133] INFO LLM process is alive.
-2024/06/17 09:33:39 batch_search_generate.py[line:133] INFO LLM process is alive.
-WARNING 06-17 09:33:59 scheduler.py:663] Input prompt (8650 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 09:34:40 scheduler.py:663] Input prompt (8326 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 09:34:40 scheduler.py:663] Input prompt (8715 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 09:35:25 scheduler.py:663] Input prompt (9949 tokens) is too long and exceeds limit of 8192
-2024/06/17 09:35:39 batch_search_generate.py[line:133] INFO LLM process is alive.
-WARNING 06-17 09:36:09 scheduler.py:663] Input prompt (8827 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 09:36:19 scheduler.py:663] Input prompt (9084 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 09:36:27 scheduler.py:663] Input prompt (8759 tokens) is too long and exceeds limit of 8192
-2024/06/17 09:37:39 batch_search_generate.py[line:133] INFO LLM process is alive.
-WARNING 06-17 09:37:48 scheduler.py:663] Input prompt (8792 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 09:39:07 scheduler.py:663] Input prompt (9416 tokens) is too long and exceeds limit of 8192
-2024/06/17 09:39:39 batch_search_generate.py[line:133] INFO LLM process is alive.
-WARNING 06-17 09:40:00 scheduler.py:663] Input prompt (9404 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 09:40:10 scheduler.py:663] Input prompt (9033 tokens) is too long and exceeds limit of 8192
-2024/06/17 09:41:39 batch_search_generate.py[line:133] INFO LLM process is alive.
-WARNING 06-17 09:42:42 scheduler.py:663] Input prompt (9568 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 09:43:11 scheduler.py:663] Input prompt (8230 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 09:43:38 scheduler.py:663] Input prompt (9677 tokens) is too long and exceeds limit of 8192
-2024/06/17 09:43:39 batch_search_generate.py[line:133] INFO LLM process is alive.
-WARNING 06-17 09:44:53 scheduler.py:663] Input prompt (8717 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 09:45:15 scheduler.py:663] Input prompt (9286 tokens) is too long and exceeds limit of 8192
-2024/06/17 09:45:39 batch_search_generate.py[line:133] INFO LLM process is alive.
-WARNING 06-17 09:45:40 scheduler.py:663] Input prompt (9587 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 09:45:40 scheduler.py:663] Input prompt (9234 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 09:45:57 scheduler.py:663] Input prompt (9178 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 09:46:14 scheduler.py:663] Input prompt (9015 tokens) is too long and exceeds limit of 8192
-2024/06/17 09:47:39 batch_search_generate.py[line:133] INFO LLM process is alive.
-WARNING 06-17 09:49:02 scheduler.py:663] Input prompt (8800 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 09:49:20 scheduler.py:663] Input prompt (8357 tokens) is too long and exceeds limit of 8192
-2024/06/17 09:49:39 batch_search_generate.py[line:133] INFO LLM process is alive.
-WARNING 06-17 09:50:04 scheduler.py:663] Input prompt (8874 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 09:51:31 scheduler.py:663] Input prompt (9208 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 09:51:38 scheduler.py:663] Input prompt (8774 tokens) is too long and exceeds limit of 8192
-2024/06/17 09:51:39 batch_search_generate.py[line:133] INFO LLM process is alive.
-WARNING 06-17 09:51:51 scheduler.py:663] Input prompt (8960 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 09:52:00 scheduler.py:663] Input prompt (8684 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 09:52:14 scheduler.py:663] Input prompt (8242 tokens) is too long and exceeds limit of 8192
-Execute:   2%|▏         | 22/1167 [7:04:54<350:46:54, 1102.89s/it]WARNING 06-17 09:52:55 scheduler.py:663] Input prompt (12458 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 09:53:01 scheduler.py:663] Input prompt (8194 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 09:53:07 scheduler.py:663] Input prompt (9112 tokens) is too long and exceeds limit of 8192
-2024/06/17 09:53:39 batch_search_generate.py[line:133] INFO LLM process is alive.
-WARNING 06-17 09:54:00 scheduler.py:663] Input prompt (8231 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 09:54:00 scheduler.py:663] Input prompt (10121 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 09:54:21 scheduler.py:663] Input prompt (8868 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 09:54:30 scheduler.py:663] Input prompt (8713 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 09:54:48 scheduler.py:663] Input prompt (8905 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 09:55:21 scheduler.py:663] Input prompt (8751 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 09:55:35 scheduler.py:663] Input prompt (8862 tokens) is too long and exceeds limit of 8192
-2024/06/17 09:55:39 batch_search_generate.py[line:133] INFO LLM process is alive.
-WARNING 06-17 09:57:27 scheduler.py:663] Input prompt (8208 tokens) is too long and exceeds limit of 8192
-2024/06/17 09:57:39 batch_search_generate.py[line:133] INFO LLM process is alive.
-WARNING 06-17 09:58:23 scheduler.py:663] Input prompt (9041 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 09:58:56 scheduler.py:663] Input prompt (9194 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 09:58:57 scheduler.py:663] Input prompt (9113 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 09:59:20 scheduler.py:663] Input prompt (9926 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 09:59:29 scheduler.py:663] Input prompt (10402 tokens) is too long and exceeds limit of 8192
-2024/06/17 09:59:39 batch_search_generate.py[line:133] INFO LLM process is alive.
-WARNING 06-17 09:59:40 scheduler.py:663] Input prompt (8867 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 10:00:18 scheduler.py:663] Input prompt (9272 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 10:00:34 scheduler.py:663] Input prompt (9825 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 10:00:51 scheduler.py:663] Input prompt (9380 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 10:01:04 scheduler.py:663] Input prompt (8221 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 10:01:11 scheduler.py:663] Input prompt (8875 tokens) is too long and exceeds limit of 8192
-2024/06/17 10:01:39 batch_search_generate.py[line:133] INFO LLM process is alive.
-WARNING 06-17 10:02:46 scheduler.py:663] Input prompt (9315 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 10:03:28 scheduler.py:663] Input prompt (9632 tokens) is too long and exceeds limit of 8192
-2024/06/17 10:03:39 batch_search_generate.py[line:133] INFO LLM process is alive.
-WARNING 06-17 10:04:00 scheduler.py:663] Input prompt (8576 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 10:04:07 scheduler.py:663] Input prompt (8409 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 10:04:30 scheduler.py:663] Input prompt (10018 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 10:05:12 scheduler.py:663] Input prompt (9122 tokens) is too long and exceeds limit of 8192
-2024/06/17 10:05:39 batch_search_generate.py[line:133] INFO LLM process is alive.
-2024/06/17 10:07:39 batch_search_generate.py[line:133] INFO LLM process is alive.
-WARNING 06-17 10:08:17 scheduler.py:663] Input prompt (8666 tokens) is too long and exceeds limit of 8192
-Execute:   2%|▏         | 23/1167 [7:20:56<337:03:29, 1060.67s/it]2024/06/17 10:09:39 batch_search_generate.py[line:133] INFO LLM process is alive.
-WARNING 06-17 10:10:47 scheduler.py:663] Input prompt (13973 tokens) is too long and exceeds limit of 8192
-2024/06/17 10:11:39 batch_search_generate.py[line:133] INFO LLM process is alive.
-WARNING 06-17 10:12:27 scheduler.py:663] Input prompt (8289 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 10:12:46 scheduler.py:663] Input prompt (8817 tokens) is too long and exceeds limit of 8192
-2024/06/17 10:13:39 batch_search_generate.py[line:133] INFO LLM process is alive.
-2024/06/17 10:15:39 batch_search_generate.py[line:133] INFO LLM process is alive.
-Execute:   2%|▏         | 24/1167 [7:28:50<280:52:00, 884.62s/it] WARNING 06-17 10:16:44 scheduler.py:663] Input prompt (8590 tokens) is too long and exceeds limit of 8192
-2024/06/17 10:17:40 batch_search_generate.py[line:133] INFO LLM process is alive.
-WARNING 06-17 10:17:51 scheduler.py:663] Input prompt (8975 tokens) is too long and exceeds limit of 8192
-2024/06/17 10:19:40 batch_search_generate.py[line:133] INFO LLM process is alive.
-WARNING 06-17 10:20:57 scheduler.py:663] Input prompt (8444 tokens) is too long and exceeds limit of 8192
-WARNING 06-17 10:21:10 scheduler.py:663] Input prompt (10408 tokens) is too long and exceeds limit of 8192
-2024/06/17 10:21:40 batch_search_generate.py[line:133] INFO LLM process is alive.
-WARNING 06-17 10:23:28 scheduler.py:663] Input prompt (9057 tokens) is too long and exceeds limit of 8192
-2024/06/17 10:23:40 batch_search_generate.py[line:133] INFO LLM process is alive.
-2024/06/17 10:25:02 batch_search_generate.py[line:174] INFO save solutions: 5
-Execute:   2%|▏         | 25/1167 [7:37:30<245:55:19, 775.24s/it]2024/06/17 10:25:40 batch_search_generate.py[line:133] INFO LLM process is alive.

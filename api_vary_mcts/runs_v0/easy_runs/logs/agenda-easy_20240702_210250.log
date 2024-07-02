@@ -1,0 +1,38 @@
+toolqa_easy
+agenda-easy
+1
+2024/07/02 21:02:54 log_utils.py[line:35] INFO seed:1719925374
+2024/07/02 21:02:54 log_utils.py[line:35] INFO verbose:False
+2024/07/02 21:02:54 log_utils.py[line:35] INFO process_num:1
+2024/07/02 21:02:54 log_utils.py[line:35] INFO path:/mnt/workspace/nas/chenguoxin.cgx/api/datasets/ToolQA
+2024/07/02 21:02:54 log_utils.py[line:35] INFO num_epoch:1
+2024/07/02 21:02:54 log_utils.py[line:35] INFO tool_url:http://127.0.0.1:5010/toolqa
+2024/07/02 21:02:54 log_utils.py[line:35] INFO filter:False
+2024/07/02 21:02:54 log_utils.py[line:35] INFO filter_path:/mnt/workspace/nas/chenguoxin.cgx/api/workspace/code/api_vary_mcts/count_num/easy/toolqa_easy_4.json
+2024/07/02 21:02:54 log_utils.py[line:35] INFO checkpoint_dir:/mnt/workspace/nas/chenguoxin.cgx/model_cache/Meta-Llama-3-8B-Instruct
+2024/07/02 21:02:54 log_utils.py[line:35] INFO temperature:0.5
+2024/07/02 21:02:54 log_utils.py[line:35] INFO top_k:-1
+2024/07/02 21:02:54 log_utils.py[line:35] INFO top_p:1.0
+2024/07/02 21:02:54 log_utils.py[line:35] INFO frequency_penalty:1.2
+2024/07/02 21:02:54 log_utils.py[line:35] INFO scratchpad_length:1024
+2024/07/02 21:02:54 log_utils.py[line:35] INFO api_kernel_version:0
+2024/07/02 21:02:54 log_utils.py[line:35] INFO Cpuct:1.25
+2024/07/02 21:02:54 log_utils.py[line:35] INFO n_generate_sample:2
+2024/07/02 21:02:54 log_utils.py[line:35] INFO max_iter:12
+2024/07/02 21:02:54 log_utils.py[line:35] INFO max_depth:8
+2024/07/02 21:02:54 log_utils.py[line:35] INFO positive_reward:1.0
+2024/07/02 21:02:54 log_utils.py[line:35] INFO negative_reward:-1.0
+2024/07/02 21:02:54 log_utils.py[line:35] INFO max_new_tokens:1024
+2024/07/02 21:02:54 log_utils.py[line:35] INFO max_load_db:5
+2024/07/02 21:02:54 log_utils.py[line:35] INFO debug_num:-1
+2024/07/02 21:02:54 log_utils.py[line:35] INFO datapath:/mnt/workspace/nas/chenguoxin.cgx/api/workspace/data
+2024/07/02 21:02:54 log_utils.py[line:35] INFO task:toolqa_easy
+2024/07/02 21:02:54 log_utils.py[line:35] INFO dataname:agenda-easy
+2024/07/02 21:02:54 log_utils.py[line:35] INFO output_dir:/mnt/workspace/nas/chenguoxin.cgx/api/workspace/output_dir/mcts/round1_v0/run/toolqa_easy/agenda-easy/Meta-Llama-3-8B-Instruct/20240702_210254
+2024/07/02 21:02:54 log_utils.py[line:35] INFO num_examples:2
+2024/07/02 21:02:54 log_utils.py[line:35] INFO model_name:Meta-Llama-3-8B-Instruct
+2024/07/02 21:02:54 log_utils.py[line:35] INFO timestamp:20240702_210254
+2024/07/02 21:02:55 batch_search_generate.py[line:279] INFO ********** EPOCH 0 ***********
+Execute:   0%|          | 0/998 [00:00<?, ?it/s]INFO 07-02 21:02:56 llm_engine.py:161] Initializing an LLM engine (v0.4.3) with config: model='/mnt/workspace/nas/chenguoxin.cgx/model_cache/Meta-Llama-3-8B-Instruct', speculative_config=None, tokenizer='/mnt/workspace/nas/chenguoxin.cgx/model_cache/Meta-Llama-3-8B-Instruct', skip_tokenizer_init=False, tokenizer_mode=auto, revision=None, rope_scaling=None, tokenizer_revision=None, trust_remote_code=False, dtype=torch.bfloat16, max_seq_len=8192, download_dir=None, load_format=LoadFormat.AUTO, tensor_parallel_size=1, disable_custom_all_reduce=False, quantization=None, enforce_eager=False, kv_cache_dtype=auto, quantization_param_path=None, device_config=cuda, decoding_config=DecodingConfig(guided_decoding_backend='outlines'), seed=1719925374, served_model_name=/mnt/workspace/nas/chenguoxin.cgx/model_cache/Meta-Llama-3-8B-Instruct)
+Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+Execute:   0%|          | 0/998 [00:15<?, ?it/s]Execute:   0%|          | 0/998 [00:30<?, ?it/s]Execute:   0%|          | 0/998 [00:45<?, ?it/s]

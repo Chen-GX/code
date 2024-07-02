@@ -28,6 +28,9 @@ class LocalMCTS(MCTS):
 
     def __init__(self, **kwargs) -> None:
         super().__init__(**kwargs)
+        self.prompt_split_len = 8000
+        if "Qwen2" in self.args.checkpoint_dir:
+            self.prompt_split_len = 30000
 
     def set_public_info(self, local_prompts_cache, local_outputs_cache, local_n_cache, local_n_generate_samples):
         # local info
@@ -46,7 +49,7 @@ class LocalMCTS(MCTS):
         states = self.return_states()
         solutions_tag = [node.tag for node in self.solution_nodes]
         result = {"id": self.question_id, 'question': self.question, 'answer': self.answer, "tree": states, 'solutions_tag': solutions_tag}
-        
+        gc.collect()
         return {self.question_id: result}
 
     def expansion_evaluation_backpropagation(self, node, rollout=False):
@@ -63,13 +66,6 @@ class LocalMCTS(MCTS):
             # 已经有cache了，直接从缓存的节点中对每个节点进行rollout
             self.expand_node_with_cache(node)
     
-    # def expansion_evaluation_backpropagation(self, node):
-    #     # perform expansion and evaluation
-    #     # obtain the prior probability of subnode and the value of the leaf node
-
-    #     output_texts, prior_probs = self.get_nextstep_and_cur_value(node)
-    #     # 创建叶子节点，进行rollout，并且back——propagation
-    #     self.expand_node(output_texts, prior_probs, node)
         
     
     def get_nextstep_and_cur_value(self, node):
@@ -83,7 +79,7 @@ class LocalMCTS(MCTS):
 
     
     def get_llm_outputs(self, prompt: str, n=1):
-        if len(prompt.split()) > 8000:
+        if len(prompt.split()) > self.prompt_split_len:
             return ""
         
         prompt_key = "generator_{}".format(hash(f"{prompt}{self.question_id}"))

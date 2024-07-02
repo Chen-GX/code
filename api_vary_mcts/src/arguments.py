@@ -8,8 +8,8 @@ import torch
 from log_utils import log_params
 
 
-max_depth_dict = {"agenda-easy": 6, "airbnb-easy": 12, "coffee-easy": 12, "dblp-easy": 12, "flights-easy": 12, "scirex-easy": 6, "yelp-easy": 12,
-"agenda-hard": 12, "airbnb-hard": 12, "coffee-hard": 12, "dblp-hard": 12, "flights-hard": 12, "scirex-hard": 6, "yelp-hard": 12,}
+max_depth_dict = {"agenda-easy": 8, "airbnb-easy": 15, "coffee-easy": 15, "dblp-easy": 15, "flights-easy": 15, "scirex-easy": 6, "yelp-easy": 15,
+"agenda-hard": 20, "airbnb-hard": 20, "coffee-hard": 20, "dblp-hard": 20, "flights-hard": 20, "scirex-hard": 6, "yelp-hard": 20,}
 
 def str2bool(v):
     if isinstance(v, bool):
@@ -47,7 +47,7 @@ def get_args():
     parser.add_argument("--filter", type=str2bool, default=False)
     parser.add_argument("--filter_path", type=str, default="")
 
-    ## params of LLM
+    ## params of LLM    Meta-Llama-3-8B-Instruct
     parser.add_argument('-c', '--checkpoint_dir', type=str, default=f'{root_path}/model_cache/Meta-Llama-3-8B-Instruct')
     parser.add_argument('--temperature', type=float, default=0.5)
     parser.add_argument("--top_k", type=int, default=-1)
@@ -57,14 +57,14 @@ def get_args():
 
 
     ## params of api varying
-    parser.add_argument("--api_kernel_version", type=int, default=1)
+    parser.add_argument("--api_kernel_version", type=int, default=0)
     
 
     ## params of mcts
     parser.add_argument("--Cpuct", type=float, default=1.25)
-    parser.add_argument('--n_generate_sample', type=int, default=3, help="how many samples generated for each step")
+    parser.add_argument('--n_generate_sample', type=int, default=2, help="how many samples generated for each step")
     parser.add_argument('--max_iter', type=int, default=12, help="maximally allowed iterations")
-    parser.add_argument("--max_depth", type=int, default=15)  # 15 for easy, 20 for hard
+    parser.add_argument("--max_depth", type=int, default=12)  # 15 for easy, 20 for hard
     parser.add_argument('--positive_reward', type=float, default=1.)
     parser.add_argument('--negative_reward', type=float, default=-1.)
     parser.add_argument("--max_new_tokens", type=int, default=1024)
@@ -74,7 +74,7 @@ def get_args():
     parser.add_argument("--debug_num", type=int, default=5)
     parser.add_argument('--datapath', type=str, default=f"{root_path}/api/workspace/data")
     parser.add_argument('--task', type=str, default='toolqa_easy', choices=["toolqa_easy", "toolqa_hard"])
-    parser.add_argument('--dataname', type=str, default='coffee-easy',
+    parser.add_argument('--dataname', type=str, default='airbnb-easy',
                         choices=["agenda-easy", "airbnb-easy", "coffee-easy", "dblp-easy", "flights-easy", "scirex-easy", "yelp-easy", "agenda-hard", "airbnb-hard", "coffee-hard", "dblp-hard", "flights-hard", "scirex-hard", "yelp-hard"])
     parser.add_argument("--output_dir", type=str, default=f"{root_path}/api/workspace/output_dir/mcts/round1/test")
     parser.add_argument("--num_examples", type=int, default=2)
@@ -94,11 +94,11 @@ def get_args():
         seed_value = int(time.time()) & (2**32 - 1)
         args.seed = seed_value
 
-    if args.dataname in ['flights-easy', 'flights-hard', 'yelp-easy', 'yelp-hard']:
-        args.n_generate_sample = 3
+    if args.dataname in ['flights-easy', 'flights-hard']:
+        args.n_generate_sample = 2
 
     log_params(args)
 
-    os.system(f"cp -r /mnt/workspace/nas/chenguoxin.cgx/api/workspace/api_vary_mcts/src {args.output_dir}")
-
+    os.system(f"cp -r {root_path}/api/workspace/code/api_vary_mcts/src {args.output_dir}")
+    
     return args

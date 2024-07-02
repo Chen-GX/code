@@ -1,0 +1,660 @@
+agenda-easy airbnb-easy coffee-easy dblp-easy flights-easy scirex-easy yelp-easy
+2024/07/02 20:18:13 log_utils.py[line:35] INFO seed:42
+2024/07/02 20:18:13 log_utils.py[line:35] INFO verbose:False
+2024/07/02 20:18:13 log_utils.py[line:35] INFO process_num:1
+2024/07/02 20:18:13 log_utils.py[line:35] INFO path:/mnt/workspace/nas/chenguoxin.cgx/api/datasets/ToolQA
+2024/07/02 20:18:13 log_utils.py[line:35] INFO num_epoch:1
+2024/07/02 20:18:13 log_utils.py[line:35] INFO tool_url:http://127.0.0.1:5010/toolqa
+2024/07/02 20:18:13 log_utils.py[line:35] INFO checkpoint_dir:/mnt/workspace/nas/chenguoxin.cgx/api/workspace/output_dir/sft/Meta-Llama-3-8B/easy/run/20240620_001056/checkpoint-120
+2024/07/02 20:18:13 log_utils.py[line:35] INFO temperature:0.0
+2024/07/02 20:18:13 log_utils.py[line:35] INFO top_k:-1
+2024/07/02 20:18:13 log_utils.py[line:35] INFO top_p:1.0
+2024/07/02 20:18:13 log_utils.py[line:35] INFO scratchpad_length:1024
+2024/07/02 20:18:13 log_utils.py[line:35] INFO api_kernel_version:0
+2024/07/02 20:18:13 log_utils.py[line:35] INFO n_generate_sample:1
+2024/07/02 20:18:13 log_utils.py[line:35] INFO max_iter:15
+2024/07/02 20:18:13 log_utils.py[line:35] INFO max_depth:15
+2024/07/02 20:18:13 log_utils.py[line:35] INFO positive_reward:1.0
+2024/07/02 20:18:13 log_utils.py[line:35] INFO negative_reward:-1.0
+2024/07/02 20:18:13 log_utils.py[line:35] INFO max_new_tokens:1024
+2024/07/02 20:18:13 log_utils.py[line:35] INFO max_load_db:5
+2024/07/02 20:18:13 log_utils.py[line:35] INFO debug_num:-1
+2024/07/02 20:18:13 log_utils.py[line:35] INFO datapath:/mnt/workspace/nas/chenguoxin.cgx/api/workspace/datasets/test_data
+2024/07/02 20:18:13 log_utils.py[line:35] INFO task:toolqa_easy
+2024/07/02 20:18:13 log_utils.py[line:35] INFO dataname:agenda-easy
+2024/07/02 20:18:13 log_utils.py[line:35] INFO output_dir:/mnt/workspace/nas/chenguoxin.cgx/api/workspace/output_dir/greedy/run/toolqa_easy/20240620_001056/checkpoint-120
+2024/07/02 20:18:13 log_utils.py[line:35] INFO num_examples:2
+2024/07/02 20:18:13 log_utils.py[line:35] INFO sft_prompt:True
+2024/07/02 20:18:13 log_utils.py[line:35] INFO model_name:20240620_001056
+2024/07/02 20:18:13 log_utils.py[line:35] INFO ckpt:checkpoint-120
+2024/07/02 20:18:13 log_utils.py[line:35] INFO timestamp:20240702_201813
+2024/07/02 20:18:13 log_utils.py[line:35] INFO prompt_split_len:8000
+Execute:   0%|          | 0/100 [00:00<?, ?it/s]INFO 07-02 20:18:13 llm_engine.py:161] Initializing an LLM engine (v0.4.3) with config: model='/mnt/workspace/nas/chenguoxin.cgx/api/workspace/output_dir/sft/Meta-Llama-3-8B/easy/run/20240620_001056/checkpoint-120', speculative_config=None, tokenizer='/mnt/workspace/nas/chenguoxin.cgx/api/workspace/output_dir/sft/Meta-Llama-3-8B/easy/run/20240620_001056/checkpoint-120', skip_tokenizer_init=False, tokenizer_mode=auto, revision=None, rope_scaling=None, tokenizer_revision=None, trust_remote_code=False, dtype=torch.bfloat16, max_seq_len=8192, download_dir=None, load_format=LoadFormat.AUTO, tensor_parallel_size=1, disable_custom_all_reduce=False, quantization=None, enforce_eager=False, kv_cache_dtype=auto, quantization_param_path=None, device_config=cuda, decoding_config=DecodingConfig(guided_decoding_backend='outlines'), seed=42, served_model_name=/mnt/workspace/nas/chenguoxin.cgx/api/workspace/output_dir/sft/Meta-Llama-3-8B/easy/run/20240620_001056/checkpoint-120)
+Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+INFO 07-02 20:18:17 model_runner.py:146] Loading model weights took 14.9595 GB
+INFO 07-02 20:18:18 gpu_executor.py:83] # GPU blocks: 27895, # CPU blocks: 4096
+INFO 07-02 20:18:21 model_runner.py:854] Capturing the model for CUDA graphs. This may lead to unexpected consequences if the model is not static. To run the model in eager mode, set 'enforce_eager=True' or use '--enforce-eager' in the CLI.
+INFO 07-02 20:18:21 model_runner.py:858] CUDA graphs can take additional 1~3 GiB memory per GPU. If you are running out of memory, consider decreasing `gpu_memory_utilization` or enforcing eager mode. You can also reduce the `max_num_seqs` as needed to decrease memory usage.
+INFO 07-02 20:18:25 model_runner.py:924] Graph capturing finished in 4 secs.
+Execute:   0%|          | 0/100 [00:15<?, ?it/s]2024/07/02 20:18:43 batch_search_generate.py[line:174] INFO save solutions: 5
+2024/07/02 20:18:43 batch_search_generate.py[line:174] INFO save solutions: 5
+2024/07/02 20:18:43 batch_search_generate.py[line:174] INFO save solutions: 5
+2024/07/02 20:18:43 batch_search_generate.py[line:174] INFO save solutions: 5
+2024/07/02 20:18:43 batch_search_generate.py[line:174] INFO save solutions: 5
+Execute:  37%|███▋      | 37/100 [00:30<00:25,  2.46it/s]2024/07/02 20:18:58 batch_search_generate.py[line:174] INFO save solutions: 5
+2024/07/02 20:18:58 batch_search_generate.py[line:174] INFO save solutions: 5
+2024/07/02 20:18:58 batch_search_generate.py[line:174] INFO save solutions: 5
+2024/07/02 20:18:58 batch_search_generate.py[line:174] INFO save solutions: 5
+2024/07/02 20:18:58 batch_search_generate.py[line:174] INFO save solutions: 5
+2024/07/02 20:18:58 batch_search_generate.py[line:174] INFO save solutions: 5
+2024/07/02 20:18:58 batch_search_generate.py[line:174] INFO save solutions: 5
+Execute:  64%|██████▍   | 64/100 [00:45<00:17,  2.07it/s]2024/07/02 20:19:13 batch_search_generate.py[line:174] INFO save solutions: 5
+2024/07/02 20:19:13 batch_search_generate.py[line:174] INFO save solutions: 5
+2024/07/02 20:19:13 batch_search_generate.py[line:174] INFO save solutions: 5
+2024/07/02 20:19:13 batch_search_generate.py[line:174] INFO save solutions: 5
+2024/07/02 20:19:13 batch_search_generate.py[line:174] INFO save solutions: 5
+2024/07/02 20:19:13 batch_search_generate.py[line:174] INFO save solutions: 5
+Execute:  94%|█████████▍| 94/100 [01:00<00:02,  2.04it/s]2024/07/02 20:19:14 batch_search_generate.py[line:247] INFO all question have been sampled.
+2024/07/02 20:19:28 batch_search_generate.py[line:174] INFO save solutions: 5
+2024/07/02 20:19:28 batch_search_generate.py[line:174] INFO save solutions: 5
+Execute: 100%|██████████| 100/100 [01:15<00:00,  1.39it/s]Execute: 100%|██████████| 100/100 [01:15<00:00,  1.33it/s]
+2024/07/02 20:19:28 batch_search_generate.py[line:190] INFO stop progress_bar
+2024/07/02 20:19:28 batch_search_generate.py[line:199] INFO save surplus solutions: 0
+2024/07/02 20:22:13 batch_search_generate.py[line:135] INFO finish llm_process
+2024/07/02 20:22:17 log_utils.py[line:35] INFO seed:42
+2024/07/02 20:22:17 log_utils.py[line:35] INFO verbose:False
+2024/07/02 20:22:17 log_utils.py[line:35] INFO process_num:1
+2024/07/02 20:22:17 log_utils.py[line:35] INFO path:/mnt/workspace/nas/chenguoxin.cgx/api/datasets/ToolQA
+2024/07/02 20:22:17 log_utils.py[line:35] INFO num_epoch:1
+2024/07/02 20:22:17 log_utils.py[line:35] INFO tool_url:http://127.0.0.1:5010/toolqa
+2024/07/02 20:22:17 log_utils.py[line:35] INFO checkpoint_dir:/mnt/workspace/nas/chenguoxin.cgx/api/workspace/output_dir/sft/Meta-Llama-3-8B/easy/run/20240620_001056/checkpoint-120
+2024/07/02 20:22:17 log_utils.py[line:35] INFO temperature:0.0
+2024/07/02 20:22:17 log_utils.py[line:35] INFO top_k:-1
+2024/07/02 20:22:17 log_utils.py[line:35] INFO top_p:1.0
+2024/07/02 20:22:17 log_utils.py[line:35] INFO scratchpad_length:1024
+2024/07/02 20:22:17 log_utils.py[line:35] INFO api_kernel_version:0
+2024/07/02 20:22:17 log_utils.py[line:35] INFO n_generate_sample:1
+2024/07/02 20:22:17 log_utils.py[line:35] INFO max_iter:15
+2024/07/02 20:22:17 log_utils.py[line:35] INFO max_depth:15
+2024/07/02 20:22:17 log_utils.py[line:35] INFO positive_reward:1.0
+2024/07/02 20:22:17 log_utils.py[line:35] INFO negative_reward:-1.0
+2024/07/02 20:22:17 log_utils.py[line:35] INFO max_new_tokens:1024
+2024/07/02 20:22:17 log_utils.py[line:35] INFO max_load_db:5
+2024/07/02 20:22:17 log_utils.py[line:35] INFO debug_num:-1
+2024/07/02 20:22:17 log_utils.py[line:35] INFO datapath:/mnt/workspace/nas/chenguoxin.cgx/api/workspace/datasets/test_data
+2024/07/02 20:22:17 log_utils.py[line:35] INFO task:toolqa_easy
+2024/07/02 20:22:17 log_utils.py[line:35] INFO dataname:airbnb-easy
+2024/07/02 20:22:17 log_utils.py[line:35] INFO output_dir:/mnt/workspace/nas/chenguoxin.cgx/api/workspace/output_dir/greedy/run/toolqa_easy/20240620_001056/checkpoint-120
+2024/07/02 20:22:17 log_utils.py[line:35] INFO num_examples:2
+2024/07/02 20:22:17 log_utils.py[line:35] INFO sft_prompt:True
+2024/07/02 20:22:17 log_utils.py[line:35] INFO model_name:20240620_001056
+2024/07/02 20:22:17 log_utils.py[line:35] INFO ckpt:checkpoint-120
+2024/07/02 20:22:17 log_utils.py[line:35] INFO timestamp:20240702_202217
+2024/07/02 20:22:17 log_utils.py[line:35] INFO prompt_split_len:8000
+Execute:   0%|          | 0/100 [00:00<?, ?it/s]INFO 07-02 20:22:17 llm_engine.py:161] Initializing an LLM engine (v0.4.3) with config: model='/mnt/workspace/nas/chenguoxin.cgx/api/workspace/output_dir/sft/Meta-Llama-3-8B/easy/run/20240620_001056/checkpoint-120', speculative_config=None, tokenizer='/mnt/workspace/nas/chenguoxin.cgx/api/workspace/output_dir/sft/Meta-Llama-3-8B/easy/run/20240620_001056/checkpoint-120', skip_tokenizer_init=False, tokenizer_mode=auto, revision=None, rope_scaling=None, tokenizer_revision=None, trust_remote_code=False, dtype=torch.bfloat16, max_seq_len=8192, download_dir=None, load_format=LoadFormat.AUTO, tensor_parallel_size=1, disable_custom_all_reduce=False, quantization=None, enforce_eager=False, kv_cache_dtype=auto, quantization_param_path=None, device_config=cuda, decoding_config=DecodingConfig(guided_decoding_backend='outlines'), seed=42, served_model_name=/mnt/workspace/nas/chenguoxin.cgx/api/workspace/output_dir/sft/Meta-Llama-3-8B/easy/run/20240620_001056/checkpoint-120)
+Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+INFO 07-02 20:22:21 model_runner.py:146] Loading model weights took 14.9595 GB
+INFO 07-02 20:22:22 gpu_executor.py:83] # GPU blocks: 27895, # CPU blocks: 4096
+INFO 07-02 20:22:25 model_runner.py:854] Capturing the model for CUDA graphs. This may lead to unexpected consequences if the model is not static. To run the model in eager mode, set 'enforce_eager=True' or use '--enforce-eager' in the CLI.
+INFO 07-02 20:22:25 model_runner.py:858] CUDA graphs can take additional 1~3 GiB memory per GPU. If you are running out of memory, consider decreasing `gpu_memory_utilization` or enforcing eager mode. You can also reduce the `max_num_seqs` as needed to decrease memory usage.
+INFO 07-02 20:22:28 model_runner.py:924] Graph capturing finished in 4 secs.
+/mnt/workspace/nas/chenguoxin.cgx/api/workspace/code/greedy/src/tools/table/tabtools.py:44: DtypeWarning: Columns (25) have mixed types. Specify dtype option on import or set low_memory=False.
+  self.data = pd.read_csv(file_path)
+/mnt/workspace/nas/chenguoxin.cgx/api/workspace/code/greedy/src/tools/table/tabtools.py:44: DtypeWarning: Columns (25) have mixed types. Specify dtype option on import or set low_memory=False.
+  self.data = pd.read_csv(file_path)
+/mnt/workspace/nas/chenguoxin.cgx/api/workspace/code/greedy/src/tools/table/tabtools.py:44: DtypeWarning: Columns (25) have mixed types. Specify dtype option on import or set low_memory=False.
+  self.data = pd.read_csv(file_path)
+/mnt/workspace/nas/chenguoxin.cgx/api/workspace/code/greedy/src/tools/table/tabtools.py:44: DtypeWarning: Columns (25) have mixed types. Specify dtype option on import or set low_memory=False.
+  self.data = pd.read_csv(file_path)
+/mnt/workspace/nas/chenguoxin.cgx/api/workspace/code/greedy/src/tools/table/tabtools.py:44: DtypeWarning: Columns (25) have mixed types. Specify dtype option on import or set low_memory=False.
+  self.data = pd.read_csv(file_path)
+/mnt/workspace/nas/chenguoxin.cgx/api/workspace/code/greedy/src/tools/table/tabtools.py:44: DtypeWarning: Columns (25) have mixed types. Specify dtype option on import or set low_memory=False.
+  self.data = pd.read_csv(file_path)
+/mnt/workspace/nas/chenguoxin.cgx/api/workspace/code/greedy/src/tools/table/tabtools.py:44: DtypeWarning: Columns (25) have mixed types. Specify dtype option on import or set low_memory=False.
+  self.data = pd.read_csv(file_path)
+/mnt/workspace/nas/chenguoxin.cgx/api/workspace/code/greedy/src/tools/table/tabtools.py:44: DtypeWarning: Columns (25) have mixed types. Specify dtype option on import or set low_memory=False.
+  self.data = pd.read_csv(file_path)
+Execute:   0%|          | 0/100 [00:15<?, ?it/s]/mnt/workspace/nas/chenguoxin.cgx/api/workspace/code/greedy/src/tools/table/tabtools.py:44: DtypeWarning: Columns (25) have mixed types. Specify dtype option on import or set low_memory=False.
+  self.data = pd.read_csv(file_path)
+/mnt/workspace/nas/chenguoxin.cgx/api/workspace/code/greedy/src/tools/table/tabtools.py:44: DtypeWarning: Columns (25) have mixed types. Specify dtype option on import or set low_memory=False.
+  self.data = pd.read_csv(file_path)
+/mnt/workspace/nas/chenguoxin.cgx/api/workspace/code/greedy/src/tools/table/tabtools.py:44: DtypeWarning: Columns (25) have mixed types. Specify dtype option on import or set low_memory=False.
+  self.data = pd.read_csv(file_path)
+/mnt/workspace/nas/chenguoxin.cgx/api/workspace/code/greedy/src/tools/table/tabtools.py:44: DtypeWarning: Columns (25) have mixed types. Specify dtype option on import or set low_memory=False.
+  self.data = pd.read_csv(file_path)
+/mnt/workspace/nas/chenguoxin.cgx/api/workspace/code/greedy/src/tools/table/tabtools.py:44: DtypeWarning: Columns (25) have mixed types. Specify dtype option on import or set low_memory=False.
+  self.data = pd.read_csv(file_path)
+/mnt/workspace/nas/chenguoxin.cgx/api/workspace/code/greedy/src/tools/table/tabtools.py:44: DtypeWarning: Columns (25) have mixed types. Specify dtype option on import or set low_memory=False.
+  self.data = pd.read_csv(file_path)
+2024/07/02 20:22:47 batch_search_generate.py[line:174] INFO save solutions: 5
+Execute:   9%|▉         | 9/100 [00:30<02:31,  1.67s/it]/mnt/workspace/nas/chenguoxin.cgx/api/workspace/code/greedy/src/tools/table/tabtools.py:44: DtypeWarning: Columns (25) have mixed types. Specify dtype option on import or set low_memory=False.
+  self.data = pd.read_csv(file_path)
+/mnt/workspace/nas/chenguoxin.cgx/api/workspace/code/greedy/src/tools/table/tabtools.py:44: DtypeWarning: Columns (25) have mixed types. Specify dtype option on import or set low_memory=False.
+  self.data = pd.read_csv(file_path)
+/mnt/workspace/nas/chenguoxin.cgx/api/workspace/code/greedy/src/tools/table/tabtools.py:44: DtypeWarning: Columns (25) have mixed types. Specify dtype option on import or set low_memory=False.
+  self.data = pd.read_csv(file_path)
+/mnt/workspace/nas/chenguoxin.cgx/api/workspace/code/greedy/src/tools/table/tabtools.py:44: DtypeWarning: Columns (25) have mixed types. Specify dtype option on import or set low_memory=False.
+  self.data = pd.read_csv(file_path)
+/mnt/workspace/nas/chenguoxin.cgx/api/workspace/code/greedy/src/tools/table/tabtools.py:44: DtypeWarning: Columns (25) have mixed types. Specify dtype option on import or set low_memory=False.
+  self.data = pd.read_csv(file_path)
+/mnt/workspace/nas/chenguoxin.cgx/api/workspace/code/greedy/src/tools/table/tabtools.py:44: DtypeWarning: Columns (25) have mixed types. Specify dtype option on import or set low_memory=False.
+  self.data = pd.read_csv(file_path)
+/mnt/workspace/nas/chenguoxin.cgx/api/workspace/code/greedy/src/tools/table/tabtools.py:44: DtypeWarning: Columns (25) have mixed types. Specify dtype option on import or set low_memory=False.
+  self.data = pd.read_csv(file_path)
+/mnt/workspace/nas/chenguoxin.cgx/api/workspace/code/greedy/src/tools/table/tabtools.py:44: DtypeWarning: Columns (25) have mixed types. Specify dtype option on import or set low_memory=False.
+  self.data = pd.read_csv(file_path)
+2024/07/02 20:23:02 batch_search_generate.py[line:174] INFO save solutions: 5
+2024/07/02 20:23:02 batch_search_generate.py[line:174] INFO save solutions: 5
+Execute:  16%|█▌        | 16/100 [00:45<02:41,  1.92s/it]/mnt/workspace/nas/chenguoxin.cgx/api/workspace/code/greedy/src/tools/table/tabtools.py:44: DtypeWarning: Columns (25) have mixed types. Specify dtype option on import or set low_memory=False.
+  self.data = pd.read_csv(file_path)
+/mnt/workspace/nas/chenguoxin.cgx/api/workspace/code/greedy/src/tools/table/tabtools.py:44: DtypeWarning: Columns (25) have mixed types. Specify dtype option on import or set low_memory=False.
+  self.data = pd.read_csv(file_path)
+/mnt/workspace/nas/chenguoxin.cgx/api/workspace/code/greedy/src/tools/table/tabtools.py:44: DtypeWarning: Columns (25) have mixed types. Specify dtype option on import or set low_memory=False.
+  self.data = pd.read_csv(file_path)
+/mnt/workspace/nas/chenguoxin.cgx/api/workspace/code/greedy/src/tools/table/tabtools.py:44: DtypeWarning: Columns (25) have mixed types. Specify dtype option on import or set low_memory=False.
+  self.data = pd.read_csv(file_path)
+/mnt/workspace/nas/chenguoxin.cgx/api/workspace/code/greedy/src/tools/table/tabtools.py:44: DtypeWarning: Columns (25) have mixed types. Specify dtype option on import or set low_memory=False.
+  self.data = pd.read_csv(file_path)
+/mnt/workspace/nas/chenguoxin.cgx/api/workspace/code/greedy/src/tools/table/tabtools.py:44: DtypeWarning: Columns (25) have mixed types. Specify dtype option on import or set low_memory=False.
+  self.data = pd.read_csv(file_path)
+/mnt/workspace/nas/chenguoxin.cgx/api/workspace/code/greedy/src/tools/table/tabtools.py:44: DtypeWarning: Columns (25) have mixed types. Specify dtype option on import or set low_memory=False.
+  self.data = pd.read_csv(file_path)
+/mnt/workspace/nas/chenguoxin.cgx/api/workspace/code/greedy/src/tools/table/tabtools.py:44: DtypeWarning: Columns (25) have mixed types. Specify dtype option on import or set low_memory=False.
+  self.data = pd.read_csv(file_path)
+/mnt/workspace/nas/chenguoxin.cgx/api/workspace/code/greedy/src/tools/table/tabtools.py:44: DtypeWarning: Columns (25) have mixed types. Specify dtype option on import or set low_memory=False.
+  self.data = pd.read_csv(file_path)
+/mnt/workspace/nas/chenguoxin.cgx/api/workspace/code/greedy/src/tools/table/tabtools.py:44: DtypeWarning: Columns (25) have mixed types. Specify dtype option on import or set low_memory=False.
+  self.data = pd.read_csv(file_path)
+/mnt/workspace/nas/chenguoxin.cgx/api/workspace/code/greedy/src/tools/table/tabtools.py:44: DtypeWarning: Columns (25) have mixed types. Specify dtype option on import or set low_memory=False.
+  self.data = pd.read_csv(file_path)
+/mnt/workspace/nas/chenguoxin.cgx/api/workspace/code/greedy/src/tools/table/tabtools.py:44: DtypeWarning: Columns (25) have mixed types. Specify dtype option on import or set low_memory=False.
+  self.data = pd.read_csv(file_path)
+2024/07/02 20:23:17 batch_search_generate.py[line:174] INFO save solutions: 5
+2024/07/02 20:23:17 batch_search_generate.py[line:174] INFO save solutions: 5
+Execute:  26%|██▌       | 26/100 [01:00<02:06,  1.70s/it]/mnt/workspace/nas/chenguoxin.cgx/api/workspace/code/greedy/src/tools/table/tabtools.py:44: DtypeWarning: Columns (25) have mixed types. Specify dtype option on import or set low_memory=False.
+  self.data = pd.read_csv(file_path)
+/mnt/workspace/nas/chenguoxin.cgx/api/workspace/code/greedy/src/tools/table/tabtools.py:44: DtypeWarning: Columns (25) have mixed types. Specify dtype option on import or set low_memory=False.
+  self.data = pd.read_csv(file_path)
+/mnt/workspace/nas/chenguoxin.cgx/api/workspace/code/greedy/src/tools/table/tabtools.py:44: DtypeWarning: Columns (25) have mixed types. Specify dtype option on import or set low_memory=False.
+  self.data = pd.read_csv(file_path)
+/mnt/workspace/nas/chenguoxin.cgx/api/workspace/code/greedy/src/tools/table/tabtools.py:44: DtypeWarning: Columns (25) have mixed types. Specify dtype option on import or set low_memory=False.
+  self.data = pd.read_csv(file_path)
+/mnt/workspace/nas/chenguoxin.cgx/api/workspace/code/greedy/src/tools/table/tabtools.py:44: DtypeWarning: Columns (25) have mixed types. Specify dtype option on import or set low_memory=False.
+  self.data = pd.read_csv(file_path)
+/mnt/workspace/nas/chenguoxin.cgx/api/workspace/code/greedy/src/tools/table/tabtools.py:44: DtypeWarning: Columns (25) have mixed types. Specify dtype option on import or set low_memory=False.
+  self.data = pd.read_csv(file_path)
+/mnt/workspace/nas/chenguoxin.cgx/api/workspace/code/greedy/src/tools/table/tabtools.py:44: DtypeWarning: Columns (25) have mixed types. Specify dtype option on import or set low_memory=False.
+  self.data = pd.read_csv(file_path)
+/mnt/workspace/nas/chenguoxin.cgx/api/workspace/code/greedy/src/tools/table/tabtools.py:44: DtypeWarning: Columns (25) have mixed types. Specify dtype option on import or set low_memory=False.
+  self.data = pd.read_csv(file_path)
+/mnt/workspace/nas/chenguoxin.cgx/api/workspace/code/greedy/src/tools/table/tabtools.py:44: DtypeWarning: Columns (25) have mixed types. Specify dtype option on import or set low_memory=False.
+  self.data = pd.read_csv(file_path)
+/mnt/workspace/nas/chenguoxin.cgx/api/workspace/code/greedy/src/tools/table/tabtools.py:44: DtypeWarning: Columns (25) have mixed types. Specify dtype option on import or set low_memory=False.
+  self.data = pd.read_csv(file_path)
+/mnt/workspace/nas/chenguoxin.cgx/api/workspace/code/greedy/src/tools/table/tabtools.py:44: DtypeWarning: Columns (25) have mixed types. Specify dtype option on import or set low_memory=False.
+  self.data = pd.read_csv(file_path)
+/mnt/workspace/nas/chenguoxin.cgx/api/workspace/code/greedy/src/tools/table/tabtools.py:44: DtypeWarning: Columns (25) have mixed types. Specify dtype option on import or set low_memory=False.
+  self.data = pd.read_csv(file_path)
+/mnt/workspace/nas/chenguoxin.cgx/api/workspace/code/greedy/src/tools/table/tabtools.py:44: DtypeWarning: Columns (25) have mixed types. Specify dtype option on import or set low_memory=False.
+  self.data = pd.read_csv(file_path)
+/mnt/workspace/nas/chenguoxin.cgx/api/workspace/code/greedy/src/tools/table/tabtools.py:44: DtypeWarning: Columns (25) have mixed types. Specify dtype option on import or set low_memory=False.
+  self.data = pd.read_csv(file_path)
+2024/07/02 20:23:32 batch_search_generate.py[line:174] INFO save solutions: 5
+2024/07/02 20:23:32 batch_search_generate.py[line:174] INFO save solutions: 5
+2024/07/02 20:23:32 batch_search_generate.py[line:174] INFO save solutions: 5
+Execute:  42%|████▏     | 42/100 [01:15<01:14,  1.29s/it]/mnt/workspace/nas/chenguoxin.cgx/api/workspace/code/greedy/src/tools/table/tabtools.py:44: DtypeWarning: Columns (25) have mixed types. Specify dtype option on import or set low_memory=False.
+  self.data = pd.read_csv(file_path)
+/mnt/workspace/nas/chenguoxin.cgx/api/workspace/code/greedy/src/tools/table/tabtools.py:44: DtypeWarning: Columns (25) have mixed types. Specify dtype option on import or set low_memory=False.
+  self.data = pd.read_csv(file_path)
+/mnt/workspace/nas/chenguoxin.cgx/api/workspace/code/greedy/src/tools/table/tabtools.py:44: DtypeWarning: Columns (25) have mixed types. Specify dtype option on import or set low_memory=False.
+  self.data = pd.read_csv(file_path)
+/mnt/workspace/nas/chenguoxin.cgx/api/workspace/code/greedy/src/tools/table/tabtools.py:44: DtypeWarning: Columns (25) have mixed types. Specify dtype option on import or set low_memory=False.
+  self.data = pd.read_csv(file_path)
+/mnt/workspace/nas/chenguoxin.cgx/api/workspace/code/greedy/src/tools/table/tabtools.py:44: DtypeWarning: Columns (25) have mixed types. Specify dtype option on import or set low_memory=False.
+  self.data = pd.read_csv(file_path)
+/mnt/workspace/nas/chenguoxin.cgx/api/workspace/code/greedy/src/tools/table/tabtools.py:44: DtypeWarning: Columns (25) have mixed types. Specify dtype option on import or set low_memory=False.
+  self.data = pd.read_csv(file_path)
+/mnt/workspace/nas/chenguoxin.cgx/api/workspace/code/greedy/src/tools/table/tabtools.py:44: DtypeWarning: Columns (25) have mixed types. Specify dtype option on import or set low_memory=False.
+  self.data = pd.read_csv(file_path)
+/mnt/workspace/nas/chenguoxin.cgx/api/workspace/code/greedy/src/tools/table/tabtools.py:44: DtypeWarning: Columns (25) have mixed types. Specify dtype option on import or set low_memory=False.
+  self.data = pd.read_csv(file_path)
+/mnt/workspace/nas/chenguoxin.cgx/api/workspace/code/greedy/src/tools/table/tabtools.py:44: DtypeWarning: Columns (25) have mixed types. Specify dtype option on import or set low_memory=False.
+  self.data = pd.read_csv(file_path)
+/mnt/workspace/nas/chenguoxin.cgx/api/workspace/code/greedy/src/tools/table/tabtools.py:44: DtypeWarning: Columns (25) have mixed types. Specify dtype option on import or set low_memory=False.
+  self.data = pd.read_csv(file_path)
+2024/07/02 20:23:47 batch_search_generate.py[line:174] INFO save solutions: 5
+2024/07/02 20:23:47 batch_search_generate.py[line:174] INFO save solutions: 5
+Execute:  53%|█████▎    | 53/100 [01:30<01:01,  1.32s/it]/mnt/workspace/nas/chenguoxin.cgx/api/workspace/code/greedy/src/tools/table/tabtools.py:44: DtypeWarning: Columns (25) have mixed types. Specify dtype option on import or set low_memory=False.
+  self.data = pd.read_csv(file_path)
+/mnt/workspace/nas/chenguoxin.cgx/api/workspace/code/greedy/src/tools/table/tabtools.py:44: DtypeWarning: Columns (25) have mixed types. Specify dtype option on import or set low_memory=False.
+  self.data = pd.read_csv(file_path)
+/mnt/workspace/nas/chenguoxin.cgx/api/workspace/code/greedy/src/tools/table/tabtools.py:44: DtypeWarning: Columns (25) have mixed types. Specify dtype option on import or set low_memory=False.
+  self.data = pd.read_csv(file_path)
+/mnt/workspace/nas/chenguoxin.cgx/api/workspace/code/greedy/src/tools/table/tabtools.py:44: DtypeWarning: Columns (25) have mixed types. Specify dtype option on import or set low_memory=False.
+  self.data = pd.read_csv(file_path)
+/mnt/workspace/nas/chenguoxin.cgx/api/workspace/code/greedy/src/tools/table/tabtools.py:44: DtypeWarning: Columns (25) have mixed types. Specify dtype option on import or set low_memory=False.
+  self.data = pd.read_csv(file_path)
+/mnt/workspace/nas/chenguoxin.cgx/api/workspace/code/greedy/src/tools/table/tabtools.py:44: DtypeWarning: Columns (25) have mixed types. Specify dtype option on import or set low_memory=False.
+  self.data = pd.read_csv(file_path)
+/mnt/workspace/nas/chenguoxin.cgx/api/workspace/code/greedy/src/tools/table/tabtools.py:44: DtypeWarning: Columns (25) have mixed types. Specify dtype option on import or set low_memory=False.
+  self.data = pd.read_csv(file_path)
+/mnt/workspace/nas/chenguoxin.cgx/api/workspace/code/greedy/src/tools/table/tabtools.py:44: DtypeWarning: Columns (25) have mixed types. Specify dtype option on import or set low_memory=False.
+  self.data = pd.read_csv(file_path)
+/mnt/workspace/nas/chenguoxin.cgx/api/workspace/code/greedy/src/tools/table/tabtools.py:44: DtypeWarning: Columns (25) have mixed types. Specify dtype option on import or set low_memory=False.
+  self.data = pd.read_csv(file_path)
+/mnt/workspace/nas/chenguoxin.cgx/api/workspace/code/greedy/src/tools/table/tabtools.py:44: DtypeWarning: Columns (25) have mixed types. Specify dtype option on import or set low_memory=False.
+  self.data = pd.read_csv(file_path)
+/mnt/workspace/nas/chenguoxin.cgx/api/workspace/code/greedy/src/tools/table/tabtools.py:44: DtypeWarning: Columns (25) have mixed types. Specify dtype option on import or set low_memory=False.
+  self.data = pd.read_csv(file_path)
+/mnt/workspace/nas/chenguoxin.cgx/api/workspace/code/greedy/src/tools/table/tabtools.py:44: DtypeWarning: Columns (25) have mixed types. Specify dtype option on import or set low_memory=False.
+  self.data = pd.read_csv(file_path)
+/mnt/workspace/nas/chenguoxin.cgx/api/workspace/code/greedy/src/tools/table/tabtools.py:44: DtypeWarning: Columns (25) have mixed types. Specify dtype option on import or set low_memory=False.
+  self.data = pd.read_csv(file_path)
+/mnt/workspace/nas/chenguoxin.cgx/api/workspace/code/greedy/src/tools/table/tabtools.py:44: DtypeWarning: Columns (25) have mixed types. Specify dtype option on import or set low_memory=False.
+  self.data = pd.read_csv(file_path)
+2024/07/02 20:24:02 batch_search_generate.py[line:174] INFO save solutions: 5
+2024/07/02 20:24:02 batch_search_generate.py[line:174] INFO save solutions: 5
+2024/07/02 20:24:02 batch_search_generate.py[line:174] INFO save solutions: 5
+Execute:  66%|██████▌   | 66/100 [01:45<00:42,  1.26s/it]/mnt/workspace/nas/chenguoxin.cgx/api/workspace/code/greedy/src/tools/table/tabtools.py:44: DtypeWarning: Columns (25) have mixed types. Specify dtype option on import or set low_memory=False.
+  self.data = pd.read_csv(file_path)
+/mnt/workspace/nas/chenguoxin.cgx/api/workspace/code/greedy/src/tools/table/tabtools.py:44: DtypeWarning: Columns (25) have mixed types. Specify dtype option on import or set low_memory=False.
+  self.data = pd.read_csv(file_path)
+/mnt/workspace/nas/chenguoxin.cgx/api/workspace/code/greedy/src/tools/table/tabtools.py:44: DtypeWarning: Columns (25) have mixed types. Specify dtype option on import or set low_memory=False.
+  self.data = pd.read_csv(file_path)
+/mnt/workspace/nas/chenguoxin.cgx/api/workspace/code/greedy/src/tools/table/tabtools.py:44: DtypeWarning: Columns (25) have mixed types. Specify dtype option on import or set low_memory=False.
+  self.data = pd.read_csv(file_path)
+/mnt/workspace/nas/chenguoxin.cgx/api/workspace/code/greedy/src/tools/table/tabtools.py:44: DtypeWarning: Columns (25) have mixed types. Specify dtype option on import or set low_memory=False.
+  self.data = pd.read_csv(file_path)
+/mnt/workspace/nas/chenguoxin.cgx/api/workspace/code/greedy/src/tools/table/tabtools.py:44: DtypeWarning: Columns (25) have mixed types. Specify dtype option on import or set low_memory=False.
+  self.data = pd.read_csv(file_path)
+/mnt/workspace/nas/chenguoxin.cgx/api/workspace/code/greedy/src/tools/table/tabtools.py:44: DtypeWarning: Columns (25) have mixed types. Specify dtype option on import or set low_memory=False.
+  self.data = pd.read_csv(file_path)
+/mnt/workspace/nas/chenguoxin.cgx/api/workspace/code/greedy/src/tools/table/tabtools.py:44: DtypeWarning: Columns (25) have mixed types. Specify dtype option on import or set low_memory=False.
+  self.data = pd.read_csv(file_path)
+/mnt/workspace/nas/chenguoxin.cgx/api/workspace/code/greedy/src/tools/table/tabtools.py:44: DtypeWarning: Columns (25) have mixed types. Specify dtype option on import or set low_memory=False.
+  self.data = pd.read_csv(file_path)
+/mnt/workspace/nas/chenguoxin.cgx/api/workspace/code/greedy/src/tools/table/tabtools.py:44: DtypeWarning: Columns (25) have mixed types. Specify dtype option on import or set low_memory=False.
+  self.data = pd.read_csv(file_path)
+2024/07/02 20:24:17 batch_search_generate.py[line:174] INFO save solutions: 5
+2024/07/02 20:24:17 batch_search_generate.py[line:174] INFO save solutions: 5
+Execute:  77%|███████▋  | 77/100 [02:00<00:29,  1.29s/it]/mnt/workspace/nas/chenguoxin.cgx/api/workspace/code/greedy/src/tools/table/tabtools.py:44: DtypeWarning: Columns (25) have mixed types. Specify dtype option on import or set low_memory=False.
+  self.data = pd.read_csv(file_path)
+/mnt/workspace/nas/chenguoxin.cgx/api/workspace/code/greedy/src/tools/table/tabtools.py:44: DtypeWarning: Columns (25) have mixed types. Specify dtype option on import or set low_memory=False.
+  self.data = pd.read_csv(file_path)
+/mnt/workspace/nas/chenguoxin.cgx/api/workspace/code/greedy/src/tools/table/tabtools.py:44: DtypeWarning: Columns (25) have mixed types. Specify dtype option on import or set low_memory=False.
+  self.data = pd.read_csv(file_path)
+/mnt/workspace/nas/chenguoxin.cgx/api/workspace/code/greedy/src/tools/table/tabtools.py:44: DtypeWarning: Columns (25) have mixed types. Specify dtype option on import or set low_memory=False.
+  self.data = pd.read_csv(file_path)
+/mnt/workspace/nas/chenguoxin.cgx/api/workspace/code/greedy/src/tools/table/tabtools.py:44: DtypeWarning: Columns (25) have mixed types. Specify dtype option on import or set low_memory=False.
+  self.data = pd.read_csv(file_path)
+/mnt/workspace/nas/chenguoxin.cgx/api/workspace/code/greedy/src/tools/table/tabtools.py:44: DtypeWarning: Columns (25) have mixed types. Specify dtype option on import or set low_memory=False.
+  self.data = pd.read_csv(file_path)
+/mnt/workspace/nas/chenguoxin.cgx/api/workspace/code/greedy/src/tools/table/tabtools.py:44: DtypeWarning: Columns (25) have mixed types. Specify dtype option on import or set low_memory=False.
+  self.data = pd.read_csv(file_path)
+/mnt/workspace/nas/chenguoxin.cgx/api/workspace/code/greedy/src/tools/table/tabtools.py:44: DtypeWarning: Columns (25) have mixed types. Specify dtype option on import or set low_memory=False.
+  self.data = pd.read_csv(file_path)
+/mnt/workspace/nas/chenguoxin.cgx/api/workspace/code/greedy/src/tools/table/tabtools.py:44: DtypeWarning: Columns (25) have mixed types. Specify dtype option on import or set low_memory=False.
+  self.data = pd.read_csv(file_path)
+/mnt/workspace/nas/chenguoxin.cgx/api/workspace/code/greedy/src/tools/table/tabtools.py:44: DtypeWarning: Columns (25) have mixed types. Specify dtype option on import or set low_memory=False.
+  self.data = pd.read_csv(file_path)
+/mnt/workspace/nas/chenguoxin.cgx/api/workspace/code/greedy/src/tools/table/tabtools.py:44: DtypeWarning: Columns (25) have mixed types. Specify dtype option on import or set low_memory=False.
+  self.data = pd.read_csv(file_path)
+/mnt/workspace/nas/chenguoxin.cgx/api/workspace/code/greedy/src/tools/table/tabtools.py:44: DtypeWarning: Columns (25) have mixed types. Specify dtype option on import or set low_memory=False.
+  self.data = pd.read_csv(file_path)
+/mnt/workspace/nas/chenguoxin.cgx/api/workspace/code/greedy/src/tools/table/tabtools.py:44: DtypeWarning: Columns (25) have mixed types. Specify dtype option on import or set low_memory=False.
+  self.data = pd.read_csv(file_path)
+/mnt/workspace/nas/chenguoxin.cgx/api/workspace/code/greedy/src/tools/table/tabtools.py:44: DtypeWarning: Columns (25) have mixed types. Specify dtype option on import or set low_memory=False.
+  self.data = pd.read_csv(file_path)
+/mnt/workspace/nas/chenguoxin.cgx/api/workspace/code/greedy/src/tools/table/tabtools.py:44: DtypeWarning: Columns (25) have mixed types. Specify dtype option on import or set low_memory=False.
+  self.data = pd.read_csv(file_path)
+/mnt/workspace/nas/chenguoxin.cgx/api/workspace/code/greedy/src/tools/table/tabtools.py:44: DtypeWarning: Columns (25) have mixed types. Specify dtype option on import or set low_memory=False.
+  self.data = pd.read_csv(file_path)
+2024/07/02 20:24:32 batch_search_generate.py[line:174] INFO save solutions: 5
+2024/07/02 20:24:32 batch_search_generate.py[line:174] INFO save solutions: 5
+2024/07/02 20:24:32 batch_search_generate.py[line:174] INFO save solutions: 5
+Execute:  90%|█████████ | 90/100 [02:15<00:12,  1.24s/it]/mnt/workspace/nas/chenguoxin.cgx/api/workspace/code/greedy/src/tools/table/tabtools.py:44: DtypeWarning: Columns (25) have mixed types. Specify dtype option on import or set low_memory=False.
+  self.data = pd.read_csv(file_path)
+/mnt/workspace/nas/chenguoxin.cgx/api/workspace/code/greedy/src/tools/table/tabtools.py:44: DtypeWarning: Columns (25) have mixed types. Specify dtype option on import or set low_memory=False.
+  self.data = pd.read_csv(file_path)
+2024/07/02 20:24:42 batch_search_generate.py[line:247] INFO all question have been sampled.
+2024/07/02 20:24:47 batch_search_generate.py[line:174] INFO save solutions: 5
+2024/07/02 20:24:47 batch_search_generate.py[line:174] INFO save solutions: 5
+Execute: 100%|██████████| 100/100 [02:30<00:00,  1.31s/it]Execute: 100%|██████████| 100/100 [02:30<00:00,  1.50s/it]
+2024/07/02 20:24:47 batch_search_generate.py[line:190] INFO stop progress_bar
+2024/07/02 20:24:47 batch_search_generate.py[line:199] INFO save surplus solutions: 0
+2024/07/02 20:26:17 batch_search_generate.py[line:135] INFO finish llm_process
+2024/07/02 20:26:21 log_utils.py[line:35] INFO seed:42
+2024/07/02 20:26:21 log_utils.py[line:35] INFO verbose:False
+2024/07/02 20:26:21 log_utils.py[line:35] INFO process_num:1
+2024/07/02 20:26:21 log_utils.py[line:35] INFO path:/mnt/workspace/nas/chenguoxin.cgx/api/datasets/ToolQA
+2024/07/02 20:26:21 log_utils.py[line:35] INFO num_epoch:1
+2024/07/02 20:26:21 log_utils.py[line:35] INFO tool_url:http://127.0.0.1:5010/toolqa
+2024/07/02 20:26:21 log_utils.py[line:35] INFO checkpoint_dir:/mnt/workspace/nas/chenguoxin.cgx/api/workspace/output_dir/sft/Meta-Llama-3-8B/easy/run/20240620_001056/checkpoint-120
+2024/07/02 20:26:21 log_utils.py[line:35] INFO temperature:0.0
+2024/07/02 20:26:21 log_utils.py[line:35] INFO top_k:-1
+2024/07/02 20:26:21 log_utils.py[line:35] INFO top_p:1.0
+2024/07/02 20:26:21 log_utils.py[line:35] INFO scratchpad_length:1024
+2024/07/02 20:26:21 log_utils.py[line:35] INFO api_kernel_version:0
+2024/07/02 20:26:21 log_utils.py[line:35] INFO n_generate_sample:1
+2024/07/02 20:26:21 log_utils.py[line:35] INFO max_iter:15
+2024/07/02 20:26:21 log_utils.py[line:35] INFO max_depth:15
+2024/07/02 20:26:21 log_utils.py[line:35] INFO positive_reward:1.0
+2024/07/02 20:26:21 log_utils.py[line:35] INFO negative_reward:-1.0
+2024/07/02 20:26:21 log_utils.py[line:35] INFO max_new_tokens:1024
+2024/07/02 20:26:21 log_utils.py[line:35] INFO max_load_db:5
+2024/07/02 20:26:21 log_utils.py[line:35] INFO debug_num:-1
+2024/07/02 20:26:21 log_utils.py[line:35] INFO datapath:/mnt/workspace/nas/chenguoxin.cgx/api/workspace/datasets/test_data
+2024/07/02 20:26:21 log_utils.py[line:35] INFO task:toolqa_easy
+2024/07/02 20:26:21 log_utils.py[line:35] INFO dataname:coffee-easy
+2024/07/02 20:26:21 log_utils.py[line:35] INFO output_dir:/mnt/workspace/nas/chenguoxin.cgx/api/workspace/output_dir/greedy/run/toolqa_easy/20240620_001056/checkpoint-120
+2024/07/02 20:26:21 log_utils.py[line:35] INFO num_examples:2
+2024/07/02 20:26:21 log_utils.py[line:35] INFO sft_prompt:True
+2024/07/02 20:26:21 log_utils.py[line:35] INFO model_name:20240620_001056
+2024/07/02 20:26:21 log_utils.py[line:35] INFO ckpt:checkpoint-120
+2024/07/02 20:26:21 log_utils.py[line:35] INFO timestamp:20240702_202621
+2024/07/02 20:26:21 log_utils.py[line:35] INFO prompt_split_len:8000
+Execute:   0%|          | 0/100 [00:00<?, ?it/s]INFO 07-02 20:26:21 llm_engine.py:161] Initializing an LLM engine (v0.4.3) with config: model='/mnt/workspace/nas/chenguoxin.cgx/api/workspace/output_dir/sft/Meta-Llama-3-8B/easy/run/20240620_001056/checkpoint-120', speculative_config=None, tokenizer='/mnt/workspace/nas/chenguoxin.cgx/api/workspace/output_dir/sft/Meta-Llama-3-8B/easy/run/20240620_001056/checkpoint-120', skip_tokenizer_init=False, tokenizer_mode=auto, revision=None, rope_scaling=None, tokenizer_revision=None, trust_remote_code=False, dtype=torch.bfloat16, max_seq_len=8192, download_dir=None, load_format=LoadFormat.AUTO, tensor_parallel_size=1, disable_custom_all_reduce=False, quantization=None, enforce_eager=False, kv_cache_dtype=auto, quantization_param_path=None, device_config=cuda, decoding_config=DecodingConfig(guided_decoding_backend='outlines'), seed=42, served_model_name=/mnt/workspace/nas/chenguoxin.cgx/api/workspace/output_dir/sft/Meta-Llama-3-8B/easy/run/20240620_001056/checkpoint-120)
+Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+INFO 07-02 20:26:25 model_runner.py:146] Loading model weights took 14.9595 GB
+INFO 07-02 20:26:26 gpu_executor.py:83] # GPU blocks: 27895, # CPU blocks: 4096
+INFO 07-02 20:26:29 model_runner.py:854] Capturing the model for CUDA graphs. This may lead to unexpected consequences if the model is not static. To run the model in eager mode, set 'enforce_eager=True' or use '--enforce-eager' in the CLI.
+INFO 07-02 20:26:29 model_runner.py:858] CUDA graphs can take additional 1~3 GiB memory per GPU. If you are running out of memory, consider decreasing `gpu_memory_utilization` or enforcing eager mode. You can also reduce the `max_num_seqs` as needed to decrease memory usage.
+INFO 07-02 20:26:32 model_runner.py:924] Graph capturing finished in 3 secs.
+Execute:   0%|          | 0/100 [00:15<?, ?it/s]2024/07/02 20:26:51 batch_search_generate.py[line:174] INFO save solutions: 5
+2024/07/02 20:26:51 batch_search_generate.py[line:174] INFO save solutions: 5
+2024/07/02 20:26:51 batch_search_generate.py[line:174] INFO save solutions: 5
+2024/07/02 20:26:51 batch_search_generate.py[line:174] INFO save solutions: 5
+Execute:  20%|██        | 20/100 [00:30<01:00,  1.33it/s]2024/07/02 20:27:06 batch_search_generate.py[line:174] INFO save solutions: 5
+2024/07/02 20:27:06 batch_search_generate.py[line:174] INFO save solutions: 5
+2024/07/02 20:27:06 batch_search_generate.py[line:174] INFO save solutions: 5
+2024/07/02 20:27:06 batch_search_generate.py[line:174] INFO save solutions: 5
+Execute:  40%|████      | 40/100 [00:45<00:45,  1.33it/s]2024/07/02 20:27:21 batch_search_generate.py[line:174] INFO save solutions: 5
+2024/07/02 20:27:21 batch_search_generate.py[line:174] INFO save solutions: 5
+2024/07/02 20:27:21 batch_search_generate.py[line:174] INFO save solutions: 5
+2024/07/02 20:27:21 batch_search_generate.py[line:174] INFO save solutions: 5
+Execute:  60%|██████    | 60/100 [01:00<00:30,  1.33it/s]2024/07/02 20:27:36 batch_search_generate.py[line:174] INFO save solutions: 5
+2024/07/02 20:27:36 batch_search_generate.py[line:174] INFO save solutions: 5
+Execute:  70%|███████   | 70/100 [01:15<00:28,  1.07it/s]2024/07/02 20:27:51 batch_search_generate.py[line:174] INFO save solutions: 5
+2024/07/02 20:27:51 batch_search_generate.py[line:174] INFO save solutions: 5
+Execute:  84%|████████▍ | 84/100 [01:30<00:15,  1.02it/s]2024/07/02 20:28:03 batch_search_generate.py[line:247] INFO all question have been sampled.
+2024/07/02 20:28:06 batch_search_generate.py[line:174] INFO save solutions: 5
+2024/07/02 20:28:06 batch_search_generate.py[line:174] INFO save solutions: 5
+2024/07/02 20:28:06 batch_search_generate.py[line:174] INFO save solutions: 5
+2024/07/02 20:28:06 batch_search_generate.py[line:174] INFO save solutions: 5
+Execute: 100%|██████████| 100/100 [01:45<00:00,  1.03it/s]Execute: 100%|██████████| 100/100 [01:45<00:00,  1.05s/it]
+2024/07/02 20:28:06 batch_search_generate.py[line:190] INFO stop progress_bar
+2024/07/02 20:28:06 batch_search_generate.py[line:199] INFO save surplus solutions: 0
+2024/07/02 20:30:21 batch_search_generate.py[line:135] INFO finish llm_process
+2024/07/02 20:30:25 log_utils.py[line:35] INFO seed:42
+2024/07/02 20:30:25 log_utils.py[line:35] INFO verbose:False
+2024/07/02 20:30:25 log_utils.py[line:35] INFO process_num:1
+2024/07/02 20:30:25 log_utils.py[line:35] INFO path:/mnt/workspace/nas/chenguoxin.cgx/api/datasets/ToolQA
+2024/07/02 20:30:25 log_utils.py[line:35] INFO num_epoch:1
+2024/07/02 20:30:25 log_utils.py[line:35] INFO tool_url:http://127.0.0.1:5010/toolqa
+2024/07/02 20:30:25 log_utils.py[line:35] INFO checkpoint_dir:/mnt/workspace/nas/chenguoxin.cgx/api/workspace/output_dir/sft/Meta-Llama-3-8B/easy/run/20240620_001056/checkpoint-120
+2024/07/02 20:30:25 log_utils.py[line:35] INFO temperature:0.0
+2024/07/02 20:30:25 log_utils.py[line:35] INFO top_k:-1
+2024/07/02 20:30:25 log_utils.py[line:35] INFO top_p:1.0
+2024/07/02 20:30:25 log_utils.py[line:35] INFO scratchpad_length:1024
+2024/07/02 20:30:25 log_utils.py[line:35] INFO api_kernel_version:0
+2024/07/02 20:30:25 log_utils.py[line:35] INFO n_generate_sample:1
+2024/07/02 20:30:25 log_utils.py[line:35] INFO max_iter:15
+2024/07/02 20:30:25 log_utils.py[line:35] INFO max_depth:15
+2024/07/02 20:30:25 log_utils.py[line:35] INFO positive_reward:1.0
+2024/07/02 20:30:25 log_utils.py[line:35] INFO negative_reward:-1.0
+2024/07/02 20:30:25 log_utils.py[line:35] INFO max_new_tokens:1024
+2024/07/02 20:30:25 log_utils.py[line:35] INFO max_load_db:5
+2024/07/02 20:30:25 log_utils.py[line:35] INFO debug_num:-1
+2024/07/02 20:30:25 log_utils.py[line:35] INFO datapath:/mnt/workspace/nas/chenguoxin.cgx/api/workspace/datasets/test_data
+2024/07/02 20:30:25 log_utils.py[line:35] INFO task:toolqa_easy
+2024/07/02 20:30:25 log_utils.py[line:35] INFO dataname:dblp-easy
+2024/07/02 20:30:25 log_utils.py[line:35] INFO output_dir:/mnt/workspace/nas/chenguoxin.cgx/api/workspace/output_dir/greedy/run/toolqa_easy/20240620_001056/checkpoint-120
+2024/07/02 20:30:25 log_utils.py[line:35] INFO num_examples:2
+2024/07/02 20:30:25 log_utils.py[line:35] INFO sft_prompt:True
+2024/07/02 20:30:25 log_utils.py[line:35] INFO model_name:20240620_001056
+2024/07/02 20:30:25 log_utils.py[line:35] INFO ckpt:checkpoint-120
+2024/07/02 20:30:25 log_utils.py[line:35] INFO timestamp:20240702_203024
+2024/07/02 20:30:25 log_utils.py[line:35] INFO prompt_split_len:8000
+Execute:   0%|          | 0/100 [00:00<?, ?it/s]INFO 07-02 20:30:25 llm_engine.py:161] Initializing an LLM engine (v0.4.3) with config: model='/mnt/workspace/nas/chenguoxin.cgx/api/workspace/output_dir/sft/Meta-Llama-3-8B/easy/run/20240620_001056/checkpoint-120', speculative_config=None, tokenizer='/mnt/workspace/nas/chenguoxin.cgx/api/workspace/output_dir/sft/Meta-Llama-3-8B/easy/run/20240620_001056/checkpoint-120', skip_tokenizer_init=False, tokenizer_mode=auto, revision=None, rope_scaling=None, tokenizer_revision=None, trust_remote_code=False, dtype=torch.bfloat16, max_seq_len=8192, download_dir=None, load_format=LoadFormat.AUTO, tensor_parallel_size=1, disable_custom_all_reduce=False, quantization=None, enforce_eager=False, kv_cache_dtype=auto, quantization_param_path=None, device_config=cuda, decoding_config=DecodingConfig(guided_decoding_backend='outlines'), seed=42, served_model_name=/mnt/workspace/nas/chenguoxin.cgx/api/workspace/output_dir/sft/Meta-Llama-3-8B/easy/run/20240620_001056/checkpoint-120)
+Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+INFO 07-02 20:30:29 model_runner.py:146] Loading model weights took 14.9595 GB
+INFO 07-02 20:30:30 gpu_executor.py:83] # GPU blocks: 27895, # CPU blocks: 4096
+INFO 07-02 20:30:32 model_runner.py:854] Capturing the model for CUDA graphs. This may lead to unexpected consequences if the model is not static. To run the model in eager mode, set 'enforce_eager=True' or use '--enforce-eager' in the CLI.
+INFO 07-02 20:30:32 model_runner.py:858] CUDA graphs can take additional 1~3 GiB memory per GPU. If you are running out of memory, consider decreasing `gpu_memory_utilization` or enforcing eager mode. You can also reduce the `max_num_seqs` as needed to decrease memory usage.
+INFO 07-02 20:30:36 model_runner.py:924] Graph capturing finished in 3 secs.
+Execute:   0%|          | 0/100 [00:15<?, ?it/s]2024/07/02 20:30:55 batch_search_generate.py[line:174] INFO save solutions: 5
+2024/07/02 20:30:55 batch_search_generate.py[line:174] INFO save solutions: 5
+2024/07/02 20:30:55 batch_search_generate.py[line:174] INFO save solutions: 5
+Execute:  15%|█▌        | 15/100 [00:30<01:25,  1.00s/it]2024/07/02 20:31:10 batch_search_generate.py[line:174] INFO save solutions: 5
+Execute:  23%|██▎       | 23/100 [00:45<01:46,  1.38s/it]2024/07/02 20:31:25 batch_search_generate.py[line:174] INFO save solutions: 5
+2024/07/02 20:31:25 batch_search_generate.py[line:174] INFO save solutions: 5
+Execute:  30%|███       | 30/100 [01:00<01:55,  1.65s/it]2024/07/02 20:31:40 batch_search_generate.py[line:174] INFO save solutions: 5
+2024/07/02 20:31:40 batch_search_generate.py[line:174] INFO save solutions: 5
+Execute:  40%|████      | 40/100 [01:15<01:35,  1.59s/it]2024/07/02 20:31:55 batch_search_generate.py[line:174] INFO save solutions: 5
+2024/07/02 20:31:55 batch_search_generate.py[line:174] INFO save solutions: 5
+2024/07/02 20:31:55 batch_search_generate.py[line:174] INFO save solutions: 5
+2024/07/02 20:31:55 batch_search_generate.py[line:174] INFO save solutions: 5
+2024/07/02 20:31:55 batch_search_generate.py[line:174] INFO save solutions: 5
+Execute:  65%|██████▌   | 65/100 [01:30<00:34,  1.00it/s]2024/07/02 20:32:10 batch_search_generate.py[line:174] INFO save solutions: 5
+2024/07/02 20:32:10 batch_search_generate.py[line:174] INFO save solutions: 5
+2024/07/02 20:32:10 batch_search_generate.py[line:174] INFO save solutions: 5
+Execute:  82%|████████▏ | 82/100 [01:45<00:17,  1.05it/s]2024/07/02 20:32:25 batch_search_generate.py[line:174] INFO save solutions: 5
+2024/07/02 20:32:25 batch_search_generate.py[line:174] INFO save solutions: 5
+2024/07/02 20:32:25 batch_search_generate.py[line:174] INFO save solutions: 5
+Execute:  97%|█████████▋| 97/100 [02:00<00:02,  1.03it/s]2024/07/02 20:32:34 batch_search_generate.py[line:247] INFO all question have been sampled.
+2024/07/02 20:32:40 batch_search_generate.py[line:174] INFO save solutions: 5
+Execute: 100%|██████████| 100/100 [02:15<00:00,  1.30s/it]Execute: 100%|██████████| 100/100 [02:15<00:00,  1.35s/it]
+2024/07/02 20:32:40 batch_search_generate.py[line:190] INFO stop progress_bar
+2024/07/02 20:32:40 batch_search_generate.py[line:199] INFO save surplus solutions: 0
+2024/07/02 20:34:25 batch_search_generate.py[line:135] INFO finish llm_process
+2024/07/02 20:34:28 log_utils.py[line:35] INFO seed:42
+2024/07/02 20:34:28 log_utils.py[line:35] INFO verbose:False
+2024/07/02 20:34:28 log_utils.py[line:35] INFO process_num:1
+2024/07/02 20:34:28 log_utils.py[line:35] INFO path:/mnt/workspace/nas/chenguoxin.cgx/api/datasets/ToolQA
+2024/07/02 20:34:28 log_utils.py[line:35] INFO num_epoch:1
+2024/07/02 20:34:28 log_utils.py[line:35] INFO tool_url:http://127.0.0.1:5010/toolqa
+2024/07/02 20:34:28 log_utils.py[line:35] INFO checkpoint_dir:/mnt/workspace/nas/chenguoxin.cgx/api/workspace/output_dir/sft/Meta-Llama-3-8B/easy/run/20240620_001056/checkpoint-120
+2024/07/02 20:34:28 log_utils.py[line:35] INFO temperature:0.0
+2024/07/02 20:34:28 log_utils.py[line:35] INFO top_k:-1
+2024/07/02 20:34:28 log_utils.py[line:35] INFO top_p:1.0
+2024/07/02 20:34:28 log_utils.py[line:35] INFO scratchpad_length:1024
+2024/07/02 20:34:28 log_utils.py[line:35] INFO api_kernel_version:0
+2024/07/02 20:34:28 log_utils.py[line:35] INFO n_generate_sample:1
+2024/07/02 20:34:28 log_utils.py[line:35] INFO max_iter:15
+2024/07/02 20:34:28 log_utils.py[line:35] INFO max_depth:15
+2024/07/02 20:34:28 log_utils.py[line:35] INFO positive_reward:1.0
+2024/07/02 20:34:28 log_utils.py[line:35] INFO negative_reward:-1.0
+2024/07/02 20:34:28 log_utils.py[line:35] INFO max_new_tokens:1024
+2024/07/02 20:34:28 log_utils.py[line:35] INFO max_load_db:5
+2024/07/02 20:34:28 log_utils.py[line:35] INFO debug_num:-1
+2024/07/02 20:34:28 log_utils.py[line:35] INFO datapath:/mnt/workspace/nas/chenguoxin.cgx/api/workspace/datasets/test_data
+2024/07/02 20:34:28 log_utils.py[line:35] INFO task:toolqa_easy
+2024/07/02 20:34:28 log_utils.py[line:35] INFO dataname:flights-easy
+2024/07/02 20:34:28 log_utils.py[line:35] INFO output_dir:/mnt/workspace/nas/chenguoxin.cgx/api/workspace/output_dir/greedy/run/toolqa_easy/20240620_001056/checkpoint-120
+2024/07/02 20:34:28 log_utils.py[line:35] INFO num_examples:2
+2024/07/02 20:34:28 log_utils.py[line:35] INFO sft_prompt:True
+2024/07/02 20:34:28 log_utils.py[line:35] INFO model_name:20240620_001056
+2024/07/02 20:34:28 log_utils.py[line:35] INFO ckpt:checkpoint-120
+2024/07/02 20:34:28 log_utils.py[line:35] INFO timestamp:20240702_203428
+2024/07/02 20:34:28 log_utils.py[line:35] INFO prompt_split_len:8000
+Execute:   0%|          | 0/100 [00:00<?, ?it/s]INFO 07-02 20:34:29 llm_engine.py:161] Initializing an LLM engine (v0.4.3) with config: model='/mnt/workspace/nas/chenguoxin.cgx/api/workspace/output_dir/sft/Meta-Llama-3-8B/easy/run/20240620_001056/checkpoint-120', speculative_config=None, tokenizer='/mnt/workspace/nas/chenguoxin.cgx/api/workspace/output_dir/sft/Meta-Llama-3-8B/easy/run/20240620_001056/checkpoint-120', skip_tokenizer_init=False, tokenizer_mode=auto, revision=None, rope_scaling=None, tokenizer_revision=None, trust_remote_code=False, dtype=torch.bfloat16, max_seq_len=8192, download_dir=None, load_format=LoadFormat.AUTO, tensor_parallel_size=1, disable_custom_all_reduce=False, quantization=None, enforce_eager=False, kv_cache_dtype=auto, quantization_param_path=None, device_config=cuda, decoding_config=DecodingConfig(guided_decoding_backend='outlines'), seed=42, served_model_name=/mnt/workspace/nas/chenguoxin.cgx/api/workspace/output_dir/sft/Meta-Llama-3-8B/easy/run/20240620_001056/checkpoint-120)
+Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+INFO 07-02 20:34:33 model_runner.py:146] Loading model weights took 14.9595 GB
+INFO 07-02 20:34:34 gpu_executor.py:83] # GPU blocks: 27895, # CPU blocks: 4096
+INFO 07-02 20:34:37 model_runner.py:854] Capturing the model for CUDA graphs. This may lead to unexpected consequences if the model is not static. To run the model in eager mode, set 'enforce_eager=True' or use '--enforce-eager' in the CLI.
+INFO 07-02 20:34:37 model_runner.py:858] CUDA graphs can take additional 1~3 GiB memory per GPU. If you are running out of memory, consider decreasing `gpu_memory_utilization` or enforcing eager mode. You can also reduce the `max_num_seqs` as needed to decrease memory usage.
+INFO 07-02 20:34:40 model_runner.py:924] Graph capturing finished in 3 secs.
+Execute:   0%|          | 0/100 [00:15<?, ?it/s]Execute:   0%|          | 0/100 [00:30<?, ?it/s]Execute:   0%|          | 0/100 [00:45<?, ?it/s]2024/07/02 20:35:29 batch_search_generate.py[line:174] INFO save solutions: 5
+Execute:   5%|▌         | 5/100 [01:00<04:45,  3.00s/it]Execute:   8%|▊         | 8/100 [01:30<09:33,  6.23s/it]2024/07/02 20:36:14 batch_search_generate.py[line:174] INFO save solutions: 5
+Execute:  10%|█         | 10/100 [01:45<09:55,  6.62s/it]2024/07/02 20:36:44 batch_search_generate.py[line:174] INFO save solutions: 5
+Execute:  15%|█▌        | 15/100 [02:15<08:55,  6.30s/it]2024/07/02 20:37:14 batch_search_generate.py[line:174] INFO save solutions: 5
+Execute:  20%|██        | 20/100 [02:45<08:13,  6.17s/it]Execute:  23%|██▎       | 23/100 [03:15<09:14,  7.20s/it]Execute:  24%|██▍       | 24/100 [03:45<12:23,  9.78s/it]2024/07/02 20:38:29 batch_search_generate.py[line:174] INFO save solutions: 5
+Execute:  27%|██▋       | 27/100 [04:00<10:00,  8.22s/it]2024/07/02 20:38:59 batch_search_generate.py[line:174] INFO save solutions: 5
+Execute:  32%|███▏      | 32/100 [04:30<08:13,  7.25s/it]2024/07/02 20:39:29 batch_search_generate.py[line:133] INFO LLM process is alive.
+2024/07/02 20:39:29 batch_search_generate.py[line:174] INFO save solutions: 5
+Execute:  35%|███▌      | 35/100 [05:00<08:40,  8.00s/it]Execute:  37%|███▋      | 37/100 [05:15<08:17,  7.90s/it]Execute:  38%|███▊      | 38/100 [05:30<09:06,  8.81s/it]2024/07/02 20:40:14 batch_search_generate.py[line:174] INFO save solutions: 5
+Execute:  42%|████▏     | 42/100 [05:45<06:26,  6.67s/it]2024/07/02 20:40:29 batch_search_generate.py[line:133] INFO LLM process is alive.
+2024/07/02 20:40:44 batch_search_generate.py[line:174] INFO save solutions: 5
+Execute:  46%|████▌     | 46/100 [06:15<06:17,  6.99s/it]Execute:  47%|████▋     | 47/100 [06:30<07:00,  7.94s/it]2024/07/02 20:41:14 batch_search_generate.py[line:174] INFO save solutions: 5
+Execute:  50%|█████     | 50/100 [06:45<05:47,  6.95s/it]2024/07/02 20:41:29 batch_search_generate.py[line:133] INFO LLM process is alive.
+Execute:  54%|█████▍    | 54/100 [07:15<05:29,  7.17s/it]2024/07/02 20:42:14 batch_search_generate.py[line:174] INFO save solutions: 5
+Execute:  57%|█████▋    | 57/100 [07:45<05:44,  8.00s/it]2024/07/02 20:42:29 batch_search_generate.py[line:133] INFO LLM process is alive.
+Execute:  59%|█████▉    | 59/100 [08:00<05:23,  7.89s/it]2024/07/02 20:42:44 batch_search_generate.py[line:174] INFO save solutions: 5
+Execute:  60%|██████    | 60/100 [08:15<05:54,  8.86s/it]Execute:  64%|██████▍   | 64/100 [08:30<03:58,  6.63s/it]2024/07/02 20:43:14 batch_search_generate.py[line:174] INFO save solutions: 5
+Execute:  65%|██████▌   | 65/100 [08:45<04:31,  7.76s/it]2024/07/02 20:43:29 batch_search_generate.py[line:133] INFO LLM process is alive.
+Execute:  68%|██████▊   | 68/100 [09:00<03:35,  6.75s/it]2024/07/02 20:43:44 batch_search_generate.py[line:174] INFO save solutions: 5
+Execute:  70%|███████   | 70/100 [09:15<03:28,  6.94s/it]Execute:  73%|███████▎  | 73/100 [09:30<02:48,  6.25s/it]Execute:  74%|███████▍  | 74/100 [09:45<03:15,  7.52s/it]2024/07/02 20:44:29 batch_search_generate.py[line:133] INFO LLM process is alive.
+2024/07/02 20:44:29 batch_search_generate.py[line:174] INFO save solutions: 5
+Execute:  77%|███████▋  | 77/100 [10:00<02:30,  6.56s/it]Execute:  79%|███████▉  | 79/100 [10:15<02:23,  6.81s/it]2024/07/02 20:44:59 batch_search_generate.py[line:174] INFO save solutions: 5
+Execute:  82%|████████▏ | 82/100 [10:30<01:50,  6.15s/it]Execute:  84%|████████▍ | 84/100 [10:45<01:43,  6.50s/it]2024/07/02 20:45:29 batch_search_generate.py[line:133] INFO LLM process is alive.
+2024/07/02 20:45:29 batch_search_generate.py[line:174] INFO save solutions: 5
+Execute:  86%|████████▌ | 86/100 [11:00<01:34,  6.77s/it]Execute:  88%|████████▊ | 88/100 [11:15<01:23,  6.97s/it]2024/07/02 20:45:59 batch_search_generate.py[line:174] INFO save solutions: 5
+Execute:  91%|█████████ | 91/100 [11:30<00:56,  6.24s/it]Execute:  93%|█████████▎| 93/100 [11:45<00:45,  6.57s/it]2024/07/02 20:46:29 batch_search_generate.py[line:133] INFO LLM process is alive.
+2024/07/02 20:46:29 batch_search_generate.py[line:174] INFO save solutions: 5
+Execute:  95%|█████████▌| 95/100 [12:00<00:34,  6.83s/it]Execute:  98%|█████████▊| 98/100 [12:15<00:12,  6.16s/it]Execute:  99%|█████████▉| 99/100 [12:30<00:07,  7.48s/it]2024/07/02 20:47:00 batch_search_generate.py[line:247] INFO all question have been sampled.
+2024/07/02 20:47:14 batch_search_generate.py[line:174] INFO save solutions: 5
+Execute: 100%|██████████| 100/100 [12:45<00:00,  8.80s/it]Execute: 100%|██████████| 100/100 [12:45<00:00,  7.65s/it]
+2024/07/02 20:47:14 batch_search_generate.py[line:190] INFO stop progress_bar
+2024/07/02 20:47:14 batch_search_generate.py[line:199] INFO save surplus solutions: 0
+2024/07/02 20:47:29 batch_search_generate.py[line:122] INFO monitor break, due to monitor_flag 0
+2024/07/02 20:47:29 batch_search_generate.py[line:135] INFO finish llm_process
+2024/07/02 20:47:33 log_utils.py[line:35] INFO seed:42
+2024/07/02 20:47:33 log_utils.py[line:35] INFO verbose:False
+2024/07/02 20:47:33 log_utils.py[line:35] INFO process_num:1
+2024/07/02 20:47:33 log_utils.py[line:35] INFO path:/mnt/workspace/nas/chenguoxin.cgx/api/datasets/ToolQA
+2024/07/02 20:47:33 log_utils.py[line:35] INFO num_epoch:1
+2024/07/02 20:47:33 log_utils.py[line:35] INFO tool_url:http://127.0.0.1:5010/toolqa
+2024/07/02 20:47:33 log_utils.py[line:35] INFO checkpoint_dir:/mnt/workspace/nas/chenguoxin.cgx/api/workspace/output_dir/sft/Meta-Llama-3-8B/easy/run/20240620_001056/checkpoint-120
+2024/07/02 20:47:33 log_utils.py[line:35] INFO temperature:0.0
+2024/07/02 20:47:33 log_utils.py[line:35] INFO top_k:-1
+2024/07/02 20:47:33 log_utils.py[line:35] INFO top_p:1.0
+2024/07/02 20:47:33 log_utils.py[line:35] INFO scratchpad_length:1024
+2024/07/02 20:47:33 log_utils.py[line:35] INFO api_kernel_version:0
+2024/07/02 20:47:33 log_utils.py[line:35] INFO n_generate_sample:1
+2024/07/02 20:47:33 log_utils.py[line:35] INFO max_iter:15
+2024/07/02 20:47:33 log_utils.py[line:35] INFO max_depth:15
+2024/07/02 20:47:33 log_utils.py[line:35] INFO positive_reward:1.0
+2024/07/02 20:47:33 log_utils.py[line:35] INFO negative_reward:-1.0
+2024/07/02 20:47:33 log_utils.py[line:35] INFO max_new_tokens:1024
+2024/07/02 20:47:33 log_utils.py[line:35] INFO max_load_db:5
+2024/07/02 20:47:33 log_utils.py[line:35] INFO debug_num:-1
+2024/07/02 20:47:33 log_utils.py[line:35] INFO datapath:/mnt/workspace/nas/chenguoxin.cgx/api/workspace/datasets/test_data
+2024/07/02 20:47:33 log_utils.py[line:35] INFO task:toolqa_easy
+2024/07/02 20:47:33 log_utils.py[line:35] INFO dataname:scirex-easy
+2024/07/02 20:47:33 log_utils.py[line:35] INFO output_dir:/mnt/workspace/nas/chenguoxin.cgx/api/workspace/output_dir/greedy/run/toolqa_easy/20240620_001056/checkpoint-120
+2024/07/02 20:47:33 log_utils.py[line:35] INFO num_examples:2
+2024/07/02 20:47:33 log_utils.py[line:35] INFO sft_prompt:True
+2024/07/02 20:47:33 log_utils.py[line:35] INFO model_name:20240620_001056
+2024/07/02 20:47:33 log_utils.py[line:35] INFO ckpt:checkpoint-120
+2024/07/02 20:47:33 log_utils.py[line:35] INFO timestamp:20240702_204733
+2024/07/02 20:47:33 log_utils.py[line:35] INFO prompt_split_len:8000
+Execute:   0%|          | 0/100 [00:00<?, ?it/s]INFO 07-02 20:47:33 llm_engine.py:161] Initializing an LLM engine (v0.4.3) with config: model='/mnt/workspace/nas/chenguoxin.cgx/api/workspace/output_dir/sft/Meta-Llama-3-8B/easy/run/20240620_001056/checkpoint-120', speculative_config=None, tokenizer='/mnt/workspace/nas/chenguoxin.cgx/api/workspace/output_dir/sft/Meta-Llama-3-8B/easy/run/20240620_001056/checkpoint-120', skip_tokenizer_init=False, tokenizer_mode=auto, revision=None, rope_scaling=None, tokenizer_revision=None, trust_remote_code=False, dtype=torch.bfloat16, max_seq_len=8192, download_dir=None, load_format=LoadFormat.AUTO, tensor_parallel_size=1, disable_custom_all_reduce=False, quantization=None, enforce_eager=False, kv_cache_dtype=auto, quantization_param_path=None, device_config=cuda, decoding_config=DecodingConfig(guided_decoding_backend='outlines'), seed=42, served_model_name=/mnt/workspace/nas/chenguoxin.cgx/api/workspace/output_dir/sft/Meta-Llama-3-8B/easy/run/20240620_001056/checkpoint-120)
+Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+INFO 07-02 20:47:37 model_runner.py:146] Loading model weights took 14.9595 GB
+INFO 07-02 20:47:38 gpu_executor.py:83] # GPU blocks: 27895, # CPU blocks: 4096
+INFO 07-02 20:47:40 model_runner.py:854] Capturing the model for CUDA graphs. This may lead to unexpected consequences if the model is not static. To run the model in eager mode, set 'enforce_eager=True' or use '--enforce-eager' in the CLI.
+INFO 07-02 20:47:40 model_runner.py:858] CUDA graphs can take additional 1~3 GiB memory per GPU. If you are running out of memory, consider decreasing `gpu_memory_utilization` or enforcing eager mode. You can also reduce the `max_num_seqs` as needed to decrease memory usage.
+INFO 07-02 20:47:43 model_runner.py:924] Graph capturing finished in 3 secs.
+Execute:   0%|          | 0/100 [00:15<?, ?it/s]2024/07/02 20:48:03 batch_search_generate.py[line:174] INFO save solutions: 5
+Execute:   5%|▌         | 5/100 [00:30<04:45,  3.00s/it]WARNING 07-02 20:48:14 scheduler.py:663] Input prompt (8265 tokens) is too long and exceeds limit of 8192
+2024/07/02 20:48:18 batch_search_generate.py[line:174] INFO save solutions: 5
+Execute:  13%|█▎        | 13/100 [00:45<03:13,  2.22s/it]WARNING 07-02 20:48:33 scheduler.py:663] Input prompt (9301 tokens) is too long and exceeds limit of 8192
+2024/07/02 20:48:48 batch_search_generate.py[line:174] INFO save solutions: 5
+Execute:  15%|█▌        | 15/100 [01:15<06:44,  4.76s/it]WARNING 07-02 20:49:19 scheduler.py:663] Input prompt (8509 tokens) is too long and exceeds limit of 8192
+Execute:  18%|█▊        | 18/100 [02:00<10:41,  7.83s/it]Execute:  19%|█▉        | 19/100 [02:15<11:46,  8.72s/it]2024/07/02 20:50:03 batch_search_generate.py[line:174] INFO save solutions: 5
+Execute:  21%|██        | 21/100 [02:30<11:03,  8.40s/it]WARNING 07-02 20:50:03 scheduler.py:663] Input prompt (8224 tokens) is too long and exceeds limit of 8192
+WARNING 07-02 20:50:14 scheduler.py:663] Input prompt (8364 tokens) is too long and exceeds limit of 8192
+WARNING 07-02 20:50:17 scheduler.py:663] Input prompt (9323 tokens) is too long and exceeds limit of 8192
+2024/07/02 20:50:18 batch_search_generate.py[line:174] INFO save solutions: 5
+2024/07/02 20:50:18 batch_search_generate.py[line:174] INFO save solutions: 5
+Execute:  33%|███▎      | 33/100 [02:45<03:51,  3.45s/it]WARNING 07-02 20:50:27 scheduler.py:663] Input prompt (8258 tokens) is too long and exceeds limit of 8192
+2024/07/02 20:50:33 batch_search_generate.py[line:174] INFO save solutions: 5
+2024/07/02 20:50:33 batch_search_generate.py[line:174] INFO save solutions: 5
+Execute:  41%|████      | 41/100 [03:00<02:46,  2.83s/it]Execute:  44%|████▍     | 44/100 [03:15<02:59,  3.21s/it]2024/07/02 20:51:03 batch_search_generate.py[line:174] INFO save solutions: 5
+2024/07/02 20:51:03 batch_search_generate.py[line:174] INFO save solutions: 5
+Execute:  50%|█████     | 50/100 [03:30<02:28,  2.97s/it]Execute:  51%|█████     | 51/100 [03:45<03:09,  3.86s/it]WARNING 07-02 20:51:29 scheduler.py:663] Input prompt (8942 tokens) is too long and exceeds limit of 8192
+WARNING 07-02 20:51:29 scheduler.py:663] Input prompt (8543 tokens) is too long and exceeds limit of 8192
+2024/07/02 20:51:33 batch_search_generate.py[line:174] INFO save solutions: 5
+Execute:  56%|█████▌    | 56/100 [04:00<02:36,  3.56s/it]2024/07/02 20:51:48 batch_search_generate.py[line:174] INFO save solutions: 5
+Execute:  62%|██████▏   | 62/100 [04:15<02:00,  3.17s/it]2024/07/02 20:52:03 batch_search_generate.py[line:174] INFO save solutions: 5
+Execute:  66%|██████▌   | 66/100 [04:30<01:52,  3.32s/it]WARNING 07-02 20:52:07 scheduler.py:663] Input prompt (8583 tokens) is too long and exceeds limit of 8192
+2024/07/02 20:52:18 batch_search_generate.py[line:174] INFO save solutions: 5
+Execute:  70%|███████   | 70/100 [04:45<01:43,  3.44s/it]2024/07/02 20:52:33 batch_search_generate.py[line:133] INFO LLM process is alive.
+Execute:  71%|███████   | 71/100 [05:00<02:09,  4.46s/it]2024/07/02 20:52:48 batch_search_generate.py[line:174] INFO save solutions: 5
+Execute:  75%|███████▌  | 75/100 [05:15<01:45,  4.22s/it]Execute:  79%|███████▉  | 79/100 [05:30<01:25,  4.07s/it]WARNING 07-02 20:53:10 scheduler.py:663] Input prompt (8585 tokens) is too long and exceeds limit of 8192
+WARNING 07-02 20:53:16 scheduler.py:663] Input prompt (9168 tokens) is too long and exceeds limit of 8192
+2024/07/02 20:53:18 batch_search_generate.py[line:174] INFO save solutions: 5
+2024/07/02 20:53:18 batch_search_generate.py[line:174] INFO save solutions: 5
+Execute:  89%|████████▉ | 89/100 [05:45<00:29,  2.69s/it]2024/07/02 20:53:33 batch_search_generate.py[line:133] INFO LLM process is alive.
+2024/07/02 20:53:33 batch_search_generate.py[line:174] INFO save solutions: 5
+Execute:  94%|█████████▍| 94/100 [06:00<00:16,  2.78s/it]WARNING 07-02 20:53:44 scheduler.py:663] Input prompt (8972 tokens) is too long and exceeds limit of 8192
+2024/07/02 20:53:48 batch_search_generate.py[line:174] INFO save solutions: 5
+Execute:  98%|█████████▊| 98/100 [06:15<00:06,  3.01s/it]2024/07/02 20:53:54 batch_search_generate.py[line:247] INFO all question have been sampled.
+2024/07/02 20:54:03 batch_search_generate.py[line:174] INFO save solutions: 5
+Execute: 100%|██████████| 100/100 [06:30<00:00,  3.67s/it]Execute: 100%|██████████| 100/100 [06:30<00:00,  3.90s/it]
+2024/07/02 20:54:03 batch_search_generate.py[line:190] INFO stop progress_bar
+2024/07/02 20:54:03 batch_search_generate.py[line:199] INFO save surplus solutions: 0
+2024/07/02 20:54:33 batch_search_generate.py[line:122] INFO monitor break, due to monitor_flag 0
+2024/07/02 20:54:33 batch_search_generate.py[line:135] INFO finish llm_process
+2024/07/02 20:54:36 log_utils.py[line:35] INFO seed:42
+2024/07/02 20:54:36 log_utils.py[line:35] INFO verbose:False
+2024/07/02 20:54:36 log_utils.py[line:35] INFO process_num:1
+2024/07/02 20:54:36 log_utils.py[line:35] INFO path:/mnt/workspace/nas/chenguoxin.cgx/api/datasets/ToolQA
+2024/07/02 20:54:36 log_utils.py[line:35] INFO num_epoch:1
+2024/07/02 20:54:36 log_utils.py[line:35] INFO tool_url:http://127.0.0.1:5010/toolqa
+2024/07/02 20:54:36 log_utils.py[line:35] INFO checkpoint_dir:/mnt/workspace/nas/chenguoxin.cgx/api/workspace/output_dir/sft/Meta-Llama-3-8B/easy/run/20240620_001056/checkpoint-120
+2024/07/02 20:54:36 log_utils.py[line:35] INFO temperature:0.0
+2024/07/02 20:54:36 log_utils.py[line:35] INFO top_k:-1
+2024/07/02 20:54:36 log_utils.py[line:35] INFO top_p:1.0
+2024/07/02 20:54:36 log_utils.py[line:35] INFO scratchpad_length:1024
+2024/07/02 20:54:36 log_utils.py[line:35] INFO api_kernel_version:0
+2024/07/02 20:54:36 log_utils.py[line:35] INFO n_generate_sample:1
+2024/07/02 20:54:36 log_utils.py[line:35] INFO max_iter:15
+2024/07/02 20:54:36 log_utils.py[line:35] INFO max_depth:15
+2024/07/02 20:54:36 log_utils.py[line:35] INFO positive_reward:1.0
+2024/07/02 20:54:36 log_utils.py[line:35] INFO negative_reward:-1.0
+2024/07/02 20:54:36 log_utils.py[line:35] INFO max_new_tokens:1024
+2024/07/02 20:54:36 log_utils.py[line:35] INFO max_load_db:5
+2024/07/02 20:54:36 log_utils.py[line:35] INFO debug_num:-1
+2024/07/02 20:54:36 log_utils.py[line:35] INFO datapath:/mnt/workspace/nas/chenguoxin.cgx/api/workspace/datasets/test_data
+2024/07/02 20:54:36 log_utils.py[line:35] INFO task:toolqa_easy
+2024/07/02 20:54:36 log_utils.py[line:35] INFO dataname:yelp-easy
+2024/07/02 20:54:36 log_utils.py[line:35] INFO output_dir:/mnt/workspace/nas/chenguoxin.cgx/api/workspace/output_dir/greedy/run/toolqa_easy/20240620_001056/checkpoint-120
+2024/07/02 20:54:36 log_utils.py[line:35] INFO num_examples:2
+2024/07/02 20:54:36 log_utils.py[line:35] INFO sft_prompt:True
+2024/07/02 20:54:36 log_utils.py[line:35] INFO model_name:20240620_001056
+2024/07/02 20:54:36 log_utils.py[line:35] INFO ckpt:checkpoint-120
+2024/07/02 20:54:36 log_utils.py[line:35] INFO timestamp:20240702_205436
+2024/07/02 20:54:36 log_utils.py[line:35] INFO prompt_split_len:8000
+Execute:   0%|          | 0/100 [00:00<?, ?it/s]INFO 07-02 20:54:37 llm_engine.py:161] Initializing an LLM engine (v0.4.3) with config: model='/mnt/workspace/nas/chenguoxin.cgx/api/workspace/output_dir/sft/Meta-Llama-3-8B/easy/run/20240620_001056/checkpoint-120', speculative_config=None, tokenizer='/mnt/workspace/nas/chenguoxin.cgx/api/workspace/output_dir/sft/Meta-Llama-3-8B/easy/run/20240620_001056/checkpoint-120', skip_tokenizer_init=False, tokenizer_mode=auto, revision=None, rope_scaling=None, tokenizer_revision=None, trust_remote_code=False, dtype=torch.bfloat16, max_seq_len=8192, download_dir=None, load_format=LoadFormat.AUTO, tensor_parallel_size=1, disable_custom_all_reduce=False, quantization=None, enforce_eager=False, kv_cache_dtype=auto, quantization_param_path=None, device_config=cuda, decoding_config=DecodingConfig(guided_decoding_backend='outlines'), seed=42, served_model_name=/mnt/workspace/nas/chenguoxin.cgx/api/workspace/output_dir/sft/Meta-Llama-3-8B/easy/run/20240620_001056/checkpoint-120)
+Special tokens have been added in the vocabulary, make sure the associated word embeddings are fine-tuned or trained.
+INFO 07-02 20:54:40 model_runner.py:146] Loading model weights took 14.9595 GB
+INFO 07-02 20:54:41 gpu_executor.py:83] # GPU blocks: 27895, # CPU blocks: 4096
+INFO 07-02 20:54:44 model_runner.py:854] Capturing the model for CUDA graphs. This may lead to unexpected consequences if the model is not static. To run the model in eager mode, set 'enforce_eager=True' or use '--enforce-eager' in the CLI.
+INFO 07-02 20:54:44 model_runner.py:858] CUDA graphs can take additional 1~3 GiB memory per GPU. If you are running out of memory, consider decreasing `gpu_memory_utilization` or enforcing eager mode. You can also reduce the `max_num_seqs` as needed to decrease memory usage.
+INFO 07-02 20:54:47 model_runner.py:924] Graph capturing finished in 3 secs.
+Execute:   0%|          | 0/100 [00:15<?, ?it/s]2024/07/02 20:55:06 batch_search_generate.py[line:174] INFO save solutions: 5
+Execute:   6%|▌         | 6/100 [00:30<03:55,  2.50s/it]2024/07/02 20:55:22 batch_search_generate.py[line:174] INFO save solutions: 5
+2024/07/02 20:55:22 batch_search_generate.py[line:174] INFO save solutions: 5
+Execute:  15%|█▌        | 15/100 [00:45<02:44,  1.93s/it]2024/07/02 20:55:37 batch_search_generate.py[line:174] INFO save solutions: 5
+Execute:  24%|██▍       | 24/100 [01:00<02:16,  1.80s/it]2024/07/02 20:55:52 batch_search_generate.py[line:174] INFO save solutions: 5
+2024/07/02 20:55:52 batch_search_generate.py[line:174] INFO save solutions: 5
+Execute:  31%|███       | 31/100 [01:15<02:12,  1.92s/it]2024/07/02 20:56:07 batch_search_generate.py[line:174] INFO save solutions: 5
+Execute:  39%|███▉      | 39/100 [01:30<01:56,  1.91s/it]2024/07/02 20:56:22 batch_search_generate.py[line:174] INFO save solutions: 5
+Execute:  44%|████▍     | 44/100 [01:45<02:01,  2.18s/it]2024/07/02 20:56:37 batch_search_generate.py[line:174] INFO save solutions: 5
+2024/07/02 20:56:37 batch_search_generate.py[line:174] INFO save solutions: 5
+Execute:  52%|█████▏    | 52/100 [02:00<01:39,  2.07s/it]2024/07/02 20:56:52 batch_search_generate.py[line:174] INFO save solutions: 5
+Execute:  59%|█████▉    | 59/100 [02:15<01:25,  2.09s/it]2024/07/02 20:57:07 batch_search_generate.py[line:174] INFO save solutions: 5
+2024/07/02 20:57:07 batch_search_generate.py[line:174] INFO save solutions: 5
+Execute:  67%|██████▋   | 67/100 [02:30<01:06,  2.02s/it]2024/07/02 20:57:22 batch_search_generate.py[line:174] INFO save solutions: 5
+Execute:  72%|███████▏  | 72/100 [02:45<01:02,  2.25s/it]2024/07/02 20:57:37 batch_search_generate.py[line:174] INFO save solutions: 5
+Execute:  77%|███████▋  | 77/100 [03:00<00:56,  2.43s/it]2024/07/02 20:57:52 batch_search_generate.py[line:174] INFO save solutions: 5
+Execute:  84%|████████▍ | 84/100 [03:15<00:37,  2.34s/it]2024/07/02 20:58:07 batch_search_generate.py[line:174] INFO save solutions: 5
+2024/07/02 20:58:07 batch_search_generate.py[line:174] INFO save solutions: 5
+Execute:  90%|█████████ | 90/100 [03:30<00:23,  2.39s/it]2024/07/02 20:58:22 batch_search_generate.py[line:174] INFO save solutions: 5
+Execute:  97%|█████████▋| 97/100 [03:45<00:06,  2.31s/it]2024/07/02 20:58:29 batch_search_generate.py[line:247] INFO all question have been sampled.
+2024/07/02 20:58:36 batch_search_generate.py[line:135] INFO finish llm_process
+2024/07/02 20:58:37 batch_search_generate.py[line:174] INFO save solutions: 5
+Execute: 100%|██████████| 100/100 [04:00<00:00,  2.75s/it]Execute: 100%|██████████| 100/100 [04:00<00:00,  2.40s/it]
+2024/07/02 20:58:37 batch_search_generate.py[line:190] INFO stop progress_bar
+2024/07/02 20:58:37 batch_search_generate.py[line:199] INFO save surplus solutions: 0

@@ -17,7 +17,8 @@ def load_jsonl(path):
 
 check_paths = [
     '/mnt/workspace/nas/chenguoxin.cgx/api/workspace/output_dir/mcts/round1/run/toolqa_hard',
-    '/mnt/workspace/nas/chenguoxin.cgx/api/workspace/other_output/output_dir/mcts/round1/run/toolqa_hard',
+    '/mnt/workspace/nas/chenguoxin.cgx/api/workspace/other_output/hard/toolqa_hard',
+    '/mnt/workspace/nas/chenguoxin.cgx/api/workspace/other_output/hard/toolqa_hard_single',
 ]
 modelname = 'Meta-Llama-3-8B-Instruct'  # 用于采样的模型
 threshold = 4
@@ -55,7 +56,7 @@ for check_path in check_paths:
 
 
 # 存储文件
-with open(osp.join(f"{num_round}", f"{osp.basename(check_path)}_{threshold}.json"), 'w') as f:
+with open(osp.join(f"{num_round}", f"{osp.basename(check_paths[0])}_{threshold}.json"), 'w') as f:
     json.dump(count_result, f, indent=2)
 
 num_count = {}
@@ -67,5 +68,5 @@ for dname, item in count_result.items():
 
 
 
-with open(osp.join(f"{num_round}", f"{osp.basename(check_path)}_{threshold}_num.json"), 'w') as f:
+with open(osp.join(f"{num_round}", f"{osp.basename(check_paths[0])}_{threshold}_num.json"), 'w') as f:
     json.dump(num_count, f, indent=2)
